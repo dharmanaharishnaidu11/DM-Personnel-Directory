@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DM Personnel — Admin Data Viewer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1a365d;
+            --accent: #3182ce;
+            --success: #38a169;
+            --danger: #e53e3e;
+            --warning: #dd6b20;
+            --bg: #f7f8fc;
+            --card: #ffffff;
+            --border: #e2e8f0;
+            --text: #1a2332;
+            --muted: #718096;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); }
+
+        /* Header */
+        .tricolor { height: 4px; background: linear-gradient(90deg, #FF9933 33%, #fff 33% 66%, #138808 66%); }
+        .header {
+            background: linear-gradient(135deg, #0c2340, #1a365d);
+            color: #fff; padding: 14px 20px;
+            display: flex; align-items: center; gap: 14px;
+        }
+        .header img { height: 40px; filter: brightness(10); }
+        .header h1 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 17px; font-weight: 800; }
+        .header p { font-size: 11px; opacity: .8; }
+        .header .spacer { flex: 1; }
+        .header a { color: #90cdf4; font-size: 12px; text-decoration: none; }
+        .header a:hover { color: #fff; }
+
+        /* Toolbar */
+        .toolbar {
+            display: flex; align-items: center; gap: 10px; padding: 12px 20px;
+            background: #fff; border-bottom: 1px solid var(--border); flex-wrap: wrap;
+        }
+        .toolbar label { font-size: 11px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: .4px; }
+        .toolbar select, .toolbar input[type="search"] {
+            padding: 7px 10px; font-size: 13px; border: 1px solid var(--border);
+            border-radius: 6px; font-family: 'Inter', sans-serif; background: #fff;
+        }
+        .toolbar input[type="search"] { width: 220px; }
+        .toolbar .spacer { flex: 1; }
+        .toolbar .stat {
+            font-size: 12px; color: var(--muted); padding: 4px 10px;
+            background: #f0f4ff; border-radius: 4px;
+        }
+        .toolbar .stat b { color: var(--primary); }
+
+        /* Action buttons */
+        .btn {
+            display: inline-flex; align-items: center; gap: 5px;
+            padding: 7px 14px; font-size: 12px; font-weight: 600;
+            border-radius: 6px; border: none; cursor: pointer;
+            font-family: 'Inter', sans-serif; transition: all .15s;
+        }
+        .btn-primary { background: var(--accent); color: #fff; }
+        .btn-primary:hover { background: #2b6cb0; }
+        .btn-success { background: var(--success); color: #fff; }
+        .btn-success:hover { background: #2f855a; }
+        .btn-warning { background: var(--warning); color: #fff; }
+        .btn-warning:hover { background: #c05621; }
+        .btn-outline { background: #fff; color: var(--accent); border: 1px solid var(--accent); }
+        .btn-outline:hover { background: #ebf4ff; }
+        .btn-sm { padding: 4px 8px; font-size: 11px; }
+        .btn:disabled { opacity: .5; cursor: not-allowed; }
+
+        /* Table container */
+        .table-wrap {
+            overflow-x: auto; padding: 0 12px 80px;
+        }
+        table {
+            width: 100%; border-collapse: collapse; font-size: 12px;
+            background: #fff; margin-top: 8px;
+        }
+        thead th {
+            position: sticky; top: 0; z-index: 10;
+            background: #1a365d; color: #fff; padding: 8px 10px;
+            text-align: left; font-weight: 600; font-size: 11px;
+            text-transform: uppercase; letter-spacing: .3px;
+            white-space: nowrap; cursor: pointer; user-select: none;
+        }
+        thead th:hover { background: #2a4a7d; }
+        thead th .sort-arrow { font-size: 10px; margin-left: 3px; opacity: .5; }
+        thead th.sorted .sort-arrow { opacity: 1; }
+        tbody tr { border-bottom: 1px solid #f0f0f0; transition: background .1s; }
+        tbody tr:hover { background: #f7faff; }
+        tbody tr.selected { background: #ebf4ff; }
+        tbody td { padding: 7px 10px; white-space: nowrap; max-width: 200px; overflow: hidden; text-overflow: ellipsis; }
+        tbody td.wrap { white-space: normal; max-width: 300px; }
+
+        /* Status badges */
+        .badge {
+            display: inline-block; padding: 2px 8px; border-radius: 10px;
+            font-size: 10px; font-weight: 600;
+        }
+        .badge-active { background: #c6f6d5; color: #22543d; }
+        .badge-leave { background: #fefcbf; color: #744210; }
+        .badge-transferred { background: #fed7d7; color: #742a2a; }
+        .badge-retired { background: #e2e8f0; color: #4a5568; }
+        .badge-deputation { background: #e9d8fd; color: #553c9a; }
+        .badge-attachment { background: #feebc8; color: #7b341e; }
+
+        /* Detail modal */
+        .modal-overlay {
+            display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,.5); z-index: 1000; justify-content: center; align-items: flex-start;
+            padding: 40px 20px; overflow-y: auto;
+        }
+        .modal-overlay.show { display: flex; }
+        .modal {
+            background: #fff; border-radius: 12px; max-width: 700px; width: 100%;
+            box-shadow: 0 20px 60px rgba(0,0,0,.2); max-height: 90vh; overflow-y: auto;
+        }
+        .modal-header {
+            display: flex; align-items: center; padding: 16px 20px;
+            border-bottom: 1px solid var(--border); position: sticky; top: 0; background: #fff;
+            border-radius: 12px 12px 0 0; z-index: 10;
+        }
+        .modal-header h2 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 16px; flex: 1; }
+        .modal-close { background: none; border: none; font-size: 22px; cursor: pointer; color: var(--muted); padding: 4px 8px; }
+        .modal-body { padding: 16px 20px; }
+        .detail-section { margin-bottom: 16px; }
+        .detail-section h3 {
+            font-size: 12px; font-weight: 700; color: #fff; background: var(--primary);
+            padding: 5px 10px; border-radius: 4px; margin-bottom: 6px;
+        }
+        .detail-row { display: flex; padding: 4px 0; border-bottom: 1px solid #f5f5f5; }
+        .detail-label { width: 160px; font-weight: 600; color: var(--primary); font-size: 12px; flex-shrink: 0; }
+        .detail-value { flex: 1; font-size: 12px; }
+        .modal-actions { padding: 12px 20px; border-top: 1px solid var(--border); display: flex; gap: 8px; justify-content: flex-end; }
+
+        /* Loading */
+        .loading { text-align: center; padding: 60px; color: var(--muted); }
+        .spinner { display: inline-block; width: 24px; height: 24px; border: 3px solid #e2e8f0; border-top-color: var(--accent); border-radius: 50%; animation: spin .8s linear infinite; }
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        /* Clickable row */
+        tbody tr { cursor: pointer; }
+        tbody tr:hover { background: #edf2f7; }
+        tbody tr.selected { background: #ebf4ff; }
+        tbody td.cb-cell { cursor: default; }
+
+        /* Selection toolbar */
+        .sel-bar {
+            display: none; position: fixed; bottom: 0; left: 0; right: 0;
+            background: var(--primary); color: #fff; padding: 10px 20px;
+            z-index: 200; box-shadow: 0 -4px 12px rgba(0,0,0,.2);
+            align-items: center; gap: 12px;
+        }
+        .sel-bar.show { display: flex; }
+        .sel-bar .sel-count { font-weight: 700; font-size: 14px; }
+        .sel-bar .sel-spacer { flex: 1; }
+        .sel-bar .btn { border: 1px solid rgba(255,255,255,.3); }
+        .sel-bar .btn:hover { border-color: #fff; }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .toolbar { gap: 6px; }
+            .toolbar input[type="search"] { width: 150px; }
+            .detail-row { flex-direction: column; }
+            .detail-label { width: auto; margin-bottom: 2px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="tricolor"></div>
+<div class="header">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Emblem_of_India.svg/200px-Emblem_of_India.svg.png"
+         alt="Emblem" onerror="this.style.display='none'">
+    <div>
+        <p>Government of Andhra Pradesh — APSDMA</p>
+        <h1>DM Personnel — Admin Data Viewer</h1>
+    </div>
+    <div class="spacer"></div>
+    <a href="survey.html">+ New Entry</a>
+    <a href="index.html" style="margin-left:12px;">Directory</a>
+</div>
+
+<!-- Toolbar -->
+<div class="toolbar">
+    <div>
+        <label>District</label><br>
+        <select id="fl-district"><option value="">All Districts</option></select>
+    </div>
+    <div>
+        <label>Department</label><br>
+        <select id="fl-category"><option value="">All Departments</option></select>
+    </div>
+    <div>
+        <label>Level</label><br>
+        <select id="fl-level">
+            <option value="">All</option>
+            <option value="1">L1 - Apex</option>
+            <option value="2">L2 - Dept Head</option>
+            <option value="3">L3 - District</option>
+            <option value="4">L4 - Sub-District</option>
+            <option value="5">L5 - Mandal</option>
+            <option value="6">L6 - Village</option>
+        </select>
+    </div>
+    <div>
+        <label>Status</label><br>
+        <select id="fl-status">
+            <option value="">All</option>
+            <option>Active</option>
+            <option>On Leave</option>
+            <option>Transferred</option>
+            <option>Retired</option>
+            <option>Vacant</option>
+        </select>
+    </div>
+    <div>
+        <label>Posting Type</label><br>
+        <select id="fl-posting">
+            <option value="">All</option>
+            <option>Regular</option>
+            <option>Deputation</option>
+            <option>Attachment</option>
+            <option>Additional Charge</option>
+            <option>Contract</option>
+        </select>
+    </div>
+    <div>
+        <label>Search</label><br>
+        <input type="search" id="fl-search" placeholder="Name, phone, email, dept...">
+    </div>
+    <div class="spacer"></div>
+    <div class="stat" id="stat-count">Loading...</div>
+    <button class="btn btn-outline" onclick="resetFilters()">Reset</button>
+    <button class="btn btn-success" onclick="exportCSV()">&#128196; CSV</button>
+    <button class="btn btn-warning" onclick="exportExcel()">&#128202; Excel</button>
+    <button class="btn btn-primary" onclick="printAll()">&#128424; Print</button>
+</div>
+
+<!-- Table -->
+<div class="table-wrap">
+    <div class="loading" id="loading">
+        <div class="spinner"></div>
+        <p style="margin-top:8px;">Loading personnel data...</p>
+    </div>
+    <table id="data-table" style="display:none;">
+        <thead id="table-head"></thead>
+        <tbody id="table-body"></tbody>
+    </table>
+</div>
+
+<!-- Selection bar -->
+<div class="sel-bar" id="sel-bar">
+    <span class="sel-count" id="sel-count">0 selected</span>
+    <div class="sel-spacer"></div>
+    <button class="btn btn-success" onclick="bulkDownloadReports()">&#128196; Download Selected Reports</button>
+    <button class="btn btn-warning" onclick="bulkPrintReports()">&#128424; Print Selected</button>
+    <button class="btn btn-primary" onclick="bulkExportCSV()">&#128202; Export Selected CSV</button>
+    <button class="btn btn-outline" onclick="clearSelection()" style="color:#fff;">&#10005; Clear</button>
+</div>
+
+<!-- Detail Modal -->
+<div class="modal-overlay" id="modal">
+    <div class="modal">
+        <div class="modal-header">
+            <h2 id="modal-title">Personnel Detail</h2>
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+        </div>
+        <div class="modal-body" id="modal-body"></div>
+        <div class="modal-actions">
+            <button class="btn btn-primary" onclick="downloadPersonReport()">&#128196; Download Report</button>
+            <button class="btn btn-warning" onclick="printPersonReport()">&#128424; Print</button>
+            <button class="btn btn-outline" onclick="closeModal()">Close</button>
+        </div>
+    </div>
+</div>
+
+<script>
+(function() {
+    "use strict";
+
+    var FEATURE_URL = "https://apsdmagis.ap.gov.in/gisserver/rest/services/Hosted/DM_Personnel/FeatureServer/0";
+    var TOKEN_URL = "https://apsdmagis.ap.gov.in/gisportal/sharing/rest/generateToken";
+
+    var COLUMNS = [
+        { key: "objectid",         label: "ID",           w: 50 },
+        { key: "person_name",      label: "Name",         w: 180 },
+        { key: "designation",      label: "Current Post",  w: 150 },
+        { key: "parent_department", label: "Parent Dept",  w: 120 },
+        { key: "rank_designation", label: "Rank",          w: 100 },
+        { key: "posting_type",    label: "Posting Type",   w: 90 },
+        { key: "category",        label: "Department",     w: 140 },
+        { key: "hierarchy_level", label: "Level",          w: 50 },
+        { key: "district_name",   label: "District",       w: 120 },
+        { key: "mandal_name",     label: "Mandal",         w: 100 },
+        { key: "phone_primary",   label: "Mobile",         w: 100 },
+        { key: "email",           label: "Email",          w: 160 },
+        { key: "status",          label: "Status",         w: 80 },
+        { key: "date_of_entry",   label: "Submitted",      w: 90 }
+    ];
+
+    var DISTRICTS = [
+        "Alluri Sitharama Raju","Anakapalli","Ananthapuramu","Annamayya",
+        "Bapatla","Chittoor","Dr.B.R.Ambedkar Konaseema","East Godavari",
+        "Eluru","Guntur","Kakinada","Krishna","Kurnool","Markapuram",
+        "Nandyal","NTR","Palnadu","Parvathipuram Manyam","Polavaram",
+        "Prakasam","Sri Potti Sriramulu Nellore","Sri Sathya Sai",
+        "Srikakulam","Tirupati","Visakhapatnam","Vizianagaram",
+        "West Godavari","Y.S.R.Kadapa"
+    ];
+
+    var allData = [];
+    var filteredData = [];
+    var sortCol = "objectid";
+    var sortAsc = false;
+    var selectedPerson = null;
+    var searchTimeout = null;
+
+    // ── Init ──
+    function init() {
+        populateDropdowns();
+        bindEvents();
+        loadData();
+    }
+
+    function populateDropdowns() {
+        var dSel = document.getElementById("fl-district");
+        DISTRICTS.forEach(function(d) {
+            var o = document.createElement("option"); o.value = d; o.textContent = d;
+            dSel.appendChild(o);
+        });
+    }
+
+    function bindEvents() {
+        ["fl-district","fl-category","fl-level","fl-status","fl-posting"].forEach(function(id) {
+            document.getElementById(id).addEventListener("change", applyFilters);
+        });
+        document.getElementById("fl-search").addEventListener("input", function() {
+            clearTimeout(searchTimeout);
+            searchTimeout = setTimeout(applyFilters, 300);
+        });
+    }
+
+    // ── Auth ──
+    function getToken() {
+        var params = new URLSearchParams({
+            username: "portaladmin", password: "9494501235Nn@",
+            client: "referer", referer: window.location.origin || "https://apsdmagis.ap.gov.in",
+            expiration: 30, f: "json"
+        });
+        return fetch(TOKEN_URL, { method: "POST", body: params })
+            .then(function(r) { return r.json(); })
+            .then(function(d) { return d.token; });
+    }
+
+    // ── Load data ──
+    function loadData() {
+        getToken().then(function(token) {
+            var url = FEATURE_URL + "/query?where=1%3D1&outFields=*&returnGeometry=false&orderByFields=objectid+DESC&resultRecordCount=10000&f=json&token=" + token;
+            return fetch(url);
+        }).then(function(r) { return r.json(); })
+        .then(function(result) {
+            allData = (result.features || []).map(function(f) { return f.attributes; });
+
+            // Populate category dropdown from actual data
+            var cats = {};
+            allData.forEach(function(r) { if (r.category) cats[r.category] = true; });
+            var cSel = document.getElementById("fl-category");
+            Object.keys(cats).sort().forEach(function(c) {
+                var o = document.createElement("option"); o.value = c; o.textContent = c;
+                cSel.appendChild(o);
+            });
+
+            document.getElementById("loading").style.display = "none";
+            document.getElementById("data-table").style.display = "table";
+            buildTableHead();
+            applyFilters();
+        }).catch(function(err) {
+            document.getElementById("loading").innerHTML =
+                '<div style="color:var(--danger);font-size:16px;">&#10060;</div>' +
+                '<p style="color:var(--danger);">Failed to load data: ' + err.message + '</p>';
+        });
+    }
+
+    // ── Table header ──
+    function buildTableHead() {
+        var thead = document.getElementById("table-head");
+        var tr = document.createElement("tr");
+        // Checkbox column
+        tr.innerHTML = '<th style="width:30px;"><input type="checkbox" id="select-all"></th>';
+        COLUMNS.forEach(function(col) {
+            var th = document.createElement("th");
+            th.style.minWidth = col.w + "px";
+            th.dataset.key = col.key;
+            th.innerHTML = col.label + ' <span class="sort-arrow">&#9650;</span>';
+            th.addEventListener("click", function() {
+                if (sortCol === col.key) { sortAsc = !sortAsc; }
+                else { sortCol = col.key; sortAsc = true; }
+                applyFilters();
+            });
+            tr.appendChild(th);
+        });
+        tr.innerHTML += '<th style="width:60px;">Actions</th>';
+        thead.innerHTML = "";
+        thead.appendChild(tr);
+
+        document.getElementById("select-all").addEventListener("change", function() {
+            var cbs = document.querySelectorAll(".row-cb");
+            var checked = this.checked;
+            cbs.forEach(function(cb) { cb.checked = checked; });
+            updateSelectionBar();
+        });
+    }
+
+    // ── Filters ──
+    function applyFilters() {
+        var district = document.getElementById("fl-district").value;
+        var category = document.getElementById("fl-category").value;
+        var level = document.getElementById("fl-level").value;
+        var status = document.getElementById("fl-status").value;
+        var posting = document.getElementById("fl-posting").value;
+        var search = (document.getElementById("fl-search").value || "").toLowerCase().trim();
+
+        filteredData = allData.filter(function(r) {
+            if (district && r.district_name !== district) return false;
+            if (category && r.category !== category) return false;
+            if (level && String(r.hierarchy_level) !== level) return false;
+            if (status && r.status !== status) return false;
+            if (posting && r.posting_type !== posting) return false;
+            if (search) {
+                var hay = [r.person_name, r.designation, r.department, r.category,
+                    r.phone_primary, r.email, r.district_name, r.mandal_name,
+                    r.parent_department, r.rank_designation, r.employee_id,
+                    r.ngo_org_name, r.sub_department, r.posting_type
+                ].filter(Boolean).join(" ").toLowerCase();
+                if (hay.indexOf(search) === -1) return false;
+            }
+            return true;
+        });
+
+        // Sort
+        filteredData.sort(function(a, b) {
+            var va = a[sortCol], vb = b[sortCol];
+            if (va == null) va = "";
+            if (vb == null) vb = "";
+            if (typeof va === "number" && typeof vb === "number") {
+                return sortAsc ? va - vb : vb - va;
+            }
+            va = String(va).toLowerCase(); vb = String(vb).toLowerCase();
+            return sortAsc ? va.localeCompare(vb) : vb.localeCompare(va);
+        });
+
+        renderTable();
+        updateStats();
+    }
+
+    window.resetFilters = function() {
+        ["fl-district","fl-category","fl-level","fl-status","fl-posting"].forEach(function(id) {
+            document.getElementById(id).value = "";
+        });
+        document.getElementById("fl-search").value = "";
+        applyFilters();
+    };
+
+    // ── Render table ──
+    function renderTable() {
+        var tbody = document.getElementById("table-body");
+        var html = "";
+        filteredData.forEach(function(r, i) {
+            html += '<tr data-idx="' + i + '">';
+            html += '<td class="cb-cell"><input type="checkbox" class="row-cb" data-idx="' + i + '"></td>';
+            COLUMNS.forEach(function(col) {
+                var val = r[col.key];
+                if (col.key === "date_of_entry" || col.key === "date_of_posting") {
+                    val = fmtDate(val);
+                } else if (col.key === "status") {
+                    val = statusBadge(val);
+                } else if (col.key === "posting_type") {
+                    val = postingBadge(val);
+                } else if (col.key === "hierarchy_level") {
+                    val = val ? "L" + val : "-";
+                } else {
+                    val = esc(val);
+                }
+                html += '<td>' + val + '</td>';
+            });
+            html += '<td class="cb-cell"><button class="btn btn-sm btn-outline" onclick="event.stopPropagation();viewPerson(' + i + ')">View</button></td>';
+            html += '</tr>';
+        });
+        tbody.innerHTML = html;
+
+        // Click row → open profile (except checkbox/button cells)
+        tbody.querySelectorAll("tr").forEach(function(tr) {
+            tr.addEventListener("click", function(e) {
+                if (e.target.tagName === "INPUT" || e.target.tagName === "BUTTON") return;
+                var idx = parseInt(this.dataset.idx);
+                viewPerson(idx);
+            });
+        });
+
+        // Checkbox change → update selection bar
+        tbody.querySelectorAll(".row-cb").forEach(function(cb) {
+            cb.addEventListener("change", updateSelectionBar);
+        });
+
+        updateSelectionBar();
+    }
+
+    // ── Selection management ──
+    function getSelectedIndices() {
+        var indices = [];
+        document.querySelectorAll(".row-cb:checked").forEach(function(cb) {
+            indices.push(parseInt(cb.dataset.idx));
+        });
+        return indices;
+    }
+
+    function getSelectedRecords() {
+        return getSelectedIndices().map(function(i) { return filteredData[i]; }).filter(Boolean);
+    }
+
+    function updateSelectionBar() {
+        var count = getSelectedIndices().length;
+        var bar = document.getElementById("sel-bar");
+        if (count > 0) {
+            bar.classList.add("show");
+            document.getElementById("sel-count").textContent = count + " selected";
+        } else {
+            bar.classList.remove("show");
+        }
+    }
+
+    window.clearSelection = function() {
+        document.querySelectorAll(".row-cb").forEach(function(cb) { cb.checked = false; });
+        var sa = document.getElementById("select-all");
+        if (sa) sa.checked = false;
+        updateSelectionBar();
+    };
+
+    // ── Bulk download individual reports as separate files ──
+    window.bulkDownloadReports = function() {
+        var records = getSelectedRecords();
+        if (!records.length) return;
+
+        if (records.length === 1) {
+            // Single record — direct download
+            selectedPerson = records[0];
+            downloadPersonReport();
+            return;
+        }
+
+        // Multiple records — combine into one big report
+        var now = new Date().toLocaleString("en-IN");
+        var html = '<!DOCTYPE html><html><head><meta charset="UTF-8"><title>DM Personnel Bulk Report (' + records.length + ' records)</title>' +
+            '<style>*{margin:0;padding:0;box-sizing:border-box;}body{font-family:Arial,sans-serif;font-size:12px;color:#333;padding:15px;}' +
+            '.tricolor{height:4px;background:linear-gradient(90deg,#FF9933 33%,#fff 33% 66%,#138808 66%);margin-bottom:10px;}' +
+            '.main-header{text-align:center;border-bottom:3px solid #1a365d;padding-bottom:10px;margin-bottom:15px;}' +
+            '.main-header h1{font-size:16px;color:#1a365d;}.main-header h2{font-size:12px;color:#3182ce;margin-top:2px;}' +
+            '.main-header p{font-size:10px;color:#888;margin-top:3px;}' +
+            '.person{page-break-inside:avoid;border:1px solid #ddd;border-radius:6px;padding:12px;margin-bottom:14px;}' +
+            '.person-header{display:flex;align-items:center;gap:10px;margin-bottom:8px;padding-bottom:6px;border-bottom:2px solid #1a365d;}' +
+            '.person-name{font-size:14px;font-weight:700;color:#1a365d;flex:1;}' +
+            '.person-id{font-size:11px;color:#888;}' +
+            '.person-badges span{display:inline-block;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:600;margin-right:4px;}' +
+            '.st{font-size:11px;font-weight:700;color:#fff;background:#1a365d;padding:4px 8px;margin:8px 0 4px;border-radius:3px;}' +
+            'table{width:100%;border-collapse:collapse;}' +
+            'td{padding:3px 8px;border-bottom:1px solid #f0f0f0;font-size:11px;vertical-align:top;}' +
+            'td:first-child{font-weight:600;color:#1a365d;width:140px;white-space:nowrap;}' +
+            '.footer{text-align:center;font-size:10px;color:#aaa;margin-top:15px;padding-top:8px;border-top:1px solid #ddd;}' +
+            '@media print{.person{page-break-inside:avoid;break-inside:avoid;}body{padding:8px;}}</style></head><body>' +
+            '<div class="tricolor"></div>' +
+            '<div class="main-header"><h1>Government of Andhra Pradesh</h1><h2>APSDMA — DM Personnel Bulk Report</h2>' +
+            '<p>' + records.length + ' personnel records | Generated: ' + now + '</p></div>';
+
+        records.forEach(function(r, i) {
+            var row = function(l, v) {
+                var val = (v || "-").toString().replace(/</g,"&lt;");
+                return '<tr><td>' + l + '</td><td>' + val + '</td></tr>';
+            };
+            var fD = function(v) { return fmtDate(v); };
+
+            html += '<div class="person">';
+            html += '<div class="person-header">';
+            html += '<div class="person-name">' + (i+1) + '. ' + esc(r.person_name) + '</div>';
+            html += '<div class="person-id">ID: ' + r.objectid + '</div>';
+            html += '<div class="person-badges">';
+            if (r.status) html += '<span style="background:#c6f6d5;color:#22543d;">' + r.status + '</span>';
+            if (r.posting_type && r.posting_type !== "Regular") html += '<span style="background:#e9d8fd;color:#553c9a;">' + r.posting_type + '</span>';
+            if (r.hierarchy_level) html += '<span style="background:#bee3f8;color:#2a4365;">L' + r.hierarchy_level + '</span>';
+            html += '</div></div>';
+
+            html += '<div class="st">Personal & Posting</div><table>' +
+                row("Current Post", r.designation) +
+                row("Parent Dept", r.parent_department) +
+                row("Rank", r.rank_designation) +
+                row("Posting Type", r.posting_type) +
+                row("Department", r.category) +
+                row("Sub-Dept", r.sub_department) +
+                row("Employee ID", r.employee_id) +
+                row("DOB", fD(r.date_of_birth)) +
+                '</table>';
+
+            html += '<div class="st">Location</div><table>' +
+                row("District", r.district_name) +
+                row("Mandal", r.mandal_name) +
+                row("Village", r.village_name) +
+                row("Office", r.office_address) +
+                '</table>';
+
+            html += '<div class="st">Contact</div><table>' +
+                row("Mobile", r.phone_primary) +
+                row("Alt Mobile", r.phone_alternate) +
+                row("WhatsApp", r.whatsapp_number) +
+                row("Email", r.email) +
+                row("Office Ph", [r.office_phone, r.office_phone_ext ? "Ext:" + r.office_phone_ext : ""].filter(Boolean).join(" ")) +
+                row("Intercom", r.intercom_number) +
+                '</table>';
+
+            html += '<div class="st">DM Role & Capabilities</div><table>' +
+                row("Reports To", [r.reports_to_name, r.reports_to_designation].filter(Boolean).join(" — ")) +
+                row("DM Role", r.dm_role) +
+                row("Blood Group", r.blood_group) +
+                row("Training", r.training_certifications) +
+                row("24x7", r.availability_24x7) +
+                '</table>';
+
+            if (r.remarks) html += '<p style="padding:4px 8px;font-style:italic;color:#718096;font-size:11px;">Remarks: ' + esc(r.remarks) + '</p>';
+            html += '</div>';
+        });
+
+        html += '<div class="footer">APSDMA, Government of Andhra Pradesh | ' + now + '</div></body></html>';
+
+        var blob = new Blob([html], { type: "text/html;charset=utf-8" });
+        var url = URL.createObjectURL(blob);
+        var a = document.createElement("a"); a.href = url;
+        a.download = "DM_Personnel_Bulk_" + records.length + "_records_" + new Date().toISOString().slice(0,10) + ".html";
+        a.click(); URL.revokeObjectURL(url);
+    };
+
+    // ── Bulk print ──
+    window.bulkPrintReports = function() {
+        var records = getSelectedRecords();
+        if (!records.length) return;
+
+        if (records.length === 1) {
+            selectedPerson = records[0];
+            printPersonReport();
+            return;
+        }
+
+        // Reuse bulk download HTML but open in print window
+        // Trigger bulkDownload's HTML builder
+        var tempSelectedPerson = selectedPerson;
+        window.bulkDownloadReports(); // generates HTML — we'll intercept
+        selectedPerson = tempSelectedPerson;
+        // Actually, let's build the print version directly:
+        var btn = document.querySelector('.sel-bar .btn-warning');
+        btn.disabled = true; btn.textContent = "Preparing...";
+
+        setTimeout(function() {
+            // Build same HTML
+            var now = new Date().toLocaleString("en-IN");
+            var html = '<!DOCTYPE html><html><head><meta charset="UTF-8"><title>DM Personnel - ' + records.length + ' Records</title>' +
+                '<style>*{margin:0;padding:0;}body{font-family:Arial,sans-serif;font-size:11px;padding:10px;}' +
+                '.tricolor{height:3px;background:linear-gradient(90deg,#FF9933 33%,#fff 33% 66%,#138808 66%);margin-bottom:8px;}' +
+                'h1{font-size:14px;color:#1a365d;text-align:center;}h2{font-size:11px;color:#3182ce;text-align:center;margin-bottom:10px;}' +
+                'table{width:100%;border-collapse:collapse;font-size:10px;margin-bottom:15px;}' +
+                'th{background:#1a365d;color:#fff;padding:4px 6px;text-align:left;}' +
+                'td{padding:3px 6px;border-bottom:1px solid #eee;}tr:nth-child(even){background:#f9f9f9;}' +
+                '</style></head><body><div class="tricolor"></div>' +
+                '<h1>APSDMA — DM Personnel</h1><h2>' + records.length + ' records | ' + now + '</h2>' +
+                '<table><tr><th>#</th><th>Name</th><th>Post</th><th>Parent Dept</th><th>Type</th><th>Dept</th><th>Lvl</th><th>District</th><th>Mobile</th><th>Email</th><th>Status</th></tr>';
+            records.forEach(function(r, i) {
+                html += '<tr><td>' + (i+1) + '</td><td>' + esc(r.person_name) + '</td><td>' + esc(r.designation) + '</td><td>' + esc(r.parent_department) + '</td><td>' + esc(r.posting_type) + '</td><td>' + esc(r.category) + '</td><td>' + (r.hierarchy_level ? "L"+r.hierarchy_level : "-") + '</td><td>' + esc(r.district_name) + '</td><td>' + esc(r.phone_primary) + '</td><td>' + esc(r.email) + '</td><td>' + esc(r.status) + '</td></tr>';
+            });
+            html += '</table></body></html>';
+
+            var w = window.open("", "_blank", "width=1100,height=700");
+            w.document.write(html); w.document.close();
+            setTimeout(function() { w.print(); }, 500);
+            btn.disabled = false; btn.textContent = "\uD83D\uDDA8 Print Selected";
+        }, 100);
+    };
+
+    // ── Bulk CSV for selected ──
+    window.bulkExportCSV = function() {
+        var records = getSelectedRecords();
+        if (!records.length) return;
+
+        var headers = COLUMNS.map(function(c) { return c.label; });
+        var rows = records.map(function(r) {
+            return COLUMNS.map(function(c) {
+                var v = r[c.key];
+                if (c.key === "date_of_entry" || c.key === "date_of_posting") v = fmtDate(v);
+                else if (c.key === "hierarchy_level") v = v ? "L" + v : "";
+                return '"' + ((v || "").toString().replace(/"/g, '""')) + '"';
+            });
+        });
+        var csv = [headers.join(",")].concat(rows.map(function(r) { return r.join(","); })).join("\n");
+        downloadFile("\ufeff" + csv, "text/csv;charset=utf-8;", "DM_Personnel_Selected_" + records.length + "_" + new Date().toISOString().slice(0,10) + ".csv");
+    };
+
+    function updateStats() {
+        var el = document.getElementById("stat-count");
+        var active = filteredData.filter(function(r) { return r.status === "Active"; }).length;
+        el.innerHTML = 'Showing <b>' + filteredData.length + '</b> of <b>' + allData.length + '</b> | Active: <b>' + active + '</b>';
+    }
+
+    // ── Helpers ──
+    function esc(s) { return s ? String(s).replace(/</g,"&lt;") : "-"; }
+    function fmtDate(v) {
+        if (!v) return "-";
+        try { return new Date(v).toLocaleDateString("en-IN", {day:"2-digit",month:"short",year:"numeric"}); }
+        catch(e) { return "-"; }
+    }
+    function statusBadge(s) {
+        if (!s) return "-";
+        var cls = "badge-active";
+        if (s === "On Leave") cls = "badge-leave";
+        else if (s === "Transferred") cls = "badge-transferred";
+        else if (s === "Retired") cls = "badge-retired";
+        return '<span class="badge ' + cls + '">' + s + '</span>';
+    }
+    function postingBadge(s) {
+        if (!s) return "-";
+        if (s === "Deputation") return '<span class="badge badge-deputation">' + s + '</span>';
+        if (s === "Attachment") return '<span class="badge badge-attachment">' + s + '</span>';
+        return esc(s);
+    }
+
+    // ── Detail modal ──
+    window.viewPerson = function(idx) {
+        selectedPerson = filteredData[idx];
+        if (!selectedPerson) return;
+        var r = selectedPerson;
+        document.getElementById("modal-title").textContent = r.person_name || "Personnel Detail";
+
+        var section = function(title, rows) {
+            var h = '<div class="detail-section"><h3>' + title + '</h3>';
+            rows.forEach(function(row) {
+                var val = row[1];
+                if (row[2] === "date") val = fmtDate(val);
+                else val = esc(val);
+                h += '<div class="detail-row"><div class="detail-label">' + row[0] + '</div><div class="detail-value">' + val + '</div></div>';
+            });
+            return h + '</div>';
+        };
+
+        var html = "";
+        html += section("Personal Details", [
+            ["Full Name", r.person_name],
+            ["Date of Birth", r.date_of_birth, "date"],
+            ["Employee ID", r.employee_id],
+            ["Parent Department", r.parent_department],
+            ["Parent Rank/Designation", r.rank_designation],
+            ["Current Post", r.designation],
+            ["Posting Type", r.posting_type]
+        ]);
+        html += section("Department & Posting", [
+            ["State Department", r.category],
+            ["Sub-Department / HOD", r.sub_department],
+            ["Department (text)", r.department],
+            ["Hierarchy Level", r.hierarchy_level ? "L" + r.hierarchy_level + " — " + ["","Apex/State","Dept Head","District","Sub-District","Mandal","Village"][r.hierarchy_level] : null],
+            ["Jurisdiction", r.jurisdiction_type],
+            ["Status", r.status],
+            ["Date of Posting", r.date_of_posting, "date"]
+        ]);
+        html += section("Location", [
+            ["District", r.district_name],
+            ["Mandal", r.mandal_name],
+            ["Village / Town", r.village_name],
+            ["Office Address", r.office_address]
+        ]);
+        html += section("Contact", [
+            ["Personal Mobile", r.phone_primary],
+            ["Alternate Mobile", r.phone_alternate],
+            ["WhatsApp", r.whatsapp_number],
+            ["Email", r.email],
+            ["Office Phone", [r.office_phone, r.office_phone_ext ? "Ext: " + r.office_phone_ext : ""].filter(Boolean).join(" ")],
+            ["Intercom", r.intercom_number],
+            ["Fax", r.fax_number],
+            ["Residence Phone", r.residence_phone],
+            ["HAM Radio", r.ham_radio_callsign],
+            ["Residence Address", r.residence_address]
+        ]);
+        html += section("Reporting & Capabilities", [
+            ["Reports To", [r.reports_to_name, r.reports_to_designation].filter(Boolean).join(" — ")],
+            ["Blood Group", r.blood_group],
+            ["Languages", r.languages_spoken],
+            ["Training / Certs", r.training_certifications],
+            ["Equipment", r.equipment_resources],
+            ["Available 24x7", r.availability_24x7],
+            ["NGO / Org", r.ngo_org_name],
+            ["Specialization", r.specialization]
+        ]);
+        html += section("DM Role", [
+            ["DM Role", r.dm_role],
+            ["Active", r.dm_role_active],
+            ["Order / GO No.", r.dm_role_order_no],
+            ["Since", r.dm_role_since, "date"]
+        ]);
+        if (r.disaster_name) {
+            html += section("Disaster Duty", [
+                ["Disaster", r.disaster_name],
+                ["Type", r.disaster_type],
+                ["Duty", r.disaster_duty],
+                ["Status", r.disaster_duty_status],
+                ["Location", r.disaster_duty_location],
+                ["Start", r.disaster_duty_start, "date"],
+                ["End", r.disaster_duty_end, "date"],
+                ["Shift", r.disaster_shift],
+                ["Team", r.disaster_team]
+            ]);
+        }
+        if (r.remarks) {
+            html += section("Remarks", [["Remarks", r.remarks]]);
+        }
+        html += '<div class="detail-section" style="color:var(--muted);font-size:11px;">' +
+            'Record ID: ' + r.objectid + ' | Entered by: ' + esc(r.entered_by) + ' | Submitted: ' + fmtDate(r.date_of_entry) +
+            '</div>';
+
+        document.getElementById("modal-body").innerHTML = html;
+        document.getElementById("modal").classList.add("show");
+    };
+
+    window.closeModal = function() {
+        document.getElementById("modal").classList.remove("show");
+    };
+
+    // Close on overlay click
+    document.getElementById("modal").addEventListener("click", function(e) {
+        if (e.target === this) closeModal();
+    });
+
+    // ── Person report (reuse from survey) ──
+    function buildPersonReport(r) {
+        var fD = function(v) { return fmtDate(v); };
+        var e = function(s) { return (s || "-").toString().replace(/</g,"&lt;"); };
+        var row = function(l, v) { return '<tr><td style="padding:5px 10px;font-weight:600;color:#1a365d;white-space:nowrap;border-bottom:1px solid #eee;">' + l + '</td><td style="padding:5px 10px;border-bottom:1px solid #eee;">' + e(v) + '</td></tr>'; };
+        var now = new Date().toLocaleString("en-IN");
+
+        return '<!DOCTYPE html><html><head><meta charset="UTF-8"><title>' + e(r.person_name) + ' — DM Personnel</title>' +
+            '<style>*{margin:0;padding:0;box-sizing:border-box;}body{font-family:Arial,sans-serif;font-size:13px;color:#333;padding:20px;}' +
+            '.header{text-align:center;border-bottom:3px solid #1a365d;padding-bottom:12px;margin-bottom:16px;}.header h1{font-size:16px;color:#1a365d;}.header h2{font-size:13px;color:#3182ce;margin-top:2px;}.header p{font-size:11px;color:#888;margin-top:4px;}' +
+            '.tricolor{height:4px;background:linear-gradient(90deg,#FF9933 33%,#fff 33% 66%,#138808 66%);margin-bottom:12px;}' +
+            '.st{font-size:13px;font-weight:700;color:#fff;background:#1a365d;padding:6px 10px;margin:12px 0 4px;border-radius:4px;}' +
+            'table{width:100%;border-collapse:collapse;}td{vertical-align:top;}' +
+            '.footer{text-align:center;font-size:10px;color:#aaa;margin-top:20px;padding-top:10px;border-top:1px solid #ddd;}' +
+            '@media print{body{padding:10px;}}</style></head><body>' +
+            '<div class="tricolor"></div><div class="header"><h1>Government of Andhra Pradesh</h1><h2>APSDMA — DM Personnel Report</h2><p>ID: ' + r.objectid + ' | Generated: ' + now + '</p></div>' +
+            '<div class="st">Personal Details</div><table>' + row("Name", r.person_name) + row("DOB", fD(r.date_of_birth)) + row("Parent Dept", r.parent_department) + row("Rank", r.rank_designation) + row("Current Post", r.designation) + row("Posting Type", r.posting_type) + row("Employee ID", r.employee_id) + '</table>' +
+            '<div class="st">Department & Posting</div><table>' + row("Department", r.category) + row("Sub-Dept", r.sub_department) + row("Level", r.hierarchy_level ? "L"+r.hierarchy_level : null) + row("Jurisdiction", r.jurisdiction_type) + row("Status", r.status) + row("Posted Since", fD(r.date_of_posting)) + '</table>' +
+            '<div class="st">Location</div><table>' + row("District", r.district_name) + row("Mandal", r.mandal_name) + row("Village", r.village_name) + row("Office Address", r.office_address) + '</table>' +
+            '<div class="st">Contact</div><table>' + row("Mobile", r.phone_primary) + row("Alt Mobile", r.phone_alternate) + row("WhatsApp", r.whatsapp_number) + row("Email", r.email) + row("Office Ph", [r.office_phone,r.office_phone_ext?"Ext:"+r.office_phone_ext:""].filter(Boolean).join(" ")) + row("Intercom", r.intercom_number) + row("Fax", r.fax_number) + row("Res Phone", r.residence_phone) + row("HAM", r.ham_radio_callsign) + row("Res Address", r.residence_address) + '</table>' +
+            '<div class="st">Reporting & Capabilities</div><table>' + row("Reports To", [r.reports_to_name,r.reports_to_designation].filter(Boolean).join(" — ")) + row("Blood Group", r.blood_group) + row("Languages", r.languages_spoken) + row("Training", r.training_certifications) + row("Equipment", r.equipment_resources) + row("24x7", r.availability_24x7) + row("NGO", r.ngo_org_name) + row("Specialization", r.specialization) + '</table>' +
+            '<div class="st">DM Role</div><table>' + row("Role", r.dm_role) + row("Active", r.dm_role_active) + row("GO No.", r.dm_role_order_no) + row("Since", fD(r.dm_role_since)) + '</table>' +
+            (r.remarks ? '<div class="st">Remarks</div><p style="padding:8px 10px;">' + e(r.remarks) + '</p>' : '') +
+            '<div class="footer">APSDMA, Government of Andhra Pradesh | Entered by: ' + e(r.entered_by) + '</div></body></html>';
+    }
+
+    window.downloadPersonReport = function() {
+        if (!selectedPerson) return;
+        var html = buildPersonReport(selectedPerson);
+        var blob = new Blob([html], { type: "text/html;charset=utf-8" });
+        var url = URL.createObjectURL(blob);
+        var a = document.createElement("a"); a.href = url;
+        a.download = "DM_" + (selectedPerson.person_name || "").replace(/[^a-zA-Z0-9]/g, "_") + "_" + selectedPerson.objectid + ".html";
+        a.click(); URL.revokeObjectURL(url);
+    };
+
+    window.printPersonReport = function() {
+        if (!selectedPerson) return;
+        var html = buildPersonReport(selectedPerson);
+        var w = window.open("", "_blank", "width=800,height=900");
+        w.document.write(html); w.document.close();
+        setTimeout(function() { w.print(); }, 500);
+    };
+
+    // ── Export CSV ──
+    window.exportCSV = function() {
+        var headers = COLUMNS.map(function(c) { return c.label; });
+        var rows = filteredData.map(function(r) {
+            return COLUMNS.map(function(c) {
+                var v = r[c.key];
+                if (c.key === "date_of_entry" || c.key === "date_of_posting") v = fmtDate(v);
+                else if (c.key === "hierarchy_level") v = v ? "L" + v : "";
+                return '"' + ((v || "").toString().replace(/"/g, '""')) + '"';
+            });
+        });
+        var csv = [headers.join(",")].concat(rows.map(function(r) { return r.join(","); })).join("\n");
+        downloadFile("\ufeff" + csv, "text/csv;charset=utf-8;", "DM_Personnel_" + new Date().toISOString().slice(0,10) + ".csv");
+    };
+
+    // ── Export Excel (HTML table) ──
+    window.exportExcel = function() {
+        var html = '<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel">' +
+            '<head><meta charset="UTF-8"><!--[if gte mso 9]><xml><x:ExcelWorkbook><x:ExcelWorksheets><x:ExcelWorksheet>' +
+            '<x:Name>DM Personnel</x:Name><x:WorksheetOptions><x:DisplayGridlines/></x:WorksheetOptions>' +
+            '</x:ExcelWorksheet></x:ExcelWorksheets></x:ExcelWorkbook></xml><![endif]--></head><body>' +
+            '<table border="1"><tr>';
+
+        // All fields for Excel
+        var allKeys = [
+            ["objectid","ID"],["person_name","Name"],["designation","Current Post"],["parent_department","Parent Dept"],
+            ["rank_designation","Rank"],["posting_type","Posting Type"],["category","Department"],["sub_department","Sub-Dept"],
+            ["hierarchy_level","Level"],["jurisdiction_type","Jurisdiction"],["status","Status"],
+            ["district_name","District"],["mandal_name","Mandal"],["village_name","Village"],
+            ["phone_primary","Mobile"],["phone_alternate","Alt Mobile"],["whatsapp_number","WhatsApp"],
+            ["email","Email"],["office_phone","Office Phone"],["office_phone_ext","Ext"],
+            ["intercom_number","Intercom"],["fax_number","Fax"],["residence_phone","Res Phone"],
+            ["ham_radio_callsign","HAM Radio"],["office_address","Office Address"],["residence_address","Res Address"],
+            ["reports_to_name","Reports To"],["reports_to_designation","Reports To Desg"],
+            ["employee_id","Employee ID"],["blood_group","Blood Group"],["languages_spoken","Languages"],
+            ["training_certifications","Training"],["equipment_resources","Equipment"],["availability_24x7","24x7"],
+            ["ngo_org_name","NGO"],["specialization","Specialization"],
+            ["dm_role","DM Role"],["dm_role_active","DM Active"],["dm_role_order_no","GO No."],
+            ["posting_type","Posting Type"],["date_of_birth","DOB"],["date_of_posting","Posted Since"],
+            ["date_of_entry","Submitted"],["entered_by","Entered By"],["remarks","Remarks"]
+        ];
+
+        allKeys.forEach(function(k) { html += '<th style="background:#1a365d;color:#fff;font-weight:bold;">' + k[1] + '</th>'; });
+        html += '</tr>';
+
+        filteredData.forEach(function(r) {
+            html += '<tr>';
+            allKeys.forEach(function(k) {
+                var v = r[k[0]];
+                if (k[0].indexOf("date") >= 0 && v) {
+                    try { v = new Date(v).toLocaleDateString("en-IN"); } catch(e) {}
+                }
+                html += '<td>' + (v || "") + '</td>';
+            });
+            html += '</tr>';
+        });
+
+        html += '</table></body></html>';
+        downloadFile(html, "application/vnd.ms-excel;charset=utf-8;", "DM_Personnel_" + new Date().toISOString().slice(0,10) + ".xls");
+    };
+
+    // ── Print all filtered ──
+    window.printAll = function() {
+        var html = '<!DOCTYPE html><html><head><meta charset="UTF-8"><title>DM Personnel List</title>' +
+            '<style>*{margin:0;padding:0;}body{font-family:Arial,sans-serif;font-size:11px;padding:10px;}' +
+            '.tricolor{height:4px;background:linear-gradient(90deg,#FF9933 33%,#fff 33% 66%,#138808 66%);margin-bottom:8px;}' +
+            'h1{font-size:14px;color:#1a365d;text-align:center;}p{text-align:center;font-size:10px;color:#888;margin-bottom:10px;}' +
+            'table{width:100%;border-collapse:collapse;font-size:10px;}th{background:#1a365d;color:#fff;padding:4px 6px;text-align:left;}' +
+            'td{padding:3px 6px;border-bottom:1px solid #eee;}tr:nth-child(even){background:#f9f9f9;}' +
+            '</style></head><body>' +
+            '<div class="tricolor"></div>' +
+            '<h1>APSDMA — DM Personnel Directory</h1>' +
+            '<p>' + filteredData.length + ' records | Generated: ' + new Date().toLocaleString("en-IN") + '</p>' +
+            '<table><tr>';
+
+        var printCols = [
+            ["objectid","ID"],["person_name","Name"],["designation","Post"],["parent_department","Parent Dept"],
+            ["posting_type","Type"],["category","Department"],["hierarchy_level","Lvl"],
+            ["district_name","District"],["phone_primary","Mobile"],["status","Status"]
+        ];
+        printCols.forEach(function(c) { html += '<th>' + c[1] + '</th>'; });
+        html += '</tr>';
+
+        filteredData.forEach(function(r) {
+            html += '<tr>';
+            printCols.forEach(function(c) {
+                var v = r[c[0]];
+                if (c[0] === "hierarchy_level") v = v ? "L" + v : "-";
+                html += '<td>' + (v || "-") + '</td>';
+            });
+            html += '</tr>';
+        });
+
+        html += '</table></body></html>';
+        var w = window.open("", "_blank", "width=1000,height=700");
+        w.document.write(html); w.document.close();
+        setTimeout(function() { w.print(); }, 500);
+    };
+
+    // ── File download helper ──
+    function downloadFile(content, type, filename) {
+        var blob = new Blob([content], { type: type });
+        var url = URL.createObjectURL(blob);
+        var a = document.createElement("a"); a.href = url; a.download = filename;
+        a.click(); URL.revokeObjectURL(url);
+    }
+
+    // ── Boot ──
+    init();
+})();
+</script>
+</body>
+</html>

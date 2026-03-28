@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AP Government - Department Structure &amp; Hierarchy</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#f4f6f9;--card:#fff;--border:#d0d5dd;--text:#1a1a2e;--muted:#5f6b7a;
+  --blue:#2563eb;--green:#059669;--orange:#d97706;--red:#dc2626;--purple:#7c3aed;
+  --teal:#0d9488;--pink:#db2777;--indigo:#4f46e5;
+  --cm:#1e3a5f;--minister:#b45309;--secretary:#1d4ed8;--dept:#065f46;
+  --hod:#7c2d12;--ao:#4338ca;--su:#0f766e;
+}
+body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text);line-height:1.5}
+
+/* ── Header ── */
+.header{background:linear-gradient(135deg,#1e3a5f 0%,#0f766e 100%);color:#fff;padding:18px 24px;display:flex;align-items:center;gap:16px;box-shadow:0 2px 8px rgba(0,0,0,.15)}
+.header h1{font-size:20px;font-weight:700;letter-spacing:.3px}
+.header .sub{font-size:12px;opacity:.75;margin-top:2px}
+.header .stats{margin-left:auto;display:flex;gap:16px;font-size:12px}
+.header .stat{text-align:center}
+.header .stat b{display:block;font-size:22px;font-weight:700}
+
+/* ── Toolbar ── */
+.toolbar{background:#fff;border-bottom:1px solid var(--border);padding:10px 24px;display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.toolbar input[type=text]{flex:1;min-width:200px;padding:7px 12px;border:1px solid var(--border);border-radius:6px;font-size:13px}
+.toolbar select{padding:7px 10px;border:1px solid var(--border);border-radius:6px;font-size:13px;background:#fff}
+.toolbar button{padding:7px 14px;border:none;border-radius:6px;font-size:12px;font-weight:600;cursor:pointer;transition:.15s}
+.btn-primary{background:var(--blue);color:#fff}.btn-primary:hover{background:#1d4ed8}
+.btn-outline{background:transparent;border:1px solid var(--border);color:var(--text)}.btn-outline:hover{background:#f0f2f5}
+
+/* ── Tabs ── */
+.tabs{display:flex;gap:0;background:#fff;border-bottom:2px solid var(--border);padding:0 24px}
+.tab{padding:10px 20px;font-size:13px;font-weight:600;cursor:pointer;border-bottom:3px solid transparent;color:var(--muted);transition:.15s}
+.tab:hover{color:var(--text)}
+.tab.active{color:var(--blue);border-bottom-color:var(--blue)}
+
+/* ── Content ── */
+.content{padding:20px 24px;max-width:1400px;margin:0 auto}
+
+/* ── Summary Cards ── */
+.summary-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-bottom:20px}
+.s-card{background:#fff;border-radius:8px;padding:14px 16px;border-left:4px solid var(--blue);box-shadow:0 1px 3px rgba(0,0,0,.06)}
+.s-card .s-val{font-size:26px;font-weight:700;color:var(--blue)}
+.s-card .s-lab{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;margin-top:2px}
+.s-card.green{border-color:var(--green)}.s-card.green .s-val{color:var(--green)}
+.s-card.orange{border-color:var(--orange)}.s-card.orange .s-val{color:var(--orange)}
+.s-card.purple{border-color:var(--purple)}.s-card.purple .s-val{color:var(--purple)}
+.s-card.teal{border-color:var(--teal)}.s-card.teal .s-val{color:var(--teal)}
+.s-card.red{border-color:var(--red)}.s-card.red .s-val{color:var(--red)}
+
+/* ── Tree ── */
+.tree{font-size:13px}
+.tree-node{position:relative;padding-left:24px}
+.tree-node::before{content:'';position:absolute;left:8px;top:0;bottom:0;width:1px;background:#d0d5dd}
+.tree-node:last-child::before{bottom:50%}
+.tree-item{display:flex;align-items:center;gap:8px;padding:5px 8px;border-radius:6px;cursor:pointer;transition:.1s;position:relative}
+.tree-item:hover{background:#f0f4ff}
+.tree-item::before{content:'';position:absolute;left:-16px;top:50%;width:14px;height:1px;background:#d0d5dd}
+.tree-node:first-child>.tree-item::before,.tree-root>.tree-item::before{display:none}
+.tree-root{padding-left:0}.tree-root::before{display:none}
+.tree-root>.tree-item::before{display:none}
+
+/* Toggle */
+.toggle{width:18px;height:18px;border-radius:4px;background:#e8ecf1;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:var(--muted);flex-shrink:0;transition:.15s}
+.toggle:hover{background:#d0d5dd}
+.toggle.expanded{background:var(--blue);color:#fff}
+
+/* Badges */
+.badge{display:inline-flex;align-items:center;gap:4px;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600;white-space:nowrap}
+.b-cm{background:#1e3a5f;color:#fff}
+.b-minister{background:#fef3c7;color:#92400e;border:1px solid #fbbf24}
+.b-secretary{background:#dbeafe;color:#1e40af;border:1px solid #93c5fd}
+.b-dept{background:#d1fae5;color:#065f46;border:1px solid #6ee7b7}
+.b-hod{background:#fee2e2;color:#991b1b;border:1px solid #fca5a5}
+.b-ao{background:#ede9fe;color:#5b21b6;border:1px solid #c4b5fd}
+.b-su{background:#ccfbf1;color:#134e4a;border:1px solid #5eead4}
+
+.node-label{font-weight:500;color:var(--text)}
+.node-sub{font-size:11px;color:var(--muted);margin-left:4px}
+.node-count{font-size:10px;background:#e8ecf1;color:var(--muted);padding:1px 6px;border-radius:8px;margin-left:auto;flex-shrink:0}
+.node-officer{font-size:11px;color:var(--blue);margin-left:8px;font-style:italic}
+
+/* children container */
+.tree-children{display:none;margin-left:0}
+.tree-children.open{display:block}
+
+/* ── Legend ── */
+.legend{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:16px}
+.legend-item{display:flex;align-items:center;gap:6px;font-size:12px}
+.legend-dot{width:12px;height:12px;border-radius:3px}
+
+/* ── Department detail panel ── */
+.dept-panel{display:none;background:#fff;border-radius:10px;padding:20px;box-shadow:0 2px 8px rgba(0,0,0,.08);margin-top:16px}
+.dept-panel.visible{display:block}
+.dept-panel h2{font-size:18px;margin-bottom:12px;color:var(--dept)}
+.dept-panel .chain{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:16px;padding:12px;background:#f8fafc;border-radius:8px}
+.chain-arrow{color:var(--muted);font-size:14px}
+.dept-panel .org-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:10px}
+.org-card{padding:10px 14px;border-radius:8px;border:1px solid var(--border);transition:.15s}
+.org-card:hover{border-color:var(--blue);box-shadow:0 2px 6px rgba(37,99,235,.1)}
+.org-card .org-name{font-weight:600;font-size:13px}
+.org-card .org-type{font-size:10px;text-transform:uppercase;letter-spacing:.5px;margin-top:2px}
+.org-card .org-officer{font-size:12px;color:var(--blue);margin-top:4px}
+.org-card.hod-card{border-left:3px solid var(--hod)}.org-card.hod-card .org-type{color:var(--hod)}
+.org-card.ao-card{border-left:3px solid var(--ao)}.org-card.ao-card .org-type{color:var(--ao)}
+.org-card.su-card{border-left:3px solid var(--su)}.org-card.su-card .org-type{color:var(--su)}
+
+/* ── Department List view ── */
+.dept-list-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:12px}
+.dept-tile{background:#fff;border-radius:10px;padding:16px;border:1px solid var(--border);cursor:pointer;transition:.2s}
+.dept-tile:hover{border-color:var(--blue);transform:translateY(-2px);box-shadow:0 4px 12px rgba(37,99,235,.12)}
+.dept-tile .dt-code{font-size:10px;font-weight:700;color:var(--muted);letter-spacing:1px;text-transform:uppercase}
+.dept-tile .dt-name{font-size:14px;font-weight:600;margin-top:4px;color:var(--text)}
+.dept-tile .dt-meta{display:flex;gap:12px;margin-top:8px;font-size:11px;color:var(--muted)}
+.dept-tile .dt-meta b{color:var(--text)}
+.dept-tile .dt-minister{font-size:11px;color:var(--minister);margin-top:6px}
+.dept-tile .dt-secretary{font-size:11px;color:var(--secretary);margin-top:2px}
+
+/* ── Secretaries tab ── */
+.sec-table{width:100%;border-collapse:separate;border-spacing:0;background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+.sec-table th{background:#f8fafc;padding:10px 14px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);border-bottom:2px solid var(--border)}
+.sec-table td{padding:8px 14px;border-bottom:1px solid #f0f2f5;font-size:13px}
+.sec-table tr:hover td{background:#f8fafc}
+
+/* ── Panels ── */
+.panel{display:none}.panel.active{display:block}
+
+/* ── Responsive ── */
+@media(max-width:768px){
+  .header{flex-direction:column;text-align:center}
+  .header .stats{margin-left:0}
+  .toolbar{flex-direction:column}
+  .toolbar input[type=text]{min-width:100%}
+}
+
+/* ── Print ── */
+@media print{
+  .toolbar,.tabs{display:none}
+  .tree-children{display:block!important}
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div>
+    <h1>Andhra Pradesh Government - Department Structure</h1>
+    <div class="sub">Source: AP HRMS Code Book &amp; Secretaries/HoD Lists (Dec 2025)</div>
+  </div>
+  <div class="stats">
+    <div class="stat"><b id="h-depts">40</b>Departments</div>
+    <div class="stat"><b id="h-hods">96</b>HODs</div>
+    <div class="stat"><b id="h-aos">238</b>Autonomous Orgs</div>
+    <div class="stat"><b id="h-units">30</b>State Units</div>
+  </div>
+</div>
+
+<div class="tabs">
+  <div class="tab active" data-tab="master">Master Tree</div>
+  <div class="tab" data-tab="departments">Departments</div>
+  <div class="tab" data-tab="secretaries">Secretaries &amp; HODs</div>
+  <div class="tab" data-tab="summary">Summary</div>
+</div>
+
+<div class="toolbar">
+  <input type="text" id="search-box" placeholder="Search departments, HODs, officers, organizations...">
+  <select id="filter-type">
+    <option value="all">All Types</option>
+    <option value="HOD">HODs Only</option>
+    <option value="AO">Autonomous Orgs Only</option>
+    <option value="SU">State Units Only</option>
+  </select>
+  <button class="btn-outline" onclick="expandAll()">Expand All</button>
+  <button class="btn-outline" onclick="collapseAll()">Collapse All</button>
+  <button class="btn-primary" onclick="printPage()">Print / Export</button>
+</div>
+
+<div class="content">
+  <!-- Master Tree Panel -->
+  <div class="panel active" id="panel-master">
+    <div class="legend">
+      <div class="legend-item"><div class="legend-dot" style="background:var(--cm)"></div>Chief Minister</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#fbbf24"></div>Minister</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#93c5fd"></div>Secretary</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#6ee7b7"></div>Department</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#fca5a5"></div>HOD</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#c4b5fd"></div>Autonomous Org</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#5eead4"></div>State Unit</div>
+    </div>
+    <div id="master-tree" class="tree"></div>
+  </div>
+
+  <!-- Departments Panel -->
+  <div class="panel" id="panel-departments">
+    <div id="dept-list" class="dept-list-grid"></div>
+    <div id="dept-detail" class="dept-panel"></div>
+  </div>
+
+  <!-- Secretaries Panel -->
+  <div class="panel" id="panel-secretaries">
+    <div id="sec-content"></div>
+  </div>
+
+  <!-- Summary Panel -->
+  <div class="panel" id="panel-summary">
+    <div class="summary-grid" id="summary-cards"></div>
+    <div id="summary-tables"></div>
+  </div>
+</div>
+
+<script>
+// ═══════════════════════════════════════════════════
+// DATA - embedded from source files
+// ═══════════════════════════════════════════════════
+var DATA = {
+  stateDepts: [
+    {code:"AGC01",short:"AGC",name:"Agriculture and Marketing"},
+    {code:"AHF01",short:"AHF",name:"Animal Husbandry, Dairy Development and Fisheries"},
+    {code:"BCW01",short:"BCW",name:"Backward Classes Welfare"},
+    {code:"CAB01",short:"CAB",name:"Chief Ministers Office"},
+    {code:"CSO01",short:"CSO",name:"Chief Secretarys Office"},
+    {code:"EFS01",short:"EFS",name:"Environment, Forest, Science and Technology"},
+    {code:"EHE01",short:"EHE",name:"Human Resources (Higher Education)"},
+    {code:"ENE01",short:"ENE",name:"Energy"},
+    {code:"ESE01",short:"ESE",name:"Human Resources (School Education)"},
+    {code:"EWS01",short:"EWS",name:"Economically Weaker Sections Welfare"},
+    {code:"FCS01",short:"FCS",name:"Consumer Affairs, Food and Civil Supplies"},
+    {code:"FIN01",short:"FIN",name:"Finance"},
+    {code:"GAD01",short:"GAD",name:"General Administration"},
+    {code:"GAD07",short:"RJB",name:"Governors Secretariat"},
+    {code:"GAD16",short:"CEO",name:"Chief Electoral Officer"},
+    {code:"GWS01",short:"GWS",name:"Gram Volunteers/Ward Volunteers and Village Secretariats/Ward Secretariats"},
+    {code:"HMF01",short:"HMF",name:"Health, Medical & Family Welfare"},
+    {code:"HOM01",short:"HOM",name:"Home"},
+    {code:"HOU01",short:"HOU",name:"Housing"},
+    {code:"ICD01",short:"ICD",name:"Water Resources"},
+    {code:"INC01",short:"INC",name:"Industries and Commerce"},
+    {code:"INI01",short:"INI",name:"Infrastructure and Investment"},
+    {code:"ITC01",short:"ITC",name:"Information Technology, Electronics and Communications"},
+    {code:"LAE01",short:"LAE",name:"Labour, Factories, Boilers & Insurance Medical Services"},
+    {code:"LAW01",short:"LAW",name:"Law"},
+    {code:"LEG01",short:"LEG",name:"Legislature"},
+    {code:"MAU01",short:"MAU",name:"Municipal Administration and Urban Development"},
+    {code:"MNW01",short:"MNW",name:"Minorities Welfare"},
+    {code:"PBE01",short:"PBE",name:"Public Enterprises"},
+    {code:"PLG01",short:"PLG",name:"Planning"},
+    {code:"PRR01",short:"PRR",name:"Panchayat Raj and Rural Development"},
+    {code:"RDM01",short:"RDM",name:"Disaster Management"},
+    {code:"REV01",short:"REV",name:"Revenue"},
+    {code:"RTG01",short:"RTG",name:"Real Time Governance"},
+    {code:"SEI01",short:"SEI",name:"Skills Development and Training"},
+    {code:"SOW01",short:"SOW",name:"Social Welfare"},
+    {code:"TBW01",short:"TBW",name:"Tribal Welfare"},
+    {code:"TRB01",short:"TRB",name:"Transport, Roads and Buildings"},
+    {code:"WDC01",short:"WDC",name:"Women, Children, Disabled and Senior Citizens"},
+    {code:"YTC01",short:"YTC",name:"Youth Advancement, Tourism and Culture"}
+  ],
+
+  // Ministry data: department -> minister, secretary, HOD officers
+  ministry: {
+    "Agriculture and Marketing":{minister:"Sri Kinjarapu Atchannaidu",secretary:"Sri B. Rajsekhar, IAS (Retd), E.O Spl. Chief Secretary",hods:[
+      {org:"Director, Agriculture",officer:"Dr. Manazir Jeelani Samoon, IAS"},
+      {org:"Director, Marketing",officer:"Smt. M. Vijaya Suneetha, IAS"},
+      {org:"Director, Horticulture and Sericulture",officer:"Dr. K. Srinivasulu, IAS"},
+      {org:"Commissioner, Cooperation",officer:"Sri Babu. A, IAS (FAC)"},
+      {org:"VC&MD, AP State Agro-Industries Dev. Corp.",officer:"Dr. Manazir Jeelani Samoon, IAS (FAC)"},
+      {org:"VC&MD, AP State Seeds Development Corp.",officer:"Dr. Manazir Jeelani Samoon, IAS (FAC)"},
+      {org:"MD, APMARKFED",officer:"Dr. Manazir Jeelani Samoon, IAS (FAC)"},
+      {org:"CEO, Rythu Bazar",officer:"Dr. K. Madhavi Latha, IAS"},
+      {org:"VC&MD, AP Warehousing Corp.",officer:"Smt. B. Navya, IAS"},
+      {org:"VC&MD, OILFED",officer:"Sri K. Balaji Naik (FAC)"}
+    ]},
+    "Animal Husbandry, Dairy Development and Fisheries":{minister:"Sri Kinjarapu Atchannaidu",secretary:"Sri B. Rajsekhar, IAS (Retd) (FAC)",hods:[
+      {org:"Director, Animal Husbandry",officer:"Sri T. Damodar Naidu"},
+      {org:"MD, AP Dairy Development Corporation",officer:"Sri K. Muralidhar, IRS"},
+      {org:"Commissioner, Fisheries",officer:"Sri Rama Shankar Naik, IAS (Retd.)"}
+    ]},
+    "Backward Classes Welfare":{minister:"Smt. S. Savitha",secretary:"Sri S.Satyanarayana IAS (Retd), E.O. Secretary",hods:[
+      {org:"Director, BC Welfare",officer:"Dr. Mallikarjuna.A, IAS"},
+      {org:"VC&MD, BC Finance Corp.",officer:"Dr. Mallikarjuna.A, IAS (FAC)"}
+    ]},
+    "Consumer Affairs, Food and Civil Supplies":{minister:"Sri Nadendla Manohar",secretary:"Sri Saurabh Gaur, IAS (FAC)",hods:[
+      {org:"Commissioner, CAF&CS",officer:"Sri R. Govinda Rao, IAS"},
+      {org:"VC&MD, APSCSCL",officer:"Sri S Dilli Rao, IAS (FAC)"},
+      {org:"Controller of Legal Metrology",officer:"Sri S Dilli Rao, IAS (FAC)"}
+    ]},
+    "Energy":{minister:"Sri Gottipati Ravi Kumar",secretary:"Sri K. Vijayanand, IAS, Spl. Chief Secretary (FAC)",hods:[
+      {org:"CMD, APTRANSCO",officer:"Sri K. Vijayanand, IAS (FAC)"},
+      {org:"MD, APGENCO",officer:"Smt. Nagalakshmi S, IAS"},
+      {org:"CMD, APEPDCL",officer:"Sri Pridhvitej Immadi, IAS"},
+      {org:"CMD, APSPDCL",officer:"Sri Siva Sankar Lotheti, IAS"},
+      {org:"CMD, APCPDCL",officer:"Sri P. Pulla Reddy"},
+      {org:"MD, NREDCAP",officer:"Sri Kamalakar Babu"}
+    ]},
+    "Environment, Forest, Science and Technology":{minister:"Sri Konidala Pawan Kalyan",secretary:"Sri Kantilal Dande, IAS, Principal Secretary",hods:[
+      {org:"PCCF & HoFF",officer:"Sri P V Chalapathi Rao, IFS"},
+      {org:"VC&MD, APFDCL",officer:"Sri S.S.Sreedhar, IFS"},
+      {org:"MS, APPCB",officer:"Sri Saravanan, IFS"},
+      {org:"MS, APSBB",officer:"Sri P. Rama Krishna, IFS"},
+      {org:"MD, APEMCL",officer:"Sri R.P. Khajuria, IFS"}
+    ]},
+    "Finance":{minister:"Sri Payyavula Keshav",secretary:"Sri Peeyush Kumar, IAS, Principal Secretary",hods:[
+      {org:"Chief Commissioner of State Taxes",officer:"Sri Babu.A, IAS"},
+      {org:"Directorate of Treasuries and Accounts",officer:"Sri N. Mohan Rao (FAC)"},
+      {org:"Directorate of State Audit",officer:"Smt. Kalyani Edara"},
+      {org:"Pay and Accounts",officer:"Smt. Padmaja Kare"},
+      {org:"MD, APSFC",officer:"Dr. N. Yuvaraj, IAS (FAC)"},
+      {org:"CEO, APCFSS",officer:"Sri Gautam Allada, IA&AS (FAC)"}
+    ]},
+    "General Administration":{minister:"Sri Nara Chandrababu Naidu",secretary:"Sri J. Syamala Rao, IAS, Prl. Secretary",hods:[
+      {org:"DG, ACB",officer:"Sri Atul Singh, IPS"},
+      {org:"DG, V&E",officer:"Sri Harish Kumar Gupta, IPS (FAC)"},
+      {org:"Director, I&PR",officer:"Sri K S Viswanathan, IAS"},
+      {org:"Director, Protocol",officer:"Sri T. Mohan Rao"},
+      {org:"Resident Commissioner, AP Bhavan",officer:"Sri Pravin Kumar, IAS"},
+      {org:"DG, APHRDI",officer:"Sri Bhaskar Katamneni, IAS (FAC)"},
+      {org:"Secretary, APPSC",officer:"Sri Pattanshetti Ravi Subash, IAS"},
+      {org:"CEO, APEDB",officer:"Sri C. Saikanth Varma, IAS"},
+      {org:"CEO, APNRT Society",officer:"Sri P. Krishna Mohan"}
+    ]},
+    "Health, Medical & Family Welfare":{minister:"Sri Satya Kumar Yadav",secretary:"Sri Saurabh Gaur, IAS, Secretary",hods:[
+      {org:"Commissioner, HM & FW",officer:"Sri G. Veerapandian, IAS"},
+      {org:"Director, Secondary Health",officer:"Sri K.V.N.Chakradhara Babu, IAS"},
+      {org:"Director, Ayush",officer:"Sri Kothamasu Dinesh Kumar, IAS"},
+      {org:"CEO, NTR Vaidhya Seva",officer:"Sri K. Dinesh Kumar, IAS (FAC)"},
+      {org:"VC&MD, APMSIDC",officer:"Sri Girisha P.S, IAS"},
+      {org:"DG, Drugs Control Administration",officer:"Sri P.S. Girisha IAS (FAC)"}
+    ]},
+    "Home":{minister:"Smt. Anitha Vangalapudi",secretary:"Sri Kumar Vishwajeet, IPS, Principal Secretary",hods:[
+      {org:"DGP",officer:"Sri Harish Kumar Gupta, IPS"},
+      {org:"Commissioner, Printing & Stationery",officer:"Sri Kasi Reddy V.R.N.Reddy, IPS"},
+      {org:"ADG, Intelligence",officer:"Sri Mahesh Chandra Laddha, IPS"},
+      {org:"DG, SPF",officer:"Dr. C.M. Thrivikrama Varma, IPS"},
+      {org:"MD, AP State Police Housing Corp.",officer:"Sri Hari Krishna, IPS (FAC)"}
+    ]},
+    "Housing":{minister:"Sri Kolusu Parthasarathy",secretary:"Sri Ajay Jain, IAS, Spl. Chief Secretary",hods:[
+      {org:"MD, AP State Housing Corp. & Commissioner",officer:"Sri P. Arun Babu, IAS"}
+    ]},
+    "Human Resources (Higher Education)":{minister:"Sri Nara Lokesh",secretary:"Sri Kona Sasidhar, IAS, Secretary (FAC)",hods:[
+      {org:"Director, Collegiate Education",officer:"Dr. Narayan Bharath Gupta, IAS"},
+      {org:"Director, Telugu Academy",officer:"Dr. N. Bharath Gupta, IAS (FAC)"}
+    ]},
+    "Human Resources (School Education)":{minister:"Sri Nara Lokesh",secretary:"Sri Kona Sasidhar, IAS, Secretary",hods:[
+      {org:"Director, School Education",officer:"Sri V. Vijay Rama Raju, IAS"},
+      {org:"Director, Intermediate Education",officer:"Sri P. Ranjit Basha, IAS"},
+      {org:"Director, Adult Education",officer:"Sri Ranjit Basha, IAS (FAC)"},
+      {org:"SPD, Samagra Siksha",officer:"Sri B. Srinivasa Rao, IAS"},
+      {org:"MD, APEWIDC",officer:"Sri C.N. Deevan Reddy, IRPS"}
+    ]},
+    "Industries and Commerce":{minister:"Sri T G Bharath",secretary:"Dr. N Yuvaraj, IAS, Secretary",hods:[
+      {org:"Director, Industries",officer:"Sri Shubham Bansal, IAS"},
+      {org:"MD, APIIC",officer:"Sri M. Abhishikth Kishore, IAS"},
+      {org:"Commissioner, H&T",officer:"Smt. G. Rekha Rani, IAS"},
+      {org:"Director, Mines & Geology",officer:"Sri Pravin Kumar, IAS (FAC)"},
+      {org:"MD, AP Mineral Development Corp.",officer:"Sri Pravin Kumar, IAS (FAC)"},
+      {org:"CEO, KVIB",officer:"Sri Katta Simhachalam, IAS"}
+    ]},
+    "Infrastructure and Investment":{minister:"Sri BC Janardhan Reddy",secretary:"Sri M.T. Krishna Babu, IAS, Spl. Chief Secretary (FAC)",hods:[
+      {org:"MD, AP State Fibrenet Ltd.",officer:"Ms. Geetanjali Sharma, IAS"},
+      {org:"CEO, AP Maritime Board",officer:"Sri Abhishek Kumar, IAS"},
+      {org:"CMD, INCAP",officer:"Sri Praveen Adhithya C V, IAS (FAC)"},
+      {org:"MD, APADCL",officer:"Sri Praveen Adhithya C V, IAS"},
+      {org:"MD, AP Drone Corporation",officer:"Sri Saurya Man Patel, IAS"}
+    ]},
+    "Information Technology, Electronics and Communications":{minister:"Sri Nara Lokesh",secretary:"Sri Bhaskar Katamneni, IAS, Secretary",hods:[
+      {org:"MD, APTS",officer:"Sri Mallavarapu Surya Teja, IAS"},
+      {org:"CEO, Ratan Tata Innovation Hub",officer:"Smt. Pedditi Dhatri Reddy, IAS"},
+      {org:"CEO, AP Innovation Society",officer:"Smt. Pedditi Dhatri Reddy, IAS (FAC)"}
+    ]},
+    "Labour, Factories, Boilers & Insurance Medical Services":{minister:"Sri Vasamsetty Subhash",secretary:"Sri M.V. Seshagiri Babu, IAS, Secretary",hods:[
+      {org:"Commissioner, Labour",officer:"Sri M.V. Seshagiri Babu, IAS (FAC)"},
+      {org:"Director, Insurance Medical Services",officer:"Sri V. Anjaneyulu, IRTS"}
+    ]},
+    "Law":{minister:"Sri Nasyam Mohammed Farook",secretary:"Smt. Prathibha Devi, Secretary",hods:[
+      {org:"Advocate General, AP High Court",officer:"Sri Dammalapati Srinivas"}
+    ]},
+    "Minorities Welfare":{minister:"Sri Nasyam Mohammed Farook",secretary:"Sri Ch. Sridhar, IAS, Secretary",hods:[
+      {org:"Commissioner, Minority Welfare",officer:"Sri Ch. Sridhar, IAS (FAC)"},
+      {org:"VC&MD, AP State Minorities Fin. Corp.",officer:"Sri Yakub Basha"}
+    ]},
+    "Municipal Administration and Urban Development":{minister:"Sri Ponguru Narayana",secretary:"Sri S. Suresh Kumar, IAS, Principal Secretary",hods:[
+      {org:"Commissioner & Director, Municipal Administration",officer:"Sri P. Sampath Kumar, IAS"},
+      {org:"Commissioner, APCRDA",officer:"Sri K. Kanna Babu, IAS"},
+      {org:"MD, APTIDCO",officer:"Sri B. Sunil Kumar Reddy, IFS"},
+      {org:"MD, Swachha Andhra Corporation",officer:"Sri B. Anil Kumar Reddy, IAS"},
+      {org:"MD, MEPMA",officer:"Sri B. Sunil Kumar Reddy, IFS (FAC)"}
+    ]},
+    "Panchayat Raj and Rural Development":{minister:"Sri Konidala Pawan Kalyan",secretary:"Sri Shashi Bhushan Kumar, IAS, Principal Secretary",hods:[
+      {org:"Director, PR&RD",officer:"Sri V.R.K. Teja Mylavarapu, IAS"},
+      {org:"Secretary, AP State Election Commission",officer:"Sri A. Mallikharjuna, IAS (FAC)"},
+      {org:"Commissioner, SIRD",officer:"Sri Mutyalaraju Revu, IAS"},
+      {org:"CEO, SERP",officer:"Smt. V. Karuna, IAS"}
+    ]},
+    "Planning":{minister:"Sri Payyavula Keshav",secretary:"Sri Peeyush Kumar, IAS, Principal Secretary (FAC)",hods:[
+      {org:"Project Director, KADA",officer:"Sri Vikas Marmat, IAS"},
+      {org:"CEO, APSDPS",officer:"Sri Peeyush Kumar, IAS (FAC)"}
+    ]},
+    "Revenue":{minister:"Sri Anagani Satya Prasad",secretary:"Sri G. Sai Prasad, IAS, Spl. Chief Secretary (FAC)",hods:[
+      {org:"CCLA",officer:"Smt. G. Jaya Lakshmi, IAS"},
+      {org:"Director, SS&LR",officer:"Sri Ronanki Kurmanath, IAS"},
+      {org:"IG, Registrations & Stamps",officer:"Sri Dr. B.R.Ambedkar, IAS"},
+      {org:"DG, AP SDR&FS",officer:"Sri P. Venkata Ramana (FAC)"},
+      {org:"Director, DM",officer:"Sri Prakhar Jain, IAS (FAC)"},
+      {org:"Director, Prohibition & Excise",officer:"Sri Sridhar Chamakuri, IAS"},
+      {org:"Commissioner, Endowments",officer:"Sri K. Ramachandra Mohan (FAC)"}
+    ]},
+    "Real Time Governance":{minister:"Sri Nara Lokesh",secretary:"Sri Bhaskar Katamneni, IAS (FAC)",hods:[
+      {org:"CEO, RTGS",officer:"Sri Prakhar Jain, IAS"}
+    ]},
+    "Skills Development and Training":{minister:"Sri Nara Lokesh",secretary:"Sri Kona Sasidhar, IAS (FAC)",hods:[
+      {org:"Commissioner, Technical Education",officer:""},
+      {org:"Director, Employment & Training",officer:""}
+    ]},
+    "Social Welfare":{minister:"Dr. Dola Sree Bala Veeranjaneya Swamy",secretary:"Sri M.M. Nayak, IAS",hods:[
+      {org:"Director, Social Welfare",officer:""},
+      {org:"Secretary, APSWREIS",officer:""},
+      {org:"MD, APSCCFC",officer:""}
+    ]},
+    "Tribal Welfare":{minister:"Smt. Gummidi Sandhya Rani",secretary:"Sri M.M. Nayak, IAS (FAC)",hods:[
+      {org:"Commissioner, Tribal Welfare",officer:""},
+      {org:"Secretary, Gurukulam",officer:""},
+      {org:"MD, GCC",officer:""}
+    ]},
+    "Transport, Roads and Buildings":{minister:"Sri BC Janardhan Reddy",secretary:"Sri M.T. Krishna Babu, IAS, Spl. Chief Secretary",hods:[
+      {org:"E-in-C, Roads & Buildings",officer:""},
+      {org:"Commissioner, Transport",officer:""}
+    ]},
+    "Water Resources":{minister:"Dr. Nimmala Ramanaidu",secretary:"Sri G. Sai Prasad, IAS, Spl. Chief Secretary",hods:[
+      {org:"E-in-C, Water Resources",officer:""}
+    ]},
+    "Women, Children, Disabled and Senior Citizens":{minister:"Smt. Gummidi Sandhya Rani",secretary:"Smt. A. Surya Kumari, IAS",hods:[
+      {org:"Director, WD&CW",officer:""},
+      {org:"Commissioner, Differently Abled",officer:""}
+    ]},
+    "Youth Advancement, Tourism and Culture":{minister:"Sri Mandipalli Ramprasad Reddy",secretary:"Sri Ajay Jain, IAS (FAC)",hods:[
+      {org:"Director, Youth Services",officer:""},
+      {org:"Director, Archaeology & Museums",officer:""},
+      {org:"MD, APTDC",officer:""},
+      {org:"Director, Sports Authority",officer:""}
+    ]},
+    "Gram Volunteers/Ward Volunteers and Village Secretariats/Ward Secretariats":{minister:"Dr. Dola Sree Bala Veeranjaneya Swamy",secretary:"Sri Bhaskar Katamneni, IAS (FAC)",hods:[
+      {org:"Director, GSWS",officer:"Sri M. Siva Prasad, IFS"}
+    ]},
+    "Economically Weaker Sections Welfare":{minister:"Smt. S. Savitha",secretary:"Smt. K. Sunitha, IAS, Principal Secretary",hods:[
+      {org:"MD, AP State Kapu Welfare Corporation",officer:"Sri Krishna Murthy"}
+    ]},
+    "Disaster Management":{minister:"Sri Anagani Satya Prasad",secretary:"Sri G. Sai Prasad, IAS (Revenue)",hods:[
+      {org:"Director, Disaster Management",officer:"Sri Prakhar Jain, IAS (FAC)"},
+      {org:"MD, APSDMA",officer:""}
+    ]},
+    "Public Enterprises":{minister:"Sri Nara Chandrababu Naidu",secretary:"Smt. M. Janaki, IAS",hods:[]},
+    "Legislature":{minister:"Sri Nasyam Mohammed Farook",secretary:"Sri Prasanna Kumar Suryadevara",hods:[]}
+  },
+
+  // HODs and AOs per department (from List sheet)
+  deptOrgs: {
+    "Agriculture and Marketing":[
+      {name:"Agriculture",type:"HOD"},{name:"Horticulture",type:"HOD"},{name:"Sericulture",type:"HOD"},
+      {name:"Marketing",type:"HOD"},{name:"Cooperation and Cooperative Societies",type:"HOD"},
+      {name:"AP State Seeds Certification Agency",type:"AO"},{name:"AP State Cooperative Joint Farming and Labour Contract Societies Federation",type:"AO"},
+      {name:"AP State Warehousing Corporation",type:"AO"},{name:"AP Food Processing Society",type:"AO"},
+      {name:"AP State Seeds Development Corporation (AP SEEDS)",type:"AO"},{name:"AP State Agro Industries Corporation (AP AGROS)",type:"AO"},
+      {name:"Federation of Sericulturists and Silk Weavers (SERIFED)",type:"AO"},
+      {name:"AP State Cooperative Oil Seeds Growers Federation (OILFED)",type:"AO"},
+      {name:"AP State Cooperative Marketing Federation (MARKFED)",type:"AO"},
+      {name:"Rythu Sadhikara Samstha",type:"AO"},{name:"SAMETI",type:"AO"},
+      {name:"Dr. YSR Horticultural University",type:"AO"},{name:"AP State Cooperative Bank Ltd",type:"AO"},
+      {name:"Acharya N.G.Ranga Agricultural University (ANGRAU)",type:"AO"}
+    ],
+    "Animal Husbandry, Dairy Development and Fisheries":[
+      {name:"Animal Husbandry",type:"HOD"},{name:"Fisheries",type:"HOD"},
+      {name:"AP State Sheep & Goat Development Federation",type:"AO"},{name:"AP Centre for Advanced Research on Livestock (APCARL)",type:"AO"},
+      {name:"AP State Fishermen Cooperative Societies Federation",type:"AO"},{name:"AP Veterinary Council",type:"AO"},
+      {name:"AP Dairy Development Cooperative Federation",type:"AO"},{name:"AP Livestock Development Agency",type:"AO"},
+      {name:"Sri Venkateswara Veterinary University",type:"AO"},{name:"AP Fisheries University",type:"AO"},
+      {name:"AP Para Veterinary and Allied Council",type:"AO"}
+    ],
+    "Backward Classes Welfare":[
+      {name:"BC Welfare",type:"HOD"},
+      {name:"AP BC Cooperative Finance Corporation",type:"AO"},{name:"AP Commission for Backward Classes",type:"AO"},
+      {name:"BC Study Circle",type:"AO"},{name:"MJPAPBBCW Residential Education Society",type:"AO"},
+      {name:"AP State Economically Backward Classes Welfare Corporation (APSEBCWDC)",type:"AO"}
+    ],
+    "Consumer Affairs, Food and Civil Supplies":[
+      {name:"Civil Supplies",type:"HOD"},{name:"Legal Metrology",type:"HOD"},
+      {name:"State Consumer Disputes Redressal Commission",type:"AO"},{name:"AP State Civil Supplies Corporation",type:"AO"},
+      {name:"AP State Food Commission",type:"AO"}
+    ],
+    "Skills Development and Training":[
+      {name:"Technical Education",type:"HOD"},{name:"Employment and Training",type:"HOD"},
+      {name:"AP State Skill Development Corporation",type:"AO"},{name:"SEEDAP",type:"AO"},
+      {name:"National Academy of Construction",type:"AO"}
+    ],
+    "Tribal Welfare":[
+      {name:"Tribal Welfare",type:"HOD"},{name:"Tribal Welfare Engineering",type:"HOD"},
+      {name:"AP Tribal Welfare Residential Educational Institutions Society Gurukulam",type:"AO"},
+      {name:"Girijan Cooperative Corporation Ltd",type:"AO"},{name:"AP Scheduled Tribes Cooperative Finance Corporation",type:"AO"},
+      {name:"AP State Commission for Scheduled Tribes",type:"AO"},{name:"AP Tribal Power Company Limited",type:"AO"}
+    ],
+    "Energy":[
+      {name:"Electrical Safety",type:"HOD"},
+      {name:"AP Transco",type:"AO"},{name:"AP Genco",type:"AO"},
+      {name:"AP Southern Power Distribution Co Ltd (SPDCL)",type:"AO"},
+      {name:"AP Eastern Power Distribution Co Ltd (EPDCL)",type:"AO"},
+      {name:"AP Central Power Distribution Co Ltd (CPDCL)",type:"AO"},
+      {name:"New & Renewable Energy Development Corporation (NEDCAP)",type:"AO"},
+      {name:"AP Power Finance Corporation Ltd",type:"AO"},{name:"AP Solar Power Corporation",type:"AO"},
+      {name:"AP Green Energy Corporation Limited",type:"AO"}
+    ],
+    "Environment, Forest, Science and Technology":[
+      {name:"Forest (PCCF)",type:"HOD"},
+      {name:"AP Forests Development Corporation",type:"AO"},{name:"AP Biodiversity Board",type:"AO"},
+      {name:"AP Pollution Control Board",type:"AO"},{name:"AP Forest Academy",type:"AO"},
+      {name:"EPTRI",type:"AO"},{name:"CEFNARM",type:"AO"},
+      {name:"AP State Remote Sensing Application Centre",type:"AO"},{name:"AP State Council of Science & Technology (APCOST)",type:"AO"},
+      {name:"AP Environment Management Corporation",type:"AO"}
+    ],
+    "Finance":[
+      {name:"Treasuries & Accounts",type:"HOD"},{name:"State Audit",type:"HOD"},
+      {name:"Government Life Insurance",type:"HOD"},{name:"Pay and Accounts Office",type:"HOD"},
+      {name:"Works Accounts",type:"HOD"},{name:"AP State Directorate of Revenue Intelligence (APSDRI)",type:"HOD"},
+      {name:"AP Centre for Financial Systems and Services",type:"AO"},{name:"AP General Insurance Corporation Ltd",type:"AO"},
+      {name:"AP State Financial Services Corporation Ltd",type:"AO"}
+    ],
+    "General Administration":[
+      {name:"Information and Public Relations",type:"HOD"},{name:"Anti Corruption Bureau",type:"HOD"},
+      {name:"Protocol",type:"HOD"},{name:"Vigilance and Enforcement Wing",type:"HOD"},
+      {name:"Andhra Pradesh Bhavan New Delhi",type:"HOD"},{name:"Translations",type:"HOD"},
+      {name:"Special Enforcement Bureau",type:"HOD"},
+      {name:"AP Public Service Commission",type:"AO"},{name:"AP Lokayukta",type:"AO"},
+      {name:"AP Human Resources Development Institute",type:"AO"},{name:"AP Information Commission",type:"AO"},
+      {name:"AP Human Rights Commission",type:"AO"},{name:"AP Corporation for Outsourced Services (APCOS)",type:"AO"}
+    ],
+    "Health, Medical & Family Welfare":[
+      {name:"Medical Education",type:"HOD"},{name:"Public Health",type:"HOD"},
+      {name:"Family Welfare",type:"HOD"},{name:"IPM & Food Safety",type:"HOD"},
+      {name:"Ayush",type:"HOD"},{name:"Drugs Control Administration",type:"HOD"},
+      {name:"Directorate of Secondary Health",type:"HOD"},
+      {name:"AP Health, Medical Housing and Infrastructure Development Corporation",type:"AO"},
+      {name:"Dr. NTR Vaidya Seva Trust",type:"AO"},{name:"AP State Aids Control Society",type:"AO"},
+      {name:"Dr. NTR University of Health Sciences",type:"AO"},
+      {name:"Sri Venkateswara Institute of Medical Sciences",type:"AO"}
+    ],
+    "Home":[
+      {name:"Police (DGP)",type:"HOD"},{name:"Prisons & Correctional Services",type:"HOD"},
+      {name:"Printing and Stationery",type:"HOD"},{name:"Fire Services",type:"HOD"},
+      {name:"Sainik Welfare",type:"HOD"},{name:"Special Protection Force",type:"HOD"},
+      {name:"Prosecutions",type:"HOD"},
+      {name:"AP Fire Services and Civil Defence Training Institute",type:"AO"},
+      {name:"AP State Police Housing Corporation",type:"AO"}
+    ],
+    "Housing":[
+      {name:"AP Weaker Sections Housing Programme",type:"AO"},{name:"AP Rural Housing Board",type:"AO"},
+      {name:"AP State Housing Corporation Ltd",type:"AO"}
+    ],
+    "Human Resources (Higher Education)":[
+      {name:"Collegiate Education",type:"HOD"},{name:"State Archives",type:"HOD"},
+      {name:"Andhra University",type:"AO"},{name:"Sri Venkateswara University",type:"AO"},
+      {name:"Nagarjuna University",type:"AO"},{name:"Sri Krishna Devaraya University",type:"AO"},
+      {name:"Dr. B.R. Ambedkar Open University",type:"AO"},{name:"Sri Padmavathi Mahila Viswa Vidyalayam",type:"AO"},
+      {name:"Potti Sriramulu Telugu University",type:"AO"},{name:"Dravidian University",type:"AO"},
+      {name:"Adikavi Nannaya University",type:"AO"},{name:"RGUKT",type:"AO"},
+      {name:"Yogi Vemana University",type:"AO"},{name:"JNTU Kakinada",type:"AO"},
+      {name:"JNTU Anantapur",type:"AO"},{name:"AP State Council for Higher Education",type:"AO"},
+      {name:"AP Higher Education Regulatory Commission",type:"AO"}
+    ],
+    "Human Resources (School Education)":[
+      {name:"Intermediate Education",type:"HOD"},{name:"School Education",type:"HOD"},
+      {name:"Publication",type:"HOD"},{name:"Adult Education",type:"HOD"},{name:"Public Libraries",type:"HOD"},
+      {name:"Samagra Shiksha",type:"AO"},{name:"Board of Intermediate Education",type:"AO"},
+      {name:"AP Education and Welfare Infrastructure Development Corporation (APEWIDC)",type:"AO"},
+      {name:"AP Residential Educational Institutions Society",type:"AO"},
+      {name:"SCERT",type:"AO"}
+    ],
+    "Industries and Commerce":[
+      {name:"Industries, Commerce and Export Promotion",type:"HOD"},{name:"Handlooms & Textiles",type:"HOD"},
+      {name:"Mines and Geology",type:"HOD"},{name:"Sugar and Cane",type:"HOD"},
+      {name:"AP Economic Development Board",type:"AO"},{name:"AP Industrial Infrastructure Corporation (APIIC)",type:"AO"},
+      {name:"AP Industrial Development Corporation (APIDC)",type:"AO"},{name:"AP Trade Promotion Corporation",type:"AO"},
+      {name:"AP Handicrafts Development Corporation (LEPAKSHI)",type:"AO"},
+      {name:"AP State Handloom Weavers Cooperative (APCO)",type:"AO"},{name:"AP Khadi Village Industries Board",type:"AO"},
+      {name:"AP Mineral Development Corporation",type:"AO"},{name:"AP MSME Development Corporation",type:"AO"}
+    ],
+    "Information Technology, Electronics and Communications":[
+      {name:"Electronics Delivery Services",type:"HOD"},
+      {name:"AP Technology Services Ltd",type:"AO"},{name:"e-Pragati Authority",type:"AO"},
+      {name:"AP Innovation Society",type:"AO"},{name:"AP Electronics and IT Agency",type:"AO"},
+      {name:"Society for AP Network (SAPNET)",type:"AO"},{name:"AP Space Application Centre (APSAC)",type:"AO"}
+    ],
+    "Infrastructure and Investment":[
+      {name:"State Ports",type:"HOD"},
+      {name:"AP State Fibernet Ltd",type:"AO"},{name:"AP Aviation Corporation",type:"AO"},
+      {name:"AP Gas Infrastructure Corporation",type:"AO"},{name:"AP Digital Corporation",type:"AO"},
+      {name:"AP Drones Corporation",type:"AO"},{name:"AP Economic Cities Promotion (APEDCO)",type:"AO"},
+      {name:"AP Maritime Infrastructure Development Corporation (APMIDCL)",type:"AO"},
+      {name:"AP Airports Development Corporation (APADCL)",type:"AO"},
+      {name:"Infrastructure Corporation of AP (INCAP)",type:"AO"},{name:"AP Towers Limited",type:"AO"}
+    ],
+    "Labour, Factories, Boilers & Insurance Medical Services":[
+      {name:"Labour",type:"HOD"},{name:"Factories",type:"HOD"},
+      {name:"Insurance Medical Services",type:"HOD"},{name:"Boilers",type:"HOD"},
+      {name:"AP Building & Other Construction Workers Welfare Board",type:"AO"}
+    ],
+    "Law":[
+      {name:"High Court of AP",type:"AO"},{name:"Advocate General's Office",type:"AO"}
+    ],
+    "Minorities Welfare":[
+      {name:"AP State Minorities Commission",type:"HOD"},{name:"Minorities Welfare",type:"HOD"},
+      {name:"AP State Minorities Finance Corporation",type:"AO"},{name:"AP State Wakf Board",type:"AO"},
+      {name:"AP State Haj Committee",type:"AO"},{name:"AP Urdu Academy",type:"AO"}
+    ],
+    "Municipal Administration and Urban Development":[
+      {name:"Municipal Administration",type:"HOD"},{name:"Town and Country Planning",type:"HOD"},
+      {name:"Public Health Engineering",type:"HOD"},
+      {name:"AP Urban Finance Infrastructure Development Corporation",type:"AO"},
+      {name:"MEPMA",type:"AO"},{name:"Swachh Andhra Corporation",type:"AO"},
+      {name:"AP Housing Board",type:"AO"},{name:"AP Township and Infrastructure Development Corporation",type:"AO"},
+      {name:"AP Metro Rail Corporation",type:"AO"},{name:"Amaravati Development Corporation",type:"AO"},
+      {name:"AP Capital Region Development Authority (APCRDA)",type:"AO"}
+    ],
+    "Panchayat Raj and Rural Development":[
+      {name:"Panchayati Raj",type:"HOD"},{name:"Panchayati Raj Engineering",type:"HOD"},
+      {name:"Rural Development",type:"HOD"},{name:"Rural Water Supply Engineering",type:"HOD"},
+      {name:"State Election Commission",type:"AO"},{name:"Society for Elimination of Rural Poverty (SERP)",type:"AO"},
+      {name:"AP Drinking Water Supply Corporation",type:"AO"}
+    ],
+    "Planning":[
+      {name:"Economics and Statistics",type:"HOD"},
+      {name:"AP State Development Planning Society (APSDPS)",type:"AO"},{name:"AP State Planning Board",type:"AO"}
+    ],
+    "Real Time Governance":[{name:"RTG Society",type:"AO"}],
+    "Revenue":[
+      {name:"Revenue (CCLA)",type:"HOD"},{name:"Commercial Taxes",type:"HOD"},
+      {name:"Prohibition and Excise",type:"HOD"},{name:"Survey Settlements and Land Records",type:"HOD"},
+      {name:"Endowments",type:"HOD"},{name:"Registration and Stamps",type:"HOD"},
+      {name:"AP Beverages Corporation Ltd",type:"AO"},{name:"AP State Disaster Management Authority",type:"AO"},
+      {name:"Tirumala Tirupati Devastanam",type:"AO"}
+    ],
+    "Disaster Management":[
+      {name:"AP State Disaster Response & Fire Services",type:"HOD"},
+      {name:"AP State Disaster Management Authority (APSDMA)",type:"AO"}
+    ],
+    "Social Welfare":[
+      {name:"Social Welfare",type:"HOD"},
+      {name:"LIDCAP",type:"AO"},{name:"AP Social Welfare Residential Educational Institutions Society (APSWREIS)",type:"AO"},
+      {name:"AP Scheduled Castes Cooperative Finance Corporation",type:"AO"},
+      {name:"AP SC ST Commission",type:"AO"}
+    ],
+    "Transport, Roads and Buildings":[
+      {name:"Roads and Buildings (E-in-C)",type:"HOD"},{name:"Transport",type:"HOD"},
+      {name:"Public Transport Department",type:"HOD"},
+      {name:"AP State Road Transport Corporation (APSRTC)",type:"AO"},{name:"AP Road Development Corporation",type:"AO"}
+    ],
+    "Water Resources":[
+      {name:"Command Area Development Authority (CADA)",type:"HOD"},{name:"Ground Water",type:"HOD"},
+      {name:"Water Resources (E-in-C)",type:"HOD"},{name:"Resettlement and Rehabilitation",type:"HOD"},
+      {name:"AP State Irrigation Development Corporation",type:"AO"},
+      {name:"AP Water Resources Development Corporation",type:"AO"},{name:"WALMTARI",type:"AO"}
+    ],
+    "Women, Children, Disabled and Senior Citizens":[
+      {name:"Women Development and Child Welfare",type:"HOD"},
+      {name:"Differently Abled, Senior Citizens & Transgender",type:"HOD"},
+      {name:"Juvenile Welfare & Correctional Services",type:"HOD"},
+      {name:"AP Womens Cooperative Development Corporation",type:"AO"},
+      {name:"AP Differently Abled Corporation",type:"AO"},
+      {name:"AP State Womens Commission",type:"AO"}
+    ],
+    "Youth Advancement, Tourism and Culture":[
+      {name:"Youth Services",type:"HOD"},{name:"National Cadet Corps",type:"HOD"},
+      {name:"Archaeology and Museums",type:"HOD"},
+      {name:"Sports Authority of AP",type:"AO"},{name:"AP State Tourism Authority",type:"AO"},
+      {name:"AP Tourism Development Corporation",type:"AO"},{name:"AP Silparamam Society",type:"AO"}
+    ],
+    "Economically Weaker Sections Welfare":[{name:"EWS Welfare",type:"HOD"},{name:"AP State Kapu Welfare Corporation",type:"AO"}],
+    "Chief Ministers Office":[], "Chief Secretarys Office":[], "Governors Secretariat":[],
+    "Chief Electoral Officer":[], "Public Enterprises":[], "Legislature":[],
+    "Gram Volunteers/Ward Volunteers and Village Secretariats/Ward Secretariats":[
+      {name:"Gram/Ward Volunteers and Village/Ward Secretariats",type:"HOD"}
+    ]
+  },
+
+  // State Units
+  stateUnits: [
+    {code:"HOM09",name:"Police-Intelligence",reporting:"HOM"},
+    {code:"HOM11",name:"Police-Home Guards",reporting:"HOM"},
+    {code:"HOM13",name:"Police-Grey Hounds",reporting:"HOM"},
+    {code:"HOM15",name:"Police-OCTOPUS",reporting:"HOM"},
+    {code:"HOM45",name:"Police-Coastal Security",reporting:"HOM"},
+    {code:"HOM46",name:"Police-Railways",reporting:"HOM"},
+    {code:"HOM47",name:"Police-CID",reporting:"HOM"},
+    {code:"HOM48",name:"Police-Communications",reporting:"HOM"},
+    {code:"HOM49",name:"Police-Training",reporting:"HOM"},
+    {code:"HOM50",name:"Police-Battalions",reporting:"HOM"},
+    {code:"ICD06",name:"Water Resources-Technical",reporting:"ICD"},
+    {code:"ICD08",name:"Water Resources-Minor Irrigation",reporting:"ICD"},
+    {code:"ICD12",name:"NTR Telugu Ganga Project, Tirupati",reporting:"ICD"},
+    {code:"ICD17",name:"Central Designs Organisation, Vijayawada",reporting:"ICD"},
+    {code:"ICD18",name:"Inter State Water Resources",reporting:"ICD"},
+    {code:"ICD20",name:"Irrigation Projects, Kadapa",reporting:"ICD"},
+    {code:"ICD21",name:"Hydrology",reporting:"ICD"},
+    {code:"ICD25",name:"CE North Coast, Visakhapatnam",reporting:"ICD"},
+    {code:"ICD26",name:"CE Projects, Ongole",reporting:"ICD"},
+    {code:"ICD27",name:"Irrigation Projects, Anantapur",reporting:"ICD"},
+    {code:"ICD28",name:"Polavaram Project",reporting:"ICD"},
+    {code:"ICD32",name:"Irrigation Projects, Kurnool",reporting:"ICD"},
+    {code:"ICD34",name:"Quality Control-Coastal Region",reporting:"ICD"},
+    {code:"ICD36",name:"Quality Control-Rayalaseema Region",reporting:"ICD"},
+    {code:"ICD43",name:"Godavari Delta System, Dowleswaram",reporting:"ICD"},
+    {code:"ICD44",name:"Krishna Delta System",reporting:"ICD"},
+    {code:"GAD56",name:"Nodal Authority for e-Office and Biometric Attendance",reporting:"GAD"},
+    {code:"GAD57",name:"Special Enforcement Bureau",reporting:"GAD"},
+    {code:"EHE07",name:"AP State NSS Cell",reporting:"EHE"}
+  ],
+
+  // Secretaries list
+  secretaries: [
+    {name:"Sri K. Vijayanand, IAS",designation:"Chief Secretary",department:"GAD / Energy (FAC)"},
+    {name:"Sri G. Sai Prasad, IAS",designation:"Spl. Chief Secretary",department:"Water Resources / Revenue (FAC)"},
+    {name:"Sri M.T. Krishna Babu, IAS",designation:"Spl. Chief Secretary",department:"TR&B / Infrastructure (FAC)"},
+    {name:"Sri Ajay Jain, IAS",designation:"Spl. Chief Secretary",department:"Housing / YAT&C (FAC)"},
+    {name:"Sri Peeyush Kumar, IAS",designation:"Principal Secretary",department:"Finance / Planning (FAC)"},
+    {name:"Sri Kumar Vishwajeet, IPS",designation:"Principal Secretary",department:"Home"},
+    {name:"Sri S. Suresh Kumar, IAS",designation:"Principal Secretary",department:"MA&UD"},
+    {name:"Sri Shashi Bhushan Kumar, IAS",designation:"Principal Secretary",department:"PR&RD"},
+    {name:"Sri Kantilal Dande, IAS",designation:"Principal Secretary",department:"EFS&T"},
+    {name:"Smt. K. Sunitha, IAS",designation:"Principal Secretary",department:"EWS Welfare"},
+    {name:"Sri Kona Sasidhar, IAS",designation:"Secretary",department:"HR School Edu / Higher Edu / Skills (FAC)"},
+    {name:"Sri Bhaskar Katamneni, IAS",designation:"Secretary",department:"ITE&C / RTG / GVWV (FAC)"},
+    {name:"Sri Saurabh Gaur, IAS",designation:"Secretary",department:"HM&FW / CAF&CS (FAC)"},
+    {name:"Dr. N. Yuvaraj, IAS",designation:"Secretary",department:"Industries & Commerce"},
+    {name:"Sri B. Rajsekhar, IAS (Retd)",designation:"E.O. Spl. Chief Secretary",department:"Agriculture / AH (FAC)"},
+    {name:"Sri M.V. Seshagiri Babu, IAS",designation:"Secretary",department:"Labour"},
+    {name:"Sri Ch. Sridhar, IAS",designation:"Secretary",department:"Minorities Welfare"},
+    {name:"Sri M.M. Nayak, IAS",designation:"Secretary",department:"Social Welfare / Tribal (FAC)"},
+    {name:"Smt. A. Surya Kumari, IAS",designation:"Secretary",department:"WCD&SC"},
+    {name:"Smt. Prathibha Devi",designation:"Secretary",department:"Law"},
+    {name:"Sri J. Syamala Rao, IAS",designation:"Prl. Secretary",department:"GAD (Political)"},
+    {name:"Sri S. Satyanarayana, IAS (Retd)",designation:"E.O. Secretary",department:"BC Welfare"},
+    {name:"Smt. M. Janaki, IAS",designation:"Secretary",department:"Public Enterprises"}
+  ]
+};
+
+// ═══════════════════════════════════════════════════
+// UTILITIES
+// ═══════════════════════════════════════════════════
+function esc(s){var d=document.createElement("div");d.textContent=s;return d.innerHTML}
+function $(id){return document.getElementById(id)}
+
+// ═══════════════════════════════════════════════════
+// TAB SWITCHING
+// ═══════════════════════════════════════════════════
+document.querySelectorAll(".tab").forEach(function(t){
+  t.addEventListener("click",function(){
+    document.querySelectorAll(".tab").forEach(function(x){x.classList.remove("active")});
+    document.querySelectorAll(".panel").forEach(function(x){x.classList.remove("active")});
+    t.classList.add("active");
+    $("panel-"+t.dataset.tab).classList.add("active");
+  });
+});
+
+// ═══════════════════════════════════════════════════
+// MASTER TREE
+// ═══════════════════════════════════════════════════
+function buildMasterTree(){
+  var container = $("master-tree");
+  // Group departments by minister
+  var ministerMap = {};
+  var deptNames = DATA.stateDepts.map(function(d){return d.name});
+  deptNames.forEach(function(dName){
+    var m = DATA.ministry[dName];
+    if(!m) return;
+    var mKey = m.minister;
+    if(!ministerMap[mKey]) ministerMap[mKey]={minister:mKey,depts:[]};
+    ministerMap[mKey].depts.push({name:dName,secretary:m.secretary,hods:m.hods||[]});
+  });
+
+  var html = '';
+  // Root: Government of AP
+  html += '<div class="tree-root">';
+  html += '<div class="tree-item" onclick="toggleChildren(this)">';
+  html += '<span class="toggle expanded">-</span>';
+  html += '<span class="badge b-cm">GOV</span>';
+  html += '<span class="node-label"><b>Government of Andhra Pradesh</b></span>';
+  html += '<span class="node-count">'+Object.keys(ministerMap).length+' Ministers</span>';
+  html += '</div>';
+  html += '<div class="tree-children open">';
+
+  // Chief Minister node
+  html += '<div class="tree-node">';
+  html += '<div class="tree-item" onclick="toggleChildren(this)">';
+  html += '<span class="toggle expanded">-</span>';
+  html += '<span class="badge b-cm">CM</span>';
+  html += '<span class="node-label"><b>Sri Nara Chandrababu Naidu</b></span>';
+  html += '<span class="node-sub">Chief Minister</span>';
+  html += '<span class="node-count">'+Object.keys(ministerMap).length+' Ministers</span>';
+  html += '</div>';
+  html += '<div class="tree-children open">';
+
+  // Ministers
+  var ministers = Object.keys(ministerMap).sort();
+  ministers.forEach(function(mKey){
+    var mData = ministerMap[mKey];
+    html += '<div class="tree-node">';
+    html += '<div class="tree-item" onclick="toggleChildren(this)">';
+    html += '<span class="toggle">+</span>';
+    html += '<span class="badge b-minister">MIN</span>';
+    html += '<span class="node-label">'+esc(mKey)+'</span>';
+    html += '<span class="node-count">'+mData.depts.length+' dept'+(mData.depts.length>1?'s':'')+'</span>';
+    html += '</div>';
+    html += '<div class="tree-children">';
+
+    // Departments under this minister
+    mData.depts.forEach(function(dept){
+      var orgs = DATA.deptOrgs[dept.name]||[];
+      var hodCount = orgs.filter(function(o){return o.type==='HOD'}).length;
+      var aoCount = orgs.filter(function(o){return o.type==='AO'}).length;
+      var sd = DATA.stateDepts.find(function(s){return s.name===dept.name});
+      var code = sd?sd.short:'';
+
+      html += '<div class="tree-node">';
+      // Secretary line
+      if(dept.secretary){
+        html += '<div class="tree-item" style="opacity:.7;padding-left:30px;font-size:11px;cursor:default">';
+        html += '<span class="badge b-secretary" style="font-size:9px">SEC</span>';
+        html += '<span class="node-label" style="font-weight:400;font-size:11px">'+esc(dept.secretary)+'</span>';
+        html += '</div>';
+      }
+      html += '<div class="tree-item" onclick="toggleChildren(this)">';
+      html += '<span class="toggle">+</span>';
+      html += '<span class="badge b-dept">'+esc(code)+'</span>';
+      html += '<span class="node-label">'+esc(dept.name)+'</span>';
+      var meta = [];
+      if(hodCount) meta.push(hodCount+' HOD'+(hodCount>1?'s':''));
+      if(aoCount) meta.push(aoCount+' AO'+(aoCount>1?'s':''));
+      if(meta.length) html += '<span class="node-count">'+meta.join(', ')+'</span>';
+      html += '</div>';
+      html += '<div class="tree-children">';
+
+      // HODs
+      orgs.forEach(function(org){
+        var cls = org.type==='HOD'?'b-hod':'b-ao';
+        html += '<div class="tree-node">';
+        html += '<div class="tree-item" style="cursor:default">';
+        html += '<span class="badge '+cls+'">'+org.type+'</span>';
+        html += '<span class="node-label" style="font-weight:400">'+esc(org.name)+'</span>';
+        html += '</div>';
+        // State units under this dept
+        if(org.type==='HOD' && sd){
+          var units = DATA.stateUnits.filter(function(u){return u.reporting===sd.short});
+          if(units.length && org===orgs.filter(function(o){return o.type==='HOD'})[0]){
+            units.forEach(function(u){
+              html += '<div class="tree-node" style="padding-left:32px">';
+              html += '<div class="tree-item" style="cursor:default">';
+              html += '<span class="badge b-su">SU</span>';
+              html += '<span class="node-label" style="font-weight:400;font-size:12px">'+esc(u.name)+'</span>';
+              html += '</div></div>';
+            });
+          }
+        }
+        html += '</div>';
+      });
+
+      html += '</div></div>'; // close children + node
+    });
+
+    html += '</div></div>'; // close minister children + node
+  });
+
+  html += '</div></div>'; // close CM children + node
+  html += '</div></div>'; // close root children + root
+
+  container.innerHTML = html;
+}
+
+function toggleChildren(el){
+  var children = el.nextElementSibling;
+  if(!children || !children.classList.contains("tree-children")) return;
+  var toggle = el.querySelector(".toggle");
+  if(children.classList.contains("open")){
+    children.classList.remove("open");
+    if(toggle){toggle.textContent="+";toggle.classList.remove("expanded")}
+  } else {
+    children.classList.add("open");
+    if(toggle){toggle.textContent="-";toggle.classList.add("expanded")}
+  }
+}
+
+function expandAll(){
+  document.querySelectorAll(".tree-children").forEach(function(c){c.classList.add("open")});
+  document.querySelectorAll(".toggle").forEach(function(t){t.textContent="-";t.classList.add("expanded")});
+}
+function collapseAll(){
+  document.querySelectorAll(".tree-children").forEach(function(c){c.classList.remove("open")});
+  document.querySelectorAll(".toggle").forEach(function(t){t.textContent="+";t.classList.remove("expanded")});
+  // Keep root open
+  var root = document.querySelector(".tree-root > .tree-children");
+  if(root){root.classList.add("open");var t=root.previousElementSibling.querySelector(".toggle");if(t){t.textContent="-";t.classList.add("expanded")}}
+}
+
+// ═══════════════════════════════════════════════════
+// DEPARTMENTS PANEL
+// ═══════════════════════════════════════════════════
+function buildDeptList(){
+  var container = $("dept-list");
+  var html = '';
+  DATA.stateDepts.forEach(function(sd){
+    var orgs = DATA.deptOrgs[sd.name]||[];
+    var m = DATA.ministry[sd.name]||{};
+    var hodCount = orgs.filter(function(o){return o.type==='HOD'}).length;
+    var aoCount = orgs.filter(function(o){return o.type==='AO'}).length;
+    html += '<div class="dept-tile" onclick="showDeptDetail(\''+esc(sd.name.replace(/'/g,"\\'"))+'\')">';
+    html += '<div class="dt-code">'+esc(sd.code)+' / '+esc(sd.short)+'</div>';
+    html += '<div class="dt-name">'+esc(sd.name)+'</div>';
+    html += '<div class="dt-meta">';
+    html += '<span><b>'+hodCount+'</b> HODs</span>';
+    html += '<span><b>'+aoCount+'</b> AOs</span>';
+    html += '<span><b>'+(hodCount+aoCount)+'</b> Total</span>';
+    html += '</div>';
+    if(m.minister) html += '<div class="dt-minister">Minister: '+esc(m.minister)+'</div>';
+    if(m.secretary) html += '<div class="dt-secretary">Secretary: '+esc(m.secretary)+'</div>';
+    html += '</div>';
+  });
+  container.innerHTML = html;
+}
+
+function showDeptDetail(deptName){
+  var panel = $("dept-detail");
+  var m = DATA.ministry[deptName]||{};
+  var orgs = DATA.deptOrgs[deptName]||[];
+  var sd = DATA.stateDepts.find(function(s){return s.name===deptName});
+  var units = sd ? DATA.stateUnits.filter(function(u){return u.reporting===sd.short}) : [];
+
+  var html = '<h2>'+esc(deptName)+'</h2>';
+
+  // Chain: Minister -> Secretary -> Department
+  html += '<div class="chain">';
+  if(m.minister) html += '<span class="badge b-minister">'+esc(m.minister)+'</span><span class="chain-arrow">&#8594;</span>';
+  if(m.secretary) html += '<span class="badge b-secretary">'+esc(m.secretary)+'</span><span class="chain-arrow">&#8594;</span>';
+  html += '<span class="badge b-dept">'+esc(deptName)+'</span>';
+  html += '</div>';
+
+  // Officers from ministry data
+  if(m.hods && m.hods.length){
+    html += '<h3 style="font-size:14px;margin:12px 0 8px;color:var(--muted)">Officers / Designations</h3>';
+    html += '<div class="org-grid">';
+    m.hods.forEach(function(h){
+      html += '<div class="org-card hod-card">';
+      html += '<div class="org-name">'+esc(h.org)+'</div>';
+      if(h.officer) html += '<div class="org-officer">'+esc(h.officer)+'</div>';
+      html += '</div>';
+    });
+    html += '</div>';
+  }
+
+  // HODs
+  var hods = orgs.filter(function(o){return o.type==='HOD'});
+  if(hods.length){
+    html += '<h3 style="font-size:14px;margin:16px 0 8px;color:var(--hod)">Heads of Department ('+hods.length+')</h3>';
+    html += '<div class="org-grid">';
+    hods.forEach(function(o){
+      html += '<div class="org-card hod-card"><div class="org-name">'+esc(o.name)+'</div><div class="org-type">HOD - Directorate</div></div>';
+    });
+    html += '</div>';
+  }
+
+  // AOs
+  var aos = orgs.filter(function(o){return o.type==='AO'});
+  if(aos.length){
+    html += '<h3 style="font-size:14px;margin:16px 0 8px;color:var(--ao)">Autonomous Organizations ('+aos.length+')</h3>';
+    html += '<div class="org-grid">';
+    aos.forEach(function(o){
+      html += '<div class="org-card ao-card"><div class="org-name">'+esc(o.name)+'</div><div class="org-type">Autonomous Organization</div></div>';
+    });
+    html += '</div>';
+  }
+
+  // State Units
+  if(units.length){
+    html += '<h3 style="font-size:14px;margin:16px 0 8px;color:var(--su)">State Units ('+units.length+')</h3>';
+    html += '<div class="org-grid">';
+    units.forEach(function(u){
+      html += '<div class="org-card su-card"><div class="org-name">'+esc(u.name)+'</div><div class="org-type">State Unit - '+esc(u.code)+'</div></div>';
+    });
+    html += '</div>';
+  }
+
+  html += '<div style="margin-top:16px"><button class="btn-outline" onclick="$(\'dept-detail\').classList.remove(\'visible\')">Close</button></div>';
+
+  panel.innerHTML = html;
+  panel.classList.add("visible");
+  panel.scrollIntoView({behavior:"smooth",block:"start"});
+}
+
+// ═══════════════════════════════════════════════════
+// SECRETARIES PANEL
+// ═══════════════════════════════════════════════════
+function buildSecretariesPanel(){
+  var container = $("sec-content");
+
+  // Build minister -> secretary -> department table
+  var html = '<h3 style="margin-bottom:12px">Minister &rarr; Secretary &rarr; Department Chain</h3>';
+  html += '<table class="sec-table"><thead><tr><th>#</th><th>Department</th><th>Minister</th><th>Secretary</th><th>HODs/Orgs</th></tr></thead><tbody>';
+
+  var i = 0;
+  DATA.stateDepts.forEach(function(sd){
+    var m = DATA.ministry[sd.name];
+    if(!m) return;
+    i++;
+    var hodList = (m.hods||[]).map(function(h){
+      var s = esc(h.org);
+      if(h.officer) s += ' <span style="color:var(--blue)">(' + esc(h.officer) + ')</span>';
+      return s;
+    }).join('<br>');
+    html += '<tr>';
+    html += '<td>'+i+'</td>';
+    html += '<td><b>'+esc(sd.name)+'</b><br><span style="font-size:11px;color:var(--muted)">'+esc(sd.code)+'</span></td>';
+    html += '<td><span class="badge b-minister" style="font-size:10px">'+esc(m.minister)+'</span></td>';
+    html += '<td><span class="badge b-secretary" style="font-size:10px">'+esc(m.secretary)+'</span></td>';
+    html += '<td style="font-size:12px">'+hodList+'</td>';
+    html += '</tr>';
+  });
+  html += '</tbody></table>';
+
+  // Secretaries list
+  html += '<h3 style="margin:24px 0 12px">All Secretaries ('+DATA.secretaries.length+')</h3>';
+  html += '<table class="sec-table"><thead><tr><th>#</th><th>Name</th><th>Designation</th><th>Department(s)</th></tr></thead><tbody>';
+  DATA.secretaries.forEach(function(s,idx){
+    html += '<tr><td>'+(idx+1)+'</td><td><b>'+esc(s.name)+'</b></td>';
+    html += '<td>'+esc(s.designation)+'</td><td>'+esc(s.department)+'</td></tr>';
+  });
+  html += '</tbody></table>';
+
+  container.innerHTML = html;
+}
+
+// ═══════════════════════════════════════════════════
+// SUMMARY PANEL
+// ═══════════════════════════════════════════════════
+function buildSummary(){
+  var totalHods=0, totalAos=0;
+  var deptStats = [];
+  DATA.stateDepts.forEach(function(sd){
+    var orgs = DATA.deptOrgs[sd.name]||[];
+    var h = orgs.filter(function(o){return o.type==='HOD'}).length;
+    var a = orgs.filter(function(o){return o.type==='AO'}).length;
+    totalHods += h; totalAos += a;
+    deptStats.push({name:sd.name,code:sd.short,hods:h,aos:a,total:h+a});
+  });
+  deptStats.sort(function(a,b){return b.total-a.total});
+
+  // Update header stats
+  $("h-hods").textContent = totalHods;
+  $("h-aos").textContent = totalAos;
+
+  // Unique ministers
+  var ministers = {};
+  Object.keys(DATA.ministry).forEach(function(k){
+    var m = DATA.ministry[k].minister;
+    if(m) ministers[m] = (ministers[m]||0)+1;
+  });
+
+  var cards = $("summary-cards");
+  cards.innerHTML = '<div class="s-card"><div class="s-val">'+DATA.stateDepts.length+'</div><div class="s-lab">State Departments</div></div>'
+    + '<div class="s-card green"><div class="s-val">'+totalHods+'</div><div class="s-lab">Heads of Department</div></div>'
+    + '<div class="s-card purple"><div class="s-val">'+totalAos+'</div><div class="s-lab">Autonomous Organizations</div></div>'
+    + '<div class="s-card teal"><div class="s-val">'+DATA.stateUnits.length+'</div><div class="s-lab">State Units</div></div>'
+    + '<div class="s-card orange"><div class="s-val">'+Object.keys(ministers).length+'</div><div class="s-lab">Ministers</div></div>'
+    + '<div class="s-card red"><div class="s-val">'+DATA.secretaries.length+'</div><div class="s-lab">Secretaries</div></div>';
+
+  // Dept ranking table
+  var tHtml = '<h3 style="margin:20px 0 12px">Departments Ranked by Organization Count</h3>';
+  tHtml += '<table class="sec-table"><thead><tr><th>#</th><th>Department</th><th>Code</th><th>HODs</th><th>AOs</th><th>Total</th></tr></thead><tbody>';
+  deptStats.forEach(function(d,i){
+    tHtml += '<tr><td>'+(i+1)+'</td><td>'+esc(d.name)+'</td><td>'+esc(d.code)+'</td>';
+    tHtml += '<td><b>'+d.hods+'</b></td><td><b>'+d.aos+'</b></td><td><b>'+d.total+'</b></td></tr>';
+  });
+  tHtml += '</tbody></table>';
+
+  // Ministers portfolio table
+  tHtml += '<h3 style="margin:24px 0 12px">Minister Portfolios</h3>';
+  tHtml += '<table class="sec-table"><thead><tr><th>#</th><th>Minister</th><th>Departments</th><th>Count</th></tr></thead><tbody>';
+  var mSorted = Object.keys(ministers).sort(function(a,b){return ministers[b]-ministers[a]});
+  mSorted.forEach(function(m,i){
+    var depts = [];
+    Object.keys(DATA.ministry).forEach(function(k){if(DATA.ministry[k].minister===m) depts.push(k)});
+    tHtml += '<tr><td>'+(i+1)+'</td><td><b>'+esc(m)+'</b></td>';
+    tHtml += '<td>'+depts.map(esc).join(', ')+'</td><td><b>'+ministers[m]+'</b></td></tr>';
+  });
+  tHtml += '</tbody></table>';
+
+  $("summary-tables").innerHTML = tHtml;
+}
+
+// ═══════════════════════════════════════════════════
+// SEARCH
+// ═══════════════════════════════════════════════════
+$("search-box").addEventListener("input",function(){
+  var q = this.value.toLowerCase().trim();
+  if(!q){
+    document.querySelectorAll(".tree-node,.dept-tile,.sec-table tr").forEach(function(el){el.style.display=""});
+    return;
+  }
+  // Search in tree
+  document.querySelectorAll(".tree-item").forEach(function(item){
+    var text = item.textContent.toLowerCase();
+    var node = item.parentElement;
+    if(text.indexOf(q)>=0){
+      node.style.display = "";
+      // Expand parents
+      var parent = node.parentElement;
+      while(parent){
+        if(parent.classList.contains("tree-children")){parent.classList.add("open");var t=parent.previousElementSibling;if(t){var tog=t.querySelector(".toggle");if(tog){tog.textContent="-";tog.classList.add("expanded")}}}
+        parent = parent.parentElement;
+      }
+    }
+  });
+  // Search in dept tiles
+  document.querySelectorAll(".dept-tile").forEach(function(tile){
+    tile.style.display = tile.textContent.toLowerCase().indexOf(q)>=0 ? "" : "none";
+  });
+});
+
+// ═══════════════════════════════════════════════════
+// PRINT
+// ═══════════════════════════════════════════════════
+function printPage(){window.print()}
+
+// ═══════════════════════════════════════════════════
+// INIT
+// ═══════════════════════════════════════════════════
+buildMasterTree();
+buildDeptList();
+buildSecretariesPanel();
+buildSummary();
+</script>
+
+</body>
+</html>

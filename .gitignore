@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# IDE
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Credentials (never commit)
+*.sde
+apsdma_credentials.json
+
+# Large minified libs (tracked but excluded from diff)
+webapp/js/vis-network.min.js linguist-generated
+
+# Logs (optional — keep recent, ignore old)
+logs/*.log
+
+# Data archives (large JSON files)
+data/archive/*.json
+data/rebuild/*.json
+data/tier2/*.json
+data/tier3/*.json
+data/tier4/*.json

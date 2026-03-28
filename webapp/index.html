@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DM Personnel Directory — APSDMA, Government of Andhra Pradesh</title>
+
+    <!-- ArcGIS JS API 4.28 -->
+    <link rel="stylesheet" href="https://js.arcgis.com/4.28/esri/themes/light/main.css">
+    <script src="https://js.arcgis.com/4.28/"></script>
+
+    <!-- App styles (includes Google Fonts import) -->
+    <link rel="stylesheet" href="css/dm-theme.css">
+
+    <!-- Config & modules (order matters) -->
+    <script src="js/dm-config.js"></script>
+    <script src="js/dm-auth.js"></script>
+    <script src="js/dm-renderers.js"></script>
+    <script src="js/dm-export.js"></script>
+    <script src="js/dm-tree.js"></script>
+    <script src="js/dm-detail.js"></script>
+    <script src="js/dm-filters.js"></script>
+    <script src="js/dm-map.js"></script>
+    <script src="js/dm-structure.js"></script>
+</head>
+<body>
+
+<!-- ── Layer 1: Tricolor Stripe ── -->
+<div class="tricolor-bar"></div>
+
+<!-- ── Layer 2: Institutional Header ── -->
+<div class="inst-header">
+    <img class="emblem"
+         src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Emblem_of_India.svg/200px-Emblem_of_India.svg.png"
+         alt="National Emblem of India"
+         onerror="this.style.display='none'">
+    <div class="title-block">
+        <div class="gov-name">Government of Andhra Pradesh</div>
+        <div class="authority-name">Andhra Pradesh State Disaster Management Authority</div>
+        <div class="app-title">Disaster Management Personnel Directory</div>
+    </div>
+    <div class="stats-bar" id="stats-bar">
+        <span class="stat">Loading...</span>
+    </div>
+    <img class="logo-right"
+         src="https://apsdmagis.ap.gov.in/gisportal/sharing/rest/content/items/9a2a82b11aaa4e99b877567efe3de99c/data"
+         alt="APSDMA"
+         onerror="this.style.display='none'">
+</div>
+
+<!-- ── Layer 3: Navigation Tab Bar ── -->
+<div class="navbar">
+    <button class="nav-tab active" id="tab-directory">Directory</button>
+    <button class="nav-tab" id="tab-structure">Structure</button>
+    <button class="nav-tab" id="tab-about">About</button>
+
+    <span class="nav-separator"></span>
+
+    <!-- View mode pills (visible only on Directory tab) -->
+    <div class="view-pills" id="view-pills">
+        <button class="view-pill active" data-mode="department" title="Browse by Department & Category">Department</button>
+        <button class="view-pill" data-mode="geographic" title="Browse by District, Mandal, Village">Geographic</button>
+        <button class="view-pill" data-mode="command" title="Chain of Command: CM → CS → District → Mandal">Chain of Command</button>
+        <button class="view-pill" data-mode="disaster" title="Active Disaster Duty Assignments">Disaster Duty</button>
+    </div>
+
+    <div class="nav-right">
+        <button class="nav-btn" id="btn-reset" title="Reset all filters">Reset</button>
+        <button class="nav-btn nav-btn-primary" id="btn-export" title="Export to CSV">Export CSV</button>
+    </div>
+</div>
+
+<!-- ── Filter Bar (Directory mode only) ── -->
+<div class="filterbar" id="filterbar">
+    <span class="filter-label">Filters:</span>
+    <select id="filter-sector"><option value="">All Groups</option></select>
+    <select id="filter-category"><option value="">All Departments</option></select>
+    <select id="filter-district"><option value="">All Districts</option></select>
+    <select id="filter-level"><option value="">All Levels</option></select>
+    <select id="filter-status"><option value="">All Status</option></select>
+    <input type="search" id="search-box" placeholder="Search name, phone, email...">
+</div>
+
+<!-- ── Directory View (3-column layout) ── -->
+<div class="main" id="directory-view">
+
+    <!-- Left: Hierarchy Tree -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            Hierarchy Tree <span class="count" id="tree-count">0</span>
+        </div>
+        <div class="sidebar-search">
+            <input type="search" id="sidebar-search" placeholder="Search name, phone, dept, district, designation...">
+        </div>
+        <div class="tree-container" id="tree-container">
+            <div class="empty-state">
+                <div class="icon">&#128194;</div>
+                <h3>Loading Personnel...</h3>
+                <p>Connecting to feature service</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Center: Map -->
+    <div class="map-container">
+        <div id="viewDiv"></div>
+        <div class="map-legend" id="map-legend"></div>
+        <div class="loading-overlay" id="loading">
+            <div class="spinner"></div>
+        </div>
+    </div>
+
+    <!-- Right: Detail Card -->
+    <div class="detail-panel hidden" id="detail-panel">
+        <div class="detail-header">
+            <div class="detail-photo" id="detail-photo">&#128100;</div>
+            <div class="detail-name" id="detail-name">&mdash;</div>
+            <div class="detail-desg" id="detail-desg">&mdash;</div>
+            <div class="detail-cat-badge" id="detail-badge">&mdash;</div>
+            <div class="detail-sector-label" id="detail-sector"></div>
+        </div>
+        <div class="detail-body">
+
+            <!-- DM Role -->
+            <div class="detail-section" id="d-dm-role-section" style="display:none;">
+                <h4>Disaster Management Role</h4>
+                <div class="detail-row"><span class="label">DM Role</span><span class="value" id="d-dm-role" style="font-weight:700;color:var(--accent);">&mdash;</span></div>
+                <div class="detail-row"><span class="label">Active</span><span class="value" id="d-dm-active">&mdash;</span></div>
+                <div class="detail-row"><span class="label">Order No.</span><span class="value" id="d-dm-order">&mdash;</span></div>
+                <div class="detail-row"><span class="label">Since</span><span class="value" id="d-dm-since">&mdash;</span></div>
+            </div>
+
+            <!-- Disaster Duty -->
+            <div class="detail-section" id="d-disaster-section" style="display:none;">
+                <h4 style="color:#e53e3e;">Active Disaster Duty</h4>
+                <div class="detail-row"><span class="label">Disaster</span><span class="value" id="d-disaster-name" style="font-weight:700;color:#e53e3e;">&mdash;</span></div>
+                <div class="detail-row"><span class="label">Type</span><span class="value" id="d-disaster-type">&mdash;</span></div>
+                <div class="detail-row"><span class="label">Duty</span><span class="value" id="d-disaster-duty">&mdash;</span></div>
+                <div class="detail-row"><span class="label">Location</span><span class="value" id="d-disaster-loc">&mdash;</span></div>
+                <div class="detail-row"><span class="label">Status</span><span class="value" id="d-disaster-status">&mdash;</span></div>
+                <div class="detail-row"><span class="label">Period</span><span class="value" id="d-disaster-period">&mdash;</span></div>
+                <div class="detail-row"><span class="label">Shift</span><span class="value" id="d-disaster-shift">&mdash;</span></div>
+                <div class="detail-row"><span class="label">Team</span><span class="value" id="d-disaster-team">&mdash;</span></div>
+            </div>
+
+            <!-- Posting Details -->
+            <div class="detail-section">
+                <h4>Posting Details</h4>
+                <div class="detail-row"><span class="label">Department</span><span class="value" id="d-dept">&mdash;</span></div>
+                <div class="detail-row"><span class="label">Sub-Dept</span><span class="value" id="d-sub-dept">&mdash;</span></div>
+                <div class="detail-row" id="d-rank-row" style="display:none;"><span class="label">Rank</span><span class="value" id="d-rank">&mdash;</span></div>
+                <div class="detail-row"><span class="label">Employee ID</span><span class="value" id="d-emp-id">&mdash;</span></div>
+                <div class="detail-row"><span class="label">Jurisdiction</span><span class="value" id="d-jurisdiction">&mdash;</span></div>
+                <div class="detail-row"><span class="label">District</span><span class="value" id="d-district">&mdash;</span></div>
+                <div class="detail-row"><span class="label">Mandal</span><span class="value" id="d-mandal">&mdash;</span></div>
+                <div class="detail-row"><span class="label">Village</span><span class="value" id="d-village">&mdash;</span></div>
+                <div class="detail-row"><span class="label">Status</span><span class="value" id="d-status">&mdash;</span></div>
+                <div class="detail-row"><span class="label">Posted Since</span><span class="value" id="d-posting-date">&mdash;</span></div>
+                <div class="detail-row"><span class="label">Office</span><span class="value" id="d-address">&mdash;</span></div>
+            </div>
+
+            <!-- Reporting Chain -->
+            <div class="detail-section">
+                <h4>Reporting Chain</h4>
+                <div class="detail-row"><span class="label">Reports To</span><span class="value" id="d-reports-to">&mdash;</span></div>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="detail-section">
+                <h4>Contact Information</h4>
+                <div class="detail-row"><span class="label">Personal Mob.</span><span class="value" id="d-phone">&mdash;</span></div>
+                <div class="detail-row"><span class="label">Alt Mobile</span><span class="value" id="d-phone-alt">&mdash;</span></div>
+                <div class="detail-row"><span class="label">WhatsApp</span><span class="value" id="d-whatsapp">&mdash;</span></div>
+                <div class="detail-row"><span class="label">Office Phone</span><span class="value" id="d-office-phone">&mdash;</span></div>
+                <div class="detail-row"><span class="label">Intercom</span><span class="value" id="d-intercom">&mdash;</span></div>
+                <div class="detail-row"><span class="label">Fax</span><span class="value" id="d-fax">&mdash;</span></div>
+                <div class="detail-row"><span class="label">Res. Phone</span><span class="value" id="d-res-phone">&mdash;</span></div>
+                <div class="detail-row"><span class="label">HAM Radio</span><span class="value" id="d-ham">&mdash;</span></div>
+                <div class="detail-row"><span class="label">Email</span><span class="value" id="d-email">&mdash;</span></div>
+                <div class="detail-row"><span class="label">Res. Address</span><span class="value" id="d-res-addr">&mdash;</span></div>
+            </div>
+
+            <!-- Capabilities -->
+            <div class="detail-section" id="d-capabilities-section" style="display:none;">
+                <h4>Capabilities & Resources</h4>
+                <div class="detail-row"><span class="label">Blood Group</span><span class="value" id="d-blood-group">&mdash;</span></div>
+                <div class="detail-row"><span class="label">Languages</span><span class="value" id="d-languages">&mdash;</span></div>
+                <div class="detail-row"><span class="label">Training</span><span class="value" id="d-training">&mdash;</span></div>
+                <div class="detail-row"><span class="label">Equipment</span><span class="value" id="d-equipment">&mdash;</span></div>
+                <div class="detail-row"><span class="label">24x7 Avail.</span><span class="value" id="d-availability">&mdash;</span></div>
+            </div>
+
+            <!-- NGO / Organization -->
+            <div class="detail-section" id="d-ngo-section" style="display:none;">
+                <h4>Organization</h4>
+                <div class="detail-row"><span class="label">NGO Name</span><span class="value" id="d-ngo">&mdash;</span></div>
+                <div class="detail-row"><span class="label">Specialization</span><span class="value" id="d-spec">&mdash;</span></div>
+            </div>
+
+            <!-- Remarks -->
+            <div class="detail-section">
+                <h4>Remarks</h4>
+                <div class="detail-row"><span class="value" id="d-remarks" style="color:var(--text-muted);font-style:italic;">&mdash;</span></div>
+            </div>
+        </div>
+
+        <div class="detail-actions">
+            <button class="btn-call" id="btn-call" title="Call primary phone">&#128222; Call</button>
+            <button class="btn-whatsapp" id="btn-whatsapp" title="Open WhatsApp">&#128172; WhatsApp</button>
+            <button id="btn-close-detail">Close</button>
+        </div>
+    </div>
+</div>
+
+<!-- ── Structure Editor Panel ── -->
+<div class="structure-panel" id="structure-panel">
+    <!-- Top toolbar -->
+    <div class="struct-toolbar">
+        <div class="struct-toolbar-group">
+            <span class="struct-toolbar-label">Layout</span>
+            <select id="struct-layout" class="struct-select">
+                <option value="UD">Top-Down</option>
+                <option value="LR">Left-Right</option>
+                <option value="physics">Force-Directed</option>
+            </select>
+        </div>
+        <div class="struct-toolbar-group">
+            <span class="struct-toolbar-label">Color</span>
+            <select id="struct-color-scheme" class="struct-select">
+                <option value="sector">By Sector</option>
+                <option value="level">By Level</option>
+                <option value="type">By Type</option>
+            </select>
+        </div>
+        <div class="struct-toolbar-group">
+            <span class="struct-toolbar-label">Show</span>
+            <label class="struct-cb"><input type="checkbox" id="struct-show-sectors" checked> Sectors</label>
+            <label class="struct-cb"><input type="checkbox" id="struct-show-departments" checked> Depts</label>
+            <label class="struct-cb"><input type="checkbox" id="struct-show-hods" checked> HODs</label>
+        </div>
+        <div class="struct-toolbar-group" style="margin-left:auto;">
+            <button id="struct-fit" class="struct-btn" title="Fit entire graph in view">Fit View</button>
+            <button id="struct-export" class="struct-btn" title="Export structure as JSON">Export</button>
+        </div>
+        <div id="struct-alert" class="struct-alert" style="display:none;"></div>
+    </div>
+
+    <!-- Main body: toolbox + canvas + properties -->
+    <div class="struct-body">
+        <!-- Left toolbox -->
+        <div class="struct-toolbox" id="struct-toolbox">
+            <div class="struct-section">
+                <h4>Focus / Navigate</h4>
+                <select id="struct-focus-sector" class="struct-select-full"><option value="">All Sectors</option></select>
+                <select id="struct-focus-dept" class="struct-select-full"><option value="">All Departments</option></select>
+            </div>
+
+            <div class="struct-section">
+                <h4>Add Node</h4>
+                <select id="struct-node-type" class="struct-select-full">
+                    <option value="department">Department</option>
+                    <option value="hod">HOD / Sub-Department</option>
+                    <option value="district">District Office</option>
+                    <option value="person">Person</option>
+                    <option value="custom">Custom</option>
+                </select>
+                <input type="text" id="struct-node-name" class="struct-input" placeholder="Node name...">
+                <select id="struct-node-parent" class="struct-select-full"><option value="">No parent</option></select>
+                <button id="struct-add-node" class="struct-btn struct-btn-accent">+ Add Node</button>
+            </div>
+
+            <div class="struct-section">
+                <h4>Add Connection</h4>
+                <select id="struct-conn-from" class="struct-select-full"><option value="">From...</option></select>
+                <select id="struct-conn-to" class="struct-select-full"><option value="">To...</option></select>
+                <select id="struct-conn-type" class="struct-select-full"><option value="">Connection type...</option></select>
+                <button id="struct-add-conn" class="struct-btn struct-btn-accent">+ Add Connection</button>
+            </div>
+
+            <div class="struct-section">
+                <h4>Actions</h4>
+                <button id="struct-delete" class="struct-btn struct-btn-danger">Delete Selected</button>
+            </div>
+
+            <div class="struct-section">
+                <h4>Connection Types</h4>
+                <div class="struct-legend" id="struct-legend"></div>
+            </div>
+
+            <div class="struct-section">
+                <h4>Node Shapes</h4>
+                <div class="struct-shapes-legend">
+                    <div class="sl-item"><span class="sl-shape sl-box-shape" style="background:#0c2340;color:#fff;">Aa</span><span class="sl-label">Root</span></div>
+                    <div class="sl-item"><span class="sl-shape sl-box-shape" style="background:#e53e3e;color:#fff;">Aa</span><span class="sl-label">Sector (10)</span></div>
+                    <div class="sl-item"><span class="sl-shape sl-box-shape" style="background:#e8ecf0;border:2px solid #5f6b7a;color:#333;">Aa</span><span class="sl-label">Department (40)</span></div>
+                    <div class="sl-item"><span class="sl-shape sl-ellipse-shape" style="background:#f5f7fa;border:2px solid #8896a6;color:#333;">Aa</span><span class="sl-label">HOD (93)</span></div>
+                    <div class="sl-item"><span class="sl-shape sl-diamond-shape" style="background:#ebf8ff;border:2px solid #3182ce;color:#333;"></span><span class="sl-label">District Office</span></div>
+                </div>
+            </div>
+
+            <div class="struct-section struct-help">
+                <h4>Tips</h4>
+                <ul>
+                    <li>Double-click a node to zoom in</li>
+                    <li>Drag nodes to reposition</li>
+                    <li>Scroll to zoom in/out</li>
+                    <li>Click + Ctrl for multi-select</li>
+                    <li>Arrow keys to pan the view</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Canvas (vis.js renders here) -->
+        <div id="structure-canvas" class="struct-canvas"></div>
+
+        <!-- Right properties panel -->
+        <div class="struct-props" id="struct-props">
+            <div class="struct-props-header">Properties</div>
+            <div id="struct-props-content" class="struct-props-body">
+                <div class="sp-empty"><div class="sp-empty-icon">&#128065;</div>Click a node or connection<br>to view its properties<br><br><small>Double-click to zoom in</small></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ── About Panel (replaces directory view when active) ── -->
+<div class="about-panel" id="about-panel">
+    <div class="about-hero">
+        <h2>About the DM Personnel Directory</h2>
+        <p>A comprehensive, GIS-enabled disaster management personnel tracking system for
+           Andhra Pradesh, organized by the official 40 State Departments from codes.ap.gov.in.</p>
+    </div>
+    <div class="about-content" id="about-content">
+        <!-- Populated by JavaScript from DMP.ABOUT -->
+    </div>
+</div>
+
+<!-- ── Footer (visible on About tab, or when scrolled on Directory) ── -->
+<div class="site-footer" id="site-footer">
+    <div class="footer-tricolor"></div>
+    <div class="footer-main">
+        <div class="footer-grid" id="footer-grid">
+            <!-- Populated by JavaScript from DMP.FOOTER -->
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2026 Andhra Pradesh State Disaster Management Authority (APSDMA), Government of Andhra Pradesh. All Rights Reserved.
+    </div>
+</div>
+
+<!-- ── App Controller ── -->
+<script>
+(function() {
+    "use strict";
+
+    var currentViewMode = "department";
+    var currentTab = "directory";
+    var allPersonnel = [];
+    var selectedPerson = null;
+
+    // ── Build About content from config ──
+    function buildAboutContent() {
+        var container = document.getElementById("about-content");
+        var sections = [
+            { title: "Overview", html: DMP.ABOUT.OVERVIEW },
+            { title: "Data Architecture: 10 Groups &rarr; 40 State Departments", html: DMP.ABOUT.ARCHITECTURE },
+            { title: "4 View Modes", html: DMP.ABOUT.VIEW_MODES },
+            { title: "Hierarchy Levels (1\u20136)", html: DMP.ABOUT.HIERARCHY },
+            { title: "How It Works", html: DMP.ABOUT.HOW_IT_WORKS },
+            { title: "Real-World Usage Scenarios", html: DMP.ABOUT.REAL_WORLD },
+            { title: "Data Entry via Survey123", html: DMP.ABOUT.DATA_ENTRY },
+            { title: "Credits & Technology", html: DMP.ABOUT.CREDITS }
+        ];
+        var html = "";
+        for (var i = 0; i < sections.length; i++) {
+            html += '<div class="about-section"><h3>' + sections[i].title + '</h3>' + sections[i].html + '</div>';
+        }
+        container.innerHTML = html;
+    }
+
+    // ── Build Footer from config ──
+    function buildFooter() {
+        var grid = document.getElementById("footer-grid");
+        var f = DMP.FOOTER;
+
+        var col1 = '<div class="footer-col"><h4>About APSDMA</h4>';
+        col1 += '<p>' + f.ABOUT_TEXT + '</p>';
+        col1 += '<p style="opacity:.6;font-size:11px;">' + f.ADDRESS + '</p></div>';
+
+        var col2 = '<div class="footer-col"><h4>Emergency Contacts</h4><ul class="emergency-list">';
+        for (var i = 0; i < f.EMERGENCY_CONTACTS.length; i++) {
+            var c = f.EMERGENCY_CONTACTS[i];
+            col2 += '<li><span class="em-label">' + c.label + '</span><span class="em-num">' + c.number + '</span></li>';
+        }
+        col2 += '</ul></div>';
+
+        var col3 = '<div class="footer-col"><h4>Quick Links</h4><ul class="quick-links">';
+        for (var j = 0; j < f.QUICK_LINKS.length; j++) {
+            var l = f.QUICK_LINKS[j];
+            col3 += '<li><a href="' + l.url + '" target="_blank" rel="noopener">' + l.label + ' &rarr;</a></li>';
+        }
+        col3 += '</ul></div>';
+
+        grid.innerHTML = col1 + col2 + col3;
+    }
+
+    // ── Tab switching ──
+    function switchTab(tab) {
+        currentTab = tab;
+        var dirView = document.getElementById("directory-view");
+        var aboutPanel = document.getElementById("about-panel");
+        var structPanel = document.getElementById("structure-panel");
+        var filterbar = document.getElementById("filterbar");
+        var viewPills = document.getElementById("view-pills");
+        var navRight = document.querySelector(".nav-right");
+        var footer = document.getElementById("site-footer");
+
+        document.getElementById("tab-directory").classList.toggle("active", tab === "directory");
+        document.getElementById("tab-structure").classList.toggle("active", tab === "structure");
+        document.getElementById("tab-about").classList.toggle("active", tab === "about");
+
+        // Hide everything first
+        dirView.style.display = "none";
+        aboutPanel.classList.remove("visible");
+        structPanel.classList.remove("visible");
+        filterbar.classList.add("hidden");
+        viewPills.style.display = "none";
+        navRight.style.display = "none";
+        footer.classList.remove("visible");
+
+        if (tab === "directory") {
+            dirView.style.display = "flex";
+            filterbar.classList.remove("hidden");
+            viewPills.style.display = "flex";
+            navRight.style.display = "flex";
+        } else if (tab === "structure") {
+            structPanel.classList.add("visible");
+            DMP.structure.show();
+        } else if (tab === "about") {
+            aboutPanel.classList.add("visible");
+            footer.classList.add("visible");
+        }
+    }
+
+    // ── Select a person ──
+    function selectPerson(person) {
+        selectedPerson = person;
+        DMP.tree.highlightPerson(person.oid);
+        DMP.detail.show(person);
+        if (person.geometry) {
+            DMP.map.zoomTo(person.geometry);
+            DMP.map.highlight(person.oid);
+        }
+    }
+
+    // ── Handle filter change ──
+    function onFilterChange(filtered) {
+        DMP.tree.build(currentViewMode, filtered);
+        DMP.map.setDefinitionExpression(DMP.filters.getWhereClause());
+        var dist = (document.getElementById("filter-district") || {}).value;
+        if (dist) DMP.map.showMandals(true);
+    }
+
+    // ── View mode switching ──
+    var sidebarTitles = {
+        "department": "AP State Departments",
+        "geographic": "Geographic Browse",
+        "command": "Chain of Command",
+        "disaster": "Disaster Duty"
+    };
+
+    function switchViewMode(mode) {
+        currentViewMode = mode;
+        document.querySelectorAll(".view-pill").forEach(function(pill) {
+            pill.classList.toggle("active", pill.dataset.mode === mode);
+        });
+        // Update sidebar header title
+        var headerEl = document.querySelector(".sidebar-header");
+        if (headerEl) {
+            var title = sidebarTitles[mode] || "Hierarchy Tree";
+            headerEl.innerHTML = title + ' <span class="count" id="tree-count">' +
+                (DMP.filters.getFiltered() || []).length + '</span>';
+        }
+        DMP.map.setRenderer(DMP.renderers.getRendererForMode(mode));
+        document.getElementById("map-legend").innerHTML = DMP.renderers.buildLegendHTML(mode);
+        DMP.tree.build(mode, DMP.filters.getFiltered());
+    }
+
+    // ── Build static content ──
+    buildAboutContent();
+    buildFooter();
+
+    // ── Initialize modules ──
+    DMP.tree.init("tree-container", selectPerson);
+    DMP.filters.init(onFilterChange);
+
+    DMP.map.init(function() {
+        DMP.map.loadPersonnel(function(err, personnel) {
+            document.getElementById("loading").style.display = "none";
+
+            if (err) {
+                console.error("Error loading personnel:", err);
+                document.getElementById("loading").innerHTML =
+                    '<div style="text-align:center;color:var(--text-muted);">' +
+                        '<div style="font-size:32px;margin-bottom:8px;">&#9888;</div>' +
+                        '<b>Could not load personnel data</b><br>' +
+                        '<small>' + (err.message || "Feature service may not be published yet.") + '</small>' +
+                    '</div>';
+                document.getElementById("loading").style.display = "flex";
+                return;
+            }
+
+            // Migrate legacy categories → current AP department names
+            allPersonnel = personnel.map(function(p) {
+                if (p.category && DMP.migrateCategory) {
+                    p.category = DMP.migrateCategory(p.category);
+                }
+                return p;
+            });
+            DMP.filters.setPersonnel(allPersonnel);
+            DMP.filters.apply();
+            document.getElementById("map-legend").innerHTML = DMP.renderers.buildLegendHTML("department");
+
+            DMP.map.onClick(function(oid) {
+                var person = allPersonnel.find(function(p) { return p.oid === oid; });
+                if (person) selectPerson(person);
+            });
+        });
+    });
+
+    // Tab clicks
+    document.getElementById("tab-directory").addEventListener("click", function() { switchTab("directory"); });
+    document.getElementById("tab-structure").addEventListener("click", function() { switchTab("structure"); });
+    document.getElementById("tab-about").addEventListener("click", function() { switchTab("about"); });
+
+    // View mode pill clicks
+    document.querySelectorAll(".view-pill").forEach(function(pill) {
+        pill.addEventListener("click", function() {
+            switchViewMode(this.dataset.mode);
+        });
+    });
+
+    // Close detail panel
+    document.getElementById("btn-close-detail").addEventListener("click", function() {
+        DMP.detail.hide();
+        DMP.map.clearHighlight();
+    });
+
+})();
+</script>
+</body>
+</html>

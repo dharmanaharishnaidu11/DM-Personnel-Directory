@@ -1,0 +1,70 @@
+{
+    "folders": [
+        {
+            "name": "Webapp",
+            "path": "webapp"
+        },
+        {
+            "name": "APIs & Sync",
+            "path": "apis"
+        },
+        {
+            "name": "Database",
+            "path": "database"
+        },
+        {
+            "name": "Data",
+            "path": "data"
+        },
+        {
+            "name": "Project Root",
+            "path": "."
+        }
+    ],
+    "settings": {
+        "files.exclude": {
+            "**/.git": true,
+            "**/__pycache__": true,
+            "**/*.pyc": true
+        },
+        "search.exclude": {
+            "**/vis-network.min.js": true
+        },
+        "editor.tabSize": 4,
+        "workbench.colorCustomizations": {
+            "titleBar.activeBackground": "#1a365d",
+            "titleBar.activeForeground": "#ffffff",
+            "activityBar.background": "#0c2340",
+            "statusBar.background": "#3182ce"
+        }
+    },
+    "tasks": {
+        "version": "2.0.0",
+        "tasks": [
+            {
+                "label": "Deploy to IIS",
+                "type": "shell",
+                "command": "Copy-Item -Path webapp/* -Destination C:/inetpub/wwwroot/dm_personnel/ -Recurse -Force",
+                "group": "build"
+            },
+            {
+                "label": "Sync Personnel (ArcGIS to PG)",
+                "type": "shell",
+                "command": "& 'C:/Program Files/Python312/python.exe' apis/sync_dm_personnel.py",
+                "group": "test"
+            },
+            {
+                "label": "Run Boundary Linkage",
+                "type": "shell",
+                "command": "& 'C:/Program Files/Python312/python.exe' apis/dm_personnel_boundary_link.py",
+                "group": "test"
+            },
+            {
+                "label": "DB Setup",
+                "type": "shell",
+                "command": "& 'C:/Program Files/Python312/python.exe' apis/dm_personnel_db_setup.py",
+                "group": "test"
+            }
+        ]
+    }
+}

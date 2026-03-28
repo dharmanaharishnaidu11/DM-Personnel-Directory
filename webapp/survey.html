@@ -1,0 +1,1472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DM Personnel Registration — APSDMA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1a365d;
+            --accent: #3182ce;
+            --success: #38a169;
+            --danger: #e53e3e;
+            --bg: #f7f8fc;
+            --card: #ffffff;
+            --border: #e2e8f0;
+            --text: #1a2332;
+            --muted: #718096;
+            --saffron: #FF9933;
+            --green: #138808;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); line-height: 1.5; }
+
+        /* ── Tricolor & Header ── */
+        .tricolor { height: 4px; background: linear-gradient(90deg, var(--saffron) 33%, #fff 33% 66%, var(--green) 66%); }
+        .header {
+            background: linear-gradient(135deg, #0c2340, #1a365d);
+            color: #fff; padding: 16px 20px;
+            display: flex; align-items: center; gap: 14px;
+        }
+        .header img { height: 48px; filter: brightness(10); }
+        .header .title-block h1 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 18px; font-weight: 800; }
+        .header .title-block p { font-size: 12px; opacity: .8; }
+
+        /* ── Progress bar ── */
+        .progress-bar { display: flex; padding: 12px 20px; background: #fff; border-bottom: 1px solid var(--border); gap: 4px; }
+        .progress-step {
+            flex: 1; height: 6px; border-radius: 3px; background: #e2e8f0; transition: background .3s;
+        }
+        .progress-step.done { background: var(--success); }
+        .progress-step.active { background: var(--accent); }
+        .step-labels { display: flex; padding: 0 20px; background: #fff; border-bottom: 1px solid var(--border); }
+        .step-label {
+            flex: 1; text-align: center; font-size: 10px; font-weight: 600;
+            text-transform: uppercase; letter-spacing: .4px; color: var(--muted);
+            padding: 6px 0; cursor: pointer; transition: color .2s;
+        }
+        .step-label.active { color: var(--accent); }
+        .step-label.done { color: var(--success); }
+
+        /* ── Form container ── */
+        .form-container { max-width: 680px; margin: 0 auto; padding: 20px 16px 100px; }
+
+        /* ── Sections ── */
+        .section { display: none; }
+        .section.active { display: block; }
+        .section-card {
+            background: var(--card); border-radius: 10px;
+            border: 1px solid var(--border); padding: 20px;
+            margin-bottom: 16px; box-shadow: 0 1px 3px rgba(0,0,0,.06);
+        }
+        .section-title {
+            font-family: 'Plus Jakarta Sans', sans-serif; font-size: 15px;
+            font-weight: 700; color: var(--primary); margin-bottom: 16px;
+            padding-bottom: 8px; border-bottom: 2px solid var(--accent);
+        }
+
+        /* ── Fields ── */
+        .field { margin-bottom: 14px; }
+        .field label {
+            display: block; font-size: 12px; font-weight: 600;
+            color: var(--text); margin-bottom: 4px;
+        }
+        .field label .req { color: var(--danger); }
+        .field input, .field select, .field textarea {
+            width: 100%; padding: 10px 12px; font-size: 14px;
+            font-family: 'Inter', sans-serif; border: 1px solid var(--border);
+            border-radius: 6px; background: #fff; color: var(--text);
+            transition: border-color .2s, box-shadow .2s;
+        }
+        .field input:focus, .field select:focus, .field textarea:focus {
+            outline: none; border-color: var(--accent);
+            box-shadow: 0 0 0 3px rgba(49,130,206,.15);
+        }
+        .field textarea { resize: vertical; min-height: 60px; }
+        .field .hint { font-size: 11px; color: var(--muted); margin-top: 2px; }
+        .field-row { display: flex; gap: 12px; }
+        .field-row .field { flex: 1; }
+
+        /* ── Location picker ── */
+        .location-box {
+            border: 1px solid var(--border); border-radius: 8px;
+            padding: 12px; background: #f8fafc; margin-bottom: 14px;
+        }
+        .location-box .loc-status { font-size: 12px; color: var(--muted); margin-bottom: 8px; }
+        .location-box .loc-coords { font-size: 13px; font-weight: 600; color: var(--accent); }
+        .btn-location {
+            display: inline-flex; align-items: center; gap: 6px;
+            padding: 8px 14px; font-size: 12px; font-weight: 600;
+            border: 1px solid var(--accent); color: var(--accent);
+            background: #fff; border-radius: 6px; cursor: pointer;
+        }
+        .btn-location:hover { background: #ebf4ff; }
+
+        /* ── Custom dropdown input ── */
+        .custom-input {
+            width: 100%; padding: 10px 12px; font-size: 14px;
+            font-family: 'Inter', sans-serif; border: 1px solid var(--accent);
+            border-radius: 6px; background: #fffff0; color: var(--text);
+        }
+
+        /* ── Photo ── */
+        .photo-upload {
+            display: flex; align-items: center; gap: 16px;
+        }
+        .photo-preview {
+            width: 80px; height: 80px; border-radius: 50%;
+            background: #e2e8f0; display: flex; align-items: center;
+            justify-content: center; font-size: 28px; color: var(--muted);
+            overflow: hidden; border: 2px solid var(--border);
+        }
+        .photo-preview img { width: 100%; height: 100%; object-fit: cover; }
+
+        /* ── Navigation ── */
+        .nav-bar {
+            position: fixed; bottom: 0; left: 0; right: 0;
+            background: #fff; border-top: 1px solid var(--border);
+            padding: 12px 20px; display: flex; justify-content: space-between;
+            align-items: center; z-index: 100;
+            box-shadow: 0 -2px 8px rgba(0,0,0,.06);
+        }
+        .btn {
+            padding: 10px 24px; font-size: 14px; font-weight: 600;
+            border-radius: 8px; border: none; cursor: pointer;
+            font-family: 'Inter', sans-serif; transition: all .2s;
+        }
+        .btn-back { background: #edf2f7; color: var(--text); }
+        .btn-back:hover { background: #e2e8f0; }
+        .btn-next { background: var(--accent); color: #fff; }
+        .btn-next:hover { background: #2b6cb0; }
+        .btn-submit { background: var(--success); color: #fff; }
+        .btn-submit:hover { background: #2f855a; }
+        .btn:disabled { opacity: .5; cursor: not-allowed; }
+
+        /* ── Success / Error ── */
+        .result-card {
+            text-align: center; padding: 40px 20px;
+        }
+        .result-icon { font-size: 56px; margin-bottom: 12px; }
+        .result-title { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 20px; font-weight: 800; margin-bottom: 8px; }
+        .result-msg { font-size: 14px; color: var(--muted); margin-bottom: 20px; }
+        .btn-another { display: inline-block; padding: 10px 24px; font-size: 14px; font-weight: 600; background: var(--accent); color: #fff; border-radius: 8px; text-decoration: none; cursor: pointer; border: none; }
+
+        /* ── Footer ── */
+        .footer { text-align: center; font-size: 11px; color: var(--muted); padding: 16px; }
+
+        /* ── Responsive ── */
+        @media (max-width: 480px) {
+            .field-row { flex-direction: column; gap: 0; }
+            .header .title-block h1 { font-size: 15px; }
+            .form-container { padding: 12px 10px 100px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="tricolor"></div>
+
+<div class="header">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Emblem_of_India.svg/200px-Emblem_of_India.svg.png"
+         alt="Emblem" onerror="this.style.display='none'">
+    <div class="title-block">
+        <p>Government of Andhra Pradesh</p>
+        <h1>DM Personnel Registration</h1>
+        <p>Andhra Pradesh State Disaster Management Authority</p>
+    </div>
+</div>
+
+<!-- Progress -->
+<div class="progress-bar" id="progress-bar"></div>
+<div class="step-labels" id="step-labels"></div>
+
+<div class="form-container">
+    <!-- ═══════ Section 1: Personal & Posting ═══════ -->
+    <div class="section" id="sec-1">
+        <div class="section-card">
+            <div class="section-title">Personal Details</div>
+            <div class="field-row">
+                <div class="field" style="flex:0 0 100px;">
+                    <label>Title <span class="req">*</span></label>
+                    <select id="f-title" required>
+                        <option value="">--</option>
+                        <option value="Sri">Sri</option>
+                        <option value="Smt">Smt</option>
+                        <option value="Mr">Mr</option>
+                        <option value="Mrs">Mrs</option>
+                        <option value="Ms">Ms</option>
+                        <option value="Miss">Miss</option>
+                        <option value="Dr">Dr</option>
+                        <option value="Prof">Prof</option>
+                        <option value="Col">Col</option>
+                        <option value="Maj">Maj</option>
+                        <option value="Capt">Capt</option>
+                        <option value="Lt">Lt</option>
+                        <option value="Cmdr">Cmdr</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label>Surname / Initial <span class="req">*</span></label>
+                    <input type="text" id="f-surname" required placeholder="e.g. K / Krishnamurthy">
+                </div>
+            </div>
+            <div class="field-row">
+                <div class="field">
+                    <label>First Name <span class="req">*</span></label>
+                    <input type="text" id="f-first_name" required placeholder="e.g. Venkateshwar">
+                </div>
+                <div class="field">
+                    <label>Middle Name</label>
+                    <input type="text" id="f-middle_name" placeholder="e.g. Prasad">
+                </div>
+                <div class="field">
+                    <label>Last Name</label>
+                    <input type="text" id="f-last_name" placeholder="e.g. Rao">
+                </div>
+            </div>
+            <div class="field">
+                <label>Full Name (auto-generated)</label>
+                <input type="text" id="f-person_name" readonly style="background:#f7f8fc;color:var(--muted);" placeholder="Will be composed from above fields">
+                <div class="hint">This is the name that appears in the directory. You can edit it if needed.</div>
+            </div>
+            <div class="field">
+                <label>Date of Birth</label>
+                <input type="date" id="f-date_of_birth">
+            </div>
+            </div>
+
+            <div class="section-card">
+            <div class="section-title">Parent Cadre & Current Posting</div>
+            <div class="field-row">
+                <div class="field">
+                    <label>Parent Department <span class="req">*</span></label>
+                    <select id="f-parent_department" required>
+                        <option value="">-- Select --</option>
+                        <option>AP Police</option>
+                        <option>Revenue</option>
+                        <option>Fire Services</option>
+                        <option>SDRF</option>
+                        <option>NDRF</option>
+                        <option>Health & Medical</option>
+                        <option>Panchayat Raj</option>
+                        <option>Municipal Administration</option>
+                        <option>Agriculture</option>
+                        <option>Animal Husbandry</option>
+                        <option>Water Resources / Irrigation</option>
+                        <option>Transport / R&B</option>
+                        <option>Energy / APSPDCL / APEPDCL</option>
+                        <option>Education (School)</option>
+                        <option>Education (Higher)</option>
+                        <option>Fisheries</option>
+                        <option>Forest</option>
+                        <option>Disaster Management / APSDMA</option>
+                        <option>Civil Supplies</option>
+                        <option>Social Welfare</option>
+                        <option>Tribal Welfare</option>
+                        <option>Women & Child Welfare</option>
+                        <option>Labour</option>
+                        <option>Industries</option>
+                        <option>IT & Communications</option>
+                        <option>Housing</option>
+                        <option>Finance</option>
+                        <option>Planning</option>
+                        <option>General Administration</option>
+                        <option>Home (Civil Defence)</option>
+                        <option>Home (Home Guards)</option>
+                        <option>Home (Prisons)</option>
+                        <option>Sainik Welfare</option>
+                        <option>Indian Army</option>
+                        <option>Indian Navy</option>
+                        <option>Indian Air Force</option>
+                        <option>Indian Coast Guard</option>
+                        <option>BSF</option>
+                        <option>CRPF</option>
+                        <option>CISF</option>
+                        <option>NCC</option>
+                        <option>NGO / Voluntary Organization</option>
+                        <option>Private Sector / CSR</option>
+                        <option value="_custom">Other (type below)</option>
+                    </select>
+                    <input type="text" id="f-parent_department_custom" class="custom-input" style="display:none;margin-top:4px;" placeholder="Type your parent department">
+                    <div class="hint">The department/service you originally belong to</div>
+                </div>
+                <div class="field">
+                    <label>Parent Designation / Rank</label>
+                    <select id="f-rank_designation_select">
+                        <option value="">-- Select --</option>
+                        <optgroup label="IAS / Revenue">
+                            <option>Chief Secretary</option>
+                            <option>Special Chief Secretary</option>
+                            <option>Principal Secretary</option>
+                            <option>Secretary</option>
+                            <option>Commissioner</option>
+                            <option>Joint Secretary</option>
+                            <option>District Collector</option>
+                            <option>Joint Collector</option>
+                            <option>RDO</option>
+                            <option>Tahsildar</option>
+                            <option>Deputy Tahsildar</option>
+                            <option>VRO</option>
+                        </optgroup>
+                        <optgroup label="IPS / Police">
+                            <option>DGP</option>
+                            <option>Addl DGP</option>
+                            <option>IG</option>
+                            <option>DIG</option>
+                            <option>SP</option>
+                            <option>Addl SP</option>
+                            <option>DSP</option>
+                            <option>CI</option>
+                            <option>SI</option>
+                            <option>ASI</option>
+                            <option>Head Constable</option>
+                            <option>Constable</option>
+                        </optgroup>
+                        <optgroup label="Fire & SDRF">
+                            <option>Director Fire Services</option>
+                            <option>Addl Director Fire</option>
+                            <option>District Fire Officer</option>
+                            <option>Station Fire Officer</option>
+                            <option>Leading Fireman</option>
+                            <option>Fireman</option>
+                            <option>Commandant SDRF</option>
+                            <option>2IC SDRF</option>
+                            <option>Company Commander</option>
+                            <option>Platoon Commander</option>
+                            <option>Assistant Commandant</option>
+                        </optgroup>
+                        <optgroup label="Health / Medical">
+                            <option>Director Public Health</option>
+                            <option>Joint Director Health</option>
+                            <option>DMHO</option>
+                            <option>Civil Surgeon</option>
+                            <option>PHC Medical Officer</option>
+                            <option>ANM</option>
+                            <option>ASHA Worker</option>
+                        </optgroup>
+                        <optgroup label="Engineering / Technical">
+                            <option>Engineer-in-Chief</option>
+                            <option>Chief Engineer</option>
+                            <option>Superintending Engineer</option>
+                            <option>Executive Engineer</option>
+                            <option>Deputy Executive Engineer</option>
+                            <option>Assistant Engineer</option>
+                            <option>AEE</option>
+                            <option>Junior Engineer</option>
+                            <option>Lineman</option>
+                        </optgroup>
+                        <optgroup label="Panchayat Raj / Rural">
+                            <option>PD DRDA</option>
+                            <option>MPDO</option>
+                            <option>Panchayat Secretary</option>
+                            <option>Gram Volunteer</option>
+                            <option>Ward Volunteer</option>
+                        </optgroup>
+                        <optgroup label="Education">
+                            <option>DEO</option>
+                            <option>DIET Principal</option>
+                            <option>MEO</option>
+                            <option>Headmaster</option>
+                            <option>Teacher</option>
+                        </optgroup>
+                        <optgroup label="Armed Forces">
+                            <option>Brigadier</option>
+                            <option>Colonel</option>
+                            <option>Lt Colonel</option>
+                            <option>Major</option>
+                            <option>Captain</option>
+                            <option>Lieutenant</option>
+                            <option>Subedar Major</option>
+                            <option>Subedar</option>
+                            <option>Naib Subedar</option>
+                            <option>Havildar</option>
+                            <option>Naik</option>
+                            <option>Sepoy</option>
+                            <option>Commander (Navy)</option>
+                            <option>Wing Commander (AF)</option>
+                        </optgroup>
+                        <optgroup label="Other">
+                            <option>Group-I Officer</option>
+                            <option>Group-II Officer</option>
+                            <option>Junior Assistant</option>
+                            <option>Attender</option>
+                            <option>Driver</option>
+                        </optgroup>
+                        <option value="_custom">Other (type below)</option>
+                    </select>
+                    <input type="text" id="f-rank_designation" class="custom-input" style="display:none;margin-top:4px;" placeholder="Type your rank / designation">
+                    <div class="hint">Your substantive post/rank in parent department</div>
+                </div>
+            </div>
+            <div class="field-row">
+                <div class="field">
+                    <label>Current Designation / Post <span class="req">*</span></label>
+                    <select id="f-designation_select">
+                        <option value="">-- Select --</option>
+                        <optgroup label="Apex / State Level">
+                            <option>Chief Minister</option>
+                            <option>Minister</option>
+                            <option>Chief Secretary</option>
+                            <option>DGP</option>
+                            <option>MD APSDMA</option>
+                            <option>Commissioner</option>
+                            <option>Director</option>
+                            <option>Secretary</option>
+                            <option>Principal Secretary</option>
+                            <option>Special Chief Secretary</option>
+                        </optgroup>
+                        <optgroup label="District Level">
+                            <option>District Collector</option>
+                            <option>Joint Collector</option>
+                            <option>SP</option>
+                            <option>Addl SP</option>
+                            <option>DMHO</option>
+                            <option>DEO</option>
+                            <option>District Fire Officer</option>
+                            <option>PD DRDA</option>
+                            <option>Executive Engineer</option>
+                            <option>SE</option>
+                        </optgroup>
+                        <optgroup label="Sub-District / Division">
+                            <option>RDO</option>
+                            <option>DSP</option>
+                            <option>Sub-Collector</option>
+                            <option>Civil Surgeon</option>
+                        </optgroup>
+                        <optgroup label="Mandal / Block">
+                            <option>Tahsildar</option>
+                            <option>MPDO</option>
+                            <option>CI</option>
+                            <option>PHC Medical Officer</option>
+                            <option>MEO</option>
+                            <option>Station Fire Officer</option>
+                            <option>AE / AEE</option>
+                        </optgroup>
+                        <optgroup label="Village / Field">
+                            <option>VRO</option>
+                            <option>SI</option>
+                            <option>ANM</option>
+                            <option>ASHA Worker</option>
+                            <option>Gram Volunteer</option>
+                            <option>Ward Volunteer</option>
+                            <option>Panchayat Secretary</option>
+                            <option>Lineman</option>
+                            <option>Fireman</option>
+                        </optgroup>
+                        <optgroup label="APSDMA / DM Specific">
+                            <option>SEOC Incharge</option>
+                            <option>SEOC Duty Officer</option>
+                            <option>DEOC Incharge</option>
+                            <option>DEOC Duty Officer</option>
+                            <option>Control Room Operator</option>
+                            <option>Nodal Officer DM</option>
+                            <option>IRS Commander</option>
+                            <option>IRS Operations Chief</option>
+                        </optgroup>
+                        <option value="_custom">Other (type below)</option>
+                    </select>
+                    <input type="text" id="f-designation" class="custom-input" style="display:none;margin-top:4px;" placeholder="Type your current designation">
+                    <div class="hint">The post you are currently working in</div>
+                </div>
+                <div class="field">
+                    <label>Posting Type <span class="req">*</span></label>
+                    <select id="f-posting_type" required>
+                        <option value="Regular">Regular</option>
+                        <option value="Deputation">Deputation</option>
+                        <option value="Attachment">Attachment</option>
+                        <option value="Additional Charge">Additional Charge</option>
+                        <option value="FAC">FAC (Full Additional Charge)</option>
+                        <option value="In-charge">In-charge</option>
+                        <option value="Contract">Contract</option>
+                        <option value="Outsourcing">Outsourcing</option>
+                        <option value="Volunteer">Volunteer</option>
+                    </select>
+                    <div class="hint">Regular = own department, Deputation = posted to another dept by GO, Attachment = temporary assignment</div>
+                </div>
+            </div>
+            <div class="field">
+                <label>Employee ID / Service No.</label>
+                <input type="text" id="f-employee_id" placeholder="e.g. AP-REV-2024-1234">
+            </div>
+        </div>
+
+        <div class="section-card">
+            <div class="section-title">Department & Posting</div>
+            <div class="field-row">
+                <div class="field">
+                    <label>Department Group <span class="req">*</span></label>
+                    <select id="f-sector" required>
+                        <option value="">-- Select Group --</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label>State Department <span class="req">*</span></label>
+                    <select id="f-category" required>
+                        <option value="">-- Select Department --</option>
+                    </select>
+                </div>
+            </div>
+            <div class="field-row">
+                <div class="field">
+                    <label>Sub-Department / HOD</label>
+                    <select id="f-sub_department">
+                        <option value="">-- Select if applicable --</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label>Department (free text)</label>
+                    <input type="text" id="f-department" placeholder="For departments not listed above">
+                </div>
+            </div>
+            <div class="field-row">
+                <div class="field">
+                    <label>Hierarchy Level <span class="req">*</span></label>
+                    <select id="f-hierarchy_level" required>
+                        <option value="">-- Select Level --</option>
+                        <option value="1">L1 - Apex / State (CM, CS, DGP)</option>
+                        <option value="2">L2 - Department Head (Secretary, Commissioner)</option>
+                        <option value="3">L3 - District Head (Collector, SP, DMHO)</option>
+                        <option value="4">L4 - Sub-District (JC, RDO, DSP)</option>
+                        <option value="5">L5 - Mandal / Block (Tahsildar, CI, MPDO)</option>
+                        <option value="6">L6 - Village / Field (VRO, SI, ANM)</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label>Jurisdiction <span class="req">*</span></label>
+                    <select id="f-jurisdiction_type" required>
+                        <option value="">-- Select --</option>
+                        <option value="State">State</option>
+                        <option value="Region">Region</option>
+                        <option value="District">District</option>
+                        <option value="Division">Division</option>
+                        <option value="Mandal">Mandal</option>
+                        <option value="Village">Village</option>
+                        <option value="Ward">Ward</option>
+                        <option value="Institution">Institution</option>
+                    </select>
+                </div>
+            </div>
+            <div class="field-row">
+                <div class="field">
+                    <label>Status <span class="req">*</span></label>
+                    <select id="f-status" required>
+                        <option value="Active">Active</option>
+                        <option value="On Leave">On Leave</option>
+                        <option value="Transferred">Transferred</option>
+                        <option value="Retired">Retired</option>
+                        <option value="Vacant">Vacant</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label>Date of Posting</label>
+                    <input type="date" id="f-date_of_posting">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════ Section 2: Location ═══════ -->
+    <div class="section" id="sec-2">
+        <div class="section-card">
+            <div class="section-title">Posting Location</div>
+            <div class="field-row">
+                <div class="field">
+                    <label>District</label>
+                    <select id="f-district_name">
+                        <option value="">-- Select District --</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label>Mandal</label>
+                    <input type="text" id="f-mandal_name" placeholder="e.g. Ponnur">
+                </div>
+            </div>
+            <div class="field">
+                <label>Village / Town</label>
+                <input type="text" id="f-village_name" placeholder="e.g. Velagapudi">
+            </div>
+            <div class="field">
+                <label>Office Address</label>
+                <textarea id="f-office_address" placeholder="Full office address with pin code"></textarea>
+            </div>
+        </div>
+
+        <div class="section-card">
+            <div class="section-title">Office GPS Location</div>
+            <div class="location-box">
+                <div class="loc-status" id="loc-status">Location not captured yet</div>
+                <div class="loc-coords" id="loc-coords"></div>
+                <input type="hidden" id="f-longitude">
+                <input type="hidden" id="f-latitude">
+            </div>
+            <button type="button" class="btn-location" onclick="captureLocation()">
+                &#128205; Capture My Location (GPS)
+            </button>
+            <div class="field hint" style="margin-top:8px;">
+                Or enter manually:
+            </div>
+            <div class="field-row" style="margin-top:6px;">
+                <div class="field">
+                    <label>Longitude</label>
+                    <input type="number" id="f-lon-manual" step="0.000001" placeholder="e.g. 80.6480">
+                </div>
+                <div class="field">
+                    <label>Latitude</label>
+                    <input type="number" id="f-lat-manual" step="0.000001" placeholder="e.g. 16.5062">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════ Section 3: Contact ═══════ -->
+    <div class="section" id="sec-3">
+        <div class="section-card">
+            <div class="section-title">Contact Information</div>
+            <div class="field-row">
+                <div class="field">
+                    <label>Personal Mobile <span class="req">*</span></label>
+                    <input type="tel" id="f-phone_primary" required placeholder="10-digit number" maxlength="15">
+                </div>
+                <div class="field">
+                    <label>Alternate Mobile</label>
+                    <input type="tel" id="f-phone_alternate" placeholder="10-digit number" maxlength="15">
+                </div>
+            </div>
+            <div class="field-row">
+                <div class="field">
+                    <label>WhatsApp Number</label>
+                    <input type="tel" id="f-whatsapp_number" placeholder="If different from primary" maxlength="15">
+                </div>
+                <div class="field">
+                    <label>Email</label>
+                    <input type="email" id="f-email" placeholder="official.email@ap.gov.in">
+                </div>
+            </div>
+            <div class="field-row">
+                <div class="field">
+                    <label>Office Phone</label>
+                    <input type="tel" id="f-office_phone" placeholder="With STD code" maxlength="20">
+                </div>
+                <div class="field">
+                    <label>Extension</label>
+                    <input type="text" id="f-office_phone_ext" placeholder="Ext." maxlength="10">
+                </div>
+            </div>
+            <div class="field-row">
+                <div class="field">
+                    <label>Intercom No.</label>
+                    <input type="text" id="f-intercom_number" maxlength="20">
+                </div>
+                <div class="field">
+                    <label>Fax</label>
+                    <input type="tel" id="f-fax_number" maxlength="20">
+                </div>
+            </div>
+            <div class="field-row">
+                <div class="field">
+                    <label>Residence Phone</label>
+                    <input type="tel" id="f-residence_phone" maxlength="15">
+                </div>
+                <div class="field">
+                    <label>HAM Radio Callsign</label>
+                    <input type="text" id="f-ham_radio_callsign" placeholder="e.g. VU2XYZ" maxlength="20">
+                </div>
+            </div>
+            <div class="field">
+                <label>Residence Address</label>
+                <textarea id="f-residence_address" placeholder="Home address (for emergency contact)"></textarea>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════ Section 4: Reporting & Capabilities ═══════ -->
+    <div class="section" id="sec-4">
+        <div class="section-card">
+            <div class="section-title">Reporting Chain</div>
+            <div class="field-row">
+                <div class="field">
+                    <label>Reports To (Name)</label>
+                    <input type="text" id="f-reports_to_name" placeholder="Immediate supervisor name">
+                </div>
+                <div class="field">
+                    <label>Reports To (Designation)</label>
+                    <input type="text" id="f-reports_to_designation" placeholder="e.g. District Collector">
+                </div>
+            </div>
+        </div>
+
+        <div class="section-card">
+            <div class="section-title">Capabilities & Training</div>
+            <div class="field-row">
+                <div class="field">
+                    <label>Blood Group</label>
+                    <select id="f-blood_group">
+                        <option value="">-- Select --</option>
+                        <option>A+</option><option>A-</option>
+                        <option>B+</option><option>B-</option>
+                        <option>AB+</option><option>AB-</option>
+                        <option>O+</option><option>O-</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label>Available 24x7?</label>
+                    <select id="f-availability_24x7">
+                        <option value="">-- Select --</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+            </div>
+            <div class="field">
+                <label>Languages Spoken</label>
+                <input type="text" id="f-languages_spoken" placeholder="e.g. Telugu, Hindi, English">
+            </div>
+            <div class="field">
+                <label>DM Training / Certifications</label>
+                <textarea id="f-training_certifications" placeholder="e.g. IRS trained, NDRF Basic course, First Aid certified"></textarea>
+            </div>
+            <div class="field">
+                <label>Equipment / Resources Available</label>
+                <textarea id="f-equipment_resources" placeholder="e.g. Rescue boat, First aid kit, Satellite phone"></textarea>
+            </div>
+        </div>
+
+        <div class="section-card">
+            <div class="section-title">NGO / Organization (if applicable)</div>
+            <div class="field-row">
+                <div class="field">
+                    <label>Organization Name</label>
+                    <input type="text" id="f-ngo_org_name" placeholder="NGO / Volunteer Org name">
+                </div>
+                <div class="field">
+                    <label>Specialization</label>
+                    <input type="text" id="f-specialization" placeholder="e.g. Search & Rescue, Medical">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════ Section 5: DM Role & Photo ═══════ -->
+    <div class="section" id="sec-5">
+        <div class="section-card">
+            <div class="section-title">Disaster Management Role</div>
+            <div class="field-row">
+                <div class="field">
+                    <label>DM Role</label>
+                    <select id="f-dm_role">
+                        <option value="">None</option>
+                        <option>Nodal Officer</option>
+                        <option>SPOC</option>
+                        <option>EOC Duty Officer</option>
+                        <option>Control Room Incharge</option>
+                        <option>DEOC Incharge</option>
+                        <option>SEOC Duty</option>
+                        <option>IRS Commander</option>
+                        <option>IRS Operations Chief</option>
+                        <option>IRS Planning Chief</option>
+                        <option>IRS Logistics Chief</option>
+                        <option>Relief Coordinator</option>
+                        <option>Evacuation Incharge</option>
+                        <option>Shelter Incharge</option>
+                        <option>Search Rescue Lead</option>
+                        <option>Medical Responder Lead</option>
+                        <option>Communication Officer</option>
+                        <option>Damage Assessment Officer</option>
+                        <option>Early Warning Officer</option>
+                        <option>Flood Monitoring Officer</option>
+                        <option>DDMA Chairperson</option>
+                        <option>DDMA Member Secretary</option>
+                        <option>Other DM Role</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label>DM Role Active?</label>
+                    <select id="f-dm_role_active">
+                        <option value="">-- Select --</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+            </div>
+            <div class="field-row">
+                <div class="field">
+                    <label>Order / GO No.</label>
+                    <input type="text" id="f-dm_role_order_no" placeholder="Government Order reference">
+                </div>
+                <div class="field">
+                    <label>DM Role Since</label>
+                    <input type="date" id="f-dm_role_since">
+                </div>
+            </div>
+        </div>
+
+        <div class="section-card">
+            <div class="section-title">Photo & Remarks</div>
+            <div class="field">
+                <label>Photo</label>
+                <div class="photo-upload">
+                    <div class="photo-preview" id="photo-preview">&#128100;</div>
+                    <div>
+                        <input type="file" id="f-photo" accept="image/*" capture="user">
+                        <div class="hint">Passport-size photo (max 2 MB)</div>
+                    </div>
+                </div>
+            </div>
+            <div class="field">
+                <label>Remarks / Additional Information</label>
+                <textarea id="f-remarks" placeholder="Any additional details relevant for disaster management"></textarea>
+            </div>
+            <div class="field">
+                <label>Your Name (who is filling this form)</label>
+                <input type="text" id="f-entered_by" placeholder="e.g. SEOC Operator / Self">
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════ Result ═══════ -->
+    <div class="section" id="sec-result">
+        <div class="section-card result-card" id="result-card">
+            <!-- Populated by JS -->
+        </div>
+    </div>
+</div>
+
+<!-- Bottom nav -->
+<div class="nav-bar" id="nav-bar">
+    <button class="btn btn-back" id="btn-back" onclick="prevSection()">Back</button>
+    <span id="nav-info" style="font-size:12px;color:var(--muted);"></span>
+    <button class="btn btn-next" id="btn-next" onclick="nextSection()">Next</button>
+</div>
+
+<div class="footer">
+    &copy; 2026 APSDMA, Government of Andhra Pradesh. All data is confidential and used for disaster management purposes only.
+</div>
+
+<script>
+(function() {
+    "use strict";
+
+    // ── Config ──
+    var FEATURE_URL = "https://apsdmagis.ap.gov.in/gisserver/rest/services/Hosted/DM_Personnel/FeatureServer/0";
+    var TOKEN_URL = "https://apsdmagis.ap.gov.in/gisportal/sharing/rest/generateToken";
+
+    var SECTIONS = ["sec-1", "sec-2", "sec-3", "sec-4", "sec-5"];
+    var LABELS = ["Personal & Posting", "Location", "Contact", "Reporting & Skills", "DM Role & Photo"];
+    var currentSection = 0;
+
+    // ── 28 Districts ──
+    var DISTRICTS = [
+        "Alluri Sitharama Raju","Anakapalli","Ananthapuramu","Annamayya",
+        "Bapatla","Chittoor","Dr.B.R.Ambedkar Konaseema","East Godavari",
+        "Eluru","Guntur","Kakinada","Krishna","Kurnool","Markapuram",
+        "Nandyal","NTR","Palnadu","Parvathipuram Manyam","Polavaram",
+        "Prakasam","Sri Potti Sriramulu Nellore","Sri Sathya Sai",
+        "Srikakulam","Tirupati","Visakhapatnam","Vizianagaram",
+        "West Godavari","Y.S.R.Kadapa"
+    ];
+
+    // ── 10 Sectors → 40 Departments ──
+    var SECTORS = {
+        "Core Governance & Administration": ["Chief Ministers Office","Chief Secretarys Office","General Administration","Governors Secretariat","Chief Electoral Officer","Legislature","Real Time Governance"],
+        "Finance & Planning": ["Finance","Planning","Public Enterprises"],
+        "Revenue & Disaster Management": ["Revenue","Disaster Management"],
+        "Home, Law & Security": ["Home","Law"],
+        "Health, Medical & Family Welfare": ["Health, Medical & Family Welfare"],
+        "Education & Skill Development": ["Human Resources (Higher Education)","Human Resources (School Education)","Dept of Skills Development and Training"],
+        "Agriculture, Environment & Water": ["Agriculture and Marketing","Animal Husbandry, Dairy Dev and Fisheries","Environment, Forest, Science and Technology","Water Resources"],
+        "Infrastructure, Industry & Urban Dev": ["Energy","Transport, Roads and Buildings","Municipal Administration and Urban Development","Housing","Industries and Commerce","Infrastructure and Investment","IT, Electronics and Communications","Consumer Affairs, Food and Civil Supplies","Labour and Employment"],
+        "Panchayat Raj & Rural Development": ["Panchayat Raj and Rural Development","Gram/Ward Volunteers and Village/Ward Secretariats"],
+        "Social Welfare & Empowerment": ["Social Welfare","Backward Classes Welfare","Minorities Welfare","Dept of Tribal Welfare","Dept of Economically Weaker Sections Welfare","Women, Children, Disabled and Senior Citizens","Youth Advancement, Tourism and Culture"]
+    };
+
+    // ── HODs per department code ──
+    var HODS = {
+        "Agriculture and Marketing": ["Agriculture","Horticulture","Sericulture","Marketing","Cooperation and Cooperative Societies"],
+        "Animal Husbandry, Dairy Dev and Fisheries": ["Animal Husbandry","Fisheries"],
+        "Health, Medical & Family Welfare": ["Medical Education","Public Health","Family Welfare","IPM & Food Safety","Ayush","Drugs Control","Directorate of Secondary Health"],
+        "Home": ["Police (DGP)","Prisons & Correctional Services","Printing and Stationery","Fire Services","Sainik Welfare","Special Protection Force","EAGLE Anti-Narcotics","Prosecutions"],
+        "Water Resources": ["CADA","Ground Water","Water Resources (E-in-C)","Resettlement and Rehabilitation"],
+        "Revenue": ["Revenue (CCLA)","Commercial Taxes","Prohibition and Excise","Survey Settlements and Land Records","Endowment","Registration and Stamps"],
+        "Transport, Roads and Buildings": ["Roads and Buildings (E-in-C)","Transport","Public Transport Department"],
+        "Municipal Administration and Urban Development": ["Municipal Administration","Town and Country Planning","Public Health Engineering"],
+        "Panchayat Raj and Rural Development": ["Panchayati Raj","Panchayati Raj Engineering","Rural Development","Rural Water Supply Engineering"],
+        "Human Resources (School Education)": ["School Education","Intermediate Education","Publication","Adult Education","Public Libraries"],
+        "Human Resources (Higher Education)": ["Collegiate Education","State Archives","Oriental Manuscripts","National Cadet Corps"],
+        "Finance": ["Treasuries & Accounts","State Audit","Government Life Insurance","Pay and Accounts Office","Works Accounts"],
+        "General Administration": ["Information and Public Relations","Anti Corruption Bureau","Protocol","Vigilance and Enforcement","Special Enforcement Bureau"],
+        "Industries and Commerce": ["Industries, Commerce and Export Promotion","Handlooms & Textiles","Mines and Geology","Sugar and Cane"],
+        "Women, Children, Disabled and Senior Citizens": ["Women Development and Child Welfare","Differently Abled, Senior Citizens & Transgender","Juvenile Welfare & Correctional Services"]
+    };
+
+    // ── Init dropdowns ──
+    function initDropdowns() {
+        var sectorSel = document.getElementById("f-sector");
+        Object.keys(SECTORS).forEach(function(s) {
+            var opt = document.createElement("option");
+            opt.value = s; opt.textContent = s;
+            sectorSel.appendChild(opt);
+        });
+
+        var distSel = document.getElementById("f-district_name");
+        DISTRICTS.forEach(function(d) {
+            var opt = document.createElement("option");
+            opt.value = d; opt.textContent = d;
+            distSel.appendChild(opt);
+        });
+
+        // Sector → Department cascade
+        sectorSel.addEventListener("change", function() {
+            var catSel = document.getElementById("f-category");
+            catSel.innerHTML = '<option value="">-- Select Department --</option>';
+            var depts = SECTORS[this.value] || [];
+            depts.forEach(function(d) {
+                var opt = document.createElement("option");
+                opt.value = d; opt.textContent = d;
+                catSel.appendChild(opt);
+            });
+        });
+
+        // Department → Sub-department cascade
+        document.getElementById("f-category").addEventListener("change", function() {
+            var subSel = document.getElementById("f-sub_department");
+            subSel.innerHTML = '<option value="">-- Select if applicable --</option>';
+            var hods = HODS[this.value] || [];
+            hods.forEach(function(h) {
+                var opt = document.createElement("option");
+                opt.value = h; opt.textContent = h;
+                subSel.appendChild(opt);
+            });
+            // Auto-fill department text
+            var deptInput = document.getElementById("f-department");
+            if (!deptInput.value) deptInput.value = this.value;
+        });
+    }
+
+    // ── Progress bar ──
+    function buildProgress() {
+        var bar = document.getElementById("progress-bar");
+        var labels = document.getElementById("step-labels");
+        bar.innerHTML = ""; labels.innerHTML = "";
+        for (var i = 0; i < SECTIONS.length; i++) {
+            var step = document.createElement("div");
+            step.className = "progress-step";
+            if (i < currentSection) step.classList.add("done");
+            if (i === currentSection) step.classList.add("active");
+            bar.appendChild(step);
+
+            var lbl = document.createElement("div");
+            lbl.className = "step-label";
+            lbl.textContent = LABELS[i];
+            if (i < currentSection) lbl.classList.add("done");
+            if (i === currentSection) lbl.classList.add("active");
+            (function(idx) {
+                lbl.addEventListener("click", function() {
+                    if (idx <= currentSection) goToSection(idx);
+                });
+            })(i);
+            labels.appendChild(lbl);
+        }
+    }
+
+    // ── Navigation ──
+    function goToSection(idx) {
+        SECTIONS.forEach(function(s) { document.getElementById(s).classList.remove("active"); });
+        document.getElementById("sec-result").classList.remove("active");
+        currentSection = idx;
+        document.getElementById(SECTIONS[idx]).classList.add("active");
+        buildProgress();
+        updateNav();
+        window.scrollTo(0, 0);
+    }
+
+    function updateNav() {
+        var backBtn = document.getElementById("btn-back");
+        var nextBtn = document.getElementById("btn-next");
+        var info = document.getElementById("nav-info");
+        backBtn.style.visibility = currentSection === 0 ? "hidden" : "visible";
+        info.textContent = (currentSection + 1) + " / " + SECTIONS.length;
+
+        if (currentSection === SECTIONS.length - 1) {
+            nextBtn.textContent = "Submit";
+            nextBtn.className = "btn btn-submit";
+            nextBtn.onclick = submitForm;
+        } else {
+            nextBtn.textContent = "Next";
+            nextBtn.className = "btn btn-next";
+            nextBtn.onclick = nextSection;
+        }
+    }
+
+    window.nextSection = function() {
+        if (!validateSection(currentSection)) return;
+        if (currentSection < SECTIONS.length - 1) goToSection(currentSection + 1);
+    };
+    window.prevSection = function() {
+        if (currentSection > 0) goToSection(currentSection - 1);
+    };
+
+    // ── Validation ──
+    function validateSection(idx) {
+        var sec = document.getElementById(SECTIONS[idx]);
+        var required = sec.querySelectorAll("[required]");
+        var valid = true;
+        required.forEach(function(el) {
+            if (!el.value.trim()) {
+                el.style.borderColor = "var(--danger)";
+                valid = false;
+            } else {
+                el.style.borderColor = "";
+            }
+        });
+        if (!valid) {
+            var first = sec.querySelector("[required]:invalid, [required][style*='danger']");
+            if (first) first.focus();
+        }
+        return valid;
+    }
+
+    // ── GPS ──
+    window.captureLocation = function() {
+        var statusEl = document.getElementById("loc-status");
+        var coordsEl = document.getElementById("loc-coords");
+        statusEl.textContent = "Capturing GPS...";
+        statusEl.style.color = "var(--accent)";
+
+        if (!navigator.geolocation) {
+            statusEl.textContent = "GPS not supported on this device";
+            statusEl.style.color = "var(--danger)";
+            return;
+        }
+        navigator.geolocation.getCurrentPosition(function(pos) {
+            var lng = pos.coords.longitude.toFixed(6);
+            var lat = pos.coords.latitude.toFixed(6);
+            document.getElementById("f-longitude").value = lng;
+            document.getElementById("f-latitude").value = lat;
+            document.getElementById("f-lon-manual").value = lng;
+            document.getElementById("f-lat-manual").value = lat;
+            coordsEl.textContent = lat + ", " + lng + " (accuracy: " + Math.round(pos.coords.accuracy) + "m)";
+            statusEl.textContent = "Location captured!";
+            statusEl.style.color = "var(--success)";
+        }, function(err) {
+            statusEl.textContent = "Location error: " + err.message;
+            statusEl.style.color = "var(--danger)";
+        }, { enableHighAccuracy: true, timeout: 15000 });
+    };
+
+    // Sync manual coords → hidden fields
+    document.getElementById("f-lon-manual").addEventListener("change", function() {
+        document.getElementById("f-longitude").value = this.value;
+    });
+    document.getElementById("f-lat-manual").addEventListener("change", function() {
+        document.getElementById("f-latitude").value = this.value;
+    });
+
+    // ── Photo preview ──
+    document.getElementById("f-photo").addEventListener("change", function() {
+        var file = this.files[0];
+        if (!file) return;
+        if (file.size > 2 * 1024 * 1024) {
+            alert("Photo must be under 2 MB");
+            this.value = "";
+            return;
+        }
+        var reader = new FileReader();
+        reader.onload = function(e) {
+            document.getElementById("photo-preview").innerHTML = '<img src="' + e.target.result + '">';
+        };
+        reader.readAsDataURL(file);
+    });
+
+    // ── Get token ──
+    function getToken() {
+        var params = new URLSearchParams({
+            username: "portaladmin",
+            password: "9494501235Nn@",
+            client: "referer",
+            referer: window.location.origin || "https://apsdmagis.ap.gov.in",
+            expiration: 30,
+            f: "json"
+        });
+        return fetch(TOKEN_URL, { method: "POST", body: params })
+            .then(function(r) { return r.json(); })
+            .then(function(d) { return d.token; });
+    }
+
+    // ── Collect form data ──
+    function collectData() {
+        var fields = [
+            "person_name","designation","rank_designation","parent_department","posting_type","employee_id",
+            "category","sub_department","department","hierarchy_level",
+            "jurisdiction_type","status","date_of_posting","date_of_birth",
+            "district_name","mandal_name","village_name","office_address",
+            "phone_primary","phone_alternate","whatsapp_number","email",
+            "office_phone","office_phone_ext","intercom_number","fax_number",
+            "residence_phone","ham_radio_callsign","residence_address",
+            "reports_to_name","reports_to_designation",
+            "blood_group","availability_24x7","languages_spoken",
+            "training_certifications","equipment_resources",
+            "ngo_org_name","specialization",
+            "dm_role","dm_role_active","dm_role_order_no","dm_role_since",
+            "remarks","entered_by"
+        ];
+        var attrs = {};
+        fields.forEach(function(f) {
+            var el = document.getElementById("f-" + f);
+            if (!el) return;
+            var val = el.value.trim();
+            // Handle custom dropdowns: if select = "_custom", use the custom text input
+            if (f === "parent_department" && val === "_custom") {
+                val = (document.getElementById("f-parent_department_custom").value || "").trim();
+            }
+            if (!val) return;
+            // Date fields → epoch ms
+            if (f === "date_of_posting" || f === "dm_role_since" || f === "date_of_birth") {
+                attrs[f] = new Date(val).getTime();
+            } else if (f === "hierarchy_level") {
+                attrs[f] = parseInt(val);
+            } else {
+                attrs[f] = val;
+            }
+        });
+        attrs.date_of_entry = Date.now();
+
+        // Geometry
+        var lng = parseFloat(document.getElementById("f-longitude").value || document.getElementById("f-lon-manual").value);
+        var lat = parseFloat(document.getElementById("f-latitude").value || document.getElementById("f-lat-manual").value);
+        var geometry = null;
+        if (!isNaN(lng) && !isNaN(lat)) {
+            geometry = { x: lng, y: lat, spatialReference: { wkid: 4326 } };
+        }
+
+        return { attributes: attrs, geometry: geometry };
+    }
+
+    // ── Submit ──
+    window.submitForm = function() {
+        if (!validateSection(currentSection)) return;
+
+        var btn = document.getElementById("btn-next");
+        btn.disabled = true;
+        btn.textContent = "Submitting...";
+
+        var feature = collectData();
+
+        getToken().then(function(token) {
+            if (!token) throw new Error("Authentication failed");
+
+            var body = new URLSearchParams({
+                features: JSON.stringify([feature]),
+                f: "json",
+                token: token
+            });
+
+            return fetch(FEATURE_URL + "/addFeatures", {
+                method: "POST",
+                body: body
+            });
+        }).then(function(r) { return r.json(); })
+        .then(function(result) {
+            if (result.addResults && result.addResults[0] && result.addResults[0].success) {
+                var oid = result.addResults[0].objectId;
+
+                // Upload photo attachment if present
+                var photoFile = document.getElementById("f-photo").files[0];
+                if (photoFile) {
+                    uploadPhoto(oid, photoFile);
+                }
+
+                showResult(true, "Registration Successful!", "Your record (ID: " + oid + ") has been added to the DM Personnel Directory. Thank you for registering.", feature.attributes, oid);
+            } else {
+                var errMsg = result.addResults ? JSON.stringify(result.addResults[0].error) : JSON.stringify(result);
+                showResult(false, "Submission Failed", errMsg);
+            }
+        }).catch(function(err) {
+            showResult(false, "Submission Error", err.message || String(err));
+        });
+    };
+
+    function uploadPhoto(oid, file) {
+        getToken().then(function(token) {
+            var formData = new FormData();
+            formData.append("attachment", file);
+            formData.append("f", "json");
+            formData.append("token", token);
+            fetch(FEATURE_URL + "/" + oid + "/addAttachment", {
+                method: "POST",
+                body: formData
+            }).then(function(r) { return r.json(); }).then(function(d) {
+                console.log("[Survey] Photo uploaded:", d);
+            });
+        });
+    }
+
+    // ── Build printable report HTML ──
+    function _buildReport(attrs, oid) {
+        var fmtDate = function(v) {
+            if (!v) return "-";
+            try { return new Date(v).toLocaleDateString("en-IN", {day:"2-digit",month:"short",year:"numeric"}); }
+            catch(e) { return "-"; }
+        };
+        var esc = function(s) { return (s || "-").toString().replace(/</g,"&lt;"); };
+        var row = function(label, val) { return '<tr><td style="padding:5px 10px;font-weight:600;color:#1a365d;white-space:nowrap;border-bottom:1px solid #eee;">' + label + '</td><td style="padding:5px 10px;border-bottom:1px solid #eee;">' + esc(val) + '</td></tr>'; };
+
+        var now = new Date().toLocaleString("en-IN", {day:"2-digit",month:"short",year:"numeric",hour:"2-digit",minute:"2-digit"});
+
+        return '<!DOCTYPE html><html><head><meta charset="UTF-8"><title>DM Personnel Registration - ' + esc(attrs.person_name) + '</title>' +
+            '<style>*{margin:0;padding:0;box-sizing:border-box;}body{font-family:Arial,sans-serif;font-size:13px;color:#333;padding:20px;}' +
+            '.header{text-align:center;border-bottom:3px solid #1a365d;padding-bottom:12px;margin-bottom:16px;}' +
+            '.header h1{font-size:16px;color:#1a365d;}.header h2{font-size:13px;color:#3182ce;margin-top:2px;}' +
+            '.header p{font-size:11px;color:#888;margin-top:4px;}' +
+            '.tricolor{height:4px;background:linear-gradient(90deg,#FF9933 33%,#fff 33% 66%,#138808 66%);margin-bottom:12px;}' +
+            '.section-title{font-size:13px;font-weight:700;color:#fff;background:#1a365d;padding:6px 10px;margin:12px 0 4px;border-radius:4px;}' +
+            'table{width:100%;border-collapse:collapse;}td{vertical-align:top;}' +
+            '.footer{text-align:center;font-size:10px;color:#aaa;margin-top:20px;padding-top:10px;border-top:1px solid #ddd;}' +
+            '@media print{body{padding:10px;}.no-print{display:none!important;}}' +
+            '</style></head><body>' +
+            '<div class="tricolor"></div>' +
+            '<div class="header">' +
+                '<h1>Government of Andhra Pradesh</h1>' +
+                '<h2>APSDMA — DM Personnel Registration Report</h2>' +
+                '<p>Record ID: ' + oid + ' | Submitted: ' + now + '</p>' +
+            '</div>' +
+
+            '<div class="section-title">Personal Details</div>' +
+            '<table>' +
+                row("Full Name", attrs.person_name) +
+                row("Parent Department", attrs.parent_department) +
+                row("Parent Designation / Rank", attrs.rank_designation) +
+                row("Current Designation", attrs.designation) +
+                row("Posting Type", attrs.posting_type) +
+                row("Employee ID", attrs.employee_id) +
+                row("Date of Birth", fmtDate(attrs.date_of_birth)) +
+            '</table>' +
+
+            '<div class="section-title">Department & Posting</div>' +
+            '<table>' +
+                row("Department Group", (document.getElementById("f-sector") || {}).value) +
+                row("State Department", attrs.category) +
+                row("Sub-Department / HOD", attrs.sub_department) +
+                row("Hierarchy Level", attrs.hierarchy_level ? "L" + attrs.hierarchy_level : "-") +
+                row("Jurisdiction", attrs.jurisdiction_type) +
+                row("Status", attrs.status) +
+                row("Date of Posting", fmtDate(attrs.date_of_posting)) +
+            '</table>' +
+
+            '<div class="section-title">Posting Location</div>' +
+            '<table>' +
+                row("District", attrs.district_name) +
+                row("Mandal", attrs.mandal_name) +
+                row("Village / Town", attrs.village_name) +
+                row("Office Address", attrs.office_address) +
+                row("GPS Coordinates", (document.getElementById("f-latitude").value || "-") + ", " + (document.getElementById("f-longitude").value || "-")) +
+            '</table>' +
+
+            '<div class="section-title">Contact Information</div>' +
+            '<table>' +
+                row("Personal Mobile", attrs.phone_primary) +
+                row("Alternate Mobile", attrs.phone_alternate) +
+                row("WhatsApp", attrs.whatsapp_number) +
+                row("Email", attrs.email) +
+                row("Office Phone", [attrs.office_phone, attrs.office_phone_ext ? "Ext: " + attrs.office_phone_ext : ""].filter(Boolean).join(" ")) +
+                row("Intercom", attrs.intercom_number) +
+                row("Fax", attrs.fax_number) +
+                row("Residence Phone", attrs.residence_phone) +
+                row("HAM Radio", attrs.ham_radio_callsign) +
+                row("Residence Address", attrs.residence_address) +
+            '</table>' +
+
+            '<div class="section-title">Reporting & Capabilities</div>' +
+            '<table>' +
+                row("Reports To", [attrs.reports_to_name, attrs.reports_to_designation].filter(Boolean).join(" — ")) +
+                row("Blood Group", attrs.blood_group) +
+                row("Languages", attrs.languages_spoken) +
+                row("Training / Certs", attrs.training_certifications) +
+                row("Equipment / Resources", attrs.equipment_resources) +
+                row("Available 24x7", attrs.availability_24x7) +
+                row("NGO / Org", attrs.ngo_org_name) +
+                row("Specialization", attrs.specialization) +
+            '</table>' +
+
+            '<div class="section-title">DM Role</div>' +
+            '<table>' +
+                row("DM Role", attrs.dm_role) +
+                row("Active", attrs.dm_role_active) +
+                row("Order / GO No.", attrs.dm_role_order_no) +
+                row("DM Role Since", fmtDate(attrs.dm_role_since)) +
+            '</table>' +
+
+            (attrs.remarks ? '<div class="section-title">Remarks</div><p style="padding:8px 10px;">' + esc(attrs.remarks) + '</p>' : '') +
+
+            '<div class="footer">' +
+                'Generated from DM Personnel Registration Form | APSDMA, Government of Andhra Pradesh<br>' +
+                'Entered by: ' + esc(attrs.entered_by) + ' | ' + now +
+            '</div>' +
+            '</body></html>';
+    }
+
+    // ── Download report as HTML file ──
+    function _downloadReport(attrs, oid) {
+        var html = _buildReport(attrs, oid);
+        var blob = new Blob([html], { type: "text/html;charset=utf-8" });
+        var url = URL.createObjectURL(blob);
+        var a = document.createElement("a");
+        a.href = url;
+        a.download = "DM_Personnel_" + (attrs.person_name || "").replace(/[^a-zA-Z0-9]/g, "_") + "_" + oid + ".html";
+        a.click();
+        URL.revokeObjectURL(url);
+    }
+
+    // ── Print report ──
+    function _printReport(attrs, oid) {
+        var html = _buildReport(attrs, oid);
+        var w = window.open("", "_blank", "width=800,height=900");
+        w.document.write(html);
+        w.document.close();
+        setTimeout(function() { w.print(); }, 500);
+    }
+
+    // Store last submission for download/print
+    var _lastAttrs = null;
+    var _lastOid = null;
+    window._downloadReport = function() { if (_lastAttrs) _downloadReport(_lastAttrs, _lastOid); };
+    window._printReport = function() { if (_lastAttrs) _printReport(_lastAttrs, _lastOid); };
+
+    function showResult(success, title, msg, attrs, oid) {
+        SECTIONS.forEach(function(s) { document.getElementById(s).classList.remove("active"); });
+        _lastAttrs = attrs || null;
+        _lastOid = oid || null;
+
+        var card = document.getElementById("result-card");
+        var html =
+            '<div class="result-icon">' + (success ? "&#9989;" : "&#10060;") + '</div>' +
+            '<div class="result-title" style="color:' + (success ? "var(--success)" : "var(--danger)") + ';">' + title + '</div>' +
+            '<div class="result-msg">' + msg + '</div>';
+
+        if (success && attrs) {
+            html +=
+                '<div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:20px;">' +
+                    '<button class="btn-another" onclick="_downloadReport()" style="background:#2b6cb0;">&#128196; Download Report</button>' +
+                    '<button class="btn-another" onclick="_printReport()" style="background:#805ad5;">&#128424; Print Report</button>' +
+                '</div>';
+        }
+
+        html += '<div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">' +
+                    '<button class="btn-another" onclick="location.reload()">Submit Another Entry</button>' +
+                    '<a class="btn-another" href="admin.html" style="background:#1a365d;text-decoration:none;">View All Submissions</a>' +
+                '</div>';
+
+        card.innerHTML = html;
+        document.getElementById("sec-result").classList.add("active");
+        document.getElementById("nav-bar").style.display = "none";
+        document.getElementById("progress-bar").style.display = "none";
+        document.getElementById("step-labels").style.display = "none";
+        window.scrollTo(0, 0);
+    }
+
+    // ── Custom "Other" dropdown logic ──
+    // When user selects "_custom", show a text input; otherwise sync select value
+    function setupCustomDropdown(selectId, textId, hiddenId) {
+        var sel = document.getElementById(selectId);
+        var txt = document.getElementById(textId);
+        var hidden = hiddenId ? document.getElementById(hiddenId) : null;
+        if (!sel || !txt) return;
+
+        sel.addEventListener("change", function() {
+            if (this.value === "_custom") {
+                txt.style.display = "block";
+                txt.required = true;
+                txt.focus();
+                if (hidden) hidden.value = "";
+            } else {
+                txt.style.display = "none";
+                txt.required = false;
+                txt.value = "";
+                if (hidden) hidden.value = this.value;
+            }
+        });
+        txt.addEventListener("input", function() {
+            if (hidden) hidden.value = this.value;
+        });
+    }
+
+    // Parent Department: dropdown → custom text → stores in hidden
+    setupCustomDropdown("f-parent_department", "f-parent_department_custom", null);
+    // Override: parent_department is the select itself, custom overrides
+    document.getElementById("f-parent_department").addEventListener("change", function() {
+        if (this.value === "_custom") {
+            document.getElementById("f-parent_department_custom").style.display = "block";
+            document.getElementById("f-parent_department_custom").focus();
+        } else {
+            document.getElementById("f-parent_department_custom").style.display = "none";
+            document.getElementById("f-parent_department_custom").value = "";
+        }
+    });
+
+    // Rank: dropdown select → shows text input for custom, otherwise syncs to hidden f-rank_designation
+    document.getElementById("f-rank_designation_select").addEventListener("change", function() {
+        var txt = document.getElementById("f-rank_designation");
+        if (this.value === "_custom") {
+            txt.style.display = "block";
+            txt.value = "";
+            txt.focus();
+        } else {
+            txt.style.display = "none";
+            txt.value = this.value;
+        }
+    });
+
+    // Designation: dropdown select → shows text input for custom, otherwise syncs to hidden f-designation
+    document.getElementById("f-designation_select").addEventListener("change", function() {
+        var txt = document.getElementById("f-designation");
+        if (this.value === "_custom") {
+            txt.style.display = "block";
+            txt.value = "";
+            txt.focus();
+        } else {
+            txt.style.display = "none";
+            txt.value = this.value;
+        }
+    });
+
+    // ── Auto-compose full name from title + surname + first + middle + last ──
+    function composeName() {
+        var title = (document.getElementById("f-title").value || "").trim();
+        var surname = (document.getElementById("f-surname").value || "").trim();
+        var first = (document.getElementById("f-first_name").value || "").trim();
+        var middle = (document.getElementById("f-middle_name").value || "").trim();
+        var last = (document.getElementById("f-last_name").value || "").trim();
+
+        // Format: "Title Surname First Middle Last"
+        // If surname is single letter/initial, treat as initial: "Sri K. Venkateshwar Rao"
+        var parts = [];
+        if (title) parts.push(title);
+        if (surname) {
+            parts.push(surname.length <= 2 ? surname + "." : surname);
+        }
+        if (first) parts.push(first);
+        if (middle) parts.push(middle);
+        if (last) parts.push(last);
+
+        var fullName = parts.join(" ");
+        var nameEl = document.getElementById("f-person_name");
+        nameEl.value = fullName;
+        nameEl.readOnly = false;
+        nameEl.style.background = "";
+        nameEl.style.color = "";
+    }
+
+    ["f-title", "f-surname", "f-first_name", "f-middle_name", "f-last_name"].forEach(function(id) {
+        var el = document.getElementById(id);
+        if (el) el.addEventListener("input", composeName);
+        if (el && el.tagName === "SELECT") el.addEventListener("change", composeName);
+    });
+
+    // ── Boot ──
+    initDropdowns();
+    goToSection(0);
+})();
+</script>
+</body>
+</html>

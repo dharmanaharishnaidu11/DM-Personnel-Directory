@@ -1,0 +1,1319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DM Personnel Directory — Organizational Architecture | APSDMA</title>
+    <link rel="stylesheet" href="css/dm-theme.css">
+    <style>
+    /* ── Tree Architecture Page Specific Styles ── */
+    body { overflow: auto; height: auto; }
+
+    .page-body {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 32px 40px 60px;
+    }
+
+    .page-intro {
+        background: var(--card);
+        border-radius: 10px;
+        padding: 28px 32px;
+        margin-bottom: 28px;
+        border-left: 4px solid var(--saffron);
+        box-shadow: 0 1px 4px rgba(0,0,0,.06);
+    }
+    .page-intro h1 {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-size: 24px; font-weight: 800; color: var(--primary);
+        margin-bottom: 8px;
+    }
+    .page-intro p { font-size: 14px; line-height: 1.7; color: var(--text); margin-bottom: 6px; }
+
+    /* Section nav */
+    .section-nav {
+        background: var(--card);
+        border-radius: 10px;
+        padding: 16px 24px;
+        margin-bottom: 28px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        box-shadow: 0 1px 4px rgba(0,0,0,.06);
+    }
+    .section-nav-label {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-size: 11px; font-weight: 700; color: var(--text-muted);
+        text-transform: uppercase; letter-spacing: .8px;
+        display: flex; align-items: center; margin-right: 8px;
+    }
+    .section-nav a {
+        padding: 5px 14px; border-radius: 5px;
+        font-size: 12px; font-weight: 600;
+        text-decoration: none; color: var(--primary);
+        background: var(--bg); border: 1px solid var(--border);
+        transition: all .15s;
+    }
+    .section-nav a:hover { background: var(--saffron); color: white; border-color: var(--saffron); }
+
+    /* Tree sections */
+    .tree-section {
+        background: var(--card);
+        border-radius: 10px;
+        padding: 28px 32px;
+        margin-bottom: 24px;
+        box-shadow: 0 1px 4px rgba(0,0,0,.06);
+        border-left: 4px solid var(--saffron);
+    }
+    .tree-section h2 {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-size: 20px; font-weight: 800; color: var(--primary);
+        margin-bottom: 6px;
+    }
+    .tree-section .section-subtitle {
+        font-size: 13px; color: var(--text-muted); margin-bottom: 18px;
+        padding-bottom: 12px; border-bottom: 1px solid var(--border-l);
+    }
+    .tree-section h3 {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-size: 16px; font-weight: 700; color: var(--primary-l);
+        margin: 20px 0 10px; padding-bottom: 6px;
+        border-bottom: 2px solid var(--saffron);
+        display: inline-block;
+    }
+
+    /* ── Organizational Tree (CSS-based) ── */
+    .org-tree { margin: 12px 0 20px; }
+    .org-tree ul {
+        list-style: none; padding-left: 0; margin: 0;
+    }
+    .org-tree > ul { padding-left: 0; }
+    .org-tree ul ul { padding-left: 28px; position: relative; }
+    .org-tree ul ul::before {
+        content: '';
+        position: absolute; left: 12px; top: 0; bottom: 12px;
+        width: 0; border-left: 2px solid var(--border);
+    }
+
+    .org-tree li {
+        position: relative; padding: 3px 0;
+    }
+    .org-tree ul ul > li::before {
+        content: '';
+        position: absolute; left: -16px; top: 14px;
+        width: 14px; height: 0;
+        border-top: 2px solid var(--border);
+    }
+
+    .org-tree .node {
+        display: inline-flex; align-items: center; gap: 8px;
+        padding: 5px 12px; border-radius: 6px;
+        font-size: 13px; font-weight: 500;
+        cursor: pointer; transition: background .15s;
+        position: relative;
+    }
+    .org-tree .node:hover { background: #f0f4ff; }
+
+    .org-tree .node .role {
+        font-weight: 700; color: var(--primary);
+    }
+    .org-tree .node .designation {
+        font-size: 11px; color: var(--text-muted);
+        font-weight: 400;
+    }
+    .org-tree .node .level-badge {
+        font-size: 9px; font-weight: 700;
+        padding: 1px 6px; border-radius: 4px;
+        color: white; flex-shrink: 0;
+    }
+
+    /* Level colors */
+    .lvl-1 { background: #c53030; }
+    .lvl-2 { background: #d69e2e; }
+    .lvl-3 { background: #3182ce; }
+    .lvl-4 { background: #38a169; }
+    .lvl-5 { background: #805ad5; }
+    .lvl-6 { background: #718096; }
+
+    /* Collapsible */
+    .org-tree .toggle {
+        width: 18px; height: 18px; border-radius: 50%;
+        background: var(--bg); border: 1px solid var(--border);
+        display: inline-flex; align-items: center; justify-content: center;
+        font-size: 10px; color: var(--text-muted); cursor: pointer;
+        flex-shrink: 0; transition: all .2s;
+        margin-right: 2px;
+    }
+    .org-tree .toggle:hover { background: var(--saffron); color: white; border-color: var(--saffron); }
+    .org-tree .collapsed > ul { display: none; }
+    .org-tree .collapsed > .node .toggle { transform: rotate(-90deg); }
+
+    /* Sector color indicators */
+    .sector-bar {
+        display: inline-block; width: 4px; height: 20px;
+        border-radius: 2px; margin-right: 4px; flex-shrink: 0;
+    }
+
+    /* View mode tree diagrams */
+    .view-tree-box {
+        background: #f8f9fb; border: 1px solid var(--border-l);
+        border-radius: 8px; padding: 20px 24px; margin: 12px 0;
+    }
+    .view-tree-box h4 {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-size: 14px; font-weight: 700; color: var(--primary);
+        margin-bottom: 12px; padding-bottom: 6px;
+        border-bottom: 2px solid var(--saffron);
+    }
+
+    /* Expand all / collapse all */
+    .tree-controls {
+        display: flex; gap: 8px; margin-bottom: 12px;
+    }
+    .tree-controls button {
+        padding: 4px 12px; border: 1px solid var(--border);
+        border-radius: 5px; background: white; cursor: pointer;
+        font-family: 'Inter', sans-serif; font-size: 11px;
+        font-weight: 600; color: var(--text-muted);
+        transition: all .15s;
+    }
+    .tree-controls button:hover { background: var(--saffron); color: white; border-color: var(--saffron); }
+
+    .back-link {
+        display: inline-flex; align-items: center; gap: 6px;
+        color: var(--saffron); text-decoration: none;
+        font-size: 13px; font-weight: 600; margin-bottom: 16px;
+    }
+    .back-link:hover { text-decoration: underline; }
+
+    @media (max-width: 768px) {
+        .page-body { padding: 16px 12px 40px; }
+        .tree-section { padding: 18px 16px; }
+        .section-nav { flex-direction: column; }
+    }
+    </style>
+</head>
+<body>
+
+<!-- ── Tricolor + Header (matches main page) ── -->
+<div class="tricolor-bar"></div>
+<div class="inst-header">
+    <img class="emblem"
+         src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Emblem_of_India.svg/200px-Emblem_of_India.svg.png"
+         alt="National Emblem of India" onerror="this.style.display='none'">
+    <div class="title-block">
+        <div class="gov-name">Government of Andhra Pradesh</div>
+        <div class="authority-name">Andhra Pradesh State Disaster Management Authority</div>
+        <div class="app-title">Disaster Management Personnel Directory</div>
+    </div>
+    <img class="logo-right"
+         src="https://apsdmagis.ap.gov.in/gisportal/sharing/rest/content/items/9a2a82b11aaa4e99b877567efe3de99c/data"
+         alt="APSDMA" onerror="this.style.display='none'">
+</div>
+<div class="navbar">
+    <a href="index.html" class="nav-tab">Directory</a>
+    <span class="nav-tab active">Architecture</span>
+</div>
+
+<div class="page-body">
+
+<a href="index.html" class="back-link">&larr; Back to Personnel Directory</a>
+
+<!-- ── Page Intro ── -->
+<div class="page-intro">
+    <h1>Organizational Architecture & Tree Structure</h1>
+    <p>This reference document details the complete administrative hierarchy of Andhra Pradesh's disaster management ecosystem &mdash; from the Chief Minister down to Village Revenue Officers, across all 25 NDMA-aligned categories. It also shows how the 5 view modes organize data in the directory.</p>
+    <p>Click any branch to expand or collapse. Use the section navigation below to jump to a specific department or view mode.</p>
+</div>
+
+<!-- ── Section Navigation ── -->
+<div class="section-nav">
+    <span class="section-nav-label">Jump to:</span>
+    <a href="#overall">Overall Structure</a>
+    <a href="#revenue">Revenue & Admin</a>
+    <a href="#police">Police</a>
+    <a href="#fire">Fire Services</a>
+    <a href="#sdrf">SDRF</a>
+    <a href="#ndrf">NDRF</a>
+    <a href="#medical">Medical</a>
+    <a href="#veterinary">Veterinary</a>
+    <a href="#irrigation">Irrigation</a>
+    <a href="#pwd">Public Works</a>
+    <a href="#power">Power</a>
+    <a href="#telecom">Telecom</a>
+    <a href="#transport">Transport</a>
+    <a href="#municipal">Municipal</a>
+    <a href="#panchayat">Panchayat Raj</a>
+    <a href="#food">Food & Supplies</a>
+    <a href="#education">Education</a>
+    <a href="#agriculture">Agriculture</a>
+    <a href="#armed">Armed Forces</a>
+    <a href="#civildefence">Civil Defence</a>
+    <a href="#homeguards">Home Guards</a>
+    <a href="#ncc">NCC</a>
+    <a href="#ngo">NGOs</a>
+    <a href="#apsdma">APSDMA</a>
+    <a href="#view-modes">5 View Modes</a>
+</div>
+
+<!-- ============================================================
+     SECTION 1: OVERALL AP GOVERNMENT STRUCTURE
+     ============================================================ -->
+<div class="tree-section" id="overall">
+    <h2>AP Government — Overall DM Structure</h2>
+    <p class="section-subtitle">Apex-level governance structure for disaster management in Andhra Pradesh, as per DM Act 2005</p>
+    <div class="tree-controls">
+        <button onclick="expandAll(this)">Expand All</button>
+        <button onclick="collapseAll(this)">Collapse All</button>
+    </div>
+    <div class="org-tree">
+        <ul>
+            <li>
+                <div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-1">L1</span><span class="role">Governor of Andhra Pradesh</span><span class="designation">Constitutional Head, Chairperson SDMA</span></div>
+                <ul>
+                    <li>
+                        <div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-1">L1</span><span class="role">Chief Minister</span><span class="designation">Chairperson, State Executive Committee (SEC)</span></div>
+                        <ul>
+                            <li>
+                                <div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-1">L1</span><span class="role">Chief Secretary</span><span class="designation">Vice-Chairperson SEC, Head of Administration</span></div>
+                                <ul>
+                                    <li>
+                                        <div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-2">L2</span><span class="role">Spl CS / Prl Secretary (Revenue & DM)</span><span class="designation">Nodal Secretary for Disaster Management</span></div>
+                                        <ul>
+                                            <li><div class="node"><span class="level-badge lvl-2">L2</span><span class="role">MD, APSDMA</span><span class="designation">Managing Director, DM Coordination</span></div></li>
+                                            <li><div class="node"><span class="level-badge lvl-2">L2</span><span class="role">Commissioner, Disaster Management</span><span class="designation">Revenue (Disaster Management) Dept</span></div></li>
+                                            <li><div class="node"><span class="level-badge lvl-3">L3</span><span class="role">26 District Collectors</span><span class="designation">Chairperson, DDMA (District DM Authority)</span></div></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-2">L2</span><span class="role">Prl Secretary (Home)</span><span class="designation">Police, Fire, Prisons, Civil Defence</span></div>
+                                        <ul>
+                                            <li><div class="node"><span class="role">DGP — Director General of Police</span></div></li>
+                                            <li><div class="node"><span class="role">Director, Fire Services</span></div></li>
+                                            <li><div class="node"><span class="role">Commandant, SDRF</span></div></li>
+                                            <li><div class="node"><span class="role">Director, Civil Defence</span></div></li>
+                                            <li><div class="node"><span class="role">Commandant General, Home Guards</span></div></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-2">L2</span><span class="role">Prl Secretary (Health)</span><span class="designation">Medical, Public Health, Family Welfare</span></div>
+                                        <ul>
+                                            <li><div class="node"><span class="role">Director of Public Health & Family Welfare</span></div></li>
+                                            <li><div class="node"><span class="role">Director of Medical Education</span></div></li>
+                                            <li><div class="node"><span class="role">Commissioner, AYUSH</span></div></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-2">L2</span><span class="role">Prl Secretary (Irrigation)</span><span class="designation">Water Resources, Flood Control</span></div>
+                                        <ul>
+                                            <li><div class="node"><span class="role">Engineer-in-Chief (Irrigation)</span></div></li>
+                                            <li><div class="node"><span class="role">Engineer-in-Chief (Projects)</span></div></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-2">L2</span><span class="role">Prl Secretary (R&B / Works)</span><span class="designation">Roads, Buildings, Public Works</span></div>
+                                        <ul>
+                                            <li><div class="node"><span class="role">Engineer-in-Chief (R&B)</span></div></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-2">L2</span><span class="role">Prl Secretary (Energy)</span><span class="designation">Power Distribution, Generation</span></div>
+                                        <ul>
+                                            <li><div class="node"><span class="role">CMD, APSPDCL</span></div></li>
+                                            <li><div class="node"><span class="role">CMD, APEPDCL</span></div></li>
+                                            <li><div class="node"><span class="role">CMD, APGENCO</span></div></li>
+                                            <li><div class="node"><span class="role">CMD, APTRANSCO</span></div></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="node"><span class="level-badge lvl-2">L2</span><span class="role">Prl Secretary (Panchayat Raj & Rural Dev)</span></div>
+                                    </li>
+                                    <li>
+                                        <div class="node"><span class="level-badge lvl-2">L2</span><span class="role">Prl Secretary (Municipal Admin & UD)</span></div>
+                                    </li>
+                                    <li>
+                                        <div class="node"><span class="level-badge lvl-2">L2</span><span class="role">Prl Secretary (Agriculture)</span></div>
+                                    </li>
+                                    <li>
+                                        <div class="node"><span class="level-badge lvl-2">L2</span><span class="role">Secretary (Transport)</span></div>
+                                    </li>
+                                    <li>
+                                        <div class="node"><span class="level-badge lvl-2">L2</span><span class="role">Secretary (Telecom / IT&C)</span></div>
+                                    </li>
+                                    <li>
+                                        <div class="node"><span class="level-badge lvl-2">L2</span><span class="role">Secretary (Education)</span></div>
+                                    </li>
+                                    <li>
+                                        <div class="node"><span class="level-badge lvl-2">L2</span><span class="role">Secretary (Food & Civil Supplies)</span></div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!-- ============================================================
+     SECTION 2: DEPARTMENT-WISE HIERARCHIES
+     ============================================================ -->
+
+<!-- Revenue & District Administration -->
+<div class="tree-section" id="revenue">
+    <h2><span class="sector-bar" style="background:rgb(49,130,206)"></span> Revenue & District Administration</h2>
+    <p class="section-subtitle">Sector: Executive & Revenue Admin | Hierarchy Level 1 (CM/CS) → Level 6 (VRO)</p>
+    <div class="tree-controls">
+        <button onclick="expandAll(this)">Expand All</button>
+        <button onclick="collapseAll(this)">Collapse All</button>
+    </div>
+    <div class="org-tree">
+        <ul>
+            <li>
+                <div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-1">L1</span><span class="role">Chief Minister / Chief Secretary</span><span class="designation">Apex — State Level</span></div>
+                <ul>
+                    <li>
+                        <div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-2">L2</span><span class="role">Special CS / Principal Secretary (Revenue)</span><span class="designation">Department Head</span></div>
+                        <ul>
+                            <li><div class="node"><span class="level-badge lvl-2">L2</span><span class="role">MD, APSDMA</span><span class="designation">DM Coordination Head</span></div></li>
+                            <li><div class="node"><span class="level-badge lvl-2">L2</span><span class="role">Commissioner (Disaster Management)</span></div></li>
+                            <li><div class="node"><span class="level-badge lvl-2">L2</span><span class="role">Commissioner (Land Administration)</span></div></li>
+                            <li><div class="node"><span class="level-badge lvl-2">L2</span><span class="role">Commissioner (Survey & Land Records)</span></div></li>
+                            <li>
+                                <div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-3">L3</span><span class="role">District Collector</span><span class="designation">District Head — Chairperson DDMA (×26)</span></div>
+                                <ul>
+                                    <li>
+                                        <div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-4">L4</span><span class="role">Joint Collector (Development)</span><span class="designation">Sub-District / Division</span></div>
+                                        <ul>
+                                            <li><div class="node"><span class="level-badge lvl-4">L4</span><span class="role">Additional Collector</span></div></li>
+                                            <li>
+                                                <div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-4">L4</span><span class="role">Revenue Divisional Officer (RDO)</span><span class="designation">Revenue Division (2-4 per district)</span></div>
+                                                <ul>
+                                                    <li>
+                                                        <div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-5">L5</span><span class="role">Tahsildar</span><span class="designation">Mandal Level (656 mandals)</span></div>
+                                                        <ul>
+                                                            <li><div class="node"><span class="level-badge lvl-5">L5</span><span class="role">Deputy Tahsildar</span></div></li>
+                                                            <li><div class="node"><span class="level-badge lvl-5">L5</span><span class="role">Mandal Revenue Inspector (MRI)</span></div></li>
+                                                            <li>
+                                                                <div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-6">L6</span><span class="role">Village Revenue Officer (VRO)</span><span class="designation">Village / Ward Level</span></div>
+                                                                <ul>
+                                                                    <li><div class="node"><span class="level-badge lvl-6">L6</span><span class="role">Village Secretary / Ward Secretary</span></div></li>
+                                                                    <li><div class="node"><span class="level-badge lvl-6">L6</span><span class="role">Village Surveyor</span></div></li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><div class="node"><span class="level-badge lvl-4">L4</span><span class="role">Joint Collector (Asst to Collector)</span></div></li>
+                                    <li><div class="node"><span class="level-badge lvl-4">L4</span><span class="role">District Revenue Officer (DRO)</span></div></li>
+                                    <li><div class="node"><span class="level-badge lvl-4">L4</span><span class="role">Project Director, DRDA</span></div></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!-- Police -->
+<div class="tree-section" id="police">
+    <h2><span class="sector-bar" style="background:rgb(229,62,62)"></span> Police</h2>
+    <p class="section-subtitle">Sector: Law Enforcement & Security | DGP → Constable</p>
+    <div class="tree-controls">
+        <button onclick="expandAll(this)">Expand All</button>
+        <button onclick="collapseAll(this)">Collapse All</button>
+    </div>
+    <div class="org-tree">
+        <ul>
+            <li>
+                <div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-1">L1</span><span class="role">Director General of Police (DGP)</span><span class="designation">Apex — State Police Head</span></div>
+                <ul>
+                    <li><div class="node"><span class="level-badge lvl-1">L1</span><span class="role">Additional DGP (Law & Order)</span></div></li>
+                    <li><div class="node"><span class="level-badge lvl-1">L1</span><span class="role">Additional DGP (CID / Intelligence)</span></div></li>
+                    <li>
+                        <div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-2">L2</span><span class="role">Inspector General (IG)</span><span class="designation">Range / Zone Level (4-6 ranges)</span></div>
+                        <ul>
+                            <li>
+                                <div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-2">L2</span><span class="role">Deputy Inspector General (DIG)</span><span class="designation">Range HQ</span></div>
+                                <ul>
+                                    <li>
+                                        <div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-3">L3</span><span class="role">Superintendent of Police (SP)</span><span class="designation">District Police Head (×26)</span></div>
+                                        <ul>
+                                            <li><div class="node"><span class="level-badge lvl-3">L3</span><span class="role">Additional SP</span></div></li>
+                                            <li>
+                                                <div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-4">L4</span><span class="role">Deputy SP (DSP / SDPO)</span><span class="designation">Sub-Division Level (3-5 per district)</span></div>
+                                                <ul>
+                                                    <li>
+                                                        <div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-5">L5</span><span class="role">Circle Inspector (CI)</span><span class="designation">Circle / Police Station Level</span></div>
+                                                        <ul>
+                                                            <li>
+                                                                <div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-6">L6</span><span class="role">Sub Inspector (SI)</span><span class="designation">Station House Officer (SHO)</span></div>
+                                                                <ul>
+                                                                    <li><div class="node"><span class="level-badge lvl-6">L6</span><span class="role">Assistant Sub Inspector (ASI)</span></div></li>
+                                                                    <li><div class="node"><span class="level-badge lvl-6">L6</span><span class="role">Head Constable</span></div></li>
+                                                                    <li><div class="node"><span class="level-badge lvl-6">L6</span><span class="role">Police Constable</span></div></li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!-- Fire & Emergency Services -->
+<div class="tree-section" id="fire">
+    <h2><span class="sector-bar" style="background:rgb(255,152,0)"></span> Fire & Emergency Services</h2>
+    <p class="section-subtitle">Sector: Fire & Rescue Forces | Director → Fireman</p>
+    <div class="tree-controls">
+        <button onclick="expandAll(this)">Expand All</button>
+        <button onclick="collapseAll(this)">Collapse All</button>
+    </div>
+    <div class="org-tree">
+        <ul>
+            <li>
+                <div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-1">L1</span><span class="role">Director of Fire Services</span><span class="designation">Apex — State Fire Head</span></div>
+                <ul>
+                    <li>
+                        <div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-2">L2</span><span class="role">Additional Director / Joint Director</span><span class="designation">HQ Administration</span></div>
+                        <ul>
+                            <li><div class="node"><span class="level-badge lvl-2">L2</span><span class="role">Deputy Director (Training)</span></div></li>
+                            <li><div class="node"><span class="level-badge lvl-2">L2</span><span class="role">Deputy Director (Operations)</span></div></li>
+                            <li>
+                                <div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-3">L3</span><span class="role">District Fire Officer (DFO)</span><span class="designation">District Level (×26)</span></div>
+                                <ul>
+                                    <li>
+                                        <div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-4">L4</span><span class="role">Asst District Fire Officer (ADFO)</span><span class="designation">Division Level</span></div>
+                                        <ul>
+                                            <li>
+                                                <div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-5">L5</span><span class="role">Station Fire Officer (SFO)</span><span class="designation">Fire Station Level</span></div>
+                                                <ul>
+                                                    <li><div class="node"><span class="level-badge lvl-6">L6</span><span class="role">Leading Fireman</span></div></li>
+                                                    <li><div class="node"><span class="level-badge lvl-6">L6</span><span class="role">Fireman</span></div></li>
+                                                    <li><div class="node"><span class="level-badge lvl-6">L6</span><span class="role">Driver Operator</span></div></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!-- SDRF -->
+<div class="tree-section" id="sdrf">
+    <h2><span class="sector-bar" style="background:rgb(255,183,77)"></span> SDRF (State Disaster Response Force)</h2>
+    <p class="section-subtitle">Sector: Fire & Rescue Forces | Commandant → Rescuer / Diver</p>
+    <div class="org-tree">
+        <ul>
+            <li>
+                <div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-1">L1</span><span class="role">Commandant, SDRF</span><span class="designation">Force Commander</span></div>
+                <ul>
+                    <li>
+                        <div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-2">L2</span><span class="role">Second-in-Command (2IC)</span></div>
+                        <ul>
+                            <li>
+                                <div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-2">L2</span><span class="role">Company Commander</span><span class="designation">Company Level (4-6 companies)</span></div>
+                                <ul>
+                                    <li>
+                                        <div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-3">L3</span><span class="role">Platoon Commander</span><span class="designation">District Deployment</span></div>
+                                        <ul>
+                                            <li>
+                                                <div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-4">L4</span><span class="role">Section Commander</span></div>
+                                                <ul>
+                                                    <li>
+                                                        <div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-5">L5</span><span class="role">Team Leader</span><span class="designation">Operational Team (8-12 members)</span></div>
+                                                        <ul>
+                                                            <li><div class="node"><span class="level-badge lvl-6">L6</span><span class="role">Rescuer</span></div></li>
+                                                            <li><div class="node"><span class="level-badge lvl-6">L6</span><span class="role">Diver</span></div></li>
+                                                            <li><div class="node"><span class="level-badge lvl-6">L6</span><span class="role">Paramedic</span></div></li>
+                                                            <li><div class="node"><span class="level-badge lvl-6">L6</span><span class="role">Boat Operator</span></div></li>
+                                                            <li><div class="node"><span class="level-badge lvl-6">L6</span><span class="role">Dog Handler</span></div></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!-- NDRF -->
+<div class="tree-section" id="ndrf">
+    <h2><span class="sector-bar" style="background:rgb(255,112,67)"></span> NDRF (National Disaster Response Force)</h2>
+    <p class="section-subtitle">Sector: Fire & Rescue Forces | DG NDRF → Rescuer / Engineer</p>
+    <div class="org-tree">
+        <ul>
+            <li>
+                <div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-1">L1</span><span class="role">DG, NDRF</span><span class="designation">National HQ, New Delhi</span></div>
+                <ul>
+                    <li>
+                        <div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-1">L1</span><span class="role">Battalion Commander (Commandant)</span><span class="designation">10th Bn NDRF, Vijayawada (AP)</span></div>
+                        <ul>
+                            <li><div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-2">L2</span><span class="role">Company Commander</span>
+                                <ul>
+                                    <li><div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-3">L3</span><span class="role">Platoon Commander</span>
+                                        <ul>
+                                            <li><div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-4">L4</span><span class="role">Section Commander</span>
+                                                <ul>
+                                                    <li><div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-5">L5</span><span class="role">Team Leader</span>
+                                                        <ul>
+                                                            <li><div class="node"><span class="level-badge lvl-6">L6</span><span class="role">Rescuer</span></div></li>
+                                                            <li><div class="node"><span class="level-badge lvl-6">L6</span><span class="role">Engineer (CBRN Specialist)</span></div></li>
+                                                            <li><div class="node"><span class="level-badge lvl-6">L6</span><span class="role">Medical First Responder</span></div></li>
+                                                        </ul>
+                                                    </div></li>
+                                                </ul>
+                                            </div></li>
+                                        </ul>
+                                    </div></li>
+                                </ul>
+                            </div></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!-- Medical & Public Health -->
+<div class="tree-section" id="medical">
+    <h2><span class="sector-bar" style="background:rgb(56,161,105)"></span> Medical & Public Health</h2>
+    <p class="section-subtitle">Sector: Health & Medical | Director → ANM / ASHA Worker</p>
+    <div class="tree-controls">
+        <button onclick="expandAll(this)">Expand All</button>
+        <button onclick="collapseAll(this)">Collapse All</button>
+    </div>
+    <div class="org-tree">
+        <ul>
+            <li>
+                <div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-1">L1</span><span class="role">Director of Public Health & Family Welfare</span><span class="designation">State Health Head</span></div>
+                <ul>
+                    <li><div class="node"><span class="level-badge lvl-1">L1</span><span class="role">Director of Medical Education</span></div></li>
+                    <li>
+                        <div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-2">L2</span><span class="role">Joint Director / Additional Director</span><span class="designation">Regional / HQ Level</span></div>
+                        <ul>
+                            <li><div class="node"><span class="level-badge lvl-2">L2</span><span class="role">Deputy Director (Epidemiology)</span></div></li>
+                            <li><div class="node"><span class="level-badge lvl-2">L2</span><span class="role">Deputy Director (Emergency Medical Services)</span></div></li>
+                            <li>
+                                <div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-3">L3</span><span class="role">DMHO (District Medical & Health Officer)</span><span class="designation">District Level (×26)</span></div>
+                                <ul>
+                                    <li>
+                                        <div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-4">L4</span><span class="role">Additional DMHO / Civil Surgeon</span><span class="designation">Area Hospital / CHC Level</span></div>
+                                        <ul>
+                                            <li><div class="node"><span class="level-badge lvl-4">L4</span><span class="role">Superintendent (District Hospital)</span></div></li>
+                                            <li><div class="node"><span class="level-badge lvl-4">L4</span><span class="role">Specialist (Surgeon / Physician)</span></div></li>
+                                            <li>
+                                                <div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-5">L5</span><span class="role">PHC Medical Officer</span><span class="designation">Primary Health Centre (Mandal Level)</span></div>
+                                                <ul>
+                                                    <li><div class="node"><span class="level-badge lvl-5">L5</span><span class="role">Pharmacist</span></div></li>
+                                                    <li><div class="node"><span class="level-badge lvl-5">L5</span><span class="role">Lab Technician</span></div></li>
+                                                    <li><div class="node"><span class="level-badge lvl-5">L5</span><span class="role">Staff Nurse</span></div></li>
+                                                    <li>
+                                                        <div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-6">L6</span><span class="role">ANM (Auxiliary Nurse Midwife)</span><span class="designation">Sub-Centre / Village Level</span></div>
+                                                        <ul>
+                                                            <li><div class="node"><span class="level-badge lvl-6">L6</span><span class="role">ASHA Worker</span><span class="designation">Village Health Volunteer</span></div></li>
+                                                            <li><div class="node"><span class="level-badge lvl-6">L6</span><span class="role">Anganwadi Worker</span></div></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!-- Veterinary -->
+<div class="tree-section" id="veterinary">
+    <h2><span class="sector-bar" style="background:rgb(72,187,120)"></span> Veterinary & Animal Husbandry</h2>
+    <p class="section-subtitle">Sector: Health & Medical | Director → Livestock Assistant</p>
+    <div class="org-tree">
+        <ul><li>
+            <div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-1">L1</span><span class="role">Director of Animal Husbandry</span></div>
+            <ul>
+                <li><div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-2">L2</span><span class="role">Joint Director / Regional JD</span>
+                    <ul>
+                        <li><div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-3">L3</span><span class="role">Deputy Director (District)</span>
+                            <ul>
+                                <li><div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-4">L4</span><span class="role">Asst Director / Veterinary Surgeon</span>
+                                    <ul>
+                                        <li><div class="node"><span class="level-badge lvl-5">L5</span><span class="role">Veterinary Asst Surgeon (Mandal)</span></div></li>
+                                        <li><div class="node"><span class="level-badge lvl-6">L6</span><span class="role">Livestock Assistant</span></div></li>
+                                    </ul>
+                                </div></li>
+                            </ul>
+                        </div></li>
+                    </ul>
+                </div></li>
+            </ul>
+        </li></ul>
+    </div>
+</div>
+
+<!-- Irrigation -->
+<div class="tree-section" id="irrigation">
+    <h2><span class="sector-bar" style="background:rgb(128,90,213)"></span> Irrigation & Water Resources</h2>
+    <p class="section-subtitle">Sector: Infrastructure & Utilities | ENC → Gate Operator / Lascur</p>
+    <div class="org-tree">
+        <ul><li>
+            <div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-1">L1</span><span class="role">Engineer-in-Chief (Irrigation)</span></div>
+            <ul>
+                <li><div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-2">L2</span><span class="role">Chief Engineer (Region / Projects)</span>
+                    <ul>
+                        <li><div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-2">L2</span><span class="role">Superintending Engineer (Circle)</span>
+                            <ul>
+                                <li><div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-3">L3</span><span class="role">Executive Engineer (Division / District)</span>
+                                    <ul>
+                                        <li><div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-4">L4</span><span class="role">Dy Executive Engineer / Asst Executive Engineer</span>
+                                            <ul>
+                                                <li><div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-5">L5</span><span class="role">Junior Engineer / Asst Engineer</span>
+                                                    <ul>
+                                                        <li><div class="node"><span class="level-badge lvl-6">L6</span><span class="role">Work Inspector</span></div></li>
+                                                        <li><div class="node"><span class="level-badge lvl-6">L6</span><span class="role">Gate Operator / Lascur</span></div></li>
+                                                        <li><div class="node"><span class="level-badge lvl-6">L6</span><span class="role">Flood Guard / Watchman</span></div></li>
+                                                    </ul>
+                                                </div></li>
+                                            </ul>
+                                        </div></li>
+                                    </ul>
+                                </div></li>
+                            </ul>
+                        </div></li>
+                    </ul>
+                </div></li>
+            </ul>
+        </li></ul>
+    </div>
+</div>
+
+<!-- Public Works / R&B -->
+<div class="tree-section" id="pwd">
+    <h2><span class="sector-bar" style="background:rgb(139,92,246)"></span> Public Works / R&B</h2>
+    <p class="section-subtitle">Sector: Infrastructure & Utilities | ENC (R&B) → Work Inspector</p>
+    <div class="org-tree">
+        <ul><li>
+            <div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-1">L1</span><span class="role">Engineer-in-Chief (R&B)</span></div>
+            <ul>
+                <li><div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-2">L2</span><span class="role">Chief Engineer / Superintending Engineer</span>
+                    <ul>
+                        <li><div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-3">L3</span><span class="role">Executive Engineer (District Division)</span>
+                            <ul>
+                                <li><div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-4">L4</span><span class="role">Dy EE / Asst Executive Engineer</span>
+                                    <ul>
+                                        <li><div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-5">L5</span><span class="role">Junior Engineer / Section Officer</span>
+                                            <ul>
+                                                <li><div class="node"><span class="level-badge lvl-6">L6</span><span class="role">Work Inspector</span></div></li>
+                                                <li><div class="node"><span class="level-badge lvl-6">L6</span><span class="role">Road Roller Operator</span></div></li>
+                                            </ul>
+                                        </div></li>
+                                    </ul>
+                                </div></li>
+                            </ul>
+                        </div></li>
+                    </ul>
+                </div></li>
+            </ul>
+        </li></ul>
+    </div>
+</div>
+
+<!-- Power / Electricity -->
+<div class="tree-section" id="power">
+    <h2><span class="sector-bar" style="background:rgb(167,139,250)"></span> Power / Electricity</h2>
+    <p class="section-subtitle">Sector: Infrastructure & Utilities | CMD → Lineman (APSPDCL / APEPDCL / APTRANSCO / APGENCO)</p>
+    <div class="org-tree">
+        <ul><li>
+            <div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-1">L1</span><span class="role">CMD (Chairman & Managing Director)</span><span class="designation">APSPDCL / APEPDCL / APTRANSCO / APGENCO</span></div>
+            <ul>
+                <li><div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-1">L1</span><span class="role">Director (Operations / Technical)</span>
+                    <ul>
+                        <li><div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-2">L2</span><span class="role">Chief General Manager / Superintending Engineer</span>
+                            <ul>
+                                <li><div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-3">L3</span><span class="role">Executive Engineer (District / Operation Circle)</span>
+                                    <ul>
+                                        <li><div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-4">L4</span><span class="role">Divisional Engineer / Asst Engineer</span>
+                                            <ul>
+                                                <li><div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-5">L5</span><span class="role">Junior Engineer / Line Inspector</span>
+                                                    <ul>
+                                                        <li><div class="node"><span class="level-badge lvl-6">L6</span><span class="role">Lineman / Energy Assistant</span></div></li>
+                                                        <li><div class="node"><span class="level-badge lvl-6">L6</span><span class="role">Helper / Wireman</span></div></li>
+                                                    </ul>
+                                                </div></li>
+                                            </ul>
+                                        </div></li>
+                                    </ul>
+                                </div></li>
+                            </ul>
+                        </div></li>
+                    </ul>
+                </div></li>
+            </ul>
+        </li></ul>
+    </div>
+</div>
+
+<!-- Telecom -->
+<div class="tree-section" id="telecom">
+    <h2><span class="sector-bar" style="background:rgb(109,40,217)"></span> Telecom & Communications</h2>
+    <p class="section-subtitle">Sector: Infrastructure & Utilities | Secretary IT&C → Technician</p>
+    <div class="org-tree">
+        <ul><li>
+            <div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-1">L1</span><span class="role">Secretary (IT, Electronics & Communications)</span></div>
+            <ul>
+                <li><div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-2">L2</span><span class="role">Commissioner / Director (IT&C)</span>
+                    <ul>
+                        <li><div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-3">L3</span><span class="role">General Manager (BSNL District)</span>
+                            <ul>
+                                <li><div class="node"><span class="level-badge lvl-4">L4</span><span class="role">Divisional Engineer (Telecom)</span></div></li>
+                                <li><div class="node"><span class="level-badge lvl-5">L5</span><span class="role">Sub Divisional Engineer</span></div></li>
+                                <li><div class="node"><span class="level-badge lvl-6">L6</span><span class="role">Junior Telecom Officer / Technician</span></div></li>
+                            </ul>
+                        </div></li>
+                    </ul>
+                </div></li>
+            </ul>
+        </li></ul>
+    </div>
+</div>
+
+<!-- Transport -->
+<div class="tree-section" id="transport">
+    <h2><span class="sector-bar" style="background:rgb(91,33,182)"></span> Transport</h2>
+    <p class="section-subtitle">Sector: Infrastructure & Utilities | Commissioner Transport → MVI</p>
+    <div class="org-tree">
+        <ul><li>
+            <div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-1">L1</span><span class="role">Commissioner of Transport</span></div>
+            <ul>
+                <li><div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-2">L2</span><span class="role">Joint Commissioner / Additional Commissioner</span>
+                    <ul>
+                        <li><div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-3">L3</span><span class="role">Regional Transport Officer (RTO) — District</span>
+                            <ul>
+                                <li><div class="node"><span class="level-badge lvl-4">L4</span><span class="role">Deputy Transport Commissioner</span></div></li>
+                                <li><div class="node"><span class="level-badge lvl-5">L5</span><span class="role">Motor Vehicle Inspector (MVI)</span></div></li>
+                                <li><div class="node"><span class="level-badge lvl-6">L6</span><span class="role">Asst MVI / Enforcement Inspector</span></div></li>
+                            </ul>
+                        </div></li>
+                    </ul>
+                </div></li>
+                <li><div class="node"><span class="level-badge lvl-2">L2</span><span class="role">MD, APSRTC</span><span class="designation">State Road Transport Corporation</span></div></li>
+            </ul>
+        </li></ul>
+    </div>
+</div>
+
+<!-- Municipal & Urban Development -->
+<div class="tree-section" id="municipal">
+    <h2><span class="sector-bar" style="background:rgb(124,58,237)"></span> Municipal & Urban Development</h2>
+    <p class="section-subtitle">Sector: Infrastructure & Utilities | Commissioner MA → Ward Secretary</p>
+    <div class="org-tree">
+        <ul><li>
+            <div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-1">L1</span><span class="role">Commissioner (Municipal Administration)</span></div>
+            <ul>
+                <li><div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-2">L2</span><span class="role">Director of Town & Country Planning</span>
+                    <ul>
+                        <li><div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-3">L3</span><span class="role">Municipal Commissioner / Commissioner (Corporation)</span><span class="designation">City / Town Level</span>
+                            <ul>
+                                <li><div class="node"><span class="level-badge lvl-4">L4</span><span class="role">City Planner / Superintendent Engineer</span></div></li>
+                                <li><div class="node"><span class="level-badge lvl-5">L5</span><span class="role">Town Planning Officer / Sanitary Inspector</span></div></li>
+                                <li><div class="node"><span class="level-badge lvl-6">L6</span><span class="role">Ward Secretary / Sanitary Worker</span></div></li>
+                            </ul>
+                        </div></li>
+                    </ul>
+                </div></li>
+            </ul>
+        </li></ul>
+    </div>
+</div>
+
+<!-- Panchayat Raj -->
+<div class="tree-section" id="panchayat">
+    <h2><span class="sector-bar" style="background:rgb(38,166,154)"></span> Panchayat Raj & Rural Development</h2>
+    <p class="section-subtitle">Sector: Rural & Social Services | Commissioner PR → Panchayat Secretary</p>
+    <div class="org-tree">
+        <ul><li>
+            <div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-1">L1</span><span class="role">Commissioner, Panchayat Raj & Rural Development</span></div>
+            <ul>
+                <li><div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-2">L2</span><span class="role">Director / Joint Director PR</span>
+                    <ul>
+                        <li><div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-3">L3</span><span class="role">CEO, Zilla Parishad (District)</span>
+                            <ul>
+                                <li><div class="node"><span class="level-badge lvl-3">L3</span><span class="role">Project Director, DRDA</span></div></li>
+                                <li><div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-5">L5</span><span class="role">MPDO (Mandal Parishad Dev Officer)</span><span class="designation">Mandal Level</span>
+                                    <ul>
+                                        <li><div class="node"><span class="level-badge lvl-5">L5</span><span class="role">Extension Officer (Panchayat)</span></div></li>
+                                        <li><div class="node"><span class="level-badge lvl-6">L6</span><span class="role">Panchayat Secretary / Ward Secretary</span></div></li>
+                                        <li><div class="node"><span class="level-badge lvl-6">L6</span><span class="role">Village Development Officer</span></div></li>
+                                    </ul>
+                                </div></li>
+                            </ul>
+                        </div></li>
+                    </ul>
+                </div></li>
+            </ul>
+        </li></ul>
+    </div>
+</div>
+
+<!-- Food & Civil Supplies -->
+<div class="tree-section" id="food">
+    <h2><span class="sector-bar" style="background:rgb(0,150,136)"></span> Food & Civil Supplies</h2>
+    <p class="section-subtitle">Sector: Rural & Social Services | Commissioner → Fair Price Shop Dealer</p>
+    <div class="org-tree">
+        <ul><li>
+            <div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-1">L1</span><span class="role">Commissioner of Civil Supplies</span></div>
+            <ul>
+                <li><div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-2">L2</span><span class="role">Joint Commissioner / Director</span>
+                    <ul>
+                        <li><div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-3">L3</span><span class="role">District Supply Officer (DSO)</span>
+                            <ul>
+                                <li><div class="node"><span class="level-badge lvl-4">L4</span><span class="role">Asst Supply Officer</span></div></li>
+                                <li><div class="node"><span class="level-badge lvl-5">L5</span><span class="role">Mandal Supply Officer</span></div></li>
+                                <li><div class="node"><span class="level-badge lvl-6">L6</span><span class="role">Fair Price Shop (FPS) Dealer</span></div></li>
+                            </ul>
+                        </div></li>
+                    </ul>
+                </div></li>
+            </ul>
+        </li></ul>
+    </div>
+</div>
+
+<!-- Education -->
+<div class="tree-section" id="education">
+    <h2><span class="sector-bar" style="background:rgb(0,137,123)"></span> Education</h2>
+    <p class="section-subtitle">Sector: Rural & Social Services | Commissioner SE → Teacher</p>
+    <div class="org-tree">
+        <ul><li>
+            <div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-1">L1</span><span class="role">Commissioner of School Education</span></div>
+            <ul>
+                <li><div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-2">L2</span><span class="role">Director of School Education / Regional Joint Director</span>
+                    <ul>
+                        <li><div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-3">L3</span><span class="role">DEO (District Educational Officer)</span>
+                            <ul>
+                                <li><div class="node"><span class="level-badge lvl-4">L4</span><span class="role">Deputy DEO / Dy Inspector of Schools</span></div></li>
+                                <li><div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-5">L5</span><span class="role">MEO (Mandal Educational Officer)</span>
+                                    <ul>
+                                        <li><div class="node"><span class="level-badge lvl-6">L6</span><span class="role">Head Master / School Head</span></div></li>
+                                        <li><div class="node"><span class="level-badge lvl-6">L6</span><span class="role">School Assistant / Teacher</span></div></li>
+                                    </ul>
+                                </div></li>
+                            </ul>
+                        </div></li>
+                    </ul>
+                </div></li>
+            </ul>
+        </li></ul>
+    </div>
+</div>
+
+<!-- Agriculture & Fisheries -->
+<div class="tree-section" id="agriculture">
+    <h2><span class="sector-bar" style="background:rgb(77,182,172)"></span> Agriculture & Fisheries</h2>
+    <p class="section-subtitle">Sector: Rural & Social Services | Commissioner → AEO</p>
+    <div class="org-tree">
+        <ul><li>
+            <div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-1">L1</span><span class="role">Commissioner & Director of Agriculture</span></div>
+            <ul>
+                <li><div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-2">L2</span><span class="role">Joint Director of Agriculture</span>
+                    <ul>
+                        <li><div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-3">L3</span><span class="role">Deputy Director of Agriculture (District)</span>
+                            <ul>
+                                <li><div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-4">L4</span><span class="role">Asst Director of Agriculture (ADA)</span>
+                                    <ul>
+                                        <li><div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-5">L5</span><span class="role">Mandal Agricultural Officer (MAO)</span>
+                                            <ul>
+                                                <li><div class="node"><span class="level-badge lvl-6">L6</span><span class="role">Agricultural Extension Officer (AEO)</span></div></li>
+                                                <li><div class="node"><span class="level-badge lvl-6">L6</span><span class="role">Agricultural Field Assistant</span></div></li>
+                                            </ul>
+                                        </div></li>
+                                    </ul>
+                                </div></li>
+                            </ul>
+                        </div></li>
+                    </ul>
+                </div></li>
+                <li><div class="node"><span class="level-badge lvl-2">L2</span><span class="role">Commissioner of Fisheries</span></div></li>
+            </ul>
+        </li></ul>
+    </div>
+</div>
+
+<!-- Armed Forces -->
+<div class="tree-section" id="armed">
+    <h2><span class="sector-bar" style="background:rgb(197,48,48)"></span> Armed Forces (Aid to Civil Authority)</h2>
+    <p class="section-subtitle">Sector: Law Enforcement & Security | GOC-in-C → Jawan</p>
+    <div class="org-tree">
+        <ul><li>
+            <div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-1">L1</span><span class="role">GOC-in-C, Southern Command / Eastern Naval Command</span></div>
+            <ul>
+                <li><div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-2">L2</span><span class="role">Division / Brigade Commander</span>
+                    <ul>
+                        <li><div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-3">L3</span><span class="role">CO / Battalion Commander</span>
+                            <ul>
+                                <li><div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-4">L4</span><span class="role">Company Commander (Major / Captain)</span>
+                                    <ul>
+                                        <li><div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-5">L5</span><span class="role">Platoon Commander (Lieutenant)</span>
+                                            <ul>
+                                                <li><div class="node"><span class="level-badge lvl-6">L6</span><span class="role">Section Commander (JCO / Havildar)</span></div></li>
+                                                <li><div class="node"><span class="level-badge lvl-6">L6</span><span class="role">Jawan / Sepoy</span></div></li>
+                                            </ul>
+                                        </div></li>
+                                    </ul>
+                                </div></li>
+                            </ul>
+                        </div></li>
+                    </ul>
+                </div></li>
+            </ul>
+        </li></ul>
+    </div>
+</div>
+
+<!-- Civil Defence -->
+<div class="tree-section" id="civildefence">
+    <h2><span class="sector-bar" style="background:rgb(66,153,225)"></span> Civil Defence</h2>
+    <p class="section-subtitle">Sector: Executive & Revenue Admin</p>
+    <div class="org-tree">
+        <ul><li>
+            <div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-1">L1</span><span class="role">Director of Civil Defence</span></div>
+            <ul>
+                <li><div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-2">L2</span><span class="role">Deputy Director / Controller</span>
+                    <ul>
+                        <li><div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-3">L3</span><span class="role">District Civil Defence Officer</span>
+                            <ul>
+                                <li><div class="node"><span class="level-badge lvl-5">L5</span><span class="role">Warden (Sector / Block)</span></div></li>
+                                <li><div class="node"><span class="level-badge lvl-6">L6</span><span class="role">Civil Defence Volunteer</span></div></li>
+                            </ul>
+                        </div></li>
+                    </ul>
+                </div></li>
+            </ul>
+        </li></ul>
+    </div>
+</div>
+
+<!-- Home Guards -->
+<div class="tree-section" id="homeguards">
+    <h2><span class="sector-bar" style="background:rgb(99,179,237)"></span> Home Guards</h2>
+    <p class="section-subtitle">Sector: Executive & Revenue Admin</p>
+    <div class="org-tree">
+        <ul><li>
+            <div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-1">L1</span><span class="role">Commandant General, Home Guards</span></div>
+            <ul>
+                <li><div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-2">L2</span><span class="role">Additional CG / Deputy CG</span>
+                    <ul>
+                        <li><div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-3">L3</span><span class="role">District Commandant</span>
+                            <ul>
+                                <li><div class="node"><span class="level-badge lvl-4">L4</span><span class="role">Company Commander</span></div></li>
+                                <li><div class="node"><span class="level-badge lvl-5">L5</span><span class="role">Platoon Commander</span></div></li>
+                                <li><div class="node"><span class="level-badge lvl-6">L6</span><span class="role">Home Guard Volunteer</span></div></li>
+                            </ul>
+                        </div></li>
+                    </ul>
+                </div></li>
+            </ul>
+        </li></ul>
+    </div>
+</div>
+
+<!-- NCC -->
+<div class="tree-section" id="ncc">
+    <h2><span class="sector-bar" style="background:rgb(214,158,46)"></span> NCC / Youth Organizations</h2>
+    <p class="section-subtitle">Sector: Youth & Voluntary Sector</p>
+    <div class="org-tree">
+        <ul><li>
+            <div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-1">L1</span><span class="role">ADG, NCC Directorate (AP & Telangana)</span></div>
+            <ul>
+                <li><div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-2">L2</span><span class="role">Group Commander / Deputy DG</span>
+                    <ul>
+                        <li><div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-3">L3</span><span class="role">Commanding Officer (CO), NCC Battalion</span>
+                            <ul>
+                                <li><div class="node"><span class="level-badge lvl-4">L4</span><span class="role">Company Commander</span></div></li>
+                                <li><div class="node"><span class="level-badge lvl-5">L5</span><span class="role">Associate NCC Officer (ANO)</span></div></li>
+                                <li><div class="node"><span class="level-badge lvl-6">L6</span><span class="role">NCC Cadet (Senior / Junior)</span></div></li>
+                            </ul>
+                        </div></li>
+                    </ul>
+                </div></li>
+                <li><div class="node"><span class="level-badge lvl-2">L2</span><span class="role">District Coordinator, NSS / Nehru Yuva Kendra</span></div></li>
+            </ul>
+        </li></ul>
+    </div>
+</div>
+
+<!-- NGOs -->
+<div class="tree-section" id="ngo">
+    <h2><span class="sector-bar" style="background:rgb(236,201,75)"></span> NGOs & Volunteer Organizations</h2>
+    <p class="section-subtitle">Sector: Youth & Voluntary Sector | Structure varies by organization</p>
+    <div class="org-tree">
+        <ul><li>
+            <div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-1">L1</span><span class="role">State Coordinator / Country Director</span><span class="designation">e.g., Red Cross, Oxfam, SEEDS, Mercy Corps</span></div>
+            <ul>
+                <li><div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-2">L2</span><span class="role">Regional / Programme Manager</span>
+                    <ul>
+                        <li><div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-3">L3</span><span class="role">District Coordinator / Project Lead</span>
+                            <ul>
+                                <li><div class="node"><span class="level-badge lvl-4">L4</span><span class="role">Block Coordinator</span></div></li>
+                                <li><div class="node"><span class="level-badge lvl-5">L5</span><span class="role">Field Officer / Community Mobilizer</span></div></li>
+                                <li><div class="node"><span class="level-badge lvl-6">L6</span><span class="role">Trained Volunteer / First Responder</span></div></li>
+                            </ul>
+                        </div></li>
+                    </ul>
+                </div></li>
+            </ul>
+        </li></ul>
+    </div>
+</div>
+
+<!-- APSDMA / DM Coordination -->
+<div class="tree-section" id="apsdma">
+    <h2><span class="sector-bar" style="background:rgb(194,24,91)"></span> APSDMA / DM Coordination</h2>
+    <p class="section-subtitle">Sector: Information & Coordination</p>
+    <div class="org-tree">
+        <ul><li>
+            <div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-1">L1</span><span class="role">Vice-Chairperson, SDMA (Chief Secretary)</span></div>
+            <ul>
+                <li><div class="node"><span class="toggle">&#9660;</span><span class="level-badge lvl-2">L2</span><span class="role">MD, APSDMA</span><span class="designation">Managing Director</span>
+                    <ul>
+                        <li><div class="node"><span class="level-badge lvl-2">L2</span><span class="role">Director (Operations)</span></div></li>
+                        <li><div class="node"><span class="level-badge lvl-2">L2</span><span class="role">Director (Preparedness & Mitigation)</span></div></li>
+                        <li><div class="node"><span class="level-badge lvl-3">L3</span><span class="role">Joint Director (GIS & Technology)</span></div></li>
+                        <li><div class="node"><span class="level-badge lvl-3">L3</span><span class="role">Joint Director (Training & Capacity Building)</span></div></li>
+                        <li><div class="node"><span class="level-badge lvl-3">L3</span><span class="role">SEOC Incharge (State Emergency Operations Centre)</span></div></li>
+                        <li><div class="node"><span class="level-badge lvl-4">L4</span><span class="role">Deputy Director / Consultant</span></div></li>
+                        <li><div class="node"><span class="level-badge lvl-5">L5</span><span class="role">GIS Analyst / Data Analyst</span></div></li>
+                        <li><div class="node"><span class="level-badge lvl-5">L5</span><span class="role">SEOC Duty Officer</span></div></li>
+                    </ul>
+                </div></li>
+            </ul>
+        </li></ul>
+    </div>
+</div>
+
+<!-- ============================================================
+     SECTION 3: 5 VIEW MODE TREE STRUCTURES
+     ============================================================ -->
+<div class="tree-section" id="view-modes">
+    <h2>5 View Mode — Tree Structures</h2>
+    <p class="section-subtitle">How each view mode reorganizes the same personnel data into different tree hierarchies</p>
+
+    <div class="view-tree-box">
+        <h4>1. Department View (Default)</h4>
+        <div class="org-tree">
+            <ul><li>
+                <div class="node"><span class="toggle">&#9660;</span><span class="role">Sector</span><span class="designation">e.g., Executive & Revenue Admin</span></div>
+                <ul>
+                    <li><div class="node"><span class="toggle">&#9660;</span><span class="role">Category</span><span class="designation">e.g., Revenue & District Administration</span></div>
+                        <ul>
+                            <li><div class="node"><span class="toggle">&#9660;</span><span class="role">District</span><span class="designation">e.g., Krishna</span></div>
+                                <ul>
+                                    <li><div class="node"><span class="role">Person</span><span class="designation">Name, Designation</span></div></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li></ul>
+        </div>
+        <p style="font-size:13px;color:var(--text-muted);margin-top:8px;"><strong>Map:</strong> Color-coded by 8 sectors. <strong>Use:</strong> "Show all Fire dept personnel across AP"</p>
+    </div>
+
+    <div class="view-tree-box">
+        <h4>2. Geographic View</h4>
+        <div class="org-tree">
+            <ul><li>
+                <div class="node"><span class="toggle">&#9660;</span><span class="role">District</span><span class="designation">e.g., Prakasam</span></div>
+                <ul>
+                    <li><div class="node"><span class="toggle">&#9660;</span><span class="role">Mandal</span><span class="designation">e.g., Ongole</span></div>
+                        <ul>
+                            <li><div class="node"><span class="toggle">&#9660;</span><span class="role">Category</span><span class="designation">e.g., Police</span></div>
+                                <ul>
+                                    <li><div class="node"><span class="role">Person</span><span class="designation">Name, Designation</span></div></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li></ul>
+        </div>
+        <p style="font-size:13px;color:var(--text-muted);margin-top:8px;"><strong>Map:</strong> Admin boundary emphasis, color by category. <strong>Use:</strong> "Who is posted in Prakasam district?"</p>
+    </div>
+
+    <div class="view-tree-box">
+        <h4>3. ESF View</h4>
+        <div class="org-tree">
+            <ul><li>
+                <div class="node"><span class="toggle">&#9660;</span><span class="role">ESF Number</span><span class="designation">e.g., ESF-4: Search & Rescue</span></div>
+                <ul>
+                    <li><div class="node"><span class="toggle">&#9660;</span><span class="role">Lead Agency</span><span class="designation">e.g., SDRF</span></div>
+                        <ul>
+                            <li><div class="node"><span class="role">Person</span><span class="designation">Name, Designation</span></div></li>
+                        </ul>
+                    </li>
+                    <li><div class="node"><span class="toggle">&#9660;</span><span class="role">Supporting Agencies</span>
+                        <ul>
+                            <li><div class="node"><span class="role">Person</span><span class="designation">Name, Designation</span></div></li>
+                        </ul>
+                    </div></li>
+                </ul>
+            </li></ul>
+        </div>
+        <p style="font-size:13px;color:var(--text-muted);margin-top:8px;"><strong>Map:</strong> Color by primary ESF (16 colors). <strong>Use:</strong> "Who handles ESF-4 Search & Rescue?"</p>
+    </div>
+
+    <div class="view-tree-box">
+        <h4>4. Chain of Command View</h4>
+        <div class="org-tree">
+            <ul><li>
+                <div class="node"><span class="toggle">&#9660;</span><span class="role">Level 1 — Apex</span><span class="designation">e.g., Chief Secretary</span></div>
+                <ul>
+                    <li><div class="node"><span class="toggle">&#9660;</span><span class="role">Level 2 — Dept Head</span><span class="designation">e.g., MD APSDMA</span></div>
+                        <ul>
+                            <li><div class="node"><span class="toggle">&#9660;</span><span class="role">Level 3 — District</span><span class="designation">e.g., Collector, Krishna</span></div>
+                                <ul>
+                                    <li><div class="node"><span class="toggle">&#9660;</span><span class="role">Level 4 — Sub-District</span><span class="designation">e.g., RDO, Machilipatnam</span></div>
+                                        <ul>
+                                            <li><div class="node"><span class="toggle">&#9660;</span><span class="role">Level 5 — Mandal</span><span class="designation">e.g., Tahsildar</span></div>
+                                                <ul>
+                                                    <li><div class="node"><span class="role">Level 6 — Village</span><span class="designation">e.g., VRO</span></div></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li></ul>
+        </div>
+        <p style="font-size:13px;color:var(--text-muted);margin-top:8px;"><strong>Map:</strong> Graduated color by hierarchy level. <strong>Use:</strong> "Show reporting chain from CS down through Revenue"</p>
+    </div>
+
+    <div class="view-tree-box">
+        <h4>5. Disaster Duty View</h4>
+        <div class="org-tree">
+            <ul><li>
+                <div class="node"><span class="toggle">&#9660;</span><span class="role">Disaster / Event</span><span class="designation">e.g., Cyclone DANA — Oct 2025</span></div>
+                <ul>
+                    <li><div class="node"><span class="toggle">&#9660;</span><span class="role">Duty Status</span><span class="designation">e.g., On Duty</span></div>
+                        <ul>
+                            <li><div class="node"><span class="toggle">&#9660;</span><span class="role">Team / Group</span><span class="designation">e.g., SDRF Team Alpha</span></div>
+                                <ul>
+                                    <li><div class="node"><span class="role">Person</span><span class="designation">Name, Duty Location, Shift</span></div></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li></ul>
+        </div>
+        <p style="font-size:13px;color:var(--text-muted);margin-top:8px;"><strong>Map:</strong> Color by duty status (On Duty=green, Standby=blue). <strong>Use:</strong> "During a cyclone, who is deployed where?"</p>
+    </div>
+</div>
+
+</div><!-- end page-body -->
+
+<!-- Footer -->
+<div class="site-footer visible">
+    <div class="footer-tricolor"></div>
+    <div class="footer-main">
+        <div class="footer-grid">
+            <div class="footer-col"><h4>About APSDMA</h4><p>The Andhra Pradesh State Disaster Management Authority (APSDMA) is the apex body for disaster management in the state, established under the Disaster Management Act, 2005.</p></div>
+            <div class="footer-col"><h4>Emergency Contacts</h4>
+                <ul class="emergency-list">
+                    <li><span class="em-label">APSDMA Helpline</span><span class="em-num">1070</span></li>
+                    <li><span class="em-label">National Emergency</span><span class="em-num">112</span></li>
+                    <li><span class="em-label">Police</span><span class="em-num">100</span></li>
+                    <li><span class="em-label">Fire</span><span class="em-num">101</span></li>
+                    <li><span class="em-label">Ambulance</span><span class="em-num">108</span></li>
+                </ul>
+            </div>
+            <div class="footer-col"><h4>Quick Links</h4>
+                <ul class="quick-links">
+                    <li><a href="index.html">Personnel Directory &rarr;</a></li>
+                    <li><a href="https://apsdmagis.ap.gov.in/gisportal" target="_blank" rel="noopener">APSDMA Portal &rarr;</a></li>
+                    <li><a href="https://ndma.gov.in" target="_blank" rel="noopener">NDMA &rarr;</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">&copy; 2026 APSDMA, Government of Andhra Pradesh. All Rights Reserved.</div>
+</div>
+
+<!-- ── Tree Toggle Script ── -->
+<script>
+(function() {
+    // Toggle tree node expand/collapse
+    document.querySelectorAll('.org-tree .toggle').forEach(function(toggle) {
+        toggle.addEventListener('click', function(e) {
+            e.stopPropagation();
+            var li = this.closest('li');
+            li.classList.toggle('collapsed');
+        });
+    });
+
+    // Also toggle when clicking the node itself
+    document.querySelectorAll('.org-tree .node').forEach(function(node) {
+        node.addEventListener('click', function() {
+            var li = this.closest('li');
+            if (li.querySelector('ul')) {
+                li.classList.toggle('collapsed');
+            }
+        });
+    });
+})();
+
+function expandAll(btn) {
+    var section = btn.closest('.tree-section');
+    section.querySelectorAll('.org-tree li.collapsed').forEach(function(li) {
+        li.classList.remove('collapsed');
+    });
+}
+
+function collapseAll(btn) {
+    var section = btn.closest('.tree-section');
+    section.querySelectorAll('.org-tree li').forEach(function(li) {
+        if (li.querySelector('ul')) {
+            li.classList.add('collapsed');
+        }
+    });
+}
+</script>
+</body>
+</html>
