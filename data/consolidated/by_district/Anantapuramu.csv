@@ -1,0 +1,178 @@
+﻿person_name,designation,department,category,district,mandal,hierarchy_level,status,phone,phone_alt,whatsapp,email,employee_id,posting_type,rank,dm_role,reports_to,office_address,longitude,latitude,source,source_id
+B.G. Ramesh,Superintendent of Police,Home,Home,Anantapuramu,,3,Active,,,,,,,IPS,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (AP 40-Dept Rebuild 2026),9309
+O.Anand,Collector & District Magistrate,Revenue,Revenue,Anantapuramu,,3,Active,,,,collector_antp@ap.gov.in,,,IAS,,,"Collectorate, Anantapuramu.",77.60060000000004,14.681900000000041,GIS_DM_Personnel (AP 40-Dept Rebuild 2026),10037
+"C Vishnu Charan I.A.S.,",Joint Collector & Addl District Magistrate,Revenue,Revenue,Anantapuramu,,4,Active,,,,jc_antp@ap.gov.in,,,IAS,,,"Collectorate, Anantapuramu.",77.60060000000004,14.681900000000041,GIS_DM_Personnel (AP 40-Dept Rebuild 2026),10038
+A.Malola,District Revenue Officer,Revenue,Revenue,Anantapuramu,,4,Active,,,,,,,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (AP 40-Dept Rebuild 2026),10039
+"P. Jagadeesh, I.P.S.,",Superintendent of Police,Home,Home,Anantapuramu,,3,Active,,,,sp@atp.appolice.gov.in,,,IPS,,,"S.P office, Anantapuramu.515001 Landline number-08554-240105 email ID: spatp1@gmail.com",77.60060000000004,14.681900000000041,GIS_DM_Personnel (AP 40-Dept Rebuild 2026),10040
+O. Anand,Collector & District Magistrate,Revenue,Revenue,Anantapuramu,,3,Active,,,,,,,IAS,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (AP 40-Dept Rebuild 2026),10594
+Sri C Vishnu Charan,Joint Collector,Revenue,Revenue,Anantapuramu,,3,Active,9849399611,,,,14989085,Regular,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12228
+Sri A Malola,District Revenue Officer,Revenue,Revenue,Anantapuramu,,5,Active,9493188810,,,,14234104,Regular,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12229
+Sri R Vijayasaradhi,"Assistant Director, Survey & Land Records",Revenue,Revenue,Anantapuramu,,5,Active,9908369736,,,,14391892,FAC,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12230
+Smt P Padmavathi,"DPM, Disaster Management",Revenue,Revenue,Anantapuramu,,5,Active,8008885736,,,,14348086,Regular,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12231
+Sri G Ramakrishna Reddy,Forest Settlement Officer,Revenue,Revenue,Anantapuramu,,5,Active,9493855455,,,,14297319,Regular,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12232
+Smt P Padmavathi,SDC KRRC,Revenue,Revenue,Anantapuramu,,5,Active,8008885736,,,,14348086,FAC,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12233
+Sri P Jagadeesh IPS,Superintendent of Police,Home,Home,Anantapuramu,,3,Active,9440796800,,,,14885332,Regular,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12234
+Sri G Siva Sankar,"Chief Executive Officer, Zilla Parishad",PR & RD,PR & RD,Anantapuramu,,3,Active,9441699119,,,,14228589,Regular,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12236
+Sri T Nagaraja Naidu,District Panchayat Officer,PR & RD,PR & RD,Anantapuramu,,5,Active,7382996167,,,,14470522,Regular,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12237
+Sri T Nagaraja Naidu,District Swarna Gramam & Swarna Wardu Officer ,PR & RD,PR & RD,Anantapuramu,,5,Active,7382996167,,,,14470522,FAC,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12238
+Smt T Sailaja,"Project Director, DRDA",PR & RD,PR & RD,Anantapuramu,,5,Active,9866664651,,,,14461641,FAC,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12239
+Sri N Saleem Basha,"Project Director, DWMA",PR & RD,PR & RD,Anantapuramu,,5,Active,8008688804,,,,14232005,Regular,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12240
+Smt Khushbu Kothari,District BC Welfare & Empowerment Officer,Social Welfare,Social Welfare,Anantapuramu,,5,Active,9194105551,,,,14076013,Regular,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12241
+Sri G Rama Subba Reddy,District Minority Welfare & Empowerment Officer,Social Welfare,Social Welfare,Anantapuramu,,5,Active,9440665889,,,,14261837,Regular,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12242
+Smt Khushbu Kothari,District SC Welfare & Enpowerment Officer,Social Welfare,Social Welfare,Anantapuramu,,5,Active,9414055515,,,,14076013,FAC,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12243
+Sri M Srinivasa Rao,District Tribal Welfare & Empowerment Officer,Social Welfare,Social Welfare,Anantapuramu,,5,Active,9490937447,,,,14344975,Regular,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12244
+Smt M Sreedevi,District Women and Child Welfare & Empowerment Officer,Social Welfare,Social Welfare,Anantapuramu,,5,Active,9440814471,,,,14313174,FAC,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12245
+Sri G Rama Subba Reddy,"Executive Director, BC Corpn ",Social Welfare,Social Welfare,Anantapuramu,,5,Active,9440665889,,,,14261837,FAC,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12246
+M Kumudha,"Executive Director,SC Corpn",Social Welfare,Social Welfare,Anantapuramu,,5,Active,8790720201,,,,15213245,FAC,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12247
+Sri M Ravi,District Agricultural Officer,Agriculture,Agriculture,Anantapuramu,,5,Active,8331057599,,,,14250142,FAC,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12248
+Sri P Preamachandu,District Animal Husbandry Officer,Agriculture,Agriculture,Anantapuramu,,5,Active,9989932894,,,,14154394,Regular,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12249
+Smt E Aruna Kumari,District Co-Operative Officer,Agriculture,Agriculture,Anantapuramu,,5,Active,9100109211,,,,14311415,Regular,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12250
+Sri N Chandrasekhar Reddy,District Fisheries Officer,Agriculture,Agriculture,Anantapuramu,,5,Active,7780320528,,,,14289441,FAC,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12251
+Smt D Umadevi,District Horticulture Officer,Agriculture,Agriculture,Anantapuramu,,5,Active,7995086792,,,,14408424,Regular,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12252
+Smt P M Penneswari,District Manager AP Markfed,Agriculture,Agriculture,Anantapuramu,,5,Active,8978381841,,,,,Regular,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12253
+Sri I Vijaya Kumar,District Sericulture Officer,Agriculture,Agriculture,Anantapuramu,,5,Active,8639500606,,,,14369675,Regular,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12254
+Sri T Venkateswarlu,District Civil Supply Officer,Civil Supplies,Civil Supplies,Anantapuramu,,5,Active,8008301418,,,,14194700,Regular,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12255
+Sri G Ramesh Reddy,"District Manager, Civil Supplies Corporation",Civil Supplies,Civil Supplies,Anantapuramu,,5,Active,7702003532,,,,14442256,Regular,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12256
+Sri M Prasad Babu,District Educational Officer,Education,Education,Anantapuramu,,5,Active,9849909112,,,,14445734,FAC,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12257
+Sri SVS Guruvaiah Chetty,District Intermediate Education Officer,Education,Education,Anantapuramu,,5,Active,9440816010,,,,14221114,Regular,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12258
+Smt T Sailaja,"Addl Project Co-ordinator, Samagra Siksha",Education,Education,Anantapuramu,,5,Active,9849909135,,,,14461641,Regular,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12259
+Sri S Venkteswarulu,"Deputy Director, Adult Education",Education,Education,Anantapuramu,,5,Active,9849909212,,,,14233862,FAC,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12260
+Sri S Jayachandra,"Superintending Engineer, APTRANSCO",Energy,Energy,Anantapuramu,,4,Active,9989945323,,,,,Regular,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12261
+Sri M Siva Sankara Naidu,"District Manager, NREDCAP",Energy,Energy,Anantapuramu,,5,Active,7330869454,,,,,FAC,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12262
+Sri Y C Subbarayudu,District Engineer Officer PR Engineering,Infrastructure,Infrastructure,Anantapuramu,,5,Active,9377841234,,,,14250861,Regular,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12263
+Sri G Suryanarayana,District Public Health Engineer Officer,Infrastructure,Infrastructure,Anantapuramu,,5,Active,9701278800,,,,14396226,FAC,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12264
+Sri R Suresh,District RWS Engineer,Infrastructure,Infrastructure,Anantapuramu,,5,Active,9014212899,,,,14203872,Regular,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12265
+Sri G Vishwanath Reddy,"District Water Resources Officer, Irrigation",Infrastructure,Infrastructure,Anantapuramu,,5,Active,8333028549,,,,14478668,Regular,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12266
+Sri PV Ramana Reddy,"EE, APEWIDC",Infrastructure,Infrastructure,Anantapuramu,,5,Active,9704701574,,,,15040566,Regular,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12267
+Sri G Rama Mohan,"EE, APMSIDC",Infrastructure,Infrastructure,Anantapuramu,,5,Active,8978680866,,,,14217886,FAC,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12268
+Sri Y Murali Krishna,"Superintending Engineer, R&B",Infrastructure,Infrastructure,Anantapuramu,,4,Active,9985112738,,,,14286805,Regular,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12269
+Sri D Obulu,District Malaria Officer,HM & FW,Health,Anantapuramu,,5,Active,9866229377,,,,14386339,Regular,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12270
+Dr E B Devi,District Medical & Health Officer,HM & FW,Health,Anantapuramu,,5,Active,9849902397,,,,14399427,Regular,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12271
+Smt J Viswa Jyothi,"Project Director, MEPMA",Municipal Admin,Municipal Admin,Anantapuramu,,5,Active,9493529996,,,,14476092,Regular,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12272
+K Sudharani,"Project Officer, TIDCO",Municipal Admin,Municipal Admin,Anantapuramu,,5,Active,9701655766,,,,14397377,Regular,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12273
+Sri G Mallikarjuna Prasad,"Assistant Commissioner, Endowments",General Admin,General Admin,Anantapuramu,,5,Active,9491000680,,,,14247771,Regular,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12274
+Sri P Vara Prasad,"Assistant Director, Handlooms & Textiles",General Admin,General Admin,Anantapuramu,,5,Active,8008705734,,,,14357683,Regular,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12275
+Sri V Ashok Kumar,District Economics & Statistics Officer,General Admin,General Admin,Anantapuramu,,5,Active,9849901537,,,,14468920,Regular,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12276
+S Pallavi,District Employment Officer,General Admin,General Admin,Anantapuramu,,5,Active,8522934848,,,,14217660,FAC,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12277
+Sri T Chakrapani,District Forest Officer(T),General Admin,General Admin,Anantapuramu,,5,Active,9440810112,,,,14220459,FAC,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12278
+Sri K Gangadhara Rao,District Ground Water Officer,General Admin,General Admin,Anantapuramu,,5,Active,8333991253,,,,14400356,Regular,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12279
+Sri G Laxmi Narasaiah,District Labour Officer,General Admin,General Admin,Anantapuramu,,5,Active,9182156171,,,,14023389,Regular,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12280
+Sri M Veerraju,District Transport Officer,General Admin,General Admin,Anantapuramu,,5,Active,9281607035,,,,14014823,Regular,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12281
+Sri G Ramanaiah,District Treasury Officer,General Admin,General Admin,Anantapuramu,,5,Active,8187866086,,,,14356808,Regular,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12282
+Sri C Srinivasa Yadav,"General Manager, Industries",General Admin,General Admin,Anantapuramu,,5,Active,9949219667,,,,14310755,Regular,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12283
+Sri D Radha Krishna,Inspector of Factories,General Admin,General Admin,Anantapuramu,,5,Active,9440174801,,,,14335095,Regular,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12284
+M Sailaja,Project Director Housing,General Admin,General Admin,Anantapuramu,,5,Active,7093930112,,,,15198347,FAC,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12285
+Sri B Raghunatha Reddy,"Project Director, AP Micro Irrigation Project",General Admin,General Admin,Anantapuramu,,5,Active,7995087057,,,,14218331,Regular,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12286
+Smt I Hema,AC/DC Commercial Taxes,Commercial Taxes,Commercial Taxes,Anantapuramu,,5,Active,9949901493,,,,14381213,Regular,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12287
+Sri D Adinarayana,DD/AD Mines,Commercial Taxes,Commercial Taxes,Anantapuramu,,5,Active,9290124018,,,,14237381,FAC,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12288
+Sri B Ramamohana Reddy,District Prohibition & Excise Officer,Commercial Taxes,Commercial Taxes,Anantapuramu,,5,Active,9989628308,,,,14024176,Regular,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12289
+Sri B Sreenivasulu,District Registrar,Commercial Taxes,Commercial Taxes,Anantapuramu,,5,Active,7093921702,,,,14220285,FAC,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12290
+Sri N Ravi Shankar Reddy,"CEO, Society for Youth Training & Employment",Youth & Sports,Youth & Sports,Anantapuramu,,5,Active,9849909062,,,,14277139,Regular,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12291
+SM Manjula,District Sports Development Officer,Youth & Sports,Youth & Sports,Anantapuramu,,5,Active,7207384486,,,,,Regular,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12292
+Sri K Jayakumar Babu,District Tourism Officer,Youth & Sports,Youth & Sports,Anantapuramu,,5,Active,9121144085,,,,14395979,Regular,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12293
+Sri G Kesava Naidu,"Revenue Divisional Officer, Anantapuramu",Revenue,Revenue,Anantapuramu,,4,Active,9493188807,,,,14472428,Regular,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12294
+Sri ABVSB Srinivas,"Revenue Divisional Officer, Guntakallu",Revenue,Revenue,Anantapuramu,,4,Active,9493188811,,,,14118805,Regular,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12295
+Sri G Vasantha Babu,"Revenue Divisional Officer, Kalyandurgam",Revenue,Revenue,Anantapuramu,,4,Active,8333082895,,,,14396943,Regular,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12296
+Sri V Srinivasa Rao,"Dy.S.P, Anantapur",Home,Home,Anantapuramu,,5,Active,9440796803,,,,14361722,Regular,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12297
+Sri A Sreenivas,"Dy.S.P, Gooty",Home,Home,Anantapuramu,,5,Active,9440796828,,,,14219000,Regular,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12298
+Sri Ravi Babu,"Dy.S.P, Kalyandurg",Home,Home,Anantapuramu,,5,Active,9490619663,,,,14311623,Regular,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12299
+Sri B Jabbar Miah,"Municipal Commissioner, Gooty Municipality ",Municipal Admin,Municipal Admin,Anantapuramu,,5,Active,9100986899,,,,14266213,Regular,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12300
+Sri S Vamsi Krishna Bhargava,"Municipal Commissioner, Kalyanadurgam Municipality ",Municipal Admin,Municipal Admin,Anantapuramu,,5,Active,7331182696,,,,14325961,Regular,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12301
+Sri V Divakar Reddy,"Municipal Commissioner, Rayadurg Municipality ",Municipal Admin,Municipal Admin,Anantapuramu,,5,Active,9849905858,,,,14410476,Regular,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12302
+Sri S Siva Rama Krishna,"Municipal Commissioner, Tadipatri Municipality ",Municipal Admin,Municipal Admin,Anantapuramu,,5,Active,9849905855,,,,14143435,Regular,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12303
+M Lakshmi Devi,"Municipal Commissioner, Guntakal Municipality ",Municipal Admin,Municipal Admin,Anantapuramu,,5,Active,9849905854,,,,14274743,FAC,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12304
+Sri M Jaswantha Rao,"Municipal Commissioner, Anantapur Municipal Corporation ",Municipal Admin,Municipal Admin,Anantapuramu,,5,Active,9849905852,,,,14154625,Regular,,,,,77.60060000000004,14.681900000000041,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12305
+Sri C Vishnu Charan,Joint Collector,Revenue,DEP01,Anantapuramu,,,Active,9849399611,,,,14989085,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P102
+Sri A Malola,District Revenue Officer,Revenue,DEP01,Anantapuramu,,,Active,9493188810,,,,14234104,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P103
+Sri R Vijayasaradhi,"Assistant Director, Survey & Land Records",Revenue,DEP01,Anantapuramu,,,Active,9908369736,,,,14391892,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P104
+Smt P Padmavathi,"DPM, Disaster Management",Revenue,DEP01,Anantapuramu,,,Active,8008885736,,,,14348086,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P105
+Sri G Ramakrishna Reddy,Forest Settlement Officer,Revenue,DEP01,Anantapuramu,,,Active,9493855455,,,,14297319,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P106
+Smt P Padmavathi,SDC KRRC,Revenue,DEP01,Anantapuramu,,,Active,8008885736,,,,14348086,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P107
+Sri P Jagadeesh IPS,Superintendent of Police,Home (Law & Order),DEP02,Anantapuramu,,,Active,9440796800,,,,14885332,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P108
+Sri G Siva Sankar,"Chief Executive Officer, Zilla Parishad",Panchayat Raj,DEP03,Anantapuramu,,,Active,9441699119,,,,14228589,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P110
+Sri T Nagaraja Naidu,District Panchayat Officer,Panchayat Raj,DEP03,Anantapuramu,,,Active,7382996167,,,,14470522,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P111
+Sri T Nagaraja Naidu,District Swarna Gramam & Swarna Wardu Officer ,Panchayat Raj,DEP03,Anantapuramu,,,Active,7382996167,,,,14470522,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P112
+Smt T Sailaja,"Project Director, DRDA",Panchayat Raj,DEP03,Anantapuramu,,,Active,9866664651,,,,14461641,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P113
+Sri N Saleem Basha,"Project Director, DWMA",Panchayat Raj,DEP03,Anantapuramu,,,Active,8008688804,,,,14232005,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P114
+Smt Khushbu Kothari,District BC Welfare & Empowerment Officer,Welfare Dept,DEP04,Anantapuramu,,,Active,9194105551,,,,14076013,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P115
+Sri G Rama Subba Reddy,District Minority Welfare & Empowerment Officer,Welfare Dept,DEP04,Anantapuramu,,,Active,9440665889,,,,14261837,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P116
+Smt Khushbu Kothari,District SC Welfare & Enpowerment Officer,Welfare Dept,DEP04,Anantapuramu,,,Active,9414055515,,,,14076013,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P117
+Sri M Srinivasa Rao,District Tribal Welfare & Empowerment Officer,Welfare Dept,DEP04,Anantapuramu,,,Active,9490937447,,,,14344975,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P118
+Smt M Sreedevi,District Women and Child Welfare & Empowerment Officer,Welfare Dept,DEP04,Anantapuramu,,,Active,9440814471,,,,14313174,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P119
+Sri G Rama Subba Reddy,"Executive Director, BC Corpn ",Welfare Dept,DEP04,Anantapuramu,,,Active,9440665889,,,,14261837,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P121
+M Kumudha,"Executive Director,SC Corpn",Welfare Dept,DEP04,Anantapuramu,,,Active,8790720201,,,,15213245,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P122
+Sri M Ravi,District Agricultural Officer,"Agriculture, Animal Husbandry & Cooperation",DEP05,Anantapuramu,,,Active,8331057599,,,,14250142,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P123
+Sri P Preamachandu,District Animal Husbandry Officer,"Agriculture, Animal Husbandry & Cooperation",DEP05,Anantapuramu,,,Active,9989932894,,,,14154394,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P124
+Smt E Aruna Kumari,District Co-Operative Officer,"Agriculture, Animal Husbandry & Cooperation",DEP05,Anantapuramu,,,Active,9100109211,,,,14311415,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P125
+Sri N Chandrasekhar Reddy,District Fisheries Officer,"Agriculture, Animal Husbandry & Cooperation",DEP05,Anantapuramu,,,Active,7780320528,,,,14289441,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P126
+Smt D Umadevi,District Horticulture Officer,"Agriculture, Animal Husbandry & Cooperation",DEP05,Anantapuramu,,,Active,7995086792,,,,14408424,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P127
+Smt P M Penneswari,District Manager AP Markfed,"Agriculture, Animal Husbandry & Cooperation",DEP05,Anantapuramu,,,Active,8978381841,,,,,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P128
+Sri I Vijaya Kumar,District Sericulture Officer,"Agriculture, Animal Husbandry & Cooperation",DEP05,Anantapuramu,,,Active,8639500606,,,,14369675,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P129
+Sri T Venkateswarlu,District Civil Supply Officer,Civil Supplies,DEP06,Anantapuramu,,,Active,8008301418,,,,14194700,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P130
+Sri G Ramesh Reddy,"District Manager, Civil Supplies Corporation",Civil Supplies,DEP06,Anantapuramu,,,Active,7702003532,,,,14442256,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P131
+Sri M Prasad Babu,District Educational Officer,Education,DEP07,Anantapuramu,,,Active,9849909112,,,,14445734,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P132
+Sri SVS Guruvaiah Chetty,District Intermediate Education Officer,Education,DEP07,Anantapuramu,,,Active,9440816010,,,,14221114,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P133
+Smt T Sailaja,"Addl Project Co-ordinator, Samagra Siksha",Education,DEP07,Anantapuramu,,,Active,9849909135,,,,14461641,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P134
+Sri S Venkteswarulu,"Deputy Director, Adult Education",Education,DEP07,Anantapuramu,,,Active,9849909212,,,,14233862,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P135
+Sri S Jayachandra,"Superintending Engineer, APTRANSCO",Energy,DEP08,Anantapuramu,,,Active,9989945323,,,,,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P136
+Sri M Siva Sankara Naidu,"District Manager, NREDCAP",Energy,DEP08,Anantapuramu,,,Active,7330869454,,,,,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P137
+Sri Y C Subbarayudu,District Engineer Officer PR Engineering,Engineering Depts,DEP09,Anantapuramu,,,Active,9377841234,,,,14250861,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P138
+Sri G Suryanarayana,District Public Health Engineer Officer,Engineering Depts,DEP09,Anantapuramu,,,Active,9701278800,,,,14396226,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P139
+Sri R Suresh,District RWS Engineer,Engineering Depts,DEP09,Anantapuramu,,,Active,9014212899,,,,14203872,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P140
+Sri G Vishwanath Reddy,"District Water Resources Officer, Irrigation",Engineering Depts,DEP09,Anantapuramu,,,Active,8333028549,,,,14478668,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P141
+Sri PV Ramana Reddy,"EE, APEWIDC",Engineering Depts,DEP09,Anantapuramu,,,Active,9704701574,,,,15040566,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P142
+Sri G Rama Mohan,"EE, APMSIDC",Engineering Depts,DEP09,Anantapuramu,,,Active,8978680866,,,,14217886,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P143
+Sri Y Murali Krishna,"Superintending Engineer, R&B",Engineering Depts,DEP09,Anantapuramu,,,Active,9985112738,,,,14286805,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P144
+Sri D Obulu,District Malaria Officer,Health,DEP10,Anantapuramu,,,Active,9866229377,,,,14386339,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P145
+Dr E B Devi,District Medical & Health Officer,Health,DEP10,Anantapuramu,,,Active,9849902397,,,,14399427,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P146
+Smt J Viswa Jyothi,"Project Director, MEPMA",Municipal Administration,DEP11,Anantapuramu,,,Active,9493529996,,,,14476092,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P149
+K Sudharani,"Project Officer, TIDCO",Municipal Administration,DEP11,Anantapuramu,,,Active,9701655766,,,,14397377,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P150
+Sri G Mallikarjuna Prasad,"Assistant Commissioner, Endowments",Other Departments,DEP12,Anantapuramu,,,Active,9491000680,,,,14247771,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P151
+Sri P Vara Prasad,"Assistant Director, Handlooms & Textiles",Other Departments,DEP12,Anantapuramu,,,Active,8008705734,,,,14357683,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P152
+Sri V Ashok Kumar,District Economics & Statistics Officer,Other Departments,DEP12,Anantapuramu,,,Active,9849901537,,,,14468920,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P153
+S Pallavi,District Employment Officer,Other Departments,DEP12,Anantapuramu,,,Active,8522934848,,,,14217660,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P154
+Sri T Chakrapani,District Forest Officer(T),Other Departments,DEP12,Anantapuramu,,,Active,9440810112,,,,14220459,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P155
+Sri K Gangadhara Rao,District Ground Water Officer,Other Departments,DEP12,Anantapuramu,,,Active,8333991253,,,,14400356,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P156
+Sri G Laxmi Narasaiah,District Labour Officer,Other Departments,DEP12,Anantapuramu,,,Active,9182156171,,,,14023389,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P157
+Sri M Veerraju,District Transport Officer,Other Departments,DEP12,Anantapuramu,,,Active,9281607035,,,,14014823,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P158
+Sri G Ramanaiah,District Treasury Officer,Other Departments,DEP12,Anantapuramu,,,Active,8187866086,,,,14356808,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P159
+Sri C Srinivasa Yadav,"General Manager, Industries",Other Departments,DEP12,Anantapuramu,,,Active,9949219667,,,,14310755,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P160
+Sri D Radha Krishna,Inspector of Factories,Other Departments,DEP12,Anantapuramu,,,Active,9440174801,,,,14335095,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P161
+M Sailaja,Project Director Housing,Other Departments,DEP12,Anantapuramu,,,Active,7093930112,,,,15198347,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P162
+Sri B Raghunatha Reddy,"Project Director, AP Micro Irrigation Project",Other Departments,DEP12,Anantapuramu,,,Active,7995087057,,,,14218331,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P163
+Smt I Hema,AC/DC Commercial Taxes,Revenue Generating Depts,DEP13,Anantapuramu,,,Active,9949901493,,,,14381213,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P164
+Sri D Adinarayana,DD/AD Mines,Revenue Generating Depts,DEP13,Anantapuramu,,,Active,9290124018,,,,14237381,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P165
+Sri B Ramamohana Reddy,District Prohibition & Excise Officer,Revenue Generating Depts,DEP13,Anantapuramu,,,Active,9989628308,,,,14024176,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P166
+Sri B Sreenivasulu,District Registrar,Revenue Generating Depts,DEP13,Anantapuramu,,,Active,7093921702,,,,14220285,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P167
+Sri N Ravi Shankar Reddy,"CEO, Society for Youth Training & Employment","Youth, Tourism, Sports & Culture",DEP14,Anantapuramu,,,Active,9849909062,,,,14277139,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P168
+SM Manjula,District Sports Development Officer,"Youth, Tourism, Sports & Culture",DEP14,Anantapuramu,,,Active,7207384486,,,,,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P169
+Sri K Jayakumar Babu,District Tourism Officer,"Youth, Tourism, Sports & Culture",DEP14,Anantapuramu,,,Active,9121144085,,,,14395979,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P170
+Sri G Kesava Naidu,"Revenue Divisional Officer, Anantapuramu",Revenue,DEP01,Anantapuramu,,,Active,9493188807,,,,14472428,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P175
+Sri ABVSB Srinivas,"Revenue Divisional Officer, Guntakallu",Revenue,DEP01,Anantapuramu,,,Active,9493188811,,,,14118805,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P176
+Sri G Vasantha Babu,"Revenue Divisional Officer, Kalyandurgam",Revenue,DEP01,Anantapuramu,,,Active,8333082895,,,,14396943,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P177
+Sri V Srinivasa Rao,"Dy.S.P, Anantapur",Home (Law & Order),DEP02,Anantapuramu,,,Active,9440796803,,,,14361722,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P400
+Sri A Sreenivas,"Dy.S.P, Gooty",Home (Law & Order),DEP02,Anantapuramu,,,Active,9440796828,,,,14219000,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P401
+Sri Ravi Babu,"Dy.S.P, Kalyandurg",Home (Law & Order),DEP02,Anantapuramu,,,Active,9490619663,,,,14311623,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P402
+Sri B Jabbar Miah,"Municipal Commissioner, Gooty Municipality ",Municipal Administration,DEP11,Anantapuramu,,,Active,9100986899,,,,14266213,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P256
+Sri S Vamsi Krishna Bhargava,"Municipal Commissioner, Kalyanadurgam Municipality ",Municipal Administration,DEP11,Anantapuramu,,,Active,7331182696,,,,14325961,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P258
+Sri V Divakar Reddy,"Municipal Commissioner, Rayadurg Municipality ",Municipal Administration,DEP11,Anantapuramu,,,Active,9849905858,,,,14410476,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P260
+Sri S Siva Rama Krishna,"Municipal Commissioner, Tadipatri Municipality ",Municipal Administration,DEP11,Anantapuramu,,,Active,9849905855,,,,14143435,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P261
+M Lakshmi Devi,"Municipal Commissioner, Guntakal Municipality ",Municipal Administration,DEP11,Anantapuramu,,,Active,9849905854,,,,14274743,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P257
+Sri M Jaswantha Rao,"Municipal Commissioner, Anantapur Municipal Corporation ",Municipal Administration,DEP11,Anantapuramu,,,Active,9849905852,,,,14154625,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P255
+"Dr. Vinod Kumar.V, I.A.S.,",District Collector,,,Anantapuramu,,,Active,,,,,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Sanjeev Reddy,CC to District Collector,,,Anantapuramu,,,Active,,,,,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Hariprasad,,,,Anantapuramu,,,Active,,,,,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Shaiksha,CC to (JC),,,Anantapuramu,,,Active,9949075303,,,,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+G.Ramakrishna Reddy,District Revenue Officer (DRO),,,Anantapuramu,,,Active,,,,,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Raghu,CC to (DRO),,,Anantapuramu,,,Active,7997048707,,,,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+H.Anand,Distrit Project Manager (DPM),,,Anantapuramu,,,Active,9177971859,,,,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Ravi Kumar,D-Section (Suprt),,,Anantapuramu,,,Active,9493188817,,,aprsupdtd@nic.in,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Gandham Chandrudu,Collector,,,Anantapuramu,,,Active,9493188801,,,"ccoatp@gmail.com  
+ccantp@gmail.com",,,,,,,,,Local_Excel (Collecters contact list.xlsx),
+S.Dillil Rao,JC-1,,,Anantapuramu,,,Active,9493188806,,,"jc_antp@ap.gov.in 
+jcantp123@gmail.com",,,,,,,,,Local_Excel (Collecters contact list.xlsx),
+Gandam Chandrudu,District Collector,,,Anantapuramu,,,Active,9491124124,,,,,,,,,,,,"Local_Excel (ALL Collectors, JCs, DRO, RTGS, APSDMA, Agriculture Contact Numbers.xlsx)",
+S. Dilli Rao,Joint Collector 1,,,Anantapuramu,,,Active,9849399611,,,,,,,,,,,,"Local_Excel (ALL Collectors, JCs, DRO, RTGS, APSDMA, Agriculture Contact Numbers.xlsx)",
+G.Rama Murthy,Joint Collector 2,,,Anantapuramu,,,Active,9493188891,,,,,,,,,,,,"Local_Excel (ALL Collectors, JCs, DRO, RTGS, APSDMA, Agriculture Contact Numbers.xlsx)",
+M.V. Subba Reddy,DRO,,,Anantapuramu,,,Active,7997048707,,,,,,,,,,,,"Local_Excel (ALL Collectors, JCs, DRO, RTGS, APSDMA, Agriculture Contact Numbers.xlsx)",
+Srirama murthy,Agri Joint Director,,,Anantapuramu,,,Active,8886614331,,,,,,,,,,,,"Local_Excel (ALL Collectors, JCs, DRO, RTGS, APSDMA, Agriculture Contact Numbers.xlsx)",

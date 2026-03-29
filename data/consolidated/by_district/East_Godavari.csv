@@ -1,0 +1,176 @@
+﻿person_name,designation,department,category,district,mandal,hierarchy_level,status,phone,phone_alt,whatsapp,email,employee_id,posting_type,rank,dm_role,reports_to,office_address,longitude,latitude,source,source_id
+"Kirti Chekuri, IAS (2016)",Collector and District Magistrate,Revenue,Revenue,East Godavari,,3,Active,8832940508,,,collector_egd@ap.gov.in,,,IAS,,,,81.80400000000003,17.000500000000045,GIS_DM_Personnel (AP 40-Dept Rebuild 2026),10022
+"Y. Megha Swarooop, IAS (2021)",Joint Collector & Addl. District Magistrate,Revenue,Revenue,East Godavari,,4,Active,8977935602,,,egojc@nic.in,,,IAS,,,,81.80400000000003,17.000500000000045,GIS_DM_Personnel (AP 40-Dept Rebuild 2026),10023
+Dusi Narasimha Kishore,Superintendent of Police,Home,Home,East Godavari,,3,Active,8832427187,,,sp@rjyu.appolice.gov.in,,,IPS,,,,81.80400000000003,17.000500000000045,GIS_DM_Personnel (AP 40-Dept Rebuild 2026),10024
+Tamarala Seetharama Murthy,District Revenue Officer,Revenue,Revenue,East Godavari,,4,Active,8977935603,,,egodro@nic.in,,,,,,,81.80400000000003,17.000500000000045,GIS_DM_Personnel (AP 40-Dept Rebuild 2026),10025
+Kirti Chekuri,Collector & District Magistrate,Revenue,Revenue,East Godavari,,3,Active,,,,,,,IAS,,,,81.80400000000003,17.000500000000045,GIS_DM_Personnel (AP 40-Dept Rebuild 2026),10578
+K. Vijay Kumar,Superintendent of Police,Home,Home,East Godavari,,3,Active,,,,,,,IPS,,,,81.80400000000003,17.000500000000045,GIS_DM_Personnel (AP 40-Dept Rebuild 2026),10601
+Yenduru Megha Swaroop,Joint Collector,Revenue,Revenue,East Godavari,,3,Active,8977935602,,,,15125922,Regular,,,,,81.77990000000005,17.000500000000045,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),10909
+Tamarala Seetarama Murty,District Revenue Officer,Revenue,Revenue,East Godavari,,5,Active,8977935603,,,,14444039,Regular,,,,,81.77990000000005,17.000500000000045,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),10910
+Bulusu Lakshmi Narayana,"Assistant Director, Survey & Land Records",Revenue,Revenue,East Godavari,,5,Active,8985006050,,,,14339668,Regular,,,,,81.77990000000005,17.000500000000045,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),10911
+sanugommula Baskar Reddy,SDC KRRC,Revenue,Revenue,East Godavari,,5,Active,8977935661,,,,14038082,Regular,,,,,81.77990000000005,17.000500000000045,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),10912
+D.Narasimha Kishore,Superintendent of Police,Home,Home,East Godavari,,3,Active,9440796502,,,,14391383,Regular,,,,,81.77990000000005,17.000500000000045,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),10913
+A.V.Subba Raju,Addl Superintendent of Police,Home,Home,East Godavari,,3,Active,9440796579,,,,14409819,Regular,,,,,81.77990000000005,17.000500000000045,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),10914
+Vudumu Santha Mani,District Panchayat Officer,PR & RD,PR & RD,East Godavari,,5,Active,8977975666,,,,14073924,Regular,,,,,81.77990000000005,17.000500000000045,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),10915
+Patakokala Veena Devi,District Swarna Gramam & Swarna Wardu Officer ,PR & RD,PR & RD,East Godavari,,5,Active,9154403608,,,,14067782,FAC,,,,,81.77990000000005,17.000500000000045,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),10916
+Anantha Naga Maheswara Rao,"Project Director, DWMA",PR & RD,PR & RD,East Godavari,,5,Active,8008100060,,,,14381967,Regular,,,,,81.77990000000005,17.000500000000045,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),10917
+Boothati Sasanka,District BC Welfare & Empowerment Officer,Social Welfare,Social Welfare,East Godavari,,5,Active,6301359423,,,,15200777,Regular,,,,,81.77990000000005,17.000500000000045,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),10918
+Mellimi Sunil Kumar,District Minority Welfare & Empowerment Officer,Social Welfare,Social Welfare,East Godavari,,5,Active,9989513437,,,,14057796,Regular,,,,,81.77990000000005,17.000500000000045,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),10919
+Mohammed Ghayajuddin,District SC Welfare & Enpowerment Officer,Social Welfare,Social Welfare,East Godavari,,5,Active,9492535085,,,,14028771,Regular,,,,,81.77990000000005,17.000500000000045,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),10920
+Kusume Naga Jyothi,District Tribal Welfare & Empowerment Officer,Social Welfare,Social Welfare,East Godavari,,5,Active,9493279214,,,,14075309,Regular,,,,,81.77990000000005,17.000500000000045,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),10921
+Thota Sridevi,District Women and Child Welfare & Empowerment Officer,Social Welfare,Social Welfare,East Godavari,,5,Active,9398055826,,,,14441462,Regular,,,,,81.77990000000005,17.000500000000045,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),10922
+Kambham Robert Paul,District Agricultural Officer,Agriculture,Agriculture,East Godavari,,5,Active,8331056502,,,,14072204,FAC,,,,,81.77990000000005,17.000500000000045,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),10923
+Tadiboyina Srinivasa Rao,District Animal Husbandry Officer,Agriculture,Agriculture,East Godavari,,5,Active,9440376595,,,,14140550,Regular,,,,,81.77990000000005,17.000500000000045,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),10924
+Mullapudi Venkata Ramana,District Co-Operative Officer,Agriculture,Agriculture,East Godavari,,5,Active,9100109172,,,,14365224,Regular,,,,,81.77990000000005,17.000500000000045,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),10925
+Nethala Nirmala Kumari,District Fisheries Officer,Agriculture,Agriculture,East Godavari,,5,Active,9494520767,,,,14037662,Regular,,,,,81.77990000000005,17.000500000000045,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),10926
+Neathala Mallikarjuna Rao,District Horticulture Officer,Agriculture,Agriculture,East Godavari,,5,Active,7995086768,,,,14086918,Regular,,,,,81.77990000000005,17.000500000000045,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),10927
+Devarapu Pratap,District Manager AP Markfed,Agriculture,Agriculture,East Godavari,,5,Active,8978381835,,,,,Regular,,,,,81.77990000000005,17.000500000000045,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),10928
+Valicharla Parvathi,District Civil Supply Officer,Civil Supplies,Civil Supplies,East Godavari,,5,Active,8008301429,,,,14407122,Regular,,,,,81.77990000000005,17.000500000000045,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),10929
+Bagati Ganesh Kumar,"District Manager, Civil Supplies Corporation",Civil Supplies,Civil Supplies,East Godavari,,5,Active,9573365733,,,,,FAC,,,,,81.77990000000005,17.000500000000045,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),10930
+Kandi Vasudeva Rao,District Educational Officer,Education,Education,East Godavari,,5,Active,9704908099,,,,14337729,Regular,,,,,81.77990000000005,17.000500000000045,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),10931
+Daram. Vijaya Sree,District Intermediate Education Officer,Education,Education,East Godavari,,5,Active,9440816004,,,,14124702,Regular,,,,,81.77990000000005,17.000500000000045,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),10932
+Siripurapu Subhashini,"Addl Project Co-ordinator, Samagra Siksha",Education,Education,East Godavari,,5,Active,7989545123,,,,14058401,Regular,,,,,81.77990000000005,17.000500000000045,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),10933
+Ayalasomayajula Ramesh,"Superintending Engineer, APTRANSCO",Energy,Energy,East Godavari,,4,Active,9490153111,,,,,Regular,,,,,81.77990000000005,17.000500000000045,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),10934
+Jalimi Nani Babu,"District Manager, NREDCAP",Energy,Energy,East Godavari,,5,Active,9849550114,,,,,Regular,,,,,81.77990000000005,17.000500000000045,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),10935
+Kaila Bala Krishna,District Engineer Officer PR Engineering,Infrastructure,Infrastructure,East Godavari,,5,Active,9704146689,,,,14115535,FAC,,,,,81.77990000000005,17.000500000000045,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),10936
+Reddy Venkata Surya Seshagiri Rao,District Public Health Engineer Officer,Infrastructure,Infrastructure,East Godavari,,5,Active,8919437566,,,,14070675,Regular,,,,,81.77990000000005,17.000500000000045,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),10937
+Boddeti Venkata Giri,District RWS Engineer,Infrastructure,Infrastructure,East Godavari,,5,Active,9100121102,,,,14095280,Regular,,,,,81.77990000000005,17.000500000000045,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),10938
+Gure Srinivasa Rao,"District Water Resources Officer, Irrigation",Infrastructure,Infrastructure,East Godavari,,5,Active,9490741146,,,,14373108,FAC,,,,,81.77990000000005,17.000500000000045,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),10939
+Muppala Sadasiva Rao,"EE, APEWIDC",Infrastructure,Infrastructure,East Godavari,,5,Active,9704701567,,,,14478536,FAC,,,,,81.77990000000005,17.000500000000045,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),10940
+Karamsetti Chandra Mouli,"EE, APMSIDC",Infrastructure,Infrastructure,East Godavari,,5,Active,8978680855,,,,15071701,Regular,,,,,81.77990000000005,17.000500000000045,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),10941
+Syamala. Bala Venkateswara Reddy,"Superintending Engineer, R&B",Infrastructure,Infrastructure,East Godavari,,4,Active,9440818050,,,,14114317,Regular,,,,,81.77990000000005,17.000500000000045,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),10942
+Alladi Gnanasree,District Malaria Officer,HM & FW,Health,East Godavari,,5,Active,6304069182,,,,14164651,Regular,,,,,81.77990000000005,17.000500000000045,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),10943
+Karempudi. Venkateswara Rao,District Medical & Health Officer,HM & FW,Health,East Godavari,,5,Active,9949133979,,,,14091027,Regular,,,,,81.77990000000005,17.000500000000045,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),10944
+Tatapudi Kanakaraju,"Project Director, MEPMA",Municipal Admin,Municipal Admin,East Godavari,,5,Active,9989245350,,,,14036306,Regular,,,,,81.77990000000005,17.000500000000045,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),10945
+P Ganga raju,"Project Officer, TIDCO",Municipal Admin,Municipal Admin,East Godavari,,5,Active,9701649966,,,,14482694,Regular,,,,,81.77990000000005,17.000500000000045,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),10946
+Edula Venkata Subba Rao,"Assistant Commissioner, Endowments",General Admin,General Admin,East Godavari,,5,Active,9491000672,,,,14475579,Regular,,,,,81.77990000000005,17.000500000000045,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),10947
+Lalam Appalakonda,District Economics & Statistics Officer,General Admin,General Admin,East Godavari,,5,Active,9391625596,,,,14109761,Regular,,,,,81.77990000000005,17.000500000000045,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),10948
+Harischandra Pradad Kusuma,District Employment Officer,General Admin,General Admin,East Godavari,,5,Active,8886882066,,,,14087905,Regular,,,,,81.77990000000005,17.000500000000045,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),10949
+Vajapeyajula Prabhakara Rao,District Forest Officer(T),General Admin,General Admin,East Godavari,,5,Active,9440907378,,,,14349671,Regular,,,,,81.77990000000005,17.000500000000045,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),10950
+Yerra Srinivas,District Ground Water Officer,General Admin,General Admin,East Godavari,,5,Active,8333991189,,,,14377488,Regular,,,,,81.77990000000005,17.000500000000045,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),10951
+Alamuri Vijaya Prakash,District Labour Officer,General Admin,General Admin,East Godavari,,5,Active,9492555063,,,,14088777,FAC,,,,,81.77990000000005,17.000500000000045,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),10952
+Rudrapati Suresh,District Transport Officer,General Admin,General Admin,East Godavari,,5,Active,9281607020,,,,14054964,Regular,,,,,81.77990000000005,17.000500000000045,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),10953
+Nagabathula Satyanarayana,District Treasury Officer,General Admin,General Admin,East Godavari,,5,Active,9701520081,,,,14376888,Regular,,,,,81.77990000000005,17.000500000000045,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),10954
+Sree Vanidhar Raman,"General Manager, Industries",General Admin,General Admin,East Godavari,,5,Active,9440268563,,,,14283443,Regular,,,,,81.77990000000005,17.000500000000045,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),10955
+Aritakula Srinivas,Inspector of Factories,General Admin,General Admin,East Godavari,,5,Active,8527526990,,,,14478819,Regular,,,,,81.77990000000005,17.000500000000045,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),10956
+Nathi Bujji,Project Director Housing,General Admin,General Admin,East Godavari,,5,Active,9652077144,,,,14065937,FAC,,,,,81.77990000000005,17.000500000000045,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),10957
+Adapa Durgesh,"Project Director, AP Micro Irrigation Project",General Admin,General Admin,East Godavari,,5,Active,7995087041,,,,14065970,Regular,,,,,81.77990000000005,17.000500000000045,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),10958
+Tatineni Venkata Nageswara Rao,AC/DC Commercial Taxes,Commercial Taxes,Commercial Taxes,East Godavari,,5,Active,9949993967,,,,14095526,Regular,,,,,81.77990000000005,17.000500000000045,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),10959
+Dubba Phani Bhushan Reddy,DD/AD Mines,Commercial Taxes,Commercial Taxes,East Godavari,,5,Active,9100688824,,,,14391889,Regular,,,,,81.77990000000005,17.000500000000045,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),10960
+Chintada Lavanya,District Prohibition & Excise Officer,Commercial Taxes,Commercial Taxes,East Godavari,,5,Active,9440902408,,,,14384913,Regular,,,,,81.77990000000005,17.000500000000045,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),10961
+Katragadda Jagan Mohan Rao,District Registrar,Commercial Taxes,Commercial Taxes,East Godavari,,5,Active,7093921418,,,,14114815,Regular,,,,,81.77990000000005,17.000500000000045,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),10962
+Dasam. Mohana Murallidhara Seshagiri,District Sports Development Officer,Youth & Sports,Youth & Sports,East Godavari,,5,Active,9490188662,,,,,Regular,,,,,81.77990000000005,17.000500000000045,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),10963
+Posina Venkatachalam,District Tourism Officer,Youth & Sports,Youth & Sports,East Godavari,,5,Active,6309942025,,,,10081488,Regular,,,,,81.77990000000005,17.000500000000045,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),10964
+Mathangi Raja Ramesh Prem Kumar,"Revenue Divisional Officer, Kovvur",Revenue,Revenue,East Godavari,,4,Active,9491041425,,,,14429051,FAC,,,,,81.77990000000005,17.000500000000045,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),10965
+sanugommula Baskar Reddy,"Revenue Divisional Officer, Rajahmundry",Revenue,Revenue,East Godavari,,4,Active,9849903863,,,,14038082,FAC,,,,,81.77990000000005,17.000500000000045,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),10966
+Thota Lakshmi Padmavathi Suryakala SriKrishnaveni,"Municipal Commissioner, Nidadavole Municipality ",Municipal Admin,Municipal Admin,East Godavari,,5,Active,9849905818,,,,14025893,Regular,,,,,81.77990000000005,17.000500000000045,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),10967
+Chinthaguntla Venkateswarlu,"Municipal Commissioner, Kovvur Municipality ",Municipal Admin,Municipal Admin,East Godavari,,5,Active,9849905819,,,,14421924,Regular,,,,,81.77990000000005,17.000500000000045,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),10968
+Rahul Meena,"Municipal Commissioner, Rajamahendravaram Municipal Corporation ",Municipal Admin,Municipal Admin,East Godavari,,5,Active,9866657600,,,,15128828,Regular,,,,,81.77990000000005,17.000500000000045,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),10969
+G.Deva Kumar,"Dy.S.P, Kovvur",Home,Home,East Godavari,,5,Active,9440796620,,,,14338610,Regular,,,,,81.77990000000005,17.000500000000045,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),10970
+B.Vidya East Zone,"Dy.S.P, Kadiyam",Home,Home,East Godavari,,5,Active,9440796506,,,,15154273,Regular,,,,,81.77990000000005,17.000500000000045,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),10971
+Tupati Venkata Ranga Rao,"Municipal Commissioner, Mandapet Municipality ",Municipal Admin,Municipal Admin,East Godavari,,5,Active,9849905809,,,,14157274,Regular,,,,,81.77990000000005,17.000500000000045,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),10972
+yenduru Megha Swaroop,"Vice Chairman, Rajamahendravaram Urban Development Authority ",Municipal Admin,Municipal Admin,East Godavari,,4,Active,8977935602,,,,15125922,FAC,,,,,81.77990000000005,17.000500000000045,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),10973
+S.Bhavya Kishore South Zone,"Dy.S.P, Rajahmundry",Home,Home,East Godavari,,5,Active,9490760791,,,,14479506,Regular,,,,,81.77990000000005,17.000500000000045,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),10974
+Yenduru Megha Swaroop,Joint Collector,Revenue,DEP01,East Godavari,,,Active,8977935602,,,,15125922,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P102
+Tamarala Seetarama Murty,District Revenue Officer,Revenue,DEP01,East Godavari,,,Active,8977935603,,,,14444039,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P103
+Bulusu Lakshmi Narayana,"Assistant Director, Survey & Land Records",Revenue,DEP01,East Godavari,,,Active,8985006050,,,,14339668,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P104
+sanugommula Baskar Reddy,SDC KRRC,Revenue,DEP01,East Godavari,,,Active,8977935661,,,,14038082,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P107
+D.Narasimha Kishore,Superintendent of Police,Home (Law & Order),DEP02,East Godavari,,,Active,9440796502,,,,14391383,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P108
+A.V.Subba Raju,Addl Superintendent of Police,Home (Law & Order),DEP02,East Godavari,,,Active,9440796579,,,,14409819,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P109
+Vudumu Santha Mani,District Panchayat Officer,Panchayat Raj,DEP03,East Godavari,,,Active,8977975666,,,,14073924,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P111
+Patakokala Veena Devi,District Swarna Gramam & Swarna Wardu Officer ,Panchayat Raj,DEP03,East Godavari,,,Active,9154403608,,,,14067782,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P112
+Anantha Naga Maheswara Rao,"Project Director, DWMA",Panchayat Raj,DEP03,East Godavari,,,Active,8008100060,,,,14381967,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P114
+Boothati Sasanka,District BC Welfare & Empowerment Officer,Welfare Dept,DEP04,East Godavari,,,Active,6301359423,,,,15200777,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P115
+Mellimi Sunil Kumar,District Minority Welfare & Empowerment Officer,Welfare Dept,DEP04,East Godavari,,,Active,9989513437,,,,14057796,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P116
+Mohammed Ghayajuddin,District SC Welfare & Enpowerment Officer,Welfare Dept,DEP04,East Godavari,,,Active,9492535085,,,,14028771,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P117
+Kusume Naga Jyothi,District Tribal Welfare & Empowerment Officer,Welfare Dept,DEP04,East Godavari,,,Active,9493279214,,,,14075309,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P118
+Thota Sridevi,District Women and Child Welfare & Empowerment Officer,Welfare Dept,DEP04,East Godavari,,,Active,9398055826,,,,14441462,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P119
+Kambham Robert Paul,District Agricultural Officer,"Agriculture, Animal Husbandry & Cooperation",DEP05,East Godavari,,,Active,8331056502,,,,14072204,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P123
+Tadiboyina Srinivasa Rao,District Animal Husbandry Officer,"Agriculture, Animal Husbandry & Cooperation",DEP05,East Godavari,,,Active,9440376595,,,,14140550,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P124
+Mullapudi Venkata Ramana,District Co-Operative Officer,"Agriculture, Animal Husbandry & Cooperation",DEP05,East Godavari,,,Active,9100109172,,,,14365224,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P125
+Nethala Nirmala Kumari,District Fisheries Officer,"Agriculture, Animal Husbandry & Cooperation",DEP05,East Godavari,,,Active,9494520767,,,,14037662,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P126
+Neathala Mallikarjuna Rao,District Horticulture Officer,"Agriculture, Animal Husbandry & Cooperation",DEP05,East Godavari,,,Active,7995086768,,,,14086918,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P127
+Devarapu Pratap,District Manager AP Markfed,"Agriculture, Animal Husbandry & Cooperation",DEP05,East Godavari,,,Active,8978381835,,,,,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P128
+Valicharla Parvathi,District Civil Supply Officer,Civil Supplies,DEP06,East Godavari,,,Active,8008301429,,,,14407122,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P130
+Bagati Ganesh Kumar,"District Manager, Civil Supplies Corporation",Civil Supplies,DEP06,East Godavari,,,Active,9573365733,,,,,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P131
+Kandi Vasudeva Rao,District Educational Officer,Education,DEP07,East Godavari,,,Active,9704908099,,,,14337729,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P132
+Daram. Vijaya Sree,District Intermediate Education Officer,Education,DEP07,East Godavari,,,Active,9440816004,,,,14124702,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P133
+Siripurapu Subhashini,"Addl Project Co-ordinator, Samagra Siksha",Education,DEP07,East Godavari,,,Active,7989545123,,,,14058401,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P134
+Ayalasomayajula Ramesh,"Superintending Engineer, APTRANSCO",Energy,DEP08,East Godavari,,,Active,9490153111,,,,,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P136
+Jalimi Nani Babu,"District Manager, NREDCAP",Energy,DEP08,East Godavari,,,Active,9849550114,,,,,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P137
+Kaila Bala Krishna,District Engineer Officer PR Engineering,Engineering Depts,DEP09,East Godavari,,,Active,9704146689,,,,14115535,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P138
+Reddy Venkata Surya Seshagiri Rao,District Public Health Engineer Officer,Engineering Depts,DEP09,East Godavari,,,Active,8919437566,,,,14070675,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P139
+Boddeti Venkata Giri,District RWS Engineer,Engineering Depts,DEP09,East Godavari,,,Active,9100121102,,,,14095280,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P140
+Gure Srinivasa Rao,"District Water Resources Officer, Irrigation",Engineering Depts,DEP09,East Godavari,,,Active,9490741146,,,,14373108,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P141
+Muppala Sadasiva Rao,"EE, APEWIDC",Engineering Depts,DEP09,East Godavari,,,Active,9704701567,,,,14478536,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P142
+Karamsetti Chandra Mouli,"EE, APMSIDC",Engineering Depts,DEP09,East Godavari,,,Active,8978680855,,,,15071701,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P143
+Syamala. Bala Venkateswara Reddy,"Superintending Engineer, R&B",Engineering Depts,DEP09,East Godavari,,,Active,9440818050,,,,14114317,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P144
+Alladi Gnanasree,District Malaria Officer,Health,DEP10,East Godavari,,,Active,6304069182,,,,14164651,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P145
+Karempudi. Venkateswara Rao,District Medical & Health Officer,Health,DEP10,East Godavari,,,Active,9949133979,,,,14091027,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P146
+Tatapudi Kanakaraju,"Project Director, MEPMA",Municipal Administration,DEP11,East Godavari,,,Active,9989245350,,,,14036306,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P149
+P Ganga raju,"Project Officer, TIDCO",Municipal Administration,DEP11,East Godavari,,,Active,9701649966,,,,14482694,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P150
+Edula Venkata Subba Rao,"Assistant Commissioner, Endowments",Other Departments,DEP12,East Godavari,,,Active,9491000672,,,,14475579,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P151
+Lalam Appalakonda,District Economics & Statistics Officer,Other Departments,DEP12,East Godavari,,,Active,9391625596,,,,14109761,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P153
+Harischandra Pradad Kusuma,District Employment Officer,Other Departments,DEP12,East Godavari,,,Active,8886882066,,,,14087905,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P154
+Vajapeyajula Prabhakara Rao,District Forest Officer(T),Other Departments,DEP12,East Godavari,,,Active,9440907378,,,,14349671,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P155
+Yerra Srinivas,District Ground Water Officer,Other Departments,DEP12,East Godavari,,,Active,8333991189,,,,14377488,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P156
+Alamuri Vijaya Prakash,District Labour Officer,Other Departments,DEP12,East Godavari,,,Active,9492555063,,,,14088777,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P157
+Rudrapati Suresh,District Transport Officer,Other Departments,DEP12,East Godavari,,,Active,9281607020,,,,14054964,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P158
+Nagabathula Satyanarayana,District Treasury Officer,Other Departments,DEP12,East Godavari,,,Active,9701520081,,,,14376888,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P159
+Sree Vanidhar Raman,"General Manager, Industries",Other Departments,DEP12,East Godavari,,,Active,9440268563,,,,14283443,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P160
+Aritakula Srinivas,Inspector of Factories,Other Departments,DEP12,East Godavari,,,Active,8527526990,,,,14478819,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P161
+Nathi Bujji,Project Director Housing,Other Departments,DEP12,East Godavari,,,Active,9652077144,,,,14065937,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P162
+Adapa Durgesh,"Project Director, AP Micro Irrigation Project",Other Departments,DEP12,East Godavari,,,Active,7995087041,,,,14065970,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P163
+Tatineni Venkata Nageswara Rao,AC/DC Commercial Taxes,Revenue Generating Depts,DEP13,East Godavari,,,Active,9949993967,,,,14095526,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P164
+Dubba Phani Bhushan Reddy,DD/AD Mines,Revenue Generating Depts,DEP13,East Godavari,,,Active,9100688824,,,,14391889,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P165
+Chintada Lavanya,District Prohibition & Excise Officer,Revenue Generating Depts,DEP13,East Godavari,,,Active,9440902408,,,,14384913,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P166
+Katragadda Jagan Mohan Rao,District Registrar,Revenue Generating Depts,DEP13,East Godavari,,,Active,7093921418,,,,14114815,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P167
+Dasam. Mohana Murallidhara Seshagiri,District Sports Development Officer,"Youth, Tourism, Sports & Culture",DEP14,East Godavari,,,Active,9490188662,,,,,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P169
+Posina Venkatachalam,District Tourism Officer,"Youth, Tourism, Sports & Culture",DEP14,East Godavari,,,Active,6309942025,,,,10081488,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P170
+Mathangi Raja Ramesh Prem Kumar,"Revenue Divisional Officer, Kovvur",Revenue,DEP01,East Godavari,,,Active,9491041425,,,,14429051,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P191
+sanugommula Baskar Reddy,"Revenue Divisional Officer, Rajahmundry",Revenue,DEP01,East Godavari,,,Active,9849903863,,,,14038082,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P192
+Thota Lakshmi Padmavathi Suryakala SriKrishnaveni,"Municipal Commissioner, Nidadavole Municipality ",Municipal Administration,DEP11,East Godavari,,,Active,9849905818,,,,14025893,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P280
+Chinthaguntla Venkateswarlu,"Municipal Commissioner, Kovvur Municipality ",Municipal Administration,DEP11,East Godavari,,,Active,9849905819,,,,14421924,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P278
+Rahul Meena,"Municipal Commissioner, Rajamahendravaram Municipal Corporation ",Municipal Administration,DEP11,East Godavari,,,Active,9866657600,,,,15128828,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P281
+G.Deva Kumar,"Dy.S.P, Kovvur",Home (Law & Order),DEP02,East Godavari,,,Active,9440796620,,,,14338610,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P413
+B.Vidya East Zone,"Dy.S.P, Kadiyam",Home (Law & Order),DEP02,East Godavari,,,Active,9440796506,,,,15154273,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P414
+Tupati Venkata Ranga Rao,"Municipal Commissioner, Mandapet Municipality ",Municipal Administration,DEP11,East Godavari,,,Active,9849905809,,,,14157274,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P279
+yenduru Megha Swaroop,"Vice Chairman, Rajamahendravaram Urban Development Authority ",Municipal Administration,DEP11,East Godavari,,,Active,8977935602,,,,15125922,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P282
+S.Bhavya Kishore South Zone,"Dy.S.P, Rajahmundry",Home (Law & Order),DEP02,East Godavari,,,Active,9490760791,,,,14479506,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P412
+"Dr. K. Madhavi Latha I.A.S.,",District Collector,,,East Godavari,,,Active,8977935601,,,collector_egd@ap.gov.in,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Gangadhar,CC to District Collector,,,East Godavari,,,Active,8977935607,,,,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+"Sri N Tej Bharath, I.A.S.,",Joint Collector,,,East Godavari,,,Active,8977935602,,,eastgodavarijc@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Gopi,CC to Joint Collector,,,East Godavari,,,Active,8977935605,,,,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Sri G Narasimhulu,District Revenue Officer (DRO),,,East Godavari,,,Active,8977935603,,,egdro@nic.in,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Sudheer,CC to (DRO),,,East Godavari,,,Active,8977935610,,,,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Sri B V S Rama Rao,Administrative Officer (AO),,,East Godavari,,,Active,8977935612,,,egoao@nic.in,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Smt M. Lavanya,Distrit Project Manager (DPM),,,East Godavari,,,Active,9399969735,,,,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Sri B V S Rama Rao (incharge),D-Section (Suprt),,,East Godavari,,,Active,8977935611,,,coordsecegd@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Kum M. Chaitra Varshini,"RDO, Rajamahendravaram",,,East Godavari,,,Active,9849903863,,,rdorjy@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Ashtosh Srivatsav,"Sub Collector, Kovvur",,,East Godavari,,,Active,9491041425,,,rdokvr321@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Sri B.Nagaraju Naik,"Tahsildar, Tahsildar Office Anaparthi",,,East Godavari,,,Active,9849903910,,,egoanp@nic.in,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Sri D.Sunil Babu,"Tahsildar, Tahsildar Office Biccavolu",,,East Godavari,,,Active,9849903913,,,egobcv@nic.in,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Sri Shaik Lathif Pasha,"Tahsildar, Tahsildar Office Rangampeta",,,East Godavari,,,Active,9849903882,,,egorng@nic.in,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Sri G.Kanaka Raju,"Tahsildar, Tahsildar Office Rajanagaram",,,East Godavari,,,Active,9849903900,,,egorjn@nic.in,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Sri Abdul Rahaman Mastana,"Tahsildar, Tahsildar Office Seethanagaram",,,East Godavari,,,Active,8008803192,,,egostng@nic.in,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Smt D.Rajya Lakshmi,"Tahsildar, Tahsildar Office Korukonda",,,East Godavari,,,Active,8008803195,,,egokrk@nic.in,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Sri K.Anjaneyulu,"Tahsildar, Rajahmundry Urban",,,East Godavari,,,Active,9849903898,,,egorjy@nic.in,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Sri Y.K.V.Apparao,"Tahsildar, Rajahmundry Rural",,,East Godavari,,,Active,9849903860,,,egorjyr@nic.in,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Sri B.Rama Devi,"Tahsildar, Kadiam",,,East Godavari,,,Active,9849903901,,,egokdm@nic.in,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Sri K.Masthan,"Tahsildar, Kovvur",,,East Godavari,,,Active,9491041468,,,kovvurtahsildar@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Smt M.Savitri,"Tahsildar, Chagallu",,,East Godavari,,,Active,9491041471,,,Tahsildarchagallu@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Sri Ch.Srinivasa Rao,"Tahsildar, Thallapudi",,,East Godavari,,,Active,9491041469,,,mrotlp@rediff.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Sri V.Nagabhushanam,"Tahsildar, Nidadavole",,,East Godavari,,,Active,9491041470,,,mrondd@rediffmail. com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Sri K.Naveen Kumar,"Tahsildar, Undrajavaram",,,East Godavari,,,Active,9491041474,,,mroundrajavaram@ gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Smt D.Sudha,"Tahsildar, Peravali",,,East Godavari,,,Active,9491041473,,,mroprv@rediffmail. com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Smt D.Vanajakshi,"Tahsildar, Gopalapuram",,,East Godavari,,,Active,9491041484,,,tahgpm123@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Sri Y.V.S.Achari,"Tahsildar, Devarapalli",,,East Godavari,,,Active,9491041478,,,mrodpr@rediffmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Sri P.Krishna Rao,"Tahsildar, Nallajerla",,,East Godavari,,,Active,9491041451,,,tahnljr12@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+"Sri D Muralidhar Reddy IAS.,",Collector,,,East Godavari,,,Active,98499038999849903879,,,collector_egd@ap.gov.in,,,,,,,,,Local_Excel (Collecters contact list.xlsx),
+"Sri G. Lakshmi Sha IAS.,",JC-1,,,East Godavari,,,Active,9849903889,,,jc_egd@ap.gov.in,,,,,,,,,Local_Excel (Collecters contact list.xlsx),
+D. Muralidhar Reddy,District Collector,,,East Godavari,,,Active,9989252959,,,,,,,,,,,,"Local_Excel (ALL Collectors, JCs, DRO, RTGS, APSDMA, Agriculture Contact Numbers.xlsx)",
+G.Lakshmisah,Joint Collector 1,,,East Godavari,,,Active,9849903889,,,,,,,,,,,,"Local_Excel (ALL Collectors, JCs, DRO, RTGS, APSDMA, Agriculture Contact Numbers.xlsx)",
+G. Raja Kumari,Joint Collector 2,,,East Godavari,,,Active,9849903103,,,,,,,,,,,,"Local_Excel (ALL Collectors, JCs, DRO, RTGS, APSDMA, Agriculture Contact Numbers.xlsx)",
+M.V. Govindharajulu,DRO,,,East Godavari,,,Active,9849903862,,,,,,,,,,,,"Local_Excel (ALL Collectors, JCs, DRO, RTGS, APSDMA, Agriculture Contact Numbers.xlsx)",
+K.S. V. Prasad,Agri Joint Director,,,East Godavari,,,Active,8886613528,,,,,,,,,,,,"Local_Excel (ALL Collectors, JCs, DRO, RTGS, APSDMA, Agriculture Contact Numbers.xlsx)",
+Sri Ch. Santhi swaoop,APSDMA Staff,,,East Godavari,,,Active,9849901509,,,,,,,,,,,,"Local_Excel (ALL Collectors, JCs, DRO, RTGS, APSDMA, Agriculture Contact Numbers.xlsx)",

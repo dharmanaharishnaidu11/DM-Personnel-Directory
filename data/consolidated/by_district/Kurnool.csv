@@ -1,0 +1,214 @@
+﻿person_name,designation,department,category,district,mandal,hierarchy_level,status,phone,phone_alt,whatsapp,email,employee_id,posting_type,rank,dm_role,reports_to,office_address,longitude,latitude,source,source_id
+T.S.R. Surya Prakash,Superintendent of Police,Home,Home,Kurnool,,3,Active,,,,,,,IPS,,,,78.04180350000007,15.817764000000068,GIS_DM_Personnel (AP 40-Dept Rebuild 2026),9311
+A. Siri,Collector & District Magistrate,Revenue,Revenue,Kurnool,,3,Active,,,,,,,IAS,,,,78.04180350000007,15.817764000000068,GIS_DM_Personnel (AP 40-Dept Rebuild 2026),10596
+Noorul Quamer,Joint Collector,Revenue,Revenue,Kurnool,,3,Active,8978840011,,,,15057545,Regular,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12306
+C.Venkata Narayanamma,District Revenue Officer,Revenue,Revenue,Kurnool,,5,Active,9491017555,,,,14390525,Regular,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12307
+K.murali Krishna,"Assistant Director, Survey & Land Records",Revenue,Revenue,Kurnool,,5,Active,9866169505,,,,14317949,Regular,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12308
+B.Suresh Kumar,"DPM, Disaster Management",Revenue,Revenue,Kurnool,,5,Active,9849284580,,,,14220410,Regular,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12309
+G.Naga Prasanna Lakshmi,SDC KRRC,Revenue,Revenue,Kurnool,,5,Active,8886931944,,,,14295061,Regular,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12310
+Vikrant Patil,Superintendent of Police,Home,Home,Kurnool,,3,Active,9440795500,,,,14388128,Regular,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12311
+G.Hussain Peera,Addl Superintendent of Police,Home,Home,Kurnool,,3,Active,7729099944,,,,14218981,Regular,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12312
+G.Nasara Reddy,"Chief Executive Officer, Zilla Parishad",PR & RD,PR & RD,Kurnool,,3,Active,9849903241,,,,14477685,Regular,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12313
+G.Bhaskar,District Panchayat Officer,PR & RD,PR & RD,Kurnool,,5,Active,9849903239,,,,14184061,Regular,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12314
+E.V.Subbareddy,District Swarna Gramam & Swarna Wardu Officer ,PR & RD,PR & RD,Kurnool,,5,Active,7569982690,,,,14230026,FAC,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12315
+Y.P.Ramana Reddy,"Project Director, DRDA",PR & RD,PR & RD,Kurnool,,5,Active,9849904732,,,,14261953,Regular,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12316
+Madhavi latha,"Project Director, DWMA",PR & RD,PR & RD,Kurnool,,5,Active,9959023450,,,,14230012,FAC,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12317
+K.Prasuna,District BC Welfare & Empowerment Officer,Social Welfare,Social Welfare,Kurnool,,5,Active,9703644987,,,,14163896,Regular,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12318
+Syed Sadiha Parveen,District Minority Welfare & Empowerment Officer,Social Welfare,Social Welfare,Kurnool,,5,Active,9849901149,,,,14969138,Regular,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12319
+B.Radhika,District SC Welfare & Enpowerment Officer,Social Welfare,Social Welfare,Kurnool,,5,Active,9133270305,,,,14330338,Regular,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12320
+D.Suresh,District Tribal Welfare & Empowerment Officer,Social Welfare,Social Welfare,Kurnool,,5,Active,9491030041,,,,14245809,Regular,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12321
+P.Vijaya,District Women and Child Welfare & Empowerment Officer,Social Welfare,Social Welfare,Kurnool,,5,Active,8332848986,,,,14232914,Regular,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12322
+Dr.KVenu Gopal,District Youth Welfare & Empowerment Officer,Social Welfare,Social Welfare,Kurnool,,5,Active,9849909070,,,,14222224,Regular,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12323
+S.Zakeer Hussain,"Executive Director, BC Corpn ",Social Welfare,Social Welfare,Kurnool,,5,Active,9849906013,,,,14754367,Regular,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12324
+K.Tulasi Devi,"Executive Director,SC Corpn",Social Welfare,Social Welfare,Kurnool,,5,Active,9849905973,,,,15197508,Regular,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12325
+P.L.Vara Lakshmi,District Agricultural Officer,Agriculture,Agriculture,Kurnool,,5,Active,8331057415,,,,14457802,Regular,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12326
+Dr.V.Hemantha Kumar,District Animal Husbandry Officer,Agriculture,Agriculture,Kurnool,,5,Active,7702036219,,,,14334457,FAC,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12327
+I.D.Sirisha,District Co-Operative Officer,Agriculture,Agriculture,Kurnool,,5,Active,9100109206,,,,14477933,FAC,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12328
+Dr.V.V.Ranganath Babu,District Fisheries Officer,Agriculture,Agriculture,Kurnool,,5,Active,9866239674,,,,14388688,Regular,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12329
+A.Rajakrishna Reddy,District Horticulture Officer,Agriculture,Agriculture,Kurnool,,5,Active,7995086793,,,,14376235,Regular,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12330
+D.Anjaneyulu,District Sericulture Officer,Agriculture,Agriculture,Kurnool,,5,Active,9866557851,,,,14248595,Regular,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12332
+M.Raja Raghuveer,District Civil Supply Officer,Civil Supplies,Civil Supplies,Kurnool,,5,Active,9490737878,,,,14248563,Regular,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12333
+N.Venkata Ramudu,"District Manager, Civil Supplies Corporation",Civil Supplies,Civil Supplies,Kurnool,,5,Active,9949505318,,,,14404393,Regular,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12334
+L.Sudhakar,District Educational Officer,Education,Education,Kurnool,,5,Active,9849909113,,,,14031183,FAC,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12335
+Dr.C.Suresh Babu,District Intermediate Education Officer,Education,Education,Kurnool,,5,Active,9440816011,,,,14261932,Regular,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12336
+Dr.N.B.Lokaraju,"Addl Project Co-ordinator, Samagra Siksha",Education,Education,Kurnool,,5,Active,9849990913,,,,14223239,Regular,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12337
+K.Chandra Sekhar Reddy,"Deputy Director, Adult Education",Education,Education,Kurnool,,5,Active,9849909213,,,,14230672,Regular,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12338
+Venkateswarlu,"Superintending Engineer, APTRANSCO",Energy,Energy,Kurnool,,4,Active,9441826266,,,,10599675,Regular,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12339
+satyanrayana Murthy,"District Manager, NREDCAP",Energy,Energy,Kurnool,,5,Active,9493123272,,,,,FAC,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12340
+I.Venu Gopal,District Engineer Officer PR Engineering,Infrastructure,Infrastructure,Kurnool,,5,Active,9441130187,,,,14150583,Regular,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12341
+K.Gurappa Yadav,District Public Health Engineer Officer,Infrastructure,Infrastructure,Kurnool,,5,Active,9100089580,,,,14314043,FAC,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12342
+CH Manohar,District RWS Engineer,Infrastructure,Infrastructure,Kurnool,,5,Active,9100122400,,,,14285857,Regular,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12343
+B.Balachandra Reddy,"District Water Resources Officer, Irrigation",Infrastructure,Infrastructure,Kurnool,,5,Active,9440797457,,,,14400753,Regular,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12344
+K.Nagi Reddy,"EE, APEWIDC",Infrastructure,Infrastructure,Kurnool,,5,Active,9704701688,,,,15040649,Regular,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12345
+M.Chiranjeevulu,"EE, APMSIDC",Infrastructure,Infrastructure,Kurnool,,5,Active,8978680859,,,,15145732,Regular,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12346
+P.Maheswara Reddy,"Superintending Engineer, R&B",Infrastructure,Infrastructure,Kurnool,,4,Active,9440818033,,,,,Regular,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12347
+A.Nooka Raju,District Malaria Officer,HM & FW,Health,Kurnool,,5,Active,9849902419,,,,14474340,Regular,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12348
+Dr.L.Bhaskar,District Medical & Health Officer,HM & FW,Health,Kurnool,,5,Active,9849902409,,,,14401481,FAC,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12349
+G.Sreenivasulu,"Project Director, MEPMA",Municipal Admin,Municipal Admin,Kurnool,,5,Active,7901610399,,,,14235398,Regular,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12350
+G.Suryanarayana,"Project Officer, TIDCO",Municipal Admin,Municipal Admin,Kurnool,,5,Active,9701278800,,,,14396226,Regular,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12351
+B.Sudhakar Reddy,"Assistant Commissioner, Endowments",General Admin,General Admin,Kurnool,,5,Active,9491000679,,,,14217737,Regular,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12352
+G.Nagaraja Rao,"Assistant Director, Handlooms & Textiles",General Admin,General Admin,Kurnool,,5,Active,9247826642,,,,14170944,Regular,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12353
+G.Bharathi,District Economics & Statistics Officer,General Admin,General Admin,Kurnool,,5,Active,9154170814,,,,14989893,Regular,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12354
+P.Deepthi,District Employment Officer,General Admin,General Admin,Kurnool,,5,Active,9963737163,,,,14466325,Regular,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12355
+P.Syamala,District Forest Officer(T),General Admin,General Admin,Kurnool,,5,Active,9440810075,,,,14404457,Regular,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12356
+E.Sunil Kumar,District Ground Water Officer,General Admin,General Admin,Kurnool,,5,Active,9440655999,,,,14407679,Regular,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12357
+E.Venkateswarlu,District Labour Officer,General Admin,General Admin,Kurnool,,5,Active,9492555167,,,,14358319,Regular,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12358
+S.Santha Kumari,District Transport Officer,General Admin,General Admin,Kurnool,,5,Active,9281607033,,,,14353662,Regular,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12359
+Bonu Ramachandra Rao,District Treasury Officer,General Admin,General Admin,Kurnool,,5,Active,9849750589,,,,14357327,Regular,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12360
+C.Ashok Kumar,"General Manager, Industries",General Admin,General Admin,Kurnool,,5,Active,7093024549,,,,14217672,Regular,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12361
+I Narayana Reddy,Inspector of Factories,General Admin,General Admin,Kurnool,,5,Active,9010641556,,,,14361198,FAC,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12362
+T. Chiranjeevi,Project Director Housing,General Admin,General Admin,Kurnool,,5,Active,7093930113,,,,14472425,Regular,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12363
+K. Sreenivasulu,"Project Director, AP Micro Irrigation Project",General Admin,General Admin,Kurnool,,5,Active,7995097059,,,,14474527,Regular,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12364
+J.Neeraja,AC/DC Commercial Taxes,Commercial Taxes,Commercial Taxes,Kurnool,,5,Active,9989283156,,,,14210457,Regular,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12365
+G.Venkaeswrlu,DD/AD Mines,Commercial Taxes,Commercial Taxes,Kurnool,,5,Active,9100688816,,,,14312065,FAC,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12366
+M. Sudheer Babu,District Prohibition & Excise Officer,Commercial Taxes,Commercial Taxes,Kurnool,,5,Active,9440310600,,,,14398302,Regular,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12367
+Y. Bazari,District Registrar,Commercial Taxes,Commercial Taxes,Kurnool,,5,Active,9949557540,,,,14218261,Regular,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12368
+Dr. K. Venugopal,"CEO, Society for Youth Training & Employment",Youth & Sports,Youth & Sports,Kurnool,,5,Active,9849909070,,,,14222224,Regular,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12369
+Bupathi Rao,District Sports Development Officer,Youth & Sports,Youth & Sports,Kurnool,,5,Active,9866317318,,,,,Regular,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12370
+G.Lakshmi Narayana,District Tourism Officer,Youth & Sports,Youth & Sports,Kurnool,,5,Active,9640177759,,,,14397257,FAC,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12371
+Y.Madhusudhan Reddy,"Revenue Divisional Officer, Adoni",Revenue,Revenue,Kurnool,,4,Active,9948092246,,,,14314128,FAC,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12372
+K.Sandeep Kumar,"Revenue Divisional Officer, Kurnool",Revenue,Revenue,Kurnool,,4,Active,9849904164,,,,14733553,Regular,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12373
+Y.Madhusudhan Reddy,"Revenue Divisional Officer, Pattikonda",Revenue,Revenue,Kurnool,,4,Active,9948092246,,,,14314128,FAC,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12374
+J.Babu Prasad,"Dy.S.P, Kurnool",Home,Home,Kurnool,,5,Active,6301555244,,,,14243942,Regular,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12375
+M.Bhargavi,"Dy.S.P, Adoni",Home,Home,Kurnool,,5,Active,9121101109,,,,15134215,FAC,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12376
+B.Venkat Ramaiah,"Dy.S.P, Pattikonda",Home,Home,Kurnool,,5,Active,9440286918,,,,14391928,Regular,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12377
+A.V.Ramesh Babu,"Municipal Commissioner, Gudur Kurnool Municipality ",Municipal Admin,Municipal Admin,Kurnool,,5,Active,9885398358,,,,14218181,Regular,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12378
+P.Viswanatha,"Municipal Commissioner, Kurnool Municipal Corporation ",Municipal Admin,Municipal Admin,Kurnool,,5,Active,8106228899,,,,14417787,Regular,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12379
+N.Gangi Reddy,"Municipal Commissioner, Yemmiganur Municipality ",Municipal Admin,Municipal Admin,Kurnool,,5,Active,9849905861,,,,14265215,Regular,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12380
+Noorul Quamer,"Vice Chairman,Kurnool Urban Development Authority ",Municipal Admin,Municipal Admin,Kurnool,,4,Active,8978840011,,,,15057545,Regular,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12381
+C.M.A.Nayeem Basha,"Municipal Commissioner, Adoni Municipality ",Municipal Admin,Municipal Admin,Kurnool,,5,Active,9849905859,,,,,Regular,,,,,78.03730000000007,15.828100000000063,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12382
+Noorul Quamer,Joint Collector,Revenue,DEP01,Kurnool,,,Active,8978840011,,,,15057545,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P102
+C.Venkata Narayanamma,District Revenue Officer,Revenue,DEP01,Kurnool,,,Active,9491017555,,,,14390525,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P103
+K.murali Krishna,"Assistant Director, Survey & Land Records",Revenue,DEP01,Kurnool,,,Active,9866169505,,,,14317949,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P104
+B.Suresh Kumar,"DPM, Disaster Management",Revenue,DEP01,Kurnool,,,Active,9849284580,,,,14220410,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P105
+G.Naga Prasanna Lakshmi,SDC KRRC,Revenue,DEP01,Kurnool,,,Active,8886931944,,,,14295061,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P107
+Vikrant Patil,Superintendent of Police,Home (Law & Order),DEP02,Kurnool,,,Active,9440795500,,,,14388128,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P108
+G.Hussain Peera,Addl Superintendent of Police,Home (Law & Order),DEP02,Kurnool,,,Active,7729099944,,,,14218981,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P109
+G.Nasara Reddy,"Chief Executive Officer, Zilla Parishad",Panchayat Raj,DEP03,Kurnool,,,Active,9849903241,,,,14477685,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P110
+G.Bhaskar,District Panchayat Officer,Panchayat Raj,DEP03,Kurnool,,,Active,9849903239,,,,14184061,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P111
+E.V.Subbareddy,District Swarna Gramam & Swarna Wardu Officer ,Panchayat Raj,DEP03,Kurnool,,,Active,7569982690,,,,14230026,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P112
+Y.P.Ramana Reddy,"Project Director, DRDA",Panchayat Raj,DEP03,Kurnool,,,Active,9849904732,,,,14261953,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P113
+Madhavi latha,"Project Director, DWMA",Panchayat Raj,DEP03,Kurnool,,,Active,9959023450,,,,14230012,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P114
+K.Prasuna,District BC Welfare & Empowerment Officer,Welfare Dept,DEP04,Kurnool,,,Active,9703644987,,,,14163896,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P115
+Syed Sadiha Parveen,District Minority Welfare & Empowerment Officer,Welfare Dept,DEP04,Kurnool,,,Active,9849901149,,,,14969138,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P116
+B.Radhika,District SC Welfare & Enpowerment Officer,Welfare Dept,DEP04,Kurnool,,,Active,9133270305,,,,14330338,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P117
+D.Suresh,District Tribal Welfare & Empowerment Officer,Welfare Dept,DEP04,Kurnool,,,Active,9491030041,,,,14245809,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P118
+P.Vijaya,District Women and Child Welfare & Empowerment Officer,Welfare Dept,DEP04,Kurnool,,,Active,8332848986,,,,14232914,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P119
+Dr.KVenu Gopal,District Youth Welfare & Empowerment Officer,Welfare Dept,DEP04,Kurnool,,,Active,9849909070,,,,14222224,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P120
+S.Zakeer Hussain,"Executive Director, BC Corpn ",Welfare Dept,DEP04,Kurnool,,,Active,9849906013,,,,14754367,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P121
+K.Tulasi Devi,"Executive Director,SC Corpn",Welfare Dept,DEP04,Kurnool,,,Active,9849905973,,,,15197508,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P122
+P.L.Vara Lakshmi,District Agricultural Officer,"Agriculture, Animal Husbandry & Cooperation",DEP05,Kurnool,,,Active,8331057415,,,,14457802,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P123
+Dr.V.Hemantha Kumar,District Animal Husbandry Officer,"Agriculture, Animal Husbandry & Cooperation",DEP05,Kurnool,,,Active,7702036219,,,,14334457,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P124
+I.D.Sirisha,District Co-Operative Officer,"Agriculture, Animal Husbandry & Cooperation",DEP05,Kurnool,,,Active,9100109206,,,,14477933,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P125
+Dr.V.V.Ranganath Babu,District Fisheries Officer,"Agriculture, Animal Husbandry & Cooperation",DEP05,Kurnool,,,Active,9866239674,,,,14388688,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P126
+A.Rajakrishna Reddy,District Horticulture Officer,"Agriculture, Animal Husbandry & Cooperation",DEP05,Kurnool,,,Active,7995086793,,,,14376235,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P127
+D.Anjaneyulu,District Sericulture Officer,"Agriculture, Animal Husbandry & Cooperation",DEP05,Kurnool,,,Active,9866557851,,,,14248595,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P129
+M.Raja Raghuveer,District Civil Supply Officer,Civil Supplies,DEP06,Kurnool,,,Active,9490737878,,,,14248563,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P130
+N.Venkata Ramudu,"District Manager, Civil Supplies Corporation",Civil Supplies,DEP06,Kurnool,,,Active,9949505318,,,,14404393,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P131
+L.Sudhakar,District Educational Officer,Education,DEP07,Kurnool,,,Active,9849909113,,,,14031183,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P132
+Dr.C.Suresh Babu,District Intermediate Education Officer,Education,DEP07,Kurnool,,,Active,9440816011,,,,14261932,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P133
+Dr.N.B.Lokaraju,"Addl Project Co-ordinator, Samagra Siksha",Education,DEP07,Kurnool,,,Active,9849990913,,,,14223239,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P134
+K.Chandra Sekhar Reddy,"Deputy Director, Adult Education",Education,DEP07,Kurnool,,,Active,9849909213,,,,14230672,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P135
+Venkateswarlu,"Superintending Engineer, APTRANSCO",Energy,DEP08,Kurnool,,,Active,9441826266,,,,10599675,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P136
+satyanrayana Murthy,"District Manager, NREDCAP",Energy,DEP08,Kurnool,,,Active,9493123272,,,,,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P137
+I.Venu Gopal,District Engineer Officer PR Engineering,Engineering Depts,DEP09,Kurnool,,,Active,9441130187,,,,14150583,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P138
+K.Gurappa Yadav,District Public Health Engineer Officer,Engineering Depts,DEP09,Kurnool,,,Active,9100089580,,,,14314043,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P139
+CH Manohar,District RWS Engineer,Engineering Depts,DEP09,Kurnool,,,Active,9100122400,,,,14285857,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P140
+B.Balachandra Reddy,"District Water Resources Officer, Irrigation",Engineering Depts,DEP09,Kurnool,,,Active,9440797457,,,,14400753,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P141
+K.Nagi Reddy,"EE, APEWIDC",Engineering Depts,DEP09,Kurnool,,,Active,9704701688,,,,15040649,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P142
+M.Chiranjeevulu,"EE, APMSIDC",Engineering Depts,DEP09,Kurnool,,,Active,8978680859,,,,15145732,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P143
+P.Maheswara Reddy,"Superintending Engineer, R&B",Engineering Depts,DEP09,Kurnool,,,Active,9440818033,,,,,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P144
+A.Nooka Raju,District Malaria Officer,Health,DEP10,Kurnool,,,Active,9849902419,,,,14474340,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P145
+Dr.L.Bhaskar,District Medical & Health Officer,Health,DEP10,Kurnool,,,Active,9849902409,,,,14401481,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P146
+G.Sreenivasulu,"Project Director, MEPMA",Municipal Administration,DEP11,Kurnool,,,Active,7901610399,,,,14235398,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P149
+G.Suryanarayana,"Project Officer, TIDCO",Municipal Administration,DEP11,Kurnool,,,Active,9701278800,,,,14396226,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P150
+B.Sudhakar Reddy,"Assistant Commissioner, Endowments",Other Departments,DEP12,Kurnool,,,Active,9491000679,,,,14217737,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P151
+G.Nagaraja Rao,"Assistant Director, Handlooms & Textiles",Other Departments,DEP12,Kurnool,,,Active,9247826642,,,,14170944,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P152
+G.Bharathi,District Economics & Statistics Officer,Other Departments,DEP12,Kurnool,,,Active,9154170814,,,,14989893,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P153
+P.Deepthi,District Employment Officer,Other Departments,DEP12,Kurnool,,,Active,9963737163,,,,14466325,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P154
+P.Syamala,District Forest Officer(T),Other Departments,DEP12,Kurnool,,,Active,9440810075,,,,14404457,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P155
+E.Sunil Kumar,District Ground Water Officer,Other Departments,DEP12,Kurnool,,,Active,9440655999,,,,14407679,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P156
+E.Venkateswarlu,District Labour Officer,Other Departments,DEP12,Kurnool,,,Active,9492555167,,,,14358319,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P157
+S.Santha Kumari,District Transport Officer,Other Departments,DEP12,Kurnool,,,Active,9281607033,,,,14353662,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P158
+Bonu Ramachandra Rao,District Treasury Officer,Other Departments,DEP12,Kurnool,,,Active,9849750589,,,,14357327,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P159
+C.Ashok Kumar,"General Manager, Industries",Other Departments,DEP12,Kurnool,,,Active,7093024549,,,,14217672,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P160
+I Narayana Reddy,Inspector of Factories,Other Departments,DEP12,Kurnool,,,Active,9010641556,,,,14361198,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P161
+T. Chiranjeevi,Project Director Housing,Other Departments,DEP12,Kurnool,,,Active,7093930113,,,,14472425,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P162
+K. Sreenivasulu,"Project Director, AP Micro Irrigation Project",Other Departments,DEP12,Kurnool,,,Active,7995097059,,,,14474527,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P163
+J.Neeraja,AC/DC Commercial Taxes,Revenue Generating Depts,DEP13,Kurnool,,,Active,9989283156,,,,14210457,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P164
+G.Venkaeswrlu,DD/AD Mines,Revenue Generating Depts,DEP13,Kurnool,,,Active,9100688816,,,,14312065,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P165
+M. Sudheer Babu,District Prohibition & Excise Officer,Revenue Generating Depts,DEP13,Kurnool,,,Active,9440310600,,,,14398302,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P166
+Y. Bazari,District Registrar,Revenue Generating Depts,DEP13,Kurnool,,,Active,9949557540,,,,14218261,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P167
+Dr. K. Venugopal,"CEO, Society for Youth Training & Employment","Youth, Tourism, Sports & Culture",DEP14,Kurnool,,,Active,9849909070,,,,14222224,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P168
+Bupathi Rao,District Sports Development Officer,"Youth, Tourism, Sports & Culture",DEP14,Kurnool,,,Active,9866317318,,,,,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P169
+G.Lakshmi Narayana,District Tourism Officer,"Youth, Tourism, Sports & Culture",DEP14,Kurnool,,,Active,9640177759,,,,14397257,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P170
+Y.Madhusudhan Reddy,"Revenue Divisional Officer, Adoni",Revenue,DEP01,Kurnool,,,Active,9948092246,,,,14314128,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P208
+K.Sandeep Kumar,"Revenue Divisional Officer, Kurnool",Revenue,DEP01,Kurnool,,,Active,9849904164,,,,14733553,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P209
+Y.Madhusudhan Reddy,"Revenue Divisional Officer, Pattikonda",Revenue,DEP01,Kurnool,,,Active,9948092246,,,,14314128,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P210
+J.Babu Prasad,"Dy.S.P, Kurnool",Home (Law & Order),DEP02,Kurnool,,,Active,6301555244,,,,14243942,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P432
+M.Bhargavi,"Dy.S.P, Adoni",Home (Law & Order),DEP02,Kurnool,,,Active,9121101109,,,,15134215,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P433
+B.Venkat Ramaiah,"Dy.S.P, Pattikonda",Home (Law & Order),DEP02,Kurnool,,,Active,9440286918,,,,14391928,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P434
+A.V.Ramesh Babu,"Municipal Commissioner, Gudur Kurnool Municipality ",Municipal Administration,DEP11,Kurnool,,,Active,9885398358,,,,14218181,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P318
+P.Viswanatha,"Municipal Commissioner, Kurnool Municipal Corporation ",Municipal Administration,DEP11,Kurnool,,,Active,8106228899,,,,14417787,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P319
+N.Gangi Reddy,"Municipal Commissioner, Yemmiganur Municipality ",Municipal Administration,DEP11,Kurnool,,,Active,9849905861,,,,14265215,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P320
+Noorul Quamer,"Vice Chairman,Kurnool Urban Development Authority ",Municipal Administration,DEP11,Kurnool,,,Active,8978840011,,,,15057545,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P321
+C.M.A.Nayeem Basha,"Municipal Commissioner, Adoni Municipality ",Municipal Administration,DEP11,Kurnool,,,Active,9849905859,,,,,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P317
+"Dr.G.Srijana,I.A.S.,",District Collector,,,Kurnool,,,Active,9440290999,,,kurnoolcollector@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+M. Preetham,CC to District Collector,,,Kurnool,,,Active,9704559596,,,mandagiripreetham@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+B. Vishnu Madhav,,,,Kurnool,,,Active,9441247499,,,,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+"Narapureddy Mourya, I.A.S.,",Joint Collector 1,,,Kurnool,,,Active,8978840011,,,jckurnool@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Venkataraju,CC to (JC),,,Kurnool,,,Active,9849904160,,,,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Lokeswara Reddy,,,,Kurnool,,,Active,9849904162,,,,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+K. Madhusudhana Rao,District Revenue Officer (DRO),,,Kurnool,,,Active,9491017555,,,drokurnool@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+B. Venkateswarlu,CC to (DRO),,,Kurnool,,,Active,9885155996,,,,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+R. Vasudevan,Administrative Officer (AO),,,Kurnool,,,Active,9849904171,,,aokurnool@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+V. Sreenivasulu,Superintendent (Land),,,Kurnool,,,Active,8333989004,,,esection@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Smt. K.Nirmala Devi,Superintendent (MAGL),,,Kurnool,,,Active,8333989002,,,csectionkurnool@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Smt. Y.Yugeswari Devi,Superintendent (CO.OR),,,Kurnool,,,Active,8333989003,,,dsectionkrnl@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Sri.I.Venugopala Rao,"AO KRRC Colletor's Office, Kurnool",,,Kurnool,,,Active,8328314727,,,sdckrrc55@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Smt. A.Ramani,"AO (Land Reforms), Collector's Office, Kurnool",,,Kurnool,,,Active,833989007,,,--,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Smt.B. Anupama,Distrit Project Manager (DPM),,,Kurnool,,,Active,9949597150,,,dpm.kurnooll@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+M. Seshi Reddy,Kurnool,,,Kurnool,,,Active,9849904163,,,rdo.knl@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+"Shiv Narayan I.A.S.,",Adoni (Sub Collector),,,Kurnool,,,Active,9849904164,,,rdo.adoni@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+N. Ramalakshmi,Pattikonda,,,Kurnool,,,Active,8333989005,,,rdo.pattikonda@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+M.Anupama,"Tahsildar, C.Belagal Mandal",,,Kurnool,,,Active,8333988964,,,tah.cbelagal@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+V.Uday Santhosh,"Tahsildar, Gudur",,,Kurnool,,,Active,9849904168,,,gudurtahsildar@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+N M. Gurappa,Tahsildar Kodumur,,,Kurnool,,,Active,8333988963,,,tahsildarkodumur@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+B. Ramanjula Naik,"Tahsildar, Kurnool Rural",,,Kurnool,,,Active,9849904173,,,krnltahsildarrural@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+K. Mohan Kumar,"TAHSILDAR, KURNOOL URBAN",,,Kurnool,,,Active,9849904165,,,krnltahsildarurban@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Aswapuri Ananthachari,"TAHSILDAR, O/o Veldurthy",,,Kurnool,,,Active,8333988967,,,tahsildarveldurthy29@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+G Nataraja,"Tahsildar , Orvakal",,,Kurnool,,,Active,8333988962,,,tahsildarorvakal@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Chinnappa Naidu Munivelu,"Tahsildar , Kallur",,,Kurnool,,,Active,833398961,,,kallurtahsildar@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+P.Jhansi Lakshmi,"Divisional Administrative Officer , Kurnool",,,Kurnool,,,Active,8333989011,,,rdo.knl@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Smt.B.Eeramma,"Tahasildhar,Aspari",,,Kurnool,,,Active,8333988997,,,mro.aspari@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Sri.B.Eswaraiah Setty,"Tahsildar,Devanakonda",,,Kurnool,,,Active,8333988958,,,mrodnkknl@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+V. Chandra Sekhar,"Tahsildar, Alur",,,Kurnool,,,Active,9849904167,,,mrodnkknl@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+C.Sharmila,"Tahsildar, Tuggali",,,Kurnool,,,Active,8333989018,,,tahsildartuggali@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+S.Madhava Raju,Tahsildar Pattikonda,,,Kurnool,,,Active,8333989017,,,tahsildarpattikonda@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+K.Beulah,"Tahsildar, Halaharvi Mandal",,,Kurnool,,,Active,8333989015,,,halaharvitahsildar@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+P.Rajak Vali,Tahsildhar Maddikera,,,Kurnool,,,Active,8333989019,,,tahsildar.mdkr@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+D.Obilesu,"TAHSILDAR 
+O/O TAHSILDAR, NANDAVARAM MANDAL",,,Kurnool,,,Active,8333988997,,,mrondvm1304@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+G.Alexander,"TAHSILDAR 
+O/O TAHSILDAR, KOWTHALAM MANDAL",,,Kurnool,,,Active,8333988995,,,mrokowthalam@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+A.M.Prasad Raju,"Tahsildar, Holagunda",,,Kurnool,,,Active,8333989016,,,holagundatahsildarr@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+G. Sreedhara Murthy,"Tahsildar, Mantrala yam",,,Kurnool,,,Active,8333988993,,,mantralayam.mro44@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+V. Suresh Babu,"Tahsildar, Peddakaburu",,,Kurnool,,,Active,833988994,,,tahsildarpeddakadubur@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+C.R. Seshaiah,"Administrative Officer, O/o sub Collector Adoni",,,Kurnool,,,Active,8333988993,,,rdo.adoni@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+B. Nagabhushanam,"Administrative Officer, O/o RDO, Pattikonda",,,Kurnool,,,Active,,,,rdo.pattikonda@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+K. Padmaja,"Tahsildar's Office, Chippagiri",,,Kurnool,,,Active,8333989014,,,mrocgiriknl@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+B. Anuradha,"Tahsildar,sOffice Krishnagiri",,,Kurnool,,,Active,8333988966,,,mrokrishnagiri@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+R.N. Haseena Sulthana,"Tahsildar, Adoni",,,Kurnool,,,Active,9849904161,,,mroadn13@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+B. Parvathi,"TAHSILDAR, GONEGANDLA MANDAL",,,Kurnool,,,Active,8333988959,,,mrogngknl@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+P. Murali,"Tahsildar, Kosigi",,,Kurnool,,,Active,8333988996,,,kosigitahsildar02@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+P.Sesha Reddy,"Tahsildar,Yemmiganur",,,Kurnool,,,Active,9849904177,,,mroymrknl@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+vacant,"Tahsildar,KRRC, Collector's Office, Kurnool",,,Kurnool,,,Active,,,,,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+vacant,"Tahsildar, Vigilance department, Kurnool",,,Kurnool,,,Active,,,,,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+"Sri G.Veerapandian, I.A.S.,",Collector,,,Kurnool,,,Active,944029099908518220006,,,collector_krnl@ap.gov.in,,,,,,,,,Local_Excel (Collecters contact list.xlsx),
+"Sri Ravi Pattanshetti, I.A.S.,",JC-1,,,Kurnool,,,Active,897884001108518220328,,,"jc_krnl@ap.gov.in
+jckurnool@gmail.com",,,,,,,,,Local_Excel (Collecters contact list.xlsx),
+G.Veerapandian,District Collector,,,Kurnool,,,Active,9440290999,,,,,,,,,,,,"Local_Excel (ALL Collectors, JCs, DRO, RTGS, APSDMA, Agriculture Contact Numbers.xlsx)",
+Pattanshetti Ravi Subash,Joint Collector 1,,,Kurnool,,,Active,8978840011,,,,,,,,,,,,"Local_Excel (ALL Collectors, JCs, DRO, RTGS, APSDMA, Agriculture Contact Numbers.xlsx)",
+Syed Khaja,Joint Collector 2,,,Kurnool,,,Active,9494044799,,,,,,,,,,,,"Local_Excel (ALL Collectors, JCs, DRO, RTGS, APSDMA, Agriculture Contact Numbers.xlsx)",
+G. Venkatesham,DRO,,,Kurnool,,,Active,9491017555,,,,,,,,,,,,"Local_Excel (ALL Collectors, JCs, DRO, RTGS, APSDMA, Agriculture Contact Numbers.xlsx)",
+Ummamaheswarmma,Agri Joint Director,,,Kurnool,,,Active,8886614216,,,,,,,,,,,,"Local_Excel (ALL Collectors, JCs, DRO, RTGS, APSDMA, Agriculture Contact Numbers.xlsx)",

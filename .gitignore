@@ -33,3 +33,7 @@ data/rebuild/*.json
 data/tier2/*.json
 data/tier3/*.json
 data/tier4/*.json
+
+# Large source dumps (re-fetchable via sync scripts)
+data/sources/gis_dm_personnel_dump.json
+data/sources/gis_ap_govt_structure_dump.json

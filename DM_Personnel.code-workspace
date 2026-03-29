@@ -1,7 +1,7 @@
 {
     "folders": [
         {
-            "name": "Webapp",
+            "name": "Webapp (Live on GIS Server)",
             "path": "webapp"
         },
         {
@@ -9,11 +9,11 @@
             "path": "apis"
         },
         {
-            "name": "Database",
-            "path": "database"
+            "name": "Scripts (Collectors & Pipeline)",
+            "path": "scripts"
         },
         {
-            "name": "Data",
+            "name": "Data (Consolidated + Sources)",
             "path": "data"
         },
         {
@@ -50,19 +50,37 @@
             {
                 "label": "Sync Personnel (ArcGIS to PG)",
                 "type": "shell",
-                "command": "& 'C:/Program Files/Python312/python.exe' apis/sync_dm_personnel.py",
+                "command": "& 'C:/Program Files/ArcGIS/Pro/bin/Python/envs/arcgispro-py3/python.exe' apis/sync_dm_personnel.py",
                 "group": "test"
             },
             {
                 "label": "Run Boundary Linkage",
                 "type": "shell",
-                "command": "& 'C:/Program Files/Python312/python.exe' apis/dm_personnel_boundary_link.py",
+                "command": "& 'C:/Program Files/ArcGIS/Pro/bin/Python/envs/arcgispro-py3/python.exe' apis/dm_personnel_boundary_link.py",
                 "group": "test"
             },
             {
                 "label": "DB Setup",
                 "type": "shell",
-                "command": "& 'C:/Program Files/Python312/python.exe' apis/dm_personnel_db_setup.py",
+                "command": "& 'C:/Program Files/ArcGIS/Pro/bin/Python/envs/arcgispro-py3/python.exe' apis/dm_personnel_db_setup.py",
+                "group": "test"
+            },
+            {
+                "label": "Export Key Posts (Google Sheets)",
+                "type": "shell",
+                "command": "& 'C:/Program Files/ArcGIS/Pro/bin/Python/envs/arcgispro-py3/python.exe' scripts/collectors/export_key_posts_gsheets.py",
+                "group": "test"
+            },
+            {
+                "label": "Consolidate All Sources",
+                "type": "shell",
+                "command": "& 'C:/Program Files/ArcGIS/Pro/bin/Python/envs/arcgispro-py3/python.exe' scripts/consolidate_all_sources.py",
+                "group": "test"
+            },
+            {
+                "label": "Import Key Posts to GIS",
+                "type": "shell",
+                "command": "& 'C:/Program Files/ArcGIS/Pro/bin/Python/envs/arcgispro-py3/python.exe' scripts/import_key_posts_to_gis.py",
                 "group": "test"
             }
         ]

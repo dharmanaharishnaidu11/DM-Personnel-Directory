@@ -1,0 +1,171 @@
+﻿person_name,designation,department,category,district,mandal,hierarchy_level,status,phone,phone_alt,whatsapp,email,employee_id,posting_type,rank,dm_role,reports_to,office_address,longitude,latitude,source,source_id
+D. Krishna Rao,Superintendent of Police,Home,Home,Palnadu,,3,Active,,,,,,,IPS,,,,79.68240000000003,16.105600000000038,GIS_DM_Personnel (AP 40-Dept Rebuild 2026),9300
+Kritika Shukla,Collector & District Magistrate,Revenue,Revenue,Palnadu,,3,Active,,,,,,,IAS,,,,79.68240000000003,16.105600000000038,GIS_DM_Personnel (AP 40-Dept Rebuild 2026),10585
+V Sanjana Simha,Joint Collector,Revenue,Revenue,Palnadu,,3,Active,6309501365,,,,15161930,Regular,,,,,79.70400000000006,16.236000000000047,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11352
+Bhattu Naradamuni,District Revenue Officer,Revenue,Revenue,Palnadu,,5,Active,9652344669,,,,14122933,FAC,,,,,79.70400000000006,16.236000000000047,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11353
+Chejerla Bhanu Keerthi,"Assistant Director, Survey & Land Records",Revenue,Revenue,Palnadu,,5,Active,9346489907,,,,15132259,Regular,,,,,79.70400000000006,16.236000000000047,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11354
+B.Krishna Rao,Superintendent of Police,Home,Home,Palnadu,,3,Active,9986595327,,,,14376017,Regular,,,,,79.70400000000006,16.236000000000047,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11356
+J.V. Santosh,Addl Superintendent of Police,Home,Home,Palnadu,,3,Active,9642027328,,,,14372266,Regular,,,,,79.70400000000006,16.236000000000047,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11357
+S V Nageswar Naik,District Panchayat Officer,PR & RD,PR & RD,Palnadu,,5,Active,9063992106,,,,14473737,Regular,,,,,79.70400000000006,16.236000000000047,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11358
+M. Venkata Reddy,District Swarna Gramam & Swarna Wardu Officer ,PR & RD,PR & RD,Palnadu,,5,Active,9154409532,,,,14177312,FAC,,,,,79.70400000000006,16.236000000000047,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11359
+P Jhansi Rani,"Project Director, DRDA",PR & RD,PR & RD,Palnadu,,5,Active,9121190656,,,,14388852,Regular,,,,,79.70400000000006,16.236000000000047,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11360
+M.Sidha Linga Murthy,"Project Director, DWMA",PR & RD,PR & RD,Palnadu,,5,Active,9121227211,,,,14254582,Regular,,,,,79.70400000000006,16.236000000000047,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11361
+K.Srinivasulu,District BC Welfare & Empowerment Officer,Social Welfare,Social Welfare,Palnadu,,5,Active,9848748365,,,,14179794,FAC,,,,,79.70400000000006,16.236000000000047,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11362
+E.Rajeswaramma,District SC Welfare & Enpowerment Officer,Social Welfare,Social Welfare,Palnadu,,5,Active,9603945433,,,,14168998,Regular,,,,,79.70400000000006,16.236000000000047,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11363
+B. Govind Naik,District Tribal Welfare & Empowerment Officer,Social Welfare,Social Welfare,Palnadu,,5,Active,9030407394,,,,14165709,FAC,,,,,79.70400000000006,16.236000000000047,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11364
+M. Umadevi,District Women and Child Welfare & Empowerment Officer,Social Welfare,Social Welfare,Palnadu,,5,Active,9705565377,,,,14494436,Regular,,,,,79.70400000000006,16.236000000000047,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11365
+M. Jaggarao,District Agricultural Officer,Agriculture,Agriculture,Palnadu,,5,Active,8331056902,,,,14090590,Regular,,,,,79.70400000000006,16.236000000000047,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11366
+Dr. B. Srinivasa Rao,District Animal Husbandry Officer,Agriculture,Agriculture,Palnadu,,5,Active,9866598919,,,,14441545,Regular,,,,,79.70400000000006,16.236000000000047,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11367
+M.Nagaraju,District Co-Operative Officer,Agriculture,Agriculture,Palnadu,,5,Active,9100109121,,,,14255784,Regular,,,,,79.70400000000006,16.236000000000047,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11368
+P. Prasad,District Fisheries Officer,Agriculture,Agriculture,Palnadu,,5,Active,9989340292,,,,14208459,FAC,,,,,79.70400000000006,16.236000000000047,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11369
+Inturi Venkat Rao,District Horticulture Officer,Agriculture,Agriculture,Palnadu,,5,Active,7995086775,,,,14457544,Regular,,,,,79.70400000000006,16.236000000000047,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11370
+K.Ramesh,District Manager AP Markfed,Agriculture,Agriculture,Palnadu,,5,Active,8978381833,,,,,FAC,,,,,79.70400000000006,16.236000000000047,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11371
+A.Bala Subramanyam,District Sericulture Officer,Agriculture,Agriculture,Palnadu,,5,Active,9000318321,,,,14223224,FAC,,,,,79.70400000000006,16.236000000000047,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11372
+M.V.Prasad,District Civil Supply Officer,Civil Supplies,Civil Supplies,Palnadu,,5,Active,9154959287,,,,14358337,Regular,,,,,79.70400000000006,16.236000000000047,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11373
+Bhattu Naradamuni,"District Manager, Civil Supplies Corporation",Civil Supplies,Civil Supplies,Palnadu,,5,Active,9652344669,,,,14122933,Regular,,,,,79.70400000000006,16.236000000000047,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11374
+P.V.J.Ramarao,District Educational Officer,Education,Education,Palnadu,,5,Active,9989931138,,,,14137842,FAC,,,,,79.70400000000006,16.236000000000047,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11375
+M.Neelavathi Devi,District Intermediate Education Officer,Education,Education,Palnadu,,5,Active,9553813264,,,,14356890,Regular,,,,,79.70400000000006,16.236000000000047,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11376
+P.V.J.Ramarao,"Addl Project Co-ordinator, Samagra Siksha",Education,Education,Palnadu,,5,Active,9989931138,,,,14137842,FAC,,,,,79.70400000000006,16.236000000000047,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11377
+P.Rama Chandra Prasad,"Superintending Engineer, APTRANSCO",Energy,Energy,Palnadu,,4,Active,8333992908,,,,,Regular,,,,,79.70400000000006,16.236000000000047,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11378
+K.Muthaiah,District Engineer Officer PR Engineering,Infrastructure,Infrastructure,Palnadu,,5,Active,9440451322,,,,14182251,FAC,,,,,79.70400000000006,16.236000000000047,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11380
+R V Srininivasa Rao,District Public Health Engineer Officer,Infrastructure,Infrastructure,Palnadu,,5,Active,9493908372,,,,14157190,FAC,,,,,79.70400000000006,16.236000000000047,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11381
+T. Chandra Shekar,District RWS Engineer,Infrastructure,Infrastructure,Palnadu,,5,Active,9100121402,,,,14142883,Regular,,,,,79.70400000000006,16.236000000000047,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11382
+P. Venkata Rathnam,"District Water Resources Officer, Irrigation",Infrastructure,Infrastructure,Palnadu,,5,Active,9701417242,,,,14389579,FAC,,,,,79.70400000000006,16.236000000000047,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11383
+M.Sada Siva Rao,"EE, APEWIDC",Infrastructure,Infrastructure,Palnadu,,5,Active,9794701567,,,,14478536,Regular,,,,,79.70400000000006,16.236000000000047,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11384
+M.Hanumantha Rao Naik,"EE, APMSIDC",Infrastructure,Infrastructure,Palnadu,,5,Active,8978680823,,,,,Regular,,,,,79.70400000000006,16.236000000000047,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11385
+G. Geetha Rani,"Superintending Engineer, R&B",Infrastructure,Infrastructure,Palnadu,,4,Active,9440818060,,,,14325837,Regular,,,,,79.70400000000006,16.236000000000047,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11386
+Dr.SHAIK DARGA NAZEER,District Malaria Officer,HM & FW,Health,Palnadu,,5,Active,8309513345,,,,15152329,Regular,,,,,79.70400000000006,16.236000000000047,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11387
+Dr.B.RAVI,District Medical & Health Officer,HM & FW,Health,Palnadu,,5,Active,9440242575,,,,14462925,Regular,,,,,79.70400000000006,16.236000000000047,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11388
+Ch.Murali Krishna,"Project Director, MEPMA",Municipal Admin,Municipal Admin,Palnadu,,5,Active,9396351331,,,,14472472,Regular,,,,,79.70400000000006,16.236000000000047,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11389
+Gujjala Atchutha Venkata Srinivas,"Assistant Commissioner, Endowments",General Admin,General Admin,Palnadu,,5,Active,8333811584,,,,14195502,Regular,,,,,79.70400000000006,16.236000000000047,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11390
+U.V.Satyanarayana Raju,District Economics & Statistics Officer,General Admin,General Admin,Palnadu,,5,Active,9949930296,,,,14142212,FAC,,,,,79.70400000000006,16.236000000000047,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11391
+G. Krishna Priya I.F.S.,District Forest Officer(T),General Admin,General Admin,Palnadu,,5,Active,9440810055,,,,14383861,Regular,,,,,79.70400000000006,16.236000000000047,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11392
+K Rama Balaji Reddy,District Ground Water Officer,General Admin,General Admin,Palnadu,,5,Active,9618379444,,,,14399854,Regular,,,,,79.70400000000006,16.236000000000047,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11393
+Shaik Mahaboob Subhani,District Labour Officer,General Admin,General Admin,Palnadu,,5,Active,9492555151,,,,14149256,Regular,,,,,79.70400000000006,16.236000000000047,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11394
+Sanjeev kumar Garrepelly,District Transport Officer,General Admin,General Admin,Palnadu,,5,Active,9281607028,,,,14124422,Regular,,,,,79.70400000000006,16.236000000000047,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11395
+K. Srinivasa Rao,District Treasury Officer,General Admin,General Admin,Palnadu,,5,Active,8886652221,,,,14137270,Regular,,,,,79.70400000000006,16.236000000000047,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11396
+Sajja Venkata Suresh,"General Manager, Industries",General Admin,General Admin,Palnadu,,5,Active,9346890600,,,,14197694,Regular,,,,,79.70400000000006,16.236000000000047,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11397
+UVNV Prasad,Project Director Housing,General Admin,General Admin,Palnadu,,5,Active,7093930120,,,,,FAC,,,,,79.70400000000006,16.236000000000047,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11398
+Ch. Anjaneyulu,"Project Director, AP Micro Irrigation Project",General Admin,General Admin,Palnadu,,5,Active,9491214959,,,,14457847,Regular,,,,,79.70400000000006,16.236000000000047,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11399
+M Ramarao,AC/DC Commercial Taxes,Commercial Taxes,Commercial Taxes,Palnadu,,5,Active,9959436484,,,,14142372,FAC,,,,,79.70400000000006,16.236000000000047,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11400
+Y. Nagaiah,DD/AD Mines,Commercial Taxes,Commercial Taxes,Palnadu,,5,Active,9989296319,,,,14359115,Regular,,,,,79.70400000000006,16.236000000000047,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11401
+K Manikanta,District Prohibition & Excise Officer,Commercial Taxes,Commercial Taxes,Palnadu,,5,Active,9440902480,,,,14476343,Regular,,,,,79.70400000000006,16.236000000000047,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11402
+S Ramkumar,District Registrar,Commercial Taxes,Commercial Taxes,Palnadu,,5,Active,7093921539,,,,14473205,Regular,,,,,79.70400000000006,16.236000000000047,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11403
+P. Narasimha Reddy,District Sports Development Officer,Youth & Sports,Youth & Sports,Palnadu,,5,Active,8712622574,,,,15181178,Regular,,,,,79.70400000000006,16.236000000000047,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11404
+V. Murali Krishna,"Revenue Divisional Officer, Gurazala",Revenue,Revenue,Palnadu,,4,Active,9849904015,,,,14118801,Regular,,,,,79.70400000000006,16.236000000000047,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11405
+V. Murali Krishna,"Revenue Divisional Officer, Narasaraopet",Revenue,Revenue,Palnadu,,4,Active,9849904015,,,,14118801,FAC,,,,,79.70400000000006,16.236000000000047,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11406
+K.Sri Ramulu,"Revenue Divisional Officer, Sattenapalle",Revenue,Revenue,Palnadu,,4,Active,9154959297,,,,14386393,FAC,,,,,79.70400000000006,16.236000000000047,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11407
+G.Ravikumar,"Municipal Commissioner, Narasaraopet Municipality ",Municipal Admin,Municipal Admin,Palnadu,,5,Active,9849905831,,,,14154625,FAC,,,,,79.70400000000006,16.236000000000047,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11408
+M. Hanumantha Rao,"Dy.S.P, Sattenapalli",Home,Home,Palnadu,,5,Active,9440796208,,,,14391347,Regular,,,,,79.70400000000006,16.236000000000047,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11409
+K.Siva Rama Prasad,"Municipal Commissioner, Vinukonda Municipality ",Municipal Admin,Municipal Admin,Palnadu,,5,Active,9849905835,,,,14494179,FAC,,,,,79.70400000000006,16.236000000000047,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11410
+D.Venu Babu,"Municipal Commissioner, Macherla Municipality ",Municipal Admin,Municipal Admin,Palnadu,,5,Active,9849905838,,,,15073262,FAC,,,,,79.70400000000006,16.236000000000047,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11411
+G.Venkateswarlu,"Municipal Commissioner, Dachepalli Nagar Panchayat ",Municipal Admin,Municipal Admin,Palnadu,,5,Active,9849366311,,,,14476205,Regular,,,,,79.70400000000006,16.236000000000047,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11412
+N.Ananda Kumar,"Municipal Commissioner, Sattenapalle Municipality ",Municipal Admin,Municipal Admin,Palnadu,,5,Active,9849905837,,,,14157276,Regular,,,,,79.70400000000006,16.236000000000047,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11413
+I.Srinivasulu,"Municipal Commissioner, Piduguralla Municipality ",Municipal Admin,Municipal Admin,Palnadu,,5,Active,9849900755,,,,14200940,Regular,,,,,79.70400000000006,16.236000000000047,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11414
+P.Srihari Babu,"Municipal Commissioner, Chilakaluripet Municipality ",Municipal Admin,Municipal Admin,Palnadu,,5,Active,9849907278,,,,14395877,Regular,,,,,79.70400000000006,16.236000000000047,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11415
+M. Hanumantha Rao,"Dy.S.P, Narasaraopet",Home,Home,Palnadu,,5,Active,9440796208,,,,14391347,FAC,,,,,79.70400000000006,16.236000000000047,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11416
+M.Venkata Ramana,"Dy.S.P, Gurazala",Home,Home,Palnadu,,5,Active,9440796245,,,,14218487,FAC,,,,,79.70400000000006,16.236000000000047,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11417
+V Sanjana Simha,Joint Collector,Revenue,DEP01,Palnadu,,,Active,6309501365,,,,15161930,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P102
+Bhattu Naradamuni,District Revenue Officer,Revenue,DEP01,Palnadu,,,Active,9652344669,,,,14122933,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P103
+Chejerla Bhanu Keerthi,"Assistant Director, Survey & Land Records",Revenue,DEP01,Palnadu,,,Active,9346489907,,,,15132259,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P104
+B.Krishna Rao,Superintendent of Police,Home (Law & Order),DEP02,Palnadu,,,Active,9986595327,,,,14376017,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P108
+J.V. Santosh,Addl Superintendent of Police,Home (Law & Order),DEP02,Palnadu,,,Active,9642027328,,,,14372266,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P109
+S V Nageswar Naik,District Panchayat Officer,Panchayat Raj,DEP03,Palnadu,,,Active,9063992106,,,,14473737,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P111
+M. Venkata Reddy,District Swarna Gramam & Swarna Wardu Officer ,Panchayat Raj,DEP03,Palnadu,,,Active,9154409532,,,,14177312,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P112
+P Jhansi Rani,"Project Director, DRDA",Panchayat Raj,DEP03,Palnadu,,,Active,9121190656,,,,14388852,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P113
+M.Sidha Linga Murthy,"Project Director, DWMA",Panchayat Raj,DEP03,Palnadu,,,Active,9121227211,,,,14254582,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P114
+K.Srinivasulu,District BC Welfare & Empowerment Officer,Welfare Dept,DEP04,Palnadu,,,Active,9848748365,,,,14179794,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P115
+E.Rajeswaramma,District SC Welfare & Enpowerment Officer,Welfare Dept,DEP04,Palnadu,,,Active,9603945433,,,,14168998,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P117
+B. Govind Naik,District Tribal Welfare & Empowerment Officer,Welfare Dept,DEP04,Palnadu,,,Active,9030407394,,,,14165709,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P118
+M. Umadevi,District Women and Child Welfare & Empowerment Officer,Welfare Dept,DEP04,Palnadu,,,Active,9705565377,,,,14494436,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P119
+M. Jaggarao,District Agricultural Officer,"Agriculture, Animal Husbandry & Cooperation",DEP05,Palnadu,,,Active,8331056902,,,,14090590,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P123
+Dr. B. Srinivasa Rao,District Animal Husbandry Officer,"Agriculture, Animal Husbandry & Cooperation",DEP05,Palnadu,,,Active,9866598919,,,,14441545,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P124
+M.Nagaraju,District Co-Operative Officer,"Agriculture, Animal Husbandry & Cooperation",DEP05,Palnadu,,,Active,9100109121,,,,14255784,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P125
+P. Prasad,District Fisheries Officer,"Agriculture, Animal Husbandry & Cooperation",DEP05,Palnadu,,,Active,9989340292,,,,14208459,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P126
+Inturi Venkat Rao,District Horticulture Officer,"Agriculture, Animal Husbandry & Cooperation",DEP05,Palnadu,,,Active,7995086775,,,,14457544,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P127
+K.Ramesh,District Manager AP Markfed,"Agriculture, Animal Husbandry & Cooperation",DEP05,Palnadu,,,Active,8978381833,,,,,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P128
+A.Bala Subramanyam,District Sericulture Officer,"Agriculture, Animal Husbandry & Cooperation",DEP05,Palnadu,,,Active,9000318321,,,,14223224,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P129
+M.V.Prasad,District Civil Supply Officer,Civil Supplies,DEP06,Palnadu,,,Active,9154959287,,,,14358337,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P130
+Bhattu Naradamuni,"District Manager, Civil Supplies Corporation",Civil Supplies,DEP06,Palnadu,,,Active,9652344669,,,,14122933,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P131
+P.V.J.Ramarao,District Educational Officer,Education,DEP07,Palnadu,,,Active,9989931138,,,,14137842,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P132
+M.Neelavathi Devi,District Intermediate Education Officer,Education,DEP07,Palnadu,,,Active,9553813264,,,,14356890,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P133
+P.V.J.Ramarao,"Addl Project Co-ordinator, Samagra Siksha",Education,DEP07,Palnadu,,,Active,9989931138,,,,14137842,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P134
+P.Rama Chandra Prasad,"Superintending Engineer, APTRANSCO",Energy,DEP08,Palnadu,,,Active,8333992908,,,,,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P136
+K.Muthaiah,District Engineer Officer PR Engineering,Engineering Depts,DEP09,Palnadu,,,Active,9440451322,,,,14182251,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P138
+R V Srininivasa Rao,District Public Health Engineer Officer,Engineering Depts,DEP09,Palnadu,,,Active,9493908372,,,,14157190,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P139
+T. Chandra Shekar,District RWS Engineer,Engineering Depts,DEP09,Palnadu,,,Active,9100121402,,,,14142883,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P140
+P. Venkata Rathnam,"District Water Resources Officer, Irrigation",Engineering Depts,DEP09,Palnadu,,,Active,9701417242,,,,14389579,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P141
+M.Sada Siva Rao,"EE, APEWIDC",Engineering Depts,DEP09,Palnadu,,,Active,9794701567,,,,14478536,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P142
+M.Hanumantha Rao Naik,"EE, APMSIDC",Engineering Depts,DEP09,Palnadu,,,Active,8978680823,,,,,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P143
+G. Geetha Rani,"Superintending Engineer, R&B",Engineering Depts,DEP09,Palnadu,,,Active,9440818060,,,,14325837,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P144
+Dr.SHAIK DARGA NAZEER,District Malaria Officer,Health,DEP10,Palnadu,,,Active,8309513345,,,,15152329,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P145
+Dr.B.RAVI,District Medical & Health Officer,Health,DEP10,Palnadu,,,Active,9440242575,,,,14462925,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P146
+Ch.Murali Krishna,"Project Director, MEPMA",Municipal Administration,DEP11,Palnadu,,,Active,9396351331,,,,14472472,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P149
+Gujjala Atchutha Venkata Srinivas,"Assistant Commissioner, Endowments",Other Departments,DEP12,Palnadu,,,Active,8333811584,,,,14195502,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P151
+U.V.Satyanarayana Raju,District Economics & Statistics Officer,Other Departments,DEP12,Palnadu,,,Active,9949930296,,,,14142212,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P153
+G. Krishna Priya I.F.S.,District Forest Officer(T),Other Departments,DEP12,Palnadu,,,Active,9440810055,,,,14383861,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P155
+K Rama Balaji Reddy,District Ground Water Officer,Other Departments,DEP12,Palnadu,,,Active,9618379444,,,,14399854,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P156
+Shaik Mahaboob Subhani,District Labour Officer,Other Departments,DEP12,Palnadu,,,Active,9492555151,,,,14149256,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P157
+Sanjeev kumar Garrepelly,District Transport Officer,Other Departments,DEP12,Palnadu,,,Active,9281607028,,,,14124422,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P158
+K. Srinivasa Rao,District Treasury Officer,Other Departments,DEP12,Palnadu,,,Active,8886652221,,,,14137270,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P159
+Sajja Venkata Suresh,"General Manager, Industries",Other Departments,DEP12,Palnadu,,,Active,9346890600,,,,14197694,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P160
+UVNV Prasad,Project Director Housing,Other Departments,DEP12,Palnadu,,,Active,7093930120,,,,,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P162
+Ch. Anjaneyulu,"Project Director, AP Micro Irrigation Project",Other Departments,DEP12,Palnadu,,,Active,9491214959,,,,14457847,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P163
+M Ramarao,AC/DC Commercial Taxes,Revenue Generating Depts,DEP13,Palnadu,,,Active,9959436484,,,,14142372,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P164
+Y. Nagaiah,DD/AD Mines,Revenue Generating Depts,DEP13,Palnadu,,,Active,9989296319,,,,14359115,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P165
+K Manikanta,District Prohibition & Excise Officer,Revenue Generating Depts,DEP13,Palnadu,,,Active,9440902480,,,,14476343,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P166
+S Ramkumar,District Registrar,Revenue Generating Depts,DEP13,Palnadu,,,Active,7093921539,,,,14473205,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P167
+P. Narasimha Reddy,District Sports Development Officer,"Youth, Tourism, Sports & Culture",DEP14,Palnadu,,,Active,8712622574,,,,15181178,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P169
+V. Murali Krishna,"Revenue Divisional Officer, Gurazala",Revenue,DEP01,Palnadu,,,Active,9849904015,,,,14118801,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P224
+V. Murali Krishna,"Revenue Divisional Officer, Narasaraopet",Revenue,DEP01,Palnadu,,,Active,9849904015,,,,14118801,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P225
+K.Sri Ramulu,"Revenue Divisional Officer, Sattenapalle",Revenue,DEP01,Palnadu,,,Active,9154959297,,,,14386393,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P226
+G.Ravikumar,"Municipal Commissioner, Narasaraopet Municipality ",Municipal Administration,DEP11,Palnadu,,,Active,9849905831,,,,14154625,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P344
+M. Hanumantha Rao,"Dy.S.P, Sattenapalli",Home (Law & Order),DEP02,Palnadu,,,Active,9440796208,,,,14391347,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P444
+K.Siva Rama Prasad,"Municipal Commissioner, Vinukonda Municipality ",Municipal Administration,DEP11,Palnadu,,,Active,9849905835,,,,14494179,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P347
+D.Venu Babu,"Municipal Commissioner, Macherla Municipality ",Municipal Administration,DEP11,Palnadu,,,Active,9849905838,,,,15073262,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P343
+G.Venkateswarlu,"Municipal Commissioner, Dachepalli Nagar Panchayat ",Municipal Administration,DEP11,Palnadu,,,Active,9849366311,,,,14476205,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P348
+N.Ananda Kumar,"Municipal Commissioner, Sattenapalle Municipality ",Municipal Administration,DEP11,Palnadu,,,Active,9849905837,,,,14157276,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P346
+I.Srinivasulu,"Municipal Commissioner, Piduguralla Municipality ",Municipal Administration,DEP11,Palnadu,,,Active,9849900755,,,,14200940,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P345
+P.Srihari Babu,"Municipal Commissioner, Chilakaluripet Municipality ",Municipal Administration,DEP11,Palnadu,,,Active,9849907278,,,,14395877,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P342
+M. Hanumantha Rao,"Dy.S.P, Narasaraopet",Home (Law & Order),DEP02,Palnadu,,,Active,9440796208,,,,14391347,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P443
+M.Venkata Ramana,"Dy.S.P, Gurazala",Home (Law & Order),DEP02,Palnadu,,,Active,9440796245,,,,14218487,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P445
+"Siva Sankar Lotheti, I.A.S.,",District Collector,,,Palnadu,,,Active,9154959301,,,collectorpalnadu@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+"Ch. Kiran Kumar, DT",CC to District Collector,,,Palnadu,,,Active,9154959305,,,,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+"A. Shyam Prasad, I.A.S.,",Joint Collector 1,,,Palnadu,,,Active,9154959302,,,jcpalnadu@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+--,Joint Collector 2,,,Palnadu,,,Active,,,,,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+--,Joint Collector 3,,,Palnadu,,,Active,,,,,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+K. Vinayakam,District Revenue Officer (DRO),,,Palnadu,,,Active,9154959303,,,dropalnadu@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+K.V.S. Maharshi,CC to (DRO),,,Palnadu,,,Active,9154959300,,,,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+V. Koteswara Rao (FAC),Administrative Officer (AO),,,Palnadu,,,Active,9154959304,,,ao.palnadu@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Vacant,D-Section (Suprt),,,Palnadu,,,Active,,,,,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+P. Sarojini,1) Narasaraopet,,,Palnadu,,,Active,9849150077,,,rdonrt@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+G. Ramana Kanth Reddy,2) Gurazala,,,Palnadu,,,Active,9849904015,,,rdogurazala@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+V. Murali Krishna,3) Sattenapalli,,,Palnadu,,,Active,9154959294,,,rdosattenapalli@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+A. Venkata Ramana Rao,1) Amaravathi,,,Palnadu,,,Active,9949098610,,,tahsildar.amaravathi@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+K. Praveen Kumar,2) Atchampet,,,Palnadu,,,Active,9949098611,,,tahsildaratchampet@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+I.S Prasad,3) Bellamkonda,,,Palnadu,,,Active,7032929340,,,bellamkonda.tahsildar@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+B.V. Ramana Rao,4) Bollapalli,,,Palnadu,,,Active,7093995424,,,tahsildarbollapalli@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+M. Jwala Narasimham,5) Chilakaluripet,,,Palnadu,,,Active,9849904025,,,mroac215@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+P. Geethavani,6) Dachepalli,,,Palnadu,,,Active,7032929344,,,tahsildar.dcpl@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+G. Rajani Kumari,7) Durgi,,,Palnadu,,,Active,9949096527,,,tahsildardurgi@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Md. Ashrapunissa Begum,8) Edlapadu,,,Palnadu,,,Active,9849904026,,,tahsildaredlapadu2@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Ch. Ashok Kumar Reddy,9) Gurazala,,,Palnadu,,,Active,9949096528,,,mroac219@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+B. Dileep Kumar,10) Ipur,,,Palnadu,,,Active,9949096529,,,mro.ipuru41@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+B. Jayavardhan,11) Karampudi,,,Palnadu,,,Active,7093004566,,,tahsildarkpd@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+M. Suvarna,12) Krosuru,,,Palnadu,,,Active,7032929341,,,tahsildar.krosuru@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+A. Venkata Ramana Rao,13) Machavaram,,,Palnadu,,,Active,9676741265,,,tahsildar.mchvrm@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+D. Manjunadha Reddy,14) Macherla,,,Palnadu,,,Active,9849904027,,,mroac220@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+P. Singa Rao,15) Muppalla,,,Palnadu,,,Active,9949098616,,,tahsildar.muppalla@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+D.V.B. Vara Kumar,16) Nadendla,,,Palnadu,,,Active,9949096532,,,tahsildarndl@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+M. Hari Babu,17) Narasaraopet,,,Palnadu,,,Active,9849904024,,,mroac216@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+L. Lakshmi Narayana,18) Nekarikallu,,,Palnadu,,,Active,9949096533,,,tahsildarnkru@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Md. Nayeem Ahamad,19) Nuzendla,,,Palnadu,,,Active,7032929343,,,mro.nuzendla@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+J. Prabhakara Rao,20) Pedakurapadu,,,Palnadu,,,Active,9949098618,,,tahsildar.pkpadu@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+P.Syam Sundara Raja,21) Piduguralla,,,Palnadu,,,Active,9949096535,,,tahsildarpiduguralla1@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+P. Lakshmi Narasimham,22) Rajupalem,,,Palnadu,,,Active,9949098622,,,rajupalem.mro@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+S. Ram Mohan Rao,23) Rentachintala,,,Palnadu,,,Active,9989991002,,,rentachintalatahsildar@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+S.Usha Rani,24) Rompicherla,,,Palnadu,,,Active,9949097434,,,thasildarrom@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Ch. Usha,25) Sattenapalli,,,Palnadu,,,Active,9849904018,,,mroac217@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+N.Lakshmi Lavanya,26) Savalyapuram,,,Palnadu,,,Active,8125747555,,,tahsildarsvlp@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+K. Chandra Sekhar,27) Veldurthy,,,Palnadu,,,Active,7032929348,,,veldurthytahsildar@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+P. Bramhaiah,28) Vinukonda,,,Palnadu,,,Active,9849904030,,,mroac218@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),

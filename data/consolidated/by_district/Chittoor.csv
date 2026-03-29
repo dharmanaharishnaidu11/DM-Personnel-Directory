@@ -1,0 +1,219 @@
+﻿person_name,designation,department,category,district,mandal,hierarchy_level,status,phone,phone_alt,whatsapp,email,employee_id,posting_type,rank,dm_role,reports_to,office_address,longitude,latitude,source,source_id
+Tushar Dudi,Superintendent of Police,Home,Home,Chittoor,,3,Active,,,,spchittoor@gmail.com,,,IPS,,,"District Police Office, Beside RTO Office, Chittoor.",79.09594780000003,13.182807000000025,GIS_DM_Personnel (AP 40-Dept Rebuild 2026),9305
+"Sumit Kumar, I.A.S.,",Collector and District Magistrate,Revenue,Revenue,Chittoor,,3,Active,,,,collector_cttr@ap.gov.in,,,IAS,,,"Vivekananda Bhavan, Vellore Road, Chittoor",79.09594780000003,13.182807000000025,GIS_DM_Personnel (AP 40-Dept Rebuild 2026),10026
+"Adharsh Rajeendran., I.A.S.,",Joint Collector & Addl. District Magistrate,Revenue,Revenue,Chittoor,,4,Active,,,,jcchittoor@gmail.com,,,IAS,,,"Vivekananda Bhavan, Vellore Road, Chittoor",79.09594780000003,13.182807000000025,GIS_DM_Personnel (AP 40-Dept Rebuild 2026),10027
+"K. Mohan Kumar, B.Sc., B.Ed.,",District Revenue Officer & Addl. District Magistrate,Revenue,Revenue,Chittoor,,4,Active,,,,dro.cttr@gmail.com,,,,,,"Vivekananda Bhavan, Vellore Road, Chittoor",79.09594780000003,13.182807000000025,GIS_DM_Personnel (AP 40-Dept Rebuild 2026),10028
+Harinarayana,Collector & District Magistrate,Revenue,Revenue,Chittoor,,3,Active,,,,,,,IAS,,,,79.09594780000003,13.182807000000025,GIS_DM_Personnel (AP 40-Dept Rebuild 2026),10590
+Adharsh Rajeendran,Joint Collector,Revenue,Revenue,Chittoor,,3,Active,9491077002,,,,15133613,Regular,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11271
+K.Mohan Kumar,District Revenue Officer,Revenue,Revenue,Chittoor,,5,Active,9491077003,,,,14143561,Regular,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11272
+A.Pullaiah,"Assistant Director, Survey & Land Records",Revenue,Revenue,Chittoor,,5,Active,9676034298,,,,14241625,Regular,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11273
+M.Anupama,"DPM, Disaster Management",Revenue,Revenue,Chittoor,,5,Active,9491077099,,,,14250513,FAC,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11274
+S.Karuna Kumari,Forest Settlement Officer,Revenue,Revenue,Chittoor,,5,Active,7093471333,,,,14399299,Regular,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11275
+K.Vijaya lakshmi,SDC KRRC,Revenue,Revenue,Chittoor,,5,Active,9491520133,,,,14250514,Regular,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11276
+Tushar Dudi,Superintendent of Police,Home,Home,Chittoor,,3,Active,9755577615,,,,14952713,Regular,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11277
+SR Raja Sekhar Raju,Addl Superintendent of Police,Home,Home,Chittoor,,3,Active,9908750504,,,,14240682,Regular,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11278
+V.Ravi Kumar Naidu,"Chief Executive Officer, Zilla Parishad",PR & RD,PR & RD,Chittoor,,3,Active,9491071321,,,,14295335,Regular,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11279
+K.Sudhakara Rao,District Panchayat Officer,PR & RD,PR & RD,Chittoor,,5,Active,9491071325,,,,14209240,Regular,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11280
+Sri V Ravi Kumar,District Swarna Gramam & Swarna Wardu Officer ,PR & RD,PR & RD,Chittoor,,5,Active,9154409518,,,,14283149,FAC,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11281
+B.Sridevi,"Project Director, DRDA",PR & RD,PR & RD,Chittoor,,5,Active,9390504550,,,,14292700,Regular,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11282
+A.Ravi Kumar,"Project Director, DWMA",PR & RD,PR & RD,Chittoor,,5,Active,9121101111,,,,14474406,Regular,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11283
+Sk.Rabbani Basha,District BC Welfare & Empowerment Officer,Social Welfare,Social Welfare,Chittoor,,5,Active,9849904513,,,,14468936,Regular,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11284
+K.Chinna Reddy,District Minority Welfare & Empowerment Officer,Social Welfare,Social Welfare,Chittoor,,5,Active,9866231955,,,,14285596,Regular,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11285
+Sri. Sk.Rabbani Basha,District SC Welfare & Enpowerment Officer,Social Welfare,Social Welfare,Chittoor,,5,Active,9849904513,,,,14468936,FAC,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11286
+S.Moorthy,District Tribal Welfare & Empowerment Officer,Social Welfare,Social Welfare,Chittoor,,5,Active,9490957021,,,,14292637,Regular,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11287
+D.Venkateswari,District Women and Child Welfare & Empowerment Officer,Social Welfare,Social Welfare,Chittoor,,5,Active,9440814496,,,,14338374,Regular,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11288
+B. Pradeep Kumar,District Youth Welfare & Empowerment Officer,Social Welfare,Social Welfare,Chittoor,,5,Active,9908127829,,,,,Regular,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11289
+Smt B.Sridevi,"Executive Director, BC Corpn ",Social Welfare,Social Welfare,Chittoor,,5,Active,9849906016,,,,14292700,FAC,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11290
+Smt B.Sridevi,"Executive Director,SC Corpn",Social Welfare,Social Welfare,Chittoor,,5,Active,9000178695,,,,14292700,FAC,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11291
+Sri I Murali,District Agricultural Officer,Agriculture,Agriculture,Chittoor,,5,Active,8331057730,,,,14466851,FAC,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11292
+Dr.D.Uma Maheswari,District Animal Husbandry Officer,Agriculture,Agriculture,Chittoor,,5,Active,9989932998,,,,14399311,Regular,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11293
+Smt.S.Lakshmi,District Co-Operative Officer,Agriculture,Agriculture,Chittoor,,5,Active,9100109216,,,,14277472,Regular,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11294
+P Ravi Kumar,District Fisheries Officer,Agriculture,Agriculture,Chittoor,,5,Active,9493372981,,,,14283237,FAC,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11295
+P. Ramanjaneyulu,District Horticulture Officer,Agriculture,Agriculture,Chittoor,,5,Active,7995086784,,,,14457580,FAC,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11296
+E. Sreeramulu,District Manager AP Markfed,Agriculture,Agriculture,Chittoor,,5,Active,9441388639,,,,14293751,FAC,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11297
+D. Padmamma,District Sericulture Officer,Agriculture,Agriculture,Chittoor,,5,Active,9866699198,,,,14300911,Regular,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11298
+E Sankaran,District Civil Supply Officer,Civil Supplies,Civil Supplies,Chittoor,,5,Active,8008301423,,,,14357746,FAC,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11299
+G. Lakshmi,"District Manager, Civil Supplies Corporation",Civil Supplies,Civil Supplies,Chittoor,,5,Active,7702003533,,,,,Regular,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11300
+K Rajendra Prasad,District Educational Officer,Education,Education,Chittoor,,5,Active,9849909110,,,,14324350,FAC,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11301
+A. Raghupathi,District Intermediate Education Officer,Education,Education,Chittoor,,5,Active,9440816008,,,,14292570,Regular,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11302
+Sri M. Venkataramana,"Addl Project Co-ordinator, Samagra Siksha",Education,Education,Chittoor,,5,Active,8106342369,,,,14286515,FAC,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11303
+S.Mahammed Azad,"Deputy Director, Adult Education",Education,Education,Chittoor,,5,Active,8096831768,,,,14322326,Regular,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11304
+Shaik ismail ahamad,"Superintending Engineer, APTRANSCO",Energy,Energy,Chittoor,,4,Active,9440811735,,,,,Regular,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11305
+N. Abdul Gayaz,"District Manager, NREDCAP",Energy,Energy,Chittoor,,5,Active,7981496665,,,,,FAC,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11306
+M. Chandra Sekhar Reddy,District Engineer Officer PR Engineering,Infrastructure,Infrastructure,Chittoor,,5,Active,9440216926,,,,14289842,Regular,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11307
+A.Pushpagiri Naik,District Public Health Engineer Officer,Infrastructure,Infrastructure,Chittoor,,5,Active,9492073559,,,,14306141,Regular,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11308
+P.V. Prasanna Kumar,District RWS Engineer,Infrastructure,Infrastructure,Chittoor,,5,Active,9100121800,,,,14315682,Regular,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11309
+Sri K Venkateswara Raju,"District Water Resources Officer, Irrigation",Infrastructure,Infrastructure,Chittoor,,5,Active,9440814821,,,,14392585,Regular,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11310
+K. Munijaya Kumar,"EE, APEWIDC",Infrastructure,Infrastructure,Chittoor,,5,Active,9440876842,,,,15070959,Regular,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11311
+M. Siva Rami Reddy,"EE, APMSIDC",Infrastructure,Infrastructure,Chittoor,,5,Active,8978680851,,,,15071721,Regular,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11312
+B.Suresh Babu,"Superintending Engineer, R&B",Infrastructure,Infrastructure,Chittoor,,4,Active,9440818030,,,,14318949,Regular,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11313
+Dr.A.Naveen Tej Royal,District Malaria Officer,HM & FW,Health,Chittoor,,5,Active,8328564033,,,,15157958,FAC,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11314
+Dr. D.T.Sudha Rani,District Medical & Health Officer,HM & FW,Health,Chittoor,,5,Active,9849902374,,,,14194420,Regular,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11315
+D Raveendra,"Project Director, MEPMA",Municipal Admin,Municipal Admin,Chittoor,,5,Active,8639634993,,,,14203206,Regular,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11316
+K. Devika,"Project Officer, TIDCO",Municipal Admin,Municipal Admin,Chittoor,,5,Active,9701644866,,,,14297885,Regular,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11317
+Smt K. CHITTEMMA,"Assistant Commissioner, Endowments",General Admin,General Admin,Chittoor,,5,Active,9491000682,,,,15103436,Regular,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11318
+P Vijayanandh,"Assistant Director, Handlooms & Textiles",General Admin,General Admin,Chittoor,,5,Active,9618176529,,,,14330610,FAC,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11319
+Sri V Srinivasa Rao,District Economics & Statistics Officer,General Admin,General Admin,Chittoor,,5,Active,9701153344,,,,14380990,Regular,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11320
+G.Padmaja,District Employment Officer,General Admin,General Admin,Chittoor,,5,Active,7013482151,,,,14414638,Regular,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11321
+Sri G Subbu Raju,District Forest Officer(T),General Admin,General Admin,Chittoor,,5,Active,9440810113,,,,15200887,Regular,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11322
+K. Govardhana Reddy,District Ground Water Officer,General Admin,General Admin,Chittoor,,5,Active,8886978111,,,,14398347,Regular,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11323
+C.H.Aalochana,District Labour Officer,General Admin,General Admin,Chittoor,,5,Active,9492555216,,,,14479032,FAC,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11324
+M.G.Niranjan Reddy,District Transport Officer,General Admin,General Admin,Chittoor,,5,Active,9281607037,,,,14479565,Regular,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11325
+M Ramachandra,District Treasury Officer,General Admin,General Admin,Chittoor,,5,Active,9848778494,,,,14358660,Regular,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11326
+C Suri Babu,"General Manager, Industries",General Admin,General Admin,Chittoor,,5,Active,9640909826,,,,14245993,Regular,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11327
+V Ramakrishna Reddy,Inspector of Factories,General Admin,General Admin,Chittoor,,5,Active,9440273322,,,,14398710,Regular,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11328
+N Subramanyam,Project Director Housing,General Admin,General Admin,Chittoor,,5,Active,7093930110,,,,,FAC,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11329
+P. V. Ramana,"Project Director, AP Micro Irrigation Project",General Admin,General Admin,Chittoor,,5,Active,7995087053,,,,14349638,Regular,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11330
+P Mahesh Kumar,AC/DC Commercial Taxes,Commercial Taxes,Commercial Taxes,Chittoor,,5,Active,7702204917,,,,14065950,Regular,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11331
+S.K.V.Satyanarayana,DD/AD Mines,Commercial Taxes,Commercial Taxes,Chittoor,,5,Active,9502225511,,,,14371350,Regular,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11332
+S.Srinivas,District Prohibition & Excise Officer,Commercial Taxes,Commercial Taxes,Chittoor,,5,Active,9492925832,,,,14260752,Regular,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11333
+A.Venkata Ramana Murthy,District Registrar,Commercial Taxes,Commercial Taxes,Chittoor,,5,Active,7093921636,,,,15125643,Regular,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11334
+Dr. P.Yaswanth,"CEO, Society for Youth Training & Employment",Youth & Sports,Youth & Sports,Chittoor,,5,Active,9703357271,,,,14308295,Regular,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11335
+B Udaya Bhaskar,District Sports Development Officer,Youth & Sports,Youth & Sports,Chittoor,,5,Active,9849421462,,,,,Regular,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11336
+A.M. Narendra Kumar,District Tourism Officer,Youth & Sports,Youth & Sports,Chittoor,,5,Active,9441392480,,,,14278679,Regular,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11337
+Sri. M. Srinivasulu,"Revenue Divisional Officer, Chittoor",Revenue,Revenue,Chittoor,,4,Active,9491077005,,,,14475241,Regular,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11338
+K.Vijaya Lakshmi,"Revenue Divisional Officer, Kuppam",Revenue,Revenue,Chittoor,,4,Active,9491074513,,,,14250514,FAC,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11339
+M.Anupama,"Revenue Divisional Officer, Nagari",Revenue,Revenue,Chittoor,,4,Active,9491077099,,,,14250513,Regular,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11340
+P.Bhavani,"Revenue Divisional Officer, Palamaner",Revenue,Revenue,Chittoor,,4,Active,9491077017,,,,14323835,Regular,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11341
+B Balaji Naik,"Municipal Commissioner, Nagari Municipality ",Municipal Admin,Municipal Admin,Chittoor,,5,Active,9949563111,,,,14472862,Regular,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11342
+Sri V Srinivasa Rao,"Municipal Commissioner, Kuppam Municipality ",Municipal Admin,Municipal Admin,Chittoor,,5,Active,9849901049,,,,14211952,FAC,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11343
+T.Sainath,"Dy.S.P, Chittoor",Home,Home,Chittoor,,5,Active,9676298333,,,,14279906,Regular,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11344
+D.Prabhakar,"Dy.S.P, Palamaner",Home,Home,Chittoor,,5,Active,8885229999,,,,14218984,Regular,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11345
+P.Narasimha Prasad,"Municipal Commissioner, Chittoor Municipal Corporation ",Municipal Admin,Municipal Admin,Chittoor,,5,Active,9849905864,,,,14461284,Regular,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11346
+Nv Ramana Reddy,"Municipal Commissioner, Palamaner Municipality ",Municipal Admin,Municipal Admin,Chittoor,,5,Active,9949887727,,,,14401774,Regular,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11347
+Sri K.V. Madhu Sudhana Reddy,"Municipal Commissioner, Punganur Municipality ",Municipal Admin,Municipal Admin,Chittoor,,5,Active,9849905868,,,,14325971,Regular,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11348
+Aadharsh Rajeendran,"Vice Chairman, Chittoor Urban Development Authority ",Municipal Admin,Municipal Admin,Chittoor,,4,Active,9491077002,,,,15133613,FAC,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11349
+Vikas Marmat,"Municipal Commissioner, Kuppam Area Development Authority ",Municipal Admin,Municipal Admin,Chittoor,,5,Active,9281448309,,,,14991045,Regular,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11350
+Sri SHIV NARAYAN SHARMA IAS,"Vice Chairman, Palamaner Kuppam Madanapalle Urban Development Authority ",Municipal Admin,Municipal Admin,Chittoor,,4,Active,8977942102,,,,15128696,FAC,,,,,79.10030000000006,13.217200000000048,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11351
+Adharsh Rajeendran,Joint Collector,Revenue,DEP01,Chittoor,,,Active,9491077002,,,,15133613,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P102
+K.Mohan Kumar,District Revenue Officer,Revenue,DEP01,Chittoor,,,Active,9491077003,,,,14143561,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P103
+A.Pullaiah,"Assistant Director, Survey & Land Records",Revenue,DEP01,Chittoor,,,Active,9676034298,,,,14241625,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P104
+M.Anupama,"DPM, Disaster Management",Revenue,DEP01,Chittoor,,,Active,9491077099,,,,14250513,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P105
+S.Karuna Kumari,Forest Settlement Officer,Revenue,DEP01,Chittoor,,,Active,7093471333,,,,14399299,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P106
+K.Vijaya lakshmi,SDC KRRC,Revenue,DEP01,Chittoor,,,Active,9491520133,,,,14250514,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P107
+Tushar Dudi,Superintendent of Police,Home (Law & Order),DEP02,Chittoor,,,Active,9755577615,,,,14952713,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P108
+SR Raja Sekhar Raju,Addl Superintendent of Police,Home (Law & Order),DEP02,Chittoor,,,Active,9908750504,,,,14240682,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P109
+V.Ravi Kumar Naidu,"Chief Executive Officer, Zilla Parishad",Panchayat Raj,DEP03,Chittoor,,,Active,9491071321,,,,14295335,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P110
+K.Sudhakara Rao,District Panchayat Officer,Panchayat Raj,DEP03,Chittoor,,,Active,9491071325,,,,14209240,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P111
+Sri V Ravi Kumar,District Swarna Gramam & Swarna Wardu Officer ,Panchayat Raj,DEP03,Chittoor,,,Active,9154409518,,,,14283149,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P112
+B.Sridevi,"Project Director, DRDA",Panchayat Raj,DEP03,Chittoor,,,Active,9390504550,,,,14292700,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P113
+A.Ravi Kumar,"Project Director, DWMA",Panchayat Raj,DEP03,Chittoor,,,Active,9121101111,,,,14474406,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P114
+Sk.Rabbani Basha,District BC Welfare & Empowerment Officer,Welfare Dept,DEP04,Chittoor,,,Active,9849904513,,,,14468936,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P115
+K.Chinna Reddy,District Minority Welfare & Empowerment Officer,Welfare Dept,DEP04,Chittoor,,,Active,9866231955,,,,14285596,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P116
+Sri. Sk.Rabbani Basha,District SC Welfare & Enpowerment Officer,Welfare Dept,DEP04,Chittoor,,,Active,9849904513,,,,14468936,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P117
+S.Moorthy,District Tribal Welfare & Empowerment Officer,Welfare Dept,DEP04,Chittoor,,,Active,9490957021,,,,14292637,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P118
+D.Venkateswari,District Women and Child Welfare & Empowerment Officer,Welfare Dept,DEP04,Chittoor,,,Active,9440814496,,,,14338374,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P119
+B. Pradeep Kumar,District Youth Welfare & Empowerment Officer,Welfare Dept,DEP04,Chittoor,,,Active,9908127829,,,,,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P120
+Smt B.Sridevi,"Executive Director, BC Corpn ",Welfare Dept,DEP04,Chittoor,,,Active,9849906016,,,,14292700,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P121
+Smt B.Sridevi,"Executive Director,SC Corpn",Welfare Dept,DEP04,Chittoor,,,Active,9000178695,,,,14292700,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P122
+Sri I Murali,District Agricultural Officer,"Agriculture, Animal Husbandry & Cooperation",DEP05,Chittoor,,,Active,8331057730,,,,14466851,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P123
+Dr.D.Uma Maheswari,District Animal Husbandry Officer,"Agriculture, Animal Husbandry & Cooperation",DEP05,Chittoor,,,Active,9989932998,,,,14399311,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P124
+Smt.S.Lakshmi,District Co-Operative Officer,"Agriculture, Animal Husbandry & Cooperation",DEP05,Chittoor,,,Active,9100109216,,,,14277472,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P125
+P Ravi Kumar,District Fisheries Officer,"Agriculture, Animal Husbandry & Cooperation",DEP05,Chittoor,,,Active,9493372981,,,,14283237,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P126
+P. Ramanjaneyulu,District Horticulture Officer,"Agriculture, Animal Husbandry & Cooperation",DEP05,Chittoor,,,Active,7995086784,,,,14457580,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P127
+E. Sreeramulu,District Manager AP Markfed,"Agriculture, Animal Husbandry & Cooperation",DEP05,Chittoor,,,Active,9441388639,,,,14293751,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P128
+D. Padmamma,District Sericulture Officer,"Agriculture, Animal Husbandry & Cooperation",DEP05,Chittoor,,,Active,9866699198,,,,14300911,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P129
+E Sankaran,District Civil Supply Officer,Civil Supplies,DEP06,Chittoor,,,Active,8008301423,,,,14357746,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P130
+G. Lakshmi,"District Manager, Civil Supplies Corporation",Civil Supplies,DEP06,Chittoor,,,Active,7702003533,,,,,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P131
+K Rajendra Prasad,District Educational Officer,Education,DEP07,Chittoor,,,Active,9849909110,,,,14324350,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P132
+A. Raghupathi,District Intermediate Education Officer,Education,DEP07,Chittoor,,,Active,9440816008,,,,14292570,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P133
+Sri M. Venkataramana,"Addl Project Co-ordinator, Samagra Siksha",Education,DEP07,Chittoor,,,Active,8106342369,,,,14286515,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P134
+S.Mahammed Azad,"Deputy Director, Adult Education",Education,DEP07,Chittoor,,,Active,8096831768,,,,14322326,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P135
+Shaik ismail ahamad,"Superintending Engineer, APTRANSCO",Energy,DEP08,Chittoor,,,Active,9440811735,,,,,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P136
+N. Abdul Gayaz,"District Manager, NREDCAP",Energy,DEP08,Chittoor,,,Active,7981496665,,,,,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P137
+M. Chandra Sekhar Reddy,District Engineer Officer PR Engineering,Engineering Depts,DEP09,Chittoor,,,Active,9440216926,,,,14289842,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P138
+A.Pushpagiri Naik,District Public Health Engineer Officer,Engineering Depts,DEP09,Chittoor,,,Active,9492073559,,,,14306141,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P139
+P.V. Prasanna Kumar,District RWS Engineer,Engineering Depts,DEP09,Chittoor,,,Active,9100121800,,,,14315682,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P140
+Sri K Venkateswara Raju,"District Water Resources Officer, Irrigation",Engineering Depts,DEP09,Chittoor,,,Active,9440814821,,,,14392585,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P141
+K. Munijaya Kumar,"EE, APEWIDC",Engineering Depts,DEP09,Chittoor,,,Active,9440876842,,,,15070959,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P142
+M. Siva Rami Reddy,"EE, APMSIDC",Engineering Depts,DEP09,Chittoor,,,Active,8978680851,,,,15071721,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P143
+B.Suresh Babu,"Superintending Engineer, R&B",Engineering Depts,DEP09,Chittoor,,,Active,9440818030,,,,14318949,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P144
+Dr.A.Naveen Tej Royal,District Malaria Officer,Health,DEP10,Chittoor,,,Active,8328564033,,,,15157958,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P145
+Dr. D.T.Sudha Rani,District Medical & Health Officer,Health,DEP10,Chittoor,,,Active,9849902374,,,,14194420,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P146
+D Raveendra,"Project Director, MEPMA",Municipal Administration,DEP11,Chittoor,,,Active,8639634993,,,,14203206,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P149
+K. Devika,"Project Officer, TIDCO",Municipal Administration,DEP11,Chittoor,,,Active,9701644866,,,,14297885,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P150
+Smt K. CHITTEMMA,"Assistant Commissioner, Endowments",Other Departments,DEP12,Chittoor,,,Active,9491000682,,,,15103436,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P151
+P Vijayanandh,"Assistant Director, Handlooms & Textiles",Other Departments,DEP12,Chittoor,,,Active,9618176529,,,,14330610,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P152
+Sri V Srinivasa Rao,District Economics & Statistics Officer,Other Departments,DEP12,Chittoor,,,Active,9701153344,,,,14380990,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P153
+G.Padmaja,District Employment Officer,Other Departments,DEP12,Chittoor,,,Active,7013482151,,,,14414638,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P154
+Sri G Subbu Raju,District Forest Officer(T),Other Departments,DEP12,Chittoor,,,Active,9440810113,,,,15200887,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P155
+K. Govardhana Reddy,District Ground Water Officer,Other Departments,DEP12,Chittoor,,,Active,8886978111,,,,14398347,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P156
+C.H.Aalochana,District Labour Officer,Other Departments,DEP12,Chittoor,,,Active,9492555216,,,,14479032,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P157
+M.G.Niranjan Reddy,District Transport Officer,Other Departments,DEP12,Chittoor,,,Active,9281607037,,,,14479565,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P158
+M Ramachandra,District Treasury Officer,Other Departments,DEP12,Chittoor,,,Active,9848778494,,,,14358660,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P159
+C Suri Babu,"General Manager, Industries",Other Departments,DEP12,Chittoor,,,Active,9640909826,,,,14245993,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P160
+V Ramakrishna Reddy,Inspector of Factories,Other Departments,DEP12,Chittoor,,,Active,9440273322,,,,14398710,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P161
+N Subramanyam,Project Director Housing,Other Departments,DEP12,Chittoor,,,Active,7093930110,,,,,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P162
+P. V. Ramana,"Project Director, AP Micro Irrigation Project",Other Departments,DEP12,Chittoor,,,Active,7995087053,,,,14349638,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P163
+P Mahesh Kumar,AC/DC Commercial Taxes,Revenue Generating Depts,DEP13,Chittoor,,,Active,7702204917,,,,14065950,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P164
+S.K.V.Satyanarayana,DD/AD Mines,Revenue Generating Depts,DEP13,Chittoor,,,Active,9502225511,,,,14371350,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P165
+S.Srinivas,District Prohibition & Excise Officer,Revenue Generating Depts,DEP13,Chittoor,,,Active,9492925832,,,,14260752,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P166
+A.Venkata Ramana Murthy,District Registrar,Revenue Generating Depts,DEP13,Chittoor,,,Active,7093921636,,,,15125643,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P167
+Dr. P.Yaswanth,"CEO, Society for Youth Training & Employment","Youth, Tourism, Sports & Culture",DEP14,Chittoor,,,Active,9703357271,,,,14308295,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P168
+B Udaya Bhaskar,District Sports Development Officer,"Youth, Tourism, Sports & Culture",DEP14,Chittoor,,,Active,9849421462,,,,,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P169
+A.M. Narendra Kumar,District Tourism Officer,"Youth, Tourism, Sports & Culture",DEP14,Chittoor,,,Active,9441392480,,,,14278679,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P170
+Sri. M. Srinivasulu,"Revenue Divisional Officer, Chittoor",Revenue,DEP01,Chittoor,,,Active,9491077005,,,,14475241,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P184
+K.Vijaya Lakshmi,"Revenue Divisional Officer, Kuppam",Revenue,DEP01,Chittoor,,,Active,9491074513,,,,14250514,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P185
+M.Anupama,"Revenue Divisional Officer, Nagari",Revenue,DEP01,Chittoor,,,Active,9491077099,,,,14250513,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P186
+P.Bhavani,"Revenue Divisional Officer, Palamaner",Revenue,DEP01,Chittoor,,,Active,9491077017,,,,14323835,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P187
+B Balaji Naik,"Municipal Commissioner, Nagari Municipality ",Municipal Administration,DEP11,Chittoor,,,Active,9949563111,,,,14472862,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P271
+Sri V Srinivasa Rao,"Municipal Commissioner, Kuppam Municipality ",Municipal Administration,DEP11,Chittoor,,,Active,9849901049,,,,14211952,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P274
+T.Sainath,"Dy.S.P, Chittoor",Home (Law & Order),DEP02,Chittoor,,,Active,9676298333,,,,14279906,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P409
+D.Prabhakar,"Dy.S.P, Palamaner",Home (Law & Order),DEP02,Chittoor,,,Active,8885229999,,,,14218984,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P410
+P.Narasimha Prasad,"Municipal Commissioner, Chittoor Municipal Corporation ",Municipal Administration,DEP11,Chittoor,,,Active,9849905864,,,,14461284,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P270
+Nv Ramana Reddy,"Municipal Commissioner, Palamaner Municipality ",Municipal Administration,DEP11,Chittoor,,,Active,9949887727,,,,14401774,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P272
+Sri K.V. Madhu Sudhana Reddy,"Municipal Commissioner, Punganur Municipality ",Municipal Administration,DEP11,Chittoor,,,Active,9849905868,,,,14325971,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P273
+Aadharsh Rajeendran,"Vice Chairman, Chittoor Urban Development Authority ",Municipal Administration,DEP11,Chittoor,,,Active,9491077002,,,,15133613,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P275
+Vikas Marmat,"Municipal Commissioner, Kuppam Area Development Authority ",Municipal Administration,DEP11,Chittoor,,,Active,9281448309,,,,14991045,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P277
+Sri SHIV NARAYAN SHARMA IAS,"Vice Chairman, Palamaner Kuppam Madanapalle Urban Development Authority ",Municipal Administration,DEP11,Chittoor,,,Active,8977942102,,,,15128696,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P276
+Sagili Shanmohan,District Collector,,,Chittoor,,,Active,9491077001,,,collectorchittoor@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+S.M.Hussain,CC to District Collector,,,Chittoor,,,Active,9491077085,,,cctocollector@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+P Sreenivasulu,Joint Collector,,,Chittoor,,,Active,9491077002,,,jcchittoor@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+B Pulliah,District Revenue Officer (DRO),,,Chittoor,,,Active,9491077003,,,drocttr@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Sreenivasamurthy,CC to (DRO),,,Chittoor,,,Active,9491077124,,,,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+P.Venkateswarlu,Administrative Officer (AO),,,Chittoor,,,Active,9491077008,,,aoctr123@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+S.Siviah,Distrit Project Manager (DPM),,,Chittoor,,,Active,9110327562,,,,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+P.Suseela,D-Section (Suprt),,,Chittoor,,,Active,9491077015,,,dsupdtctr@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+"Revenue Divisional Officer, Chittoor",Sri.G.Chinnaiah,,,Chittoor,,,Active,9491077005,,,rdoctr@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+"Revenue Divisional Officer, Palamaner",Sri.N.Manoj Reddy,,,Chittoor,,,Active,9491077017,,,rdopalamaner@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+"Revenue Divisional Officer, Nagari",Sri.K.Venkata Reddy,,,Chittoor,,,Active,9491077099,,,rdonagari@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+"Revenue Divisional Officer, Kuppam",Sri.G.Srinivasulu,,,Chittoor,,,Active,9491074513,,,rdokuppam@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Sri P.Srinivasa Reddy,Chittoor (Urban),,,Chittoor,,,Active,9491077018,,,ctr.tahsildar@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Shaik Haseena Bee,Chittoor (Rural),,,Chittoor,,,Active,9491077084,,,,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+K.Vijaya Lakshmi,Gudipala,,,Chittoor,,,Active,9491077019,,,gudipala.tahsildar@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Sri M.Dyvadeenam,Yadamari,,,Chittoor,,,Active,9491077020,,,yadamari.tahsildar@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Salkapuram Ravi,G.D.Nellore,,,Chittoor,,,Active,9491077021,,,gdn.tahsildar@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+M.V.Subramanyam Reddy,Puthalapattu,,,Chittoor,,,Active,9491077022,,,puthalapattu.tahsildar@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+S.Subhadra,Penumur,,,Chittoor,,,Active,9491077023,,,penumur.tahsildar@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+M.Aruna Kumari,Thavanamapalle,,,Chittoor,,,Active,9491077025,,,thavanampalle.tahsildar@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+T.Sreenivasulu,Irala,,,Chittoor,,,Active,9491077026,,,irala.tahsildar@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+D.Vasanthalatha,Pulicherla,,,Chittoor,,,Active,9491077042,,,pulicherla.tahsildar@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+P.Shaik Mohiddin,Rompicherla,,,Chittoor,,,Active,9491077066,,,rompicherla.tahsildar@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+D.Alfred,Srirangarajapuram,,,Chittoor,,,Active,9491077028,,,s.r.puram.tahsildar@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+"R.Jayanth Kumar, RSDT (FAC)",Vedurukuppam,,,Chittoor,,,Active,9491077029,,,vedurukuppam.tahsildar1@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+P.Subbalakshumma,Palasamudram,,,Chittoor,,,Active,9491077033,,,palasamudram.tahsildar48@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+B.Pushpa Kumari,Karvetinagaram,,,Chittoor,,,Active,9491077031,,,karvetinagar.tahsildar@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Sri N.Chandra Sekhar Reddy,Nagari,,,Chittoor,,,Active,9491077035,,,nagari.tahsildar@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+K.Nagamani,Nindra,,,Chittoor,,,Active,9491077036,,,nindratahsildar648@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+G.V.Mallikarjuna Rao,Vijayapuram,,,Chittoor,,,Active,9491077037,,,vijayapuram.tahsildar@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Y.Ranganayakulu,Palamaner,,,Chittoor,,,Active,9491077076,,,tahsildarplmnr2@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+D.Lokeswar Rao,Gangavaram,,,Chittoor,,,Active,9491077077,,,tahsildar.gangavaram@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+G.Nagendra,Peddapanjani,,,Chittoor,,,Active,9491077075,,,peddapanjani.tahsildar@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+E.Nagaraju,Somala,,,Chittoor,,,Active,9491077074,,,somala.tahsildar@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+M.Siva Ramudu,Chowdepalle,,,Chittoor,,,Active,9491077071,,,chowdepalle.tahsildar@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+G.Sivaiah,Punganur,,,Chittoor,,,Active,9491077070,,,tahsildar.punganur@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+T.Narayanaswamy,Sodam,,,Chittoor,,,Active,9491077073,,,sodum.tahsildar@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Swarnalatha,Baireddipalle,,,Chittoor,,,Active,9491077078,,,baireddypalle.tahsildar@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+A.Suresh Kumar,V.Kota,,,Chittoor,,,Active,9491077079,,,vkota.tahsildar@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+G.Subhadramma,Bangarupalem,,,Chittoor,,,Active,9491077024,,,bangarupalem.tahsildar@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+A.Hari Kumar,Kuppam,,,Chittoor,,,Active,9491077081,,,mpkuppamtahsildar@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+T.R.Muralikrishna,Santhipuram,,,Chittoor,,,Active,9491077083,,,santhipuram.tahsildar@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Syed Shabuddin,Gudupalle,,,Chittoor,,,Active,9491077082,,,gudupalle.tahsildar@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+K.Sreedhar,Ramakuppam,,,Chittoor,,,Active,9491077080,,,ramakuppam.tahsildar@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Narayana Bharath Gupta,Collector,,,Chittoor,,,Active,9491077001,,,collectorchittoor@gamil.com,,,,,,,,,Local_Excel (Collecters contact list.xlsx),
+D.Markandeyulu,JC-1,,,Chittoor,,,Active,9491077002,,,jcchittoor@gmail.com,,,,,,,,,Local_Excel (Collecters contact list.xlsx),
+Narayana Bharath Gupta,District Collector,,,Chittoor,,,Active,9959108151,,,,,,,,,,,,"Local_Excel (ALL Collectors, JCs, DRO, RTGS, APSDMA, Agriculture Contact Numbers.xlsx)",
+D. Markandeyulu,Joint Collector 1,,,Chittoor,,,Active,9491077002,,,,,,,,,,,,"Local_Excel (ALL Collectors, JCs, DRO, RTGS, APSDMA, Agriculture Contact Numbers.xlsx)",
+Chandramouli,Joint Collector 2,,,Chittoor,,,Active,8247436962,,,,,,,,,,,,"Local_Excel (ALL Collectors, JCs, DRO, RTGS, APSDMA, Agriculture Contact Numbers.xlsx)",
+G. Gangadhar Goud,DRO,,,Chittoor,,,Active,9491077033,,,,,,,,,,,,"Local_Excel (ALL Collectors, JCs, DRO, RTGS, APSDMA, Agriculture Contact Numbers.xlsx)",
+Vijaya kumar,Agri Joint Director,,,Chittoor,,,Active,8886612501,,,,,,,,,,,,"Local_Excel (ALL Collectors, JCs, DRO, RTGS, APSDMA, Agriculture Contact Numbers.xlsx)",

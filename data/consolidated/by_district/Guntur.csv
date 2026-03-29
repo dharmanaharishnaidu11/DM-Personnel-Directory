@@ -1,0 +1,189 @@
+﻿person_name,designation,department,category,district,mandal,hierarchy_level,status,phone,phone_alt,whatsapp,email,employee_id,posting_type,rank,dm_role,reports_to,office_address,longitude,latitude,source,source_id
+V. Suresh Kumar,Superintendent of Police,Home,Home,Guntur,,3,Active,,,,,,,IPS,,,,80.43466430000007,16.296282500000075,GIS_DM_Personnel (AP 40-Dept Rebuild 2026),9299
+Thameem Ansariya,Collector & District Magistrate,Revenue,Revenue,Guntur,,3,Active,,,,,,,IAS,,,,80.43466430000007,16.296282500000075,GIS_DM_Personnel (AP 40-Dept Rebuild 2026),10584
+Mr Chemudugunta Peter,SEOC Incharge,AP Police,Home,Guntur,Tadepalli,2,Active,8886066699,8886066699,8886066699,peterandhra@gmail.com,2592513,Attachment,DSP,Other DM Role,,,80.61508600000008,16.470422000000042,GIS_DM_Personnel (None),10908
+Ashutosh Shrivastava,Joint Collector,Revenue,Revenue,Guntur,,3,Active,8770243599,,,,15128841,Regular,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12594
+N.Sk.Khajavali,District Revenue Officer,Revenue,Revenue,Guntur,,5,Active,9948450558,,,,14186457,Regular,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12595
+A.Pavan Kumar,"Assistant Director, Survey & Land Records",Revenue,Revenue,Guntur,,5,Active,8125867486,,,,14457486,Regular,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12596
+A.Lakshmi Kumari,"DPM, Disaster Management",Revenue,Revenue,Guntur,,5,Active,9515133473,,,,14124031,Regular,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12597
+M.Gangaraju,SDC KRRC,Revenue,Revenue,Guntur,,5,Active,9440847065,,,,14074171,Regular,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12598
+Vakul Jindal,Superintendent of Police,Home,Home,Guntur,,3,Active,9417084026,,,,14402876,Regular,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12599
+G.V.Ramana Murthy,Addl Superintendent of Police,Home,Home,Guntur,,3,Active,9505894466,,,,14358433,Regular,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12600
+V.Jyothi Basu,"Chief Executive Officer, Zilla Parishad",PR & RD,PR & RD,Guntur,,3,Active,9849903355,,,,14441342,Regular,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12601
+B. V. Nagasai Kumar,District Panchayat Officer,PR & RD,PR & RD,Guntur,,5,Active,9492758041,,,,14187422,Regular,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12602
+Ch. Krishna,District Swarna Gramam & Swarna Wardu Officer ,PR & RD,PR & RD,Guntur,,5,Active,7032983489,,,,14169909,FAC,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12603
+V. Vijaya Lakshmi,"Project Director, DRDA",PR & RD,PR & RD,Guntur,,5,Active,9121008008,,,,14457008,FAC,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12604
+V.Shankar,"Project Director, DWMA",PR & RD,PR & RD,Guntur,,5,Active,8919304898,,,,14255874,Regular,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12605
+K. Mayuri,District BC Welfare & Empowerment Officer,Social Welfare,Social Welfare,Guntur,,5,Active,9949006422,,,,14456290,Regular,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12606
+J.Parthasarathi,District Minority Welfare & Empowerment Officer,Social Welfare,Social Welfare,Guntur,,5,Active,6304185132,,,,14149284,FAC,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12607
+U.Chennaiah,District SC Welfare & Enpowerment Officer,Social Welfare,Social Welfare,Guntur,,5,Active,7993313074,,,,14181785,Regular,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12608
+P. Muralidhar,District Tribal Welfare & Empowerment Officer,Social Welfare,Social Welfare,Guntur,,5,Active,9885609777,,,,14165682,Regular,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12609
+P.P.G.Prasoona,District Women and Child Welfare & Empowerment Officer,Social Welfare,Social Welfare,Guntur,,5,Active,9440814511,,,,14334377,Regular,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12610
+V. Vijaya Lakshmi,District Youth Welfare & Empowerment Officer,Social Welfare,Social Welfare,Guntur,,5,Active,9121008008,,,,14457008,FAC,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12611
+K. Mayuri,"Executive Director, BC Corpn ",Social Welfare,Social Welfare,Guntur,,5,Active,9849906010,,,,14456290,FAC,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12612
+D. Durga Bai,"Executive Director,SC Corpn",Social Welfare,Social Welfare,Guntur,,5,Active,9849905967,,,,14445711,FAC,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12613
+M. Padmavathi,District Agricultural Officer,Agriculture,Agriculture,Guntur,,5,Active,8331056901,,,,14457821,Regular,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12614
+Dr.K.V.V.Satyanarayana,District Animal Husbandry Officer,Agriculture,Agriculture,Guntur,,5,Active,9989798754,,,,14062822,Regular,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12615
+M. Veerachari,District Co-Operative Officer,Agriculture,Agriculture,Guntur,,5,Active,9100109185,,,,14410225,Regular,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12616
+P.N.Kiran Kumar,District Fisheries Officer,Agriculture,Agriculture,Guntur,,5,Active,8500196196,,,,14170225,Regular,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12617
+B Ravindra Babu,District Horticulture Officer,Agriculture,Agriculture,Guntur,,5,Active,7995086776,,,,14457800,Regular,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12618
+T. Narasimha Reddy,District Manager AP Markfed,Agriculture,Agriculture,Guntur,,5,Active,9010776542,,,,14325853,Regular,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12619
+P.Komali Padma,District Civil Supply Officer,Civil Supplies,Civil Supplies,Guntur,,5,Active,8008301439,,,,14358683,FAC,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12620
+V. Sri Lakshmi,"District Manager, Civil Supplies Corporation",Civil Supplies,Civil Supplies,Guntur,,5,Active,7093501314,,,,,FAC,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12621
+Dr. Sk. Saleem Basha,District Educational Officer,Education,Education,Guntur,,5,Active,9849909107,,,,14101157,Regular,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12622
+J.Padma,District Intermediate Education Officer,Education,Education,Guntur,,5,Active,9440816006,,,,14138654,Regular,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12623
+I. Padmavathi,"Addl Project Co-ordinator, Samagra Siksha",Education,Education,Guntur,,5,Active,9849909130,,,,14224972,Regular,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12624
+Kurava Anjaneyulu,"Deputy Director, Adult Education",Education,Education,Guntur,,5,Active,9849490408,,,,14230368,Regular,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12625
+Padamati Rama Chandra Prasad,"Superintending Engineer, APTRANSCO",Energy,Energy,Guntur,,4,Active,8333992908,,,,,Regular,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12626
+J.Nani Babu,"District Manager, NREDCAP",Energy,Energy,Guntur,,5,Active,9849550114,,,,,FAC,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12627
+G.Srineevasulu,District Engineer Officer PR Engineering,Infrastructure,Infrastructure,Guntur,,5,Active,9441812478,,,,14182253,Regular,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12628
+C. Suresh,District Public Health Engineer Officer,Infrastructure,Infrastructure,Guntur,,5,Active,8985580861,,,,14197695,Regular,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12629
+K. Kalyan Chakravarthy,District RWS Engineer,Infrastructure,Infrastructure,Guntur,,5,Active,9100121401,,,,14242752,Regular,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12630
+P. Venkatarathnam,"District Water Resources Officer, Irrigation",Infrastructure,Infrastructure,Guntur,,5,Active,9440814947,,,,14389579,Regular,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12631
+M. Sadasivarao,"EE, APEWIDC",Infrastructure,Infrastructure,Guntur,,5,Active,9182076788,,,,14478536,Regular,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12632
+M.Hanumantha Rao Naik,"EE, APMSIDC",Infrastructure,Infrastructure,Guntur,,5,Active,8978680823,,,,30007191,Regular,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12633
+R.Srinivasa Murthy,"Superintending Engineer, R&B",Infrastructure,Infrastructure,Guntur,,4,Active,9491063144,,,,14247906,Regular,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12634
+TMK Subbarayanam,District Malaria Officer,HM & FW,Health,Guntur,,5,Active,9849902347,,,,14376916,Regular,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12635
+Dr. Korra Vijaya Lakshmi,District Medical & Health Officer,HM & FW,Health,Guntur,,5,Active,9849902337,,,,14022547,Regular,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12636
+V.Vijaya Lakshmi,"Project Director, MEPMA",Municipal Admin,Municipal Admin,Guntur,,5,Active,8074690762,,,,14457008,Regular,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12637
+C. Subba Rayudu,"Project Officer, TIDCO",Municipal Admin,Municipal Admin,Guntur,,5,Active,9949093755,,,,14298698,FAC,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12638
+G.Madhavi,"Assistant Commissioner, Endowments",General Admin,General Admin,Guntur,,5,Active,9491000675,,,,14980576,Regular,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12639
+Ch. Sai prasad,"Assistant Director, Handlooms & Textiles",General Admin,General Admin,Guntur,,5,Active,7396149099,,,,14138787,FAC,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12640
+P . Seshasri,District Economics & Statistics Officer,General Admin,General Admin,Guntur,,5,Active,9704956348,,,,14303279,Regular,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12641
+D. Durga Bai,District Employment Officer,General Admin,General Admin,Guntur,,5,Active,7702057456,,,,14445711,Regular,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12642
+M.Hima Sailaja,District Forest Officer(T),General Admin,General Admin,Guntur,,5,Active,9440810051,,,,14361610,Regular,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12643
+D.Vandanam,District Ground Water Officer,General Admin,General Admin,Guntur,,5,Active,9989015964,,,,14386328,Regular,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12644
+A. Gayathri Devi,District Labour Officer,General Admin,General Admin,Guntur,,5,Active,9492555140,,,,14154385,Regular,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12645
+K.Sitarami Reddy,District Transport Officer,General Admin,General Admin,Guntur,,5,Active,9281607027,,,,14197321,Regular,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12646
+Chandra Sekhara Reddy Motati,District Treasury Officer,General Admin,General Admin,Guntur,,5,Active,9848367512,,,,14359358,Regular,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12647
+A.Jayalakshmi,"General Manager, Industries",General Admin,General Admin,Guntur,,5,Active,6303383792,,,,14457616,Regular,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12648
+Tenali Raju,Inspector of Factories,General Admin,General Admin,Guntur,,5,Active,8096913324,,,,14362058,FAC,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12649
+JVSRKV Prasad,Project Director Housing,General Admin,General Admin,Guntur,,5,Active,7093930107,,,,14466919,Regular,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12650
+L.Vajrasri,"Project Director, AP Micro Irrigation Project",General Admin,General Admin,Guntur,,5,Active,7995087047,,,,14457844,Regular,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12651
+B. Geetha Madhuri,AC/DC Commercial Taxes,Commercial Taxes,Commercial Taxes,Guntur,,5,Active,9949993946,,,,14407102,Regular,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12652
+N. Chandra Sekhar,DD/AD Mines,Commercial Taxes,Commercial Taxes,Guntur,,5,Active,9100688815,,,,14129713,Regular,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12653
+V.Aruna Kumari,District Prohibition & Excise Officer,Commercial Taxes,Commercial Taxes,Guntur,,5,Active,9440902465,,,,14138771,Regular,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12654
+D. Sailaja,District Registrar,Commercial Taxes,Commercial Taxes,Guntur,,5,Active,7093921513,,,,14477939,Regular,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12655
+V.Vijaya Lakshmi,"CEO, Society for Youth Training & Employment",Youth & Sports,Youth & Sports,Guntur,,5,Active,8074690762,,,,14457008,FAC,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12656
+Patan Afrozkhan,District Sports Development Officer,Youth & Sports,Youth & Sports,Guntur,,5,Active,8143143222,,,,15228998,Regular,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12657
+A Sri Ramya,District Tourism Officer,Youth & Sports,Youth & Sports,Guntur,,5,Active,8074310554,,,,14457498,Regular,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12658
+K.Srinivasa Rao,"Revenue Divisional Officer, Guntur",Revenue,Revenue,Guntur,,4,Active,9502483848,,,,14175040,Regular,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12659
+A.Lakshmi Kumari,"Revenue Divisional Officer, Tenali",Revenue,Revenue,Guntur,,4,Active,9515133473,,,,14124031,FAC,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12660
+Kathawate Mayur Ashok I.A.S,"Municipal Commissioner, Guntur Municipal Corporation ",Municipal Admin,Municipal Admin,Guntur,,5,Active,9849908888,,,,14997684,Regular,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12661
+M Ramesh Babu,"Municipal Commissioner, Ponnur Municipality ",Municipal Admin,Municipal Admin,Guntur,,5,Active,9849905834,,,,14200935,Regular,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12662
+J. Rama Appalanaidu,"Municipal Commissioner, Tenali Municipality ",Municipal Admin,Municipal Admin,Guntur,,5,Active,9849905830,,,,14340598,Regular,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12663
+Sk. Abdul Azeez,"Dy.S.P, Guntur",Home,Home,Guntur,,5,Active,8106691177,,,,14358440,Regular,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12664
+Budireddy Janardhana Rao,"Dy.S.P, Tenali",Home,Home,Guntur,,5,Active,7989008802,,,,14381098,Regular,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12665
+Chitikina Murali Krishna,"Dy.S.P, Mangalagiri",Home,Home,Guntur,,5,Active,8096024000,,,,14125078,Regular,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12666
+S Aleem Basha,"Municipal Commissioner, Mangalagiri Municipality ",Municipal Admin,Municipal Admin,Guntur,,5,Active,9849907301,,,,14410936,Regular,,,,,80.43650000000008,16.306700000000035,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12667
+Ashutosh Shrivastava,Joint Collector,Revenue,DEP01,Guntur,,,Active,8770243599,,,,15128841,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P102
+N.Sk.Khajavali,District Revenue Officer,Revenue,DEP01,Guntur,,,Active,9948450558,,,,14186457,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P103
+A.Pavan Kumar,"Assistant Director, Survey & Land Records",Revenue,DEP01,Guntur,,,Active,8125867486,,,,14457486,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P104
+A.Lakshmi Kumari,"DPM, Disaster Management",Revenue,DEP01,Guntur,,,Active,9515133473,,,,14124031,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P105
+M.Gangaraju,SDC KRRC,Revenue,DEP01,Guntur,,,Active,9440847065,,,,14074171,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P107
+Vakul Jindal,Superintendent of Police,Home (Law & Order),DEP02,Guntur,,,Active,9417084026,,,,14402876,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P108
+G.V.Ramana Murthy,Addl Superintendent of Police,Home (Law & Order),DEP02,Guntur,,,Active,9505894466,,,,14358433,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P109
+V.Jyothi Basu,"Chief Executive Officer, Zilla Parishad",Panchayat Raj,DEP03,Guntur,,,Active,9849903355,,,,14441342,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P110
+B. V. Nagasai Kumar,District Panchayat Officer,Panchayat Raj,DEP03,Guntur,,,Active,9492758041,,,,14187422,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P111
+Ch. Krishna,District Swarna Gramam & Swarna Wardu Officer ,Panchayat Raj,DEP03,Guntur,,,Active,7032983489,,,,14169909,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P112
+V. Vijaya Lakshmi,"Project Director, DRDA",Panchayat Raj,DEP03,Guntur,,,Active,9121008008,,,,14457008,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P113
+V.Shankar,"Project Director, DWMA",Panchayat Raj,DEP03,Guntur,,,Active,8919304898,,,,14255874,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P114
+K. Mayuri,District BC Welfare & Empowerment Officer,Welfare Dept,DEP04,Guntur,,,Active,9949006422,,,,14456290,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P115
+J.Parthasarathi,District Minority Welfare & Empowerment Officer,Welfare Dept,DEP04,Guntur,,,Active,6304185132,,,,14149284,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P116
+U.Chennaiah,District SC Welfare & Enpowerment Officer,Welfare Dept,DEP04,Guntur,,,Active,7993313074,,,,14181785,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P117
+P. Muralidhar,District Tribal Welfare & Empowerment Officer,Welfare Dept,DEP04,Guntur,,,Active,9885609777,,,,14165682,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P118
+P.P.G.Prasoona,District Women and Child Welfare & Empowerment Officer,Welfare Dept,DEP04,Guntur,,,Active,9440814511,,,,14334377,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P119
+V. Vijaya Lakshmi,District Youth Welfare & Empowerment Officer,Welfare Dept,DEP04,Guntur,,,Active,9121008008,,,,14457008,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P120
+K. Mayuri,"Executive Director, BC Corpn ",Welfare Dept,DEP04,Guntur,,,Active,9849906010,,,,14456290,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P121
+D. Durga Bai,"Executive Director,SC Corpn",Welfare Dept,DEP04,Guntur,,,Active,9849905967,,,,14445711,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P122
+M. Padmavathi,District Agricultural Officer,"Agriculture, Animal Husbandry & Cooperation",DEP05,Guntur,,,Active,8331056901,,,,14457821,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P123
+Dr.K.V.V.Satyanarayana,District Animal Husbandry Officer,"Agriculture, Animal Husbandry & Cooperation",DEP05,Guntur,,,Active,9989798754,,,,14062822,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P124
+M. Veerachari,District Co-Operative Officer,"Agriculture, Animal Husbandry & Cooperation",DEP05,Guntur,,,Active,9100109185,,,,14410225,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P125
+P.N.Kiran Kumar,District Fisheries Officer,"Agriculture, Animal Husbandry & Cooperation",DEP05,Guntur,,,Active,8500196196,,,,14170225,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P126
+B Ravindra Babu,District Horticulture Officer,"Agriculture, Animal Husbandry & Cooperation",DEP05,Guntur,,,Active,7995086776,,,,14457800,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P127
+T. Narasimha Reddy,District Manager AP Markfed,"Agriculture, Animal Husbandry & Cooperation",DEP05,Guntur,,,Active,9010776542,,,,14325853,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P128
+P.Komali Padma,District Civil Supply Officer,Civil Supplies,DEP06,Guntur,,,Active,8008301439,,,,14358683,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P130
+V. Sri Lakshmi,"District Manager, Civil Supplies Corporation",Civil Supplies,DEP06,Guntur,,,Active,7093501314,,,,,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P131
+Dr. Sk. Saleem Basha,District Educational Officer,Education,DEP07,Guntur,,,Active,9849909107,,,,14101157,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P132
+J.Padma,District Intermediate Education Officer,Education,DEP07,Guntur,,,Active,9440816006,,,,14138654,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P133
+I. Padmavathi,"Addl Project Co-ordinator, Samagra Siksha",Education,DEP07,Guntur,,,Active,9849909130,,,,14224972,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P134
+Kurava Anjaneyulu,"Deputy Director, Adult Education",Education,DEP07,Guntur,,,Active,9849490408,,,,14230368,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P135
+Padamati Rama Chandra Prasad,"Superintending Engineer, APTRANSCO",Energy,DEP08,Guntur,,,Active,8333992908,,,,,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P136
+J.Nani Babu,"District Manager, NREDCAP",Energy,DEP08,Guntur,,,Active,9849550114,,,,,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P137
+G.Srineevasulu,District Engineer Officer PR Engineering,Engineering Depts,DEP09,Guntur,,,Active,9441812478,,,,14182253,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P138
+C. Suresh,District Public Health Engineer Officer,Engineering Depts,DEP09,Guntur,,,Active,8985580861,,,,14197695,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P139
+K. Kalyan Chakravarthy,District RWS Engineer,Engineering Depts,DEP09,Guntur,,,Active,9100121401,,,,14242752,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P140
+P. Venkatarathnam,"District Water Resources Officer, Irrigation",Engineering Depts,DEP09,Guntur,,,Active,9440814947,,,,14389579,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P141
+M. Sadasivarao,"EE, APEWIDC",Engineering Depts,DEP09,Guntur,,,Active,9182076788,,,,14478536,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P142
+M.Hanumantha Rao Naik,"EE, APMSIDC",Engineering Depts,DEP09,Guntur,,,Active,8978680823,,,,30007191,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P143
+R.Srinivasa Murthy,"Superintending Engineer, R&B",Engineering Depts,DEP09,Guntur,,,Active,9491063144,,,,14247906,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P144
+TMK Subbarayanam,District Malaria Officer,Health,DEP10,Guntur,,,Active,9849902347,,,,14376916,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P145
+Dr. Korra Vijaya Lakshmi,District Medical & Health Officer,Health,DEP10,Guntur,,,Active,9849902337,,,,14022547,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P146
+V.Vijaya Lakshmi,"Project Director, MEPMA",Municipal Administration,DEP11,Guntur,,,Active,8074690762,,,,14457008,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P149
+C. Subba Rayudu,"Project Officer, TIDCO",Municipal Administration,DEP11,Guntur,,,Active,9949093755,,,,14298698,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P150
+G.Madhavi,"Assistant Commissioner, Endowments",Other Departments,DEP12,Guntur,,,Active,9491000675,,,,14980576,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P151
+Ch. Sai prasad,"Assistant Director, Handlooms & Textiles",Other Departments,DEP12,Guntur,,,Active,7396149099,,,,14138787,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P152
+P . Seshasri,District Economics & Statistics Officer,Other Departments,DEP12,Guntur,,,Active,9704956348,,,,14303279,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P153
+D. Durga Bai,District Employment Officer,Other Departments,DEP12,Guntur,,,Active,7702057456,,,,14445711,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P154
+M.Hima Sailaja,District Forest Officer(T),Other Departments,DEP12,Guntur,,,Active,9440810051,,,,14361610,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P155
+D.Vandanam,District Ground Water Officer,Other Departments,DEP12,Guntur,,,Active,9989015964,,,,14386328,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P156
+A. Gayathri Devi,District Labour Officer,Other Departments,DEP12,Guntur,,,Active,9492555140,,,,14154385,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P157
+K.Sitarami Reddy,District Transport Officer,Other Departments,DEP12,Guntur,,,Active,9281607027,,,,14197321,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P158
+Chandra Sekhara Reddy Motati,District Treasury Officer,Other Departments,DEP12,Guntur,,,Active,9848367512,,,,14359358,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P159
+A.Jayalakshmi,"General Manager, Industries",Other Departments,DEP12,Guntur,,,Active,6303383792,,,,14457616,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P160
+Tenali Raju,Inspector of Factories,Other Departments,DEP12,Guntur,,,Active,8096913324,,,,14362058,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P161
+JVSRKV Prasad,Project Director Housing,Other Departments,DEP12,Guntur,,,Active,7093930107,,,,14466919,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P162
+L.Vajrasri,"Project Director, AP Micro Irrigation Project",Other Departments,DEP12,Guntur,,,Active,7995087047,,,,14457844,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P163
+B. Geetha Madhuri,AC/DC Commercial Taxes,Revenue Generating Depts,DEP13,Guntur,,,Active,9949993946,,,,14407102,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P164
+N. Chandra Sekhar,DD/AD Mines,Revenue Generating Depts,DEP13,Guntur,,,Active,9100688815,,,,14129713,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P165
+V.Aruna Kumari,District Prohibition & Excise Officer,Revenue Generating Depts,DEP13,Guntur,,,Active,9440902465,,,,14138771,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P166
+D. Sailaja,District Registrar,Revenue Generating Depts,DEP13,Guntur,,,Active,7093921513,,,,14477939,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P167
+V.Vijaya Lakshmi,"CEO, Society for Youth Training & Employment","Youth, Tourism, Sports & Culture",DEP14,Guntur,,,Active,8074690762,,,,14457008,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P168
+Patan Afrozkhan,District Sports Development Officer,"Youth, Tourism, Sports & Culture",DEP14,Guntur,,,Active,8143143222,,,,15228998,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P169
+A Sri Ramya,District Tourism Officer,"Youth, Tourism, Sports & Culture",DEP14,Guntur,,,Active,8074310554,,,,14457498,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P170
+K.Srinivasa Rao,"Revenue Divisional Officer, Guntur",Revenue,DEP01,Guntur,,,Active,9502483848,,,,14175040,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P196
+A.Lakshmi Kumari,"Revenue Divisional Officer, Tenali",Revenue,DEP01,Guntur,,,Active,9515133473,,,,14124031,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P197
+Kathawate Mayur Ashok I.A.S,"Municipal Commissioner, Guntur Municipal Corporation ",Municipal Administration,DEP11,Guntur,,,Active,9849908888,,,,14997684,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P288
+M Ramesh Babu,"Municipal Commissioner, Ponnur Municipality ",Municipal Administration,DEP11,Guntur,,,Active,9849905834,,,,14200935,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P290
+J. Rama Appalanaidu,"Municipal Commissioner, Tenali Municipality ",Municipal Administration,DEP11,Guntur,,,Active,9849905830,,,,14340598,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P292
+Sk. Abdul Azeez,"Dy.S.P, Guntur",Home (Law & Order),DEP02,Guntur,,,Active,8106691177,,,,14358440,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P418
+Budireddy Janardhana Rao,"Dy.S.P, Tenali",Home (Law & Order),DEP02,Guntur,,,Active,7989008802,,,,14381098,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P419
+Chitikina Murali Krishna,"Dy.S.P, Mangalagiri",Home (Law & Order),DEP02,Guntur,,,Active,8096024000,,,,14125078,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P420
+S Aleem Basha,"Municipal Commissioner, Mangalagiri Municipality ",Municipal Administration,DEP11,Guntur,,,Active,9849907301,,,,14410936,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P289
+Sri. M. Venu Gopal Reddy,District Collector,,,Guntur,,,Active,9849904002,,,ccoguntur@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+"1.Drama Teja , 2. Sk Gows",CC to District Collector,,,Guntur,,,Active,9676336688,,,,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Smt. Rajakumari Ganiya,Joint Collector,,,Guntur,,,Active,9849904003,,,ccjointcollectorguntur@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Sri. Peddy Roja,District Revenue Officer (DRO),,,Guntur,,,Active,9849904004,,,droguntur1@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Sri. Bokka shekar,CC to (DRO),,,Guntur,,,Active,9393135553,,,,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Sri. T Vijaya Kumar,Administrative Officer (AO),,,Guntur,,,Active,9849904005,,,ao.collectorateguntur@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Smt. Lakshmi Kumari,Distrit Project Manager (DPM),,,Guntur,,,Active,9515133473,,,dsectionguntur@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Sri. T Vijaya Kumar I/C,D-Section (Supdt),,,Guntur,,,Active,9849904019,,,,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Sri. P . Srikar,Guntur,,,Guntur,,,Active,9849904006,,,rdognt@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Sri.Prakhar jain,Tenali,,,Guntur,,,Active,9849904008,,,rdotnl@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Name of the Tahsildars,Mandals,,,Guntur,,,Active,,,,Gmail IDs,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+K. Raveendra Reddy,Guntur West,,,Guntur,,,Active,9849904016,,,tahsildar.guntur@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Sri. P. Nagesh,Guntur East,,,Guntur,,,Active,7993955719,,,tahguntur.east@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Sri. P. Ratnam,Pedakakani,,,Guntur,,,Active,9949098617,,,pedakakani.tahsildar@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Smt. K. Rajya lakshmi,Medikondur,,,Guntur,,,Active,9949098615,,,medikonduru.tahsildar@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Sri. G Raghavendra Rao,Phirangipuram,,,Guntur,,,Active,9949098620,,,phirangipuramtahsildar@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Sri. P. Madhusudana Rao,Tadikonda,,,Guntur,,,Active,9949098624,,,tahsildarac086@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Sri. V. Sudheer,Thullur,,,Guntur,,,Active,9849904017,,,tahsildarthulluru@yahoo.in,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Sri. D. Padmaji,Prathipadu,,,Guntur,,,Active,9949098621,,,mroac212@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Sri. . Srinivasulu,Vatticherukuru,,,Guntur,,,Active,9989991004,,,mrovck@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Sri. D Lazarus,Pedanandipadu,,,Guntur,,,Active,9949098619,,,mropnpadu@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Sri. S. Srinivasa Reddy,Tenali,,,Guntur,,,Active,9849904023,,,gtrtnl123@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+G Nancharaiah,Kollipara,,,Guntur,,,Active,9949098512,,,tahsildarkollipara@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Smt. E Rama Devi,Chebrolu,,,Guntur,,,Active,9381573381,,,tahsildar.chebrole@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+R. Surya Narayana Singh,Ponnur,,,Guntur,,,Active,9849904021,,,gtrponnur@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Sri. K. Venkateswara Rao,Mangalagiri,,,Guntur,,,Active,9949098614,,,tahsildar.mangalagiri@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Sri. Sateesh Nalliboena,Tadepalli,,,Guntur,,,Active,7032929342,,,tahsildartadepalli@yahoo.in,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Sri. K. Ravi Babu,Duggirala,,,Guntur,,,Active,7032929351,,,tahsildar.dgrl@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+P. Pravathi,Kakumanu,,,Guntur,,,Active,9949098631,,,gtrkkmanu@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+I.Samuel Anand Kumar,Collector,,,Guntur,,,Active,9849904002,,,collector_gantr@ap.gov.in,,,,,,,,,Local_Excel (Collecters contact list.xlsx),
+A.S.Dinesh Kumar,JC-1,,,Guntur,,,Active,9849904003,,,jc_gntr@ap.gov.in,,,,,,,,,Local_Excel (Collecters contact list.xlsx),
+I.Samuel Anand Kumar,District Collector,,,Guntur,,,Active,9849904002,,,,,,,,,,,,"Local_Excel (ALL Collectors, JCs, DRO, RTGS, APSDMA, Agriculture Contact Numbers.xlsx)",
+A.S. Dinesh Kumar,Joint Collector 1,,,Guntur,,,Active,9849904003,,,,,,,,,,,,"Local_Excel (ALL Collectors, JCs, DRO, RTGS, APSDMA, Agriculture Contact Numbers.xlsx)",
+K.Sridhar Reddy,Joint Collector 2,,,Guntur,,,Active,7093893442,,,,,,,,,,,,"Local_Excel (ALL Collectors, JCs, DRO, RTGS, APSDMA, Agriculture Contact Numbers.xlsx)",
+R. Sreelatha,DRO,,,Guntur,,,Active,9849904004,,,,,,,,,,,,"Local_Excel (ALL Collectors, JCs, DRO, RTGS, APSDMA, Agriculture Contact Numbers.xlsx)",
+M. Vijaya Bharthi,Agri Joint Director,,,Guntur,,,Active,8886614109,,,,,,,,,,,,"Local_Excel (ALL Collectors, JCs, DRO, RTGS, APSDMA, Agriculture Contact Numbers.xlsx)",
+Sri Ch. Hari kiran,APSDMA Staff,,,Guntur,,,Active,9885243508,,,,,,,,,,,,"Local_Excel (ALL Collectors, JCs, DRO, RTGS, APSDMA, Agriculture Contact Numbers.xlsx)",

@@ -1,0 +1,158 @@
+﻿person_name,designation,department,category,district,mandal,hierarchy_level,status,phone,phone_alt,whatsapp,email,employee_id,posting_type,rank,dm_role,reports_to,office_address,longitude,latitude,source,source_id
+Umamaheshwar,Superintendent of Police,Home,Home,Bapatla,,3,Active,,,,,,,IPS,,,,80.46840000000003,15.905400000000043,GIS_DM_Personnel (AP 40-Dept Rebuild 2026),9301
+V. Vinod Kumar,Collector & District Magistrate,Revenue,Revenue,Bapatla,,3,Active,,,,,,,IAS,,,,80.46840000000003,15.905400000000043,GIS_DM_Personnel (AP 40-Dept Rebuild 2026),10586
+Bhawna Vashisht,Joint Collector,Revenue,Revenue,Bapatla,,3,Active,8712655901,,,,14992509,Regular,,,,,80.46700000000004,15.904800000000023,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11573
+Gangadhar Goud,District Revenue Officer,Revenue,Revenue,Bapatla,,5,Active,8712655902,,,,14182500,Regular,,,,,80.46700000000004,15.904800000000023,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11574
+K.V.Seshagiri Rao,"Assistant Director, Survey & Land Records",Revenue,Revenue,Bapatla,,5,Active,9866027362,,,,14387345,Regular,,,,,80.46700000000004,15.904800000000023,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11575
+S.Lavanna,SDC KRRC,Revenue,Revenue,Bapatla,,5,Active,7013293229,,,,14422109,Regular,,,,,80.46700000000004,15.904800000000023,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11576
+B.Umamaheswar,Superintendent of Police,Home,Home,Bapatla,,3,Active,9121102200,,,,14387466,Regular,,,,,80.46700000000004,15.904800000000023,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11577
+Jagadish Naik,Addl Superintendent of Police,Home,Home,Bapatla,,3,Active,8978777821,,,,14394639,FAC,,,,,80.46700000000004,15.904800000000023,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11578
+K.L.Prabhakar Rao,District Panchayat Officer,PR & RD,PR & RD,Bapatla,,5,Active,8712655891,,,,14321641,Regular,,,,,80.46700000000004,15.904800000000023,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11579
+CH Vijayalakshmi,District Swarna Gramam & Swarna Wardu Officer ,PR & RD,PR & RD,Bapatla,,5,Active,8331972202,,,,14460754,FAC,,,,,80.46700000000004,15.904800000000023,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11580
+B.Singaiah,"Project Director, DRDA",PR & RD,PR & RD,Bapatla,,5,Active,9154813199,,,,14343053,FAC,,,,,80.46700000000004,15.904800000000023,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11581
+A.V.Vijaya Lakshmi,"Project Director, DWMA",PR & RD,PR & RD,Bapatla,,5,Active,7893336659,,,,14099308,Regular,,,,,80.46700000000004,15.904800000000023,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11582
+B Siva Nageswara Rao,District BC Welfare & Empowerment Officer,Social Welfare,Social Welfare,Bapatla,,5,Active,9440617541,,,,14150446,FAC,,,,,80.46700000000004,15.904800000000023,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11583
+T.Partha Saradhi,District Minority Welfare & Empowerment Officer,Social Welfare,Social Welfare,Bapatla,,5,Active,6304185132,,,,14149284,FAC,,,,,80.46700000000004,15.904800000000023,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11584
+Janumala Raja Debora,District SC Welfare & Enpowerment Officer,Social Welfare,Social Welfare,Bapatla,,5,Active,9493924990,,,,14137457,Regular,,,,,80.46700000000004,15.904800000000023,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11585
+Gaddala Abbulu,District Tribal Welfare & Empowerment Officer,Social Welfare,Social Welfare,Bapatla,,5,Active,9550914096,,,,14134095,FAC,,,,,80.46700000000004,15.904800000000023,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11586
+Radha Madhavi Donkada,District Women and Child Welfare & Empowerment Officer,Social Welfare,Social Welfare,Bapatla,,5,Active,9494419745,,,,14072288,Regular,,,,,80.46700000000004,15.904800000000023,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11587
+A.Vijayanirmala,District Agricultural Officer,Agriculture,Agriculture,Bapatla,,5,Active,8331057062,,,,14444257,Regular,,,,,80.46700000000004,15.904800000000023,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11588
+Boneni Venu Gopal,District Animal Husbandry Officer,Agriculture,Agriculture,Bapatla,,5,Active,9866204088,,,,14178110,Regular,,,,,80.46700000000004,15.904800000000023,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11589
+Ch. Samson,District Co-Operative Officer,Agriculture,Agriculture,Bapatla,,5,Active,9100109188,,,,14477551,Regular,,,,,80.46700000000004,15.904800000000023,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11590
+K. Srinivas Naik,District Fisheries Officer,Agriculture,Agriculture,Bapatla,,5,Active,9440814735,,,,14360114,Regular,,,,,80.46700000000004,15.904800000000023,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11591
+S.M.A. Kaleem,District Horticulture Officer,Agriculture,Agriculture,Bapatla,,5,Active,7995086774,,,,14457858,Regular,,,,,80.46700000000004,15.904800000000023,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11592
+K Karuna Sri,District Manager AP Markfed,Agriculture,Agriculture,Bapatla,,5,Active,9652398763,,,,,Regular,,,,,80.46700000000004,15.904800000000023,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11593
+P. Sujay Kumar,District Sericulture Officer,Agriculture,Agriculture,Bapatla,,5,Active,9866559547,,,,14251410,FAC,,,,,80.46700000000004,15.904800000000023,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11594
+Sk.Jameer Basha,District Civil Supply Officer,Civil Supplies,Civil Supplies,Bapatla,,5,Active,8639050959,,,,14447848,Regular,,,,,80.46700000000004,15.904800000000023,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11595
+V Srilakshmi,"District Manager, Civil Supplies Corporation",Civil Supplies,Civil Supplies,Bapatla,,5,Active,9963479161,,,,,Regular,,,,,80.46700000000004,15.904800000000023,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11596
+Srinivas,District Educational Officer,Education,Education,Bapatla,,5,Active,9154088430,,,,14408592,Regular,,,,,80.46700000000004,15.904800000000023,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11597
+Gulam kirumani zuber,District Intermediate Education Officer,Education,Education,Bapatla,,5,Active,8712686280,,,,14142842,FAC,,,,,80.46700000000004,15.904800000000023,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11598
+Srinivas,"Addl Project Co-ordinator, Samagra Siksha",Education,Education,Bapatla,,5,Active,9154088430,,,,14408592,FAC,,,,,80.46700000000004,15.904800000000023,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11599
+B. Madhusudhan Rao,"Deputy Director, Adult Education",Education,Education,Bapatla,,5,Active,7382666888,,,,14203120,FAC,,,,,80.46700000000004,15.904800000000023,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11600
+N.Rajan Babu,District Engineer Officer PR Engineering,Infrastructure,Infrastructure,Bapatla,,5,Active,8106158255,,,,14188039,FAC,,,,,80.46700000000004,15.904800000000023,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11601
+M Anantha Raju,District RWS Engineer,Infrastructure,Infrastructure,Bapatla,,5,Active,9100121403,,,,14360236,Regular,,,,,80.46700000000004,15.904800000000023,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11602
+Mamidipalli Satya Venkata Venugopal,"District Water Resources Officer, Irrigation",Infrastructure,Infrastructure,Bapatla,,5,Active,8919950124,,,,14352272,FAC,,,,,80.46700000000004,15.904800000000023,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11603
+S. Vijayamma,District Medical & Health Officer,HM & FW,Health,Bapatla,,5,Active,9440045146,,,,14247499,Regular,,,,,80.46700000000004,15.904800000000023,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11604
+Dakkumalla Anand Satya Paul,"Project Director, MEPMA",Municipal Admin,Municipal Admin,Bapatla,,5,Active,9000032228,,,,15035354,Regular,,,,,80.46700000000004,15.904800000000023,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11605
+J Surya Prakasa Rao,"Assistant Commissioner, Endowments",General Admin,General Admin,Bapatla,,5,Active,8333811585,,,,14155893,FAC,,,,,80.46700000000004,15.904800000000023,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11606
+S. Raghunanda,"Assistant Director, Handlooms & Textiles",General Admin,General Admin,Bapatla,,5,Active,9885230025,,,,14138789,FAC,,,,,80.46700000000004,15.904800000000023,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11607
+A.S. Raju,District Economics & Statistics Officer,General Admin,General Admin,Bapatla,,5,Active,8712655875,,,,14473577,Regular,,,,,80.46700000000004,15.904800000000023,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11608
+Sunkara Ravishankar,District Forest Officer(T),General Admin,General Admin,Bapatla,,5,Active,9440810053,,,,14401235,Regular,,,,,80.46700000000004,15.904800000000023,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11609
+Suresh Gurrala,District Ground Water Officer,General Admin,General Admin,Bapatla,,5,Active,9182153253,,,,14389704,Regular,,,,,80.46700000000004,15.904800000000023,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11610
+D.V.Siva Prasad,District Labour Officer,General Admin,General Admin,Bapatla,,5,Active,9492555141,,,,14200210,FAC,,,,,80.46700000000004,15.904800000000023,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11611
+Tetali Krishna Parandhama Reddy,District Transport Officer,General Admin,General Admin,Bapatla,,5,Active,9281607026,,,,14054955,Regular,,,,,80.46700000000004,15.904800000000023,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11612
+Padmavathi,District Treasury Officer,General Admin,General Admin,Bapatla,,5,Active,8919948142,,,,14168849,Regular,,,,,80.46700000000004,15.904800000000023,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11613
+Y. Rama Krishna,"General Manager, Industries",General Admin,General Admin,Bapatla,,5,Active,8897470131,,,,14310754,Regular,,,,,80.46700000000004,15.904800000000023,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11614
+Y Venkateswararao,Project Director Housing,General Admin,General Admin,Bapatla,,5,Active,7093930757,,,,,FAC,,,,,80.46700000000004,15.904800000000023,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11615
+Venkata Ramana Bangi,"Project Director, AP Micro Irrigation Project",General Admin,General Admin,Bapatla,,5,Active,8712605955,,,,14312221,Regular,,,,,80.46700000000004,15.904800000000023,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11616
+Gujjula Glory Kumari,AC/DC Commercial Taxes,Commercial Taxes,Commercial Taxes,Bapatla,,5,Active,9949992481,,,,14100228,Regular,,,,,80.46700000000004,15.904800000000023,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11617
+Srinivas Gude,DD/AD Mines,Commercial Taxes,Commercial Taxes,Bapatla,,5,Active,9346222191,,,,14029847,Regular,,,,,80.46700000000004,15.904800000000023,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11618
+Ch.Naresh Kumar,District Prohibition & Excise Officer,Commercial Taxes,Commercial Taxes,Bapatla,,5,Active,6305895629,,,,14476564,FAC,,,,,80.46700000000004,15.904800000000023,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11619
+P.Srinivasa Rao,District Registrar,Commercial Taxes,Commercial Taxes,Bapatla,,5,Active,7093921526,,,,14140596,Regular,,,,,80.46700000000004,15.904800000000023,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11620
+S Srinivasarao,District Sports Development Officer,Youth & Sports,Youth & Sports,Bapatla,,5,Active,8712622573,,,,,Regular,,,,,80.46700000000004,15.904800000000023,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11621
+Shaik Ali Azgar,District Tourism Officer,Youth & Sports,Youth & Sports,Bapatla,,5,Active,6302379835,,,,14200952,FAC,,,,,80.46700000000004,15.904800000000023,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11622
+P.Gloria,"Revenue Divisional Officer, Bapatla",Revenue,Revenue,Bapatla,,4,Active,8712655903,,,,14472423,Regular,,,,,80.46700000000004,15.904800000000023,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11623
+T.Chandra Sekhar,"Revenue Divisional Officer, Chirala",Revenue,Revenue,Bapatla,,4,Active,8712655904,,,,14283304,Regular,,,,,80.46700000000004,15.904800000000023,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11624
+P Gloria,"Revenue Divisional Officer, Repalle",Revenue,Revenue,Bapatla,,4,Active,8712655903,,,,14472423,FAC,,,,,80.46700000000004,15.904800000000023,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11625
+G. Raghunath Reddy,"Municipal Commissioner, Bapatla Municipality ",Municipal Admin,Municipal Admin,Bapatla,,5,Active,9849905833,,,,14409702,Regular,,,,,80.46700000000004,15.904800000000023,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11626
+K. Daniel Joseph,"Municipal Commissioner, Chirala Municipality ",Municipal Admin,Municipal Admin,Bapatla,,5,Active,9849907327,,,,14185659,Regular,,,,,80.46700000000004,15.904800000000023,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11627
+K. Sambasivarao,"Municipal Commissioner, Repalle Municipality ",Municipal Admin,Municipal Admin,Bapatla,,5,Active,9849907936,,,,15074223,Regular,,,,,80.46700000000004,15.904800000000023,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11628
+a sreenivasa rao,"Dy.S.P, Repalle",Home,Home,Bapatla,,5,Active,8333813225,,,,14026790,Regular,,,,,80.46700000000004,15.904800000000023,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11629
+P Jagadeesh Naik,"Dy.S.P, Bapatla",Home,Home,Bapatla,,5,Active,8978777821,,,,14394639,FAC,,,,,80.46700000000004,15.904800000000023,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11630
+Mohammad Mouin,"Dy.S.P, Chirala",Home,Home,Bapatla,,5,Active,9121102140,,,,14388725,Regular,,,,,80.46700000000004,15.904800000000023,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),11631
+Bhawna Vashisht,Joint Collector,Revenue,DEP01,Bapatla,,,Active,8712655901,,,,14992509,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P102
+Gangadhar Goud,District Revenue Officer,Revenue,DEP01,Bapatla,,,Active,8712655902,,,,14182500,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P103
+K.V.Seshagiri Rao,"Assistant Director, Survey & Land Records",Revenue,DEP01,Bapatla,,,Active,9866027362,,,,14387345,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P104
+S.Lavanna,SDC KRRC,Revenue,DEP01,Bapatla,,,Active,7013293229,,,,14422109,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P107
+B.Umamaheswar,Superintendent of Police,Home (Law & Order),DEP02,Bapatla,,,Active,9121102200,,,,14387466,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P108
+Jagadish Naik,Addl Superintendent of Police,Home (Law & Order),DEP02,Bapatla,,,Active,8978777821,,,,14394639,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P109
+K.L.Prabhakar Rao,District Panchayat Officer,Panchayat Raj,DEP03,Bapatla,,,Active,8712655891,,,,14321641,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P111
+CH Vijayalakshmi,District Swarna Gramam & Swarna Wardu Officer ,Panchayat Raj,DEP03,Bapatla,,,Active,8331972202,,,,14460754,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P112
+B.Singaiah,"Project Director, DRDA",Panchayat Raj,DEP03,Bapatla,,,Active,9154813199,,,,14343053,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P113
+A.V.Vijaya Lakshmi,"Project Director, DWMA",Panchayat Raj,DEP03,Bapatla,,,Active,7893336659,,,,14099308,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P114
+B Siva Nageswara Rao,District BC Welfare & Empowerment Officer,Welfare Dept,DEP04,Bapatla,,,Active,9440617541,,,,14150446,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P115
+T.Partha Saradhi,District Minority Welfare & Empowerment Officer,Welfare Dept,DEP04,Bapatla,,,Active,6304185132,,,,14149284,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P116
+Janumala Raja Debora,District SC Welfare & Enpowerment Officer,Welfare Dept,DEP04,Bapatla,,,Active,9493924990,,,,14137457,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P117
+Gaddala Abbulu,District Tribal Welfare & Empowerment Officer,Welfare Dept,DEP04,Bapatla,,,Active,9550914096,,,,14134095,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P118
+Radha Madhavi Donkada,District Women and Child Welfare & Empowerment Officer,Welfare Dept,DEP04,Bapatla,,,Active,9494419745,,,,14072288,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P119
+A.Vijayanirmala,District Agricultural Officer,"Agriculture, Animal Husbandry & Cooperation",DEP05,Bapatla,,,Active,8331057062,,,,14444257,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P123
+Boneni Venu Gopal,District Animal Husbandry Officer,"Agriculture, Animal Husbandry & Cooperation",DEP05,Bapatla,,,Active,9866204088,,,,14178110,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P124
+Ch. Samson,District Co-Operative Officer,"Agriculture, Animal Husbandry & Cooperation",DEP05,Bapatla,,,Active,9100109188,,,,14477551,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P125
+K. Srinivas Naik,District Fisheries Officer,"Agriculture, Animal Husbandry & Cooperation",DEP05,Bapatla,,,Active,9440814735,,,,14360114,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P126
+S.M.A. Kaleem,District Horticulture Officer,"Agriculture, Animal Husbandry & Cooperation",DEP05,Bapatla,,,Active,7995086774,,,,14457858,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P127
+K Karuna Sri,District Manager AP Markfed,"Agriculture, Animal Husbandry & Cooperation",DEP05,Bapatla,,,Active,9652398763,,,,,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P128
+P. Sujay Kumar,District Sericulture Officer,"Agriculture, Animal Husbandry & Cooperation",DEP05,Bapatla,,,Active,9866559547,,,,14251410,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P129
+Sk.Jameer Basha,District Civil Supply Officer,Civil Supplies,DEP06,Bapatla,,,Active,8639050959,,,,14447848,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P130
+V Srilakshmi,"District Manager, Civil Supplies Corporation",Civil Supplies,DEP06,Bapatla,,,Active,9963479161,,,,,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P131
+Srinivas,District Educational Officer,Education,DEP07,Bapatla,,,Active,9154088430,,,,14408592,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P132
+Gulam kirumani zuber,District Intermediate Education Officer,Education,DEP07,Bapatla,,,Active,8712686280,,,,14142842,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P133
+Srinivas,"Addl Project Co-ordinator, Samagra Siksha",Education,DEP07,Bapatla,,,Active,9154088430,,,,14408592,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P134
+B. Madhusudhan Rao,"Deputy Director, Adult Education",Education,DEP07,Bapatla,,,Active,7382666888,,,,14203120,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P135
+N.Rajan Babu,District Engineer Officer PR Engineering,Engineering Depts,DEP09,Bapatla,,,Active,8106158255,,,,14188039,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P138
+M Anantha Raju,District RWS Engineer,Engineering Depts,DEP09,Bapatla,,,Active,9100121403,,,,14360236,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P140
+Mamidipalli Satya Venkata Venugopal,"District Water Resources Officer, Irrigation",Engineering Depts,DEP09,Bapatla,,,Active,8919950124,,,,14352272,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P141
+S. Vijayamma,District Medical & Health Officer,Health,DEP10,Bapatla,,,Active,9440045146,,,,14247499,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P146
+Dakkumalla Anand Satya Paul,"Project Director, MEPMA",Municipal Administration,DEP11,Bapatla,,,Active,9000032228,,,,15035354,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P149
+J Surya Prakasa Rao,"Assistant Commissioner, Endowments",Other Departments,DEP12,Bapatla,,,Active,8333811585,,,,14155893,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P151
+S. Raghunanda,"Assistant Director, Handlooms & Textiles",Other Departments,DEP12,Bapatla,,,Active,9885230025,,,,14138789,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P152
+A.S. Raju,District Economics & Statistics Officer,Other Departments,DEP12,Bapatla,,,Active,8712655875,,,,14473577,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P153
+Sunkara Ravishankar,District Forest Officer(T),Other Departments,DEP12,Bapatla,,,Active,9440810053,,,,14401235,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P155
+Suresh Gurrala,District Ground Water Officer,Other Departments,DEP12,Bapatla,,,Active,9182153253,,,,14389704,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P156
+D.V.Siva Prasad,District Labour Officer,Other Departments,DEP12,Bapatla,,,Active,9492555141,,,,14200210,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P157
+Tetali Krishna Parandhama Reddy,District Transport Officer,Other Departments,DEP12,Bapatla,,,Active,9281607026,,,,14054955,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P158
+Padmavathi,District Treasury Officer,Other Departments,DEP12,Bapatla,,,Active,8919948142,,,,14168849,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P159
+Y. Rama Krishna,"General Manager, Industries",Other Departments,DEP12,Bapatla,,,Active,8897470131,,,,14310754,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P160
+Y Venkateswararao,Project Director Housing,Other Departments,DEP12,Bapatla,,,Active,7093930757,,,,,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P162
+Venkata Ramana Bangi,"Project Director, AP Micro Irrigation Project",Other Departments,DEP12,Bapatla,,,Active,8712605955,,,,14312221,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P163
+Gujjula Glory Kumari,AC/DC Commercial Taxes,Revenue Generating Depts,DEP13,Bapatla,,,Active,9949992481,,,,14100228,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P164
+Srinivas Gude,DD/AD Mines,Revenue Generating Depts,DEP13,Bapatla,,,Active,9346222191,,,,14029847,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P165
+Ch.Naresh Kumar,District Prohibition & Excise Officer,Revenue Generating Depts,DEP13,Bapatla,,,Active,6305895629,,,,14476564,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P166
+P.Srinivasa Rao,District Registrar,Revenue Generating Depts,DEP13,Bapatla,,,Active,7093921526,,,,14140596,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P167
+S Srinivasarao,District Sports Development Officer,"Youth, Tourism, Sports & Culture",DEP14,Bapatla,,,Active,8712622573,,,,,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P169
+Shaik Ali Azgar,District Tourism Officer,"Youth, Tourism, Sports & Culture",DEP14,Bapatla,,,Active,6302379835,,,,14200952,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P170
+P.Gloria,"Revenue Divisional Officer, Bapatla",Revenue,DEP01,Bapatla,,,Active,8712655903,,,,14472423,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P181
+T.Chandra Sekhar,"Revenue Divisional Officer, Chirala",Revenue,DEP01,Bapatla,,,Active,8712655904,,,,14283304,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P182
+P Gloria,"Revenue Divisional Officer, Repalle",Revenue,DEP01,Bapatla,,,Active,8712655903,,,,14472423,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P183
+G. Raghunath Reddy,"Municipal Commissioner, Bapatla Municipality ",Municipal Administration,DEP11,Bapatla,,,Active,9849905833,,,,14409702,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P267
+K. Daniel Joseph,"Municipal Commissioner, Chirala Municipality ",Municipal Administration,DEP11,Bapatla,,,Active,9849907327,,,,14185659,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P268
+K. Sambasivarao,"Municipal Commissioner, Repalle Municipality ",Municipal Administration,DEP11,Bapatla,,,Active,9849907936,,,,15074223,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P269
+a sreenivasa rao,"Dy.S.P, Repalle",Home (Law & Order),DEP02,Bapatla,,,Active,8333813225,,,,14026790,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P408
+P Jagadeesh Naik,"Dy.S.P, Bapatla",Home (Law & Order),DEP02,Bapatla,,,Active,8978777821,,,,14394639,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P406
+Mohammad Mouin,"Dy.S.P, Chirala",Home (Law & Order),DEP02,Bapatla,,,Active,9121102140,,,,14388725,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P407
+Sri P.Ranjit Basha,District Collector,,,Bapatla,,,Active,8712655900,,,collectorbapatla@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Sri Nagaraju,CC to District Collector,,,Bapatla,,,Active,8712655912,,,,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Sri Ch.Sreedhar,Joint Collector 1,,,Bapatla,,,Active,8712655901,,,jointcollectorbapatla@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Sri Ch.Satti babu,District Revenue Officer (DRO),,,Bapatla,,,Active,8712655902,,,drobapatla@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Sri S.Bose,CC to (DRO),,,Bapatla,,,Active,8712655906,,,,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Sri P.Vijay Kumar,Administrative Officer (AO),,,Bapatla,,,Active,8712655905,,,,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Sri G.Ravindhar,RDO Bapatla,,,Bapatla,,,Active,8712655903,,,rdobptl@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Sri G. Suryanarayana reddy,RDO Chirala,,,Bapatla,,,Active,8712655904,,,rdochirala@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Smt B.S.Hela Sharon,RDO Repalle,,,Bapatla,,,Active,8712655890,,,rdorepalle@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+M.Sravan Kumar,"Tahsildar,Bapatla",,,Bapatla,,,Active,8712655921,,,mro211ac@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+A.Nirmalananda Baba,"Tahsildar,Karlapalem",,,Bapatla,,,Active,8712655922,,,"tahsildar.karlapalem@gmail.com
+bptlakarlapalem@gmail.com",,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+K.Spurthi,"Tahsildar,Pittalavanipalem",,,Bapatla,,,Active,8712655923,,,bptlapvpalemmro@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Ch.Subbaiah,"Tahsildar,Parchur",,,Bapatla,,,Active,8712655935,,,bptlaparchur@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+K.Sandhya Sri,"Tahsildar,Martur",,,Bapatla,,,Active,8712655940,,,bptlamartur@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Y.Nagaraju,"Tahsildar,Yaddanapudi",,,Bapatla,,,Active,8712655939,,,bptlayeddanapudi@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+D.Kavitha,"Tahsildar,Amarthalur",,,Bapatla,,,Active,8712655930,,,bptla.amarthaluru@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+I.Munilakshmi,"Tahsildar,Bhattiprolu",,,Bapatla,,,Active,8712655931,,,"tahsildar.bhtp@gmail.com
+bptla.bhattiprolu@gmail.com",,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+R.Brahmaiah,"Tahsildar,Cherukupalli",,,Bapatla,,,Active,8712655927,,,bptlacherukupalli@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+V.Pullarao,"Tahsildar,Kolluru",,,Bapatla,,,Active,8712655929,,,bptlakollur@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+A.Sri Silpa,"Tahsildar,Nagaram",,,Bapatla,,,Active,8712655926,,,bptlanagaram@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+S.L.Narayana Reddy,"Tahsildar,Nizampatnam",,,Bapatla,,,Active,8712655925,,,tahsildar.nizampatnam@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Ch.Raveendra Babu,"Tahsildar,Repalle",,,Bapatla,,,Active,8712655924,,,repallemro90@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+P.Balaji Viswanath,"Tahsildar,Tsundur",,,Bapatla,,,Active,8712655932,,,bptla.tahsildartsundur@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+V.Kiran,"Tahsildar,Vemuru",,,Bapatla,,,Active,8712655928,,,"mroac208@gmail.com
+bptlavemuru@gmail.com",,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+K.Nasaraiah,"Tahsildar,Chirala",,,Bapatla,,,Active,8712655933,,,bptlchirala@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+P.Krishna Kanth,"Tahsildar,Vetapalem",,,Bapatla,,,Active,8712655934,,,bptlavetapalem@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+G.V.S.Phaneendra Babu,"Tahsildar,Chinnaganjam",,,Bapatla,,,Active,8712655936,,,bptlachinnaganjam@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+P.Mehar Kumar,"Tahsildar,Karamchedu",,,Bapatla,,,Active,8712655937,,,bptlkaramchedu@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+M.Prameela,"Tahsildar,Inkollu",,,Bapatla,,,Active,8712655938,,,bptlainkollu@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Sk.Mahaboob Subhani,"Tahsildar,Addanki",,,Bapatla,,,Active,8712655941,,,bptlaaddanki284@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+B.Suseela,"Tahsildar,Korisapadu",,,Bapatla,,,Active,8712655942,,,bptlakorisapadu@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+T.Prasanthi,"Tahsildar,Santhamaguluru",,,Bapatla,,,Active,8712655943,,,bptlasmagulur@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+G.S.Krishna Prasad,"Tahsildar,J.Panguluru",,,Bapatla,,,Active,8712655944,,,bptlajpangulur@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+M.Subhadra,"Tahsildar,Ballikurava",,,Bapatla,,,Active,8712655945,,,bptlabkurava@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),

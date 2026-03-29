@@ -1,0 +1,229 @@
+{
+  "success": true,
+  "summaries": [
+    {
+      "district_id": "D07",
+      "sheet_name": "DM_EGD_107",
+      "total": 77,
+      "gen_saved": 77,
+      "ei_saved": 0,
+      "updated_at": "2026-03-18T13:23:12.422Z"
+    },
+    {
+      "district_id": "D10",
+      "sheet_name": "DM_KDP_110",
+      "total": 83,
+      "gen_saved": 83,
+      "ei_saved": 0,
+      "updated_at": "2026-03-17T13:38:00.935Z"
+    },
+    {
+      "district_id": "D17",
+      "sheet_name": "DM_NDL_117",
+      "total": 76,
+      "gen_saved": 76,
+      "ei_saved": 76,
+      "updated_at": "2026-03-17T16:55:48.294Z"
+    },
+    {
+      "district_id": "D11",
+      "sheet_name": "DM_KKD_111",
+      "total": 80,
+      "gen_saved": 80,
+      "ei_saved": 80,
+      "updated_at": "2026-03-20T06:57:31.550Z"
+    },
+    {
+      "district_id": "D12",
+      "sheet_name": "DM_KNS_112",
+      "total": 75,
+      "gen_saved": 75,
+      "ei_saved": 60,
+      "updated_at": "2026-03-18T10:45:46.444Z"
+    },
+    {
+      "district_id": "D06",
+      "sheet_name": "DM_CTR_106",
+      "total": 82,
+      "gen_saved": 81,
+      "ei_saved": 82,
+      "updated_at": "2026-03-20T08:00:01.353Z"
+    },
+    {
+      "district_id": "D20",
+      "sheet_name": "DM_PLN_120",
+      "total": 80,
+      "gen_saved": 80,
+      "ei_saved": 71,
+      "updated_at": "2026-03-22T15:53:06.774Z"
+    },
+    {
+      "district_id": "D04",
+      "sheet_name": "DM_ANM_104",
+      "total": 78,
+      "gen_saved": 78,
+      "ei_saved": 73,
+      "updated_at": "2026-03-24T09:36:02.876Z"
+    },
+    {
+      "district_id": "D22",
+      "sheet_name": "DM_PKM_122",
+      "total": 80,
+      "gen_saved": 80,
+      "ei_saved": 80,
+      "updated_at": "2026-03-17T17:10:29.248Z"
+    },
+    {
+      "district_id": "D05",
+      "sheet_name": "DM_BPT_105",
+      "total": 76,
+      "gen_saved": 76,
+      "ei_saved": 68,
+      "updated_at": "2026-03-20T10:26:05.097Z"
+    },
+    {
+      "district_id": "D27",
+      "sheet_name": "DM_VZM_127",
+      "total": 77,
+      "gen_saved": 77,
+      "ei_saved": 77,
+      "updated_at": "2026-03-17T16:16:27.524Z"
+    },
+    {
+      "district_id": "D08",
+      "sheet_name": "DM_ELR_108",
+      "total": 78,
+      "gen_saved": 78,
+      "ei_saved": 76,
+      "updated_at": "2026-03-20T13:14:42.466Z"
+    },
+    {
+      "district_id": "D25",
+      "sheet_name": "DM_TPT_125",
+      "total": 79,
+      "gen_saved": 79,
+      "ei_saved": 0,
+      "updated_at": "2026-03-18T10:33:18.117Z"
+    },
+    {
+      "district_id": "D28",
+      "sheet_name": "DM_WGD_128",
+      "total": 80,
+      "gen_saved": 80,
+      "ei_saved": 77,
+      "updated_at": "2026-03-20T06:19:09.630Z"
+    },
+    {
+      "district_id": "D26",
+      "sheet_name": "DM_VSK_126",
+      "total": 89,
+      "gen_saved": 89,
+      "ei_saved": 88,
+      "updated_at": "2026-03-21T14:55:43.919Z"
+    },
+    {
+      "district_id": "D18",
+      "sheet_name": "DM_NLR_118",
+      "total": 80,
+      "gen_saved": 80,
+      "ei_saved": 0,
+      "updated_at": "2026-03-21T06:43:00.567Z"
+    },
+    {
+      "district_id": "D16",
+      "sheet_name": "DM_MKP_116",
+      "total": 69,
+      "gen_saved": 69,
+      "ei_saved": 58,
+      "updated_at": "2026-03-18T11:11:30.442Z"
+    },
+    {
+      "district_id": "D02",
+      "sheet_name": "DM_AKP_102",
+      "total": 75,
+      "gen_saved": 75,
+      "ei_saved": 0,
+      "updated_at": "2026-03-20T11:42:42.603Z"
+    },
+    {
+      "district_id": "D03",
+      "sheet_name": "DM_ANP_103",
+      "total": 80,
+      "gen_saved": 80,
+      "ei_saved": 77,
+      "updated_at": "2026-03-18T16:02:46.327Z"
+    },
+    {
+      "district_id": "D14",
+      "sheet_name": "DM_KNL_114",
+      "total": 78,
+      "gen_saved": 78,
+      "ei_saved": 77,
+      "updated_at": "2026-03-21T15:26:57.991Z"
+    },
+    {
+      "district_id": "D24",
+      "sheet_name": "DM_SSS_124",
+      "total": 80,
+      "gen_saved": 80,
+      "ei_saved": 50,
+      "updated_at": "2026-03-18T12:49:45.770Z"
+    },
+    {
+      "district_id": "D19",
+      "sheet_name": "DM_NTR_119",
+      "total": 79,
+      "gen_saved": 79,
+      "ei_saved": 75,
+      "updated_at": "2026-03-22T06:56:19.978Z"
+    },
+    {
+      "district_id": "D01",
+      "sheet_name": "DM_ASR_101",
+      "total": 70,
+      "gen_saved": 70,
+      "ei_saved": 57,
+      "updated_at": "2026-03-22T16:01:37.743Z"
+    },
+    {
+      "district_id": "D09",
+      "sheet_name": "DM_GNT_109",
+      "total": 77,
+      "gen_saved": 77,
+      "ei_saved": 77,
+      "updated_at": "2026-03-19T15:01:48.977Z"
+    },
+    {
+      "district_id": "D21",
+      "sheet_name": "DM_PLV_121",
+      "total": 71,
+      "gen_saved": 71,
+      "ei_saved": 17,
+      "updated_at": "2026-03-24T04:43:35.386Z"
+    },
+    {
+      "district_id": "D15",
+      "sheet_name": "DM_PVM_115",
+      "total": 75,
+      "gen_saved": 75,
+      "ei_saved": 7,
+      "updated_at": "2026-03-26T13:40:31.843Z"
+    },
+    {
+      "district_id": "D23",
+      "sheet_name": "DM_SKL_123",
+      "total": 80,
+      "gen_saved": 80,
+      "ei_saved": 80,
+      "updated_at": "2026-03-20T17:05:16.953Z"
+    },
+    {
+      "district_id": "D13",
+      "sheet_name": "DM_KRS_113",
+      "total": 78,
+      "gen_saved": 78,
+      "ei_saved": 78,
+      "updated_at": "2026-03-18T14:21:07.422Z"
+    }
+  ]
+}

@@ -1,0 +1,229 @@
+﻿person_name,designation,department,category,district,mandal,hierarchy_level,status,phone,phone_alt,whatsapp,email,employee_id,posting_type,rank,dm_role,reports_to,office_address,longitude,latitude,source,source_id
+S. Saravanakumar,Superintendent of Police,Home,Home,SPSR Nellore,,3,Active,,,,,,,IPS,,,,79.98066540000008,14.449634700000047,GIS_DM_Personnel (AP 40-Dept Rebuild 2026),9303
+Himanshu Shukla,Collector & District Magistrate,Revenue,Revenue,SPSR Nellore,,3,Active,,,,,,,IAS,,,,79.98066540000008,14.449634700000047,GIS_DM_Personnel (AP 40-Dept Rebuild 2026),10588
+M. Venkateswarlu,Joint Collector,Revenue,Revenue,SPSR Nellore,,3,Active,9849904052,,,,30000134,Regular,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12018
+N. Vijayakumar,District Revenue Officer,Revenue,Revenue,SPSR Nellore,,5,Active,9849904053,,,,14128182,Regular,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12019
+T.M.M. Krishna Kumar,"Assistant Director, Survey & Land Records",Revenue,Revenue,SPSR Nellore,,5,Active,9963283685,,,,14181350,Regular,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12020
+B.Rajanikanth,"DPM, Disaster Management",Revenue,Revenue,SPSR Nellore,,5,Active,9440065500,,,,14211942,Regular,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12021
+Md. Asifa,Forest Settlement Officer,Revenue,Revenue,SPSR Nellore,,5,Active,9573073084,,,,14334380,Regular,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12022
+B.Chandra Leela,SDC KRRC,Revenue,Revenue,SPSR Nellore,,5,Active,7095119282,,,,14182471,Regular,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12023
+Dr. Ajitha Vejendla,Superintendent of Police,Home,Home,SPSR Nellore,,3,Active,9440796300,,,,14379301,Regular,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12024
+Ch. Sowjanya,Addl Superintendent of Police,Home,Home,SPSR Nellore,,3,Active,9440796301,,,,14365915,Regular,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12025
+L. Sridhar Reddy,"Chief Executive Officer, Zilla Parishad",PR & RD,PR & RD,SPSR Nellore,,3,Active,9949911797,,,,14026735,Regular,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12026
+D. Vasumathi,District Panchayat Officer,PR & RD,PR & RD,SPSR Nellore,,5,Active,8125157666,,,,14194968,FAC,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12027
+J Mohana Rao,District Swarna Gramam & Swarna Wardu Officer ,PR & RD,PR & RD,SPSR Nellore,,5,Active,9949911507,,,,14124047,FAC,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12028
+V. Naga Raja Kumari,"Project Director, DRDA",PR & RD,PR & RD,SPSR Nellore,,5,Active,9704501001,,,,14417508,Regular,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12029
+B. Ganga Bhavani,"Project Director, DWMA",PR & RD,PR & RD,SPSR Nellore,,5,Active,9849903744,,,,14283202,Regular,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12030
+P. Venkata Lakshumma,District BC Welfare & Empowerment Officer,Social Welfare,Social Welfare,SPSR Nellore,,5,Active,9849904499,,,,14325651,Regular,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12031
+G.V.K Raghu Kumar,District Minority Welfare & Empowerment Officer,Social Welfare,Social Welfare,SPSR Nellore,,5,Active,8639884313,,,,14204765,FAC,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12032
+K. Sobha Rani,District SC Welfare & Enpowerment Officer,Social Welfare,Social Welfare,SPSR Nellore,,5,Active,9948844774,,,,14137480,Regular,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12033
+K. Sujatha,District Tribal Welfare & Empowerment Officer,Social Welfare,Social Welfare,SPSR Nellore,,5,Active,9490957020,,,,14094901,Regular,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12034
+B. Henasuzan,District Women and Child Welfare & Empowerment Officer,Social Welfare,Social Welfare,SPSR Nellore,,5,Active,9440814522,,,,14194798,Regular,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12035
+A. Mahendra Reddy,District Youth Welfare & Empowerment Officer,Social Welfare,Social Welfare,SPSR Nellore,,5,Active,9963533440,,,,,Regular,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12036
+Dr. A.Nirmala Devi,"Executive Director, BC Corpn ",Social Welfare,Social Welfare,SPSR Nellore,,5,Active,9849906012,,,,14200271,Regular,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12037
+K. Sobha Rani,"Executive Director,SC Corpn",Social Welfare,Social Welfare,SPSR Nellore,,5,Active,9849905971,,,,14137480,FAC,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12038
+P. Satyavani,District Agricultural Officer,Agriculture,Agriculture,SPSR Nellore,,5,Active,8331057174,,,,14205273,FAC,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12039
+Dr.K.Ramesh Naik,District Animal Husbandry Officer,Agriculture,Agriculture,SPSR Nellore,,5,Active,9989932881,,,,14403973,Regular,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12040
+B. Gurappa,District Co-Operative Officer,Agriculture,Agriculture,SPSR Nellore,,5,Active,9100109190,,,,14455971,Regular,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12041
+Dr K. Santhi,District Fisheries Officer,Agriculture,Agriculture,SPSR Nellore,,5,Active,9440814739,,,,14296282,FAC,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12042
+M.V.Subba Reddy,District Horticulture Officer,Agriculture,Agriculture,SPSR Nellore,,5,Active,7995086780,,,,14195155,Regular,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12043
+S. Pavan Kumar,District Manager AP Markfed,Agriculture,Agriculture,SPSR Nellore,,5,Active,8978381839,,,,,Regular,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12044
+N.Satyanarayana,District Sericulture Officer,Agriculture,Agriculture,SPSR Nellore,,5,Active,8500374341,,,,14023409,Regular,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12045
+Bala. Leela Rani,District Civil Supply Officer,Civil Supplies,Civil Supplies,SPSR Nellore,,5,Active,8008301500,,,,14198251,FAC,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12046
+D. Arjuna Rao,"District Manager, Civil Supplies Corporation",Civil Supplies,Civil Supplies,SPSR Nellore,,5,Active,7702003544,,,,,Regular,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12047
+Dr. Raja Balaji Rao,District Educational Officer,Education,Education,SPSR Nellore,,5,Active,9849909109,,,,14208137,Regular,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12048
+B. V. Krishna Reddy,District Intermediate Education Officer,Education,Education,SPSR Nellore,,5,Active,9440816007,,,,14142843,Regular,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12049
+D. Venkata Subbaiah,"Addl Project Co-ordinator, Samagra Siksha",Education,Education,SPSR Nellore,,5,Active,9849909132,,,,14480982,Regular,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12050
+Shaik Mahammed Azad,"Deputy Director, Adult Education",Education,Education,SPSR Nellore,,5,Active,9849909209,,,,14322326,FAC,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12051
+B.V. Srinivas,"Superintending Engineer, APTRANSCO",Energy,Energy,SPSR Nellore,,4,Active,9440811030,,,,,Regular,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12052
+J.Nani Babu,"District Manager, NREDCAP",Energy,Energy,SPSR Nellore,,5,Active,9849550114,,,,,FAC,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12053
+Y. Koteswara Rao,District Engineer Officer PR Engineering,Infrastructure,Infrastructure,SPSR Nellore,,5,Active,9912326157,,,,14179687,Regular,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12054
+A. Giridhar,District Public Health Engineer Officer,Infrastructure,Infrastructure,SPSR Nellore,,5,Active,7893537278,,,,14182616,Regular,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12055
+G.Vijaya Bhaskar,District RWS Engineer,Infrastructure,Infrastructure,SPSR Nellore,,5,Active,9100121700,,,,14401487,Regular,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12056
+S. Dese Naik,"District Water Resources Officer, Irrigation",Infrastructure,Infrastructure,SPSR Nellore,,5,Active,9490610445,,,,14396450,Regular,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12057
+P. Kareemulla Khan,"EE, APEWIDC",Infrastructure,Infrastructure,SPSR Nellore,,5,Active,7993702697,,,,15070960,Regular,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12058
+P. Nirmal Kumar,"EE, APMSIDC",Infrastructure,Infrastructure,SPSR Nellore,,5,Active,8978680844,,,,30035021,FAC,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12059
+D. Prasada Rao,"Superintending Engineer, R&B",Infrastructure,Infrastructure,SPSR Nellore,,4,Active,9440818029,,,,14235713,Regular,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12060
+E. Husenamma,District Malaria Officer,HM & FW,Health,SPSR Nellore,,5,Active,9494742795,,,,14395214,Regular,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12061
+Dr V Sujatha,District Medical & Health Officer,HM & FW,Health,SPSR Nellore,,5,Active,9849032344,,,,14261783,Regular,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12062
+Bala Leela Rani,"Project Director, MEPMA",Municipal Admin,Municipal Admin,SPSR Nellore,,5,Active,7901311557,,,,14198251,Regular,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12063
+A. Mahesh,"Project Officer, TIDCO",Municipal Admin,Municipal Admin,SPSR Nellore,,5,Active,9849902306,,,,30007322,FAC,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12064
+K Janardhana Reddy,"Assistant Commissioner, Endowments",General Admin,General Admin,SPSR Nellore,,5,Active,9491000678,,,,14172541,Regular,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12065
+K. Balasubrahmanyam,"Assistant Director, Handlooms & Textiles",General Admin,General Admin,SPSR Nellore,,5,Active,9441795408,,,,14196948,FAC,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12066
+T. Lakshmi Narasimhulu,District Economics & Statistics Officer,General Admin,General Admin,SPSR Nellore,,5,Active,9849901493,,,,14457609,FAC,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12067
+M. Vinay Kumar,District Employment Officer,General Admin,General Admin,SPSR Nellore,,5,Active,7013019218,,,,14088087,Regular,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12068
+K. Mahaboob Basha,District Forest Officer(T),General Admin,General Admin,SPSR Nellore,,5,Active,9440810052,,,,14361170,Regular,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12069
+R. Sobhan Babu,District Ground Water Officer,General Admin,General Admin,SPSR Nellore,,5,Active,9849356979,,,,14389869,FAC,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12070
+Ch. Vijaya Kumara Reddy,District Labour Officer,General Admin,General Admin,SPSR Nellore,,5,Active,9492555114,,,,14172490,FAC,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12071
+B. Chander,District Transport Officer,General Admin,General Admin,SPSR Nellore,,5,Active,9281607030,,,,14197502,Regular,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12072
+Boda Sreenivasulu,District Treasury Officer,General Admin,General Admin,SPSR Nellore,,5,Active,7337272564,,,,14457330,FAC,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12073
+G. Chandra Sekhar,"General Manager, Industries",General Admin,General Admin,SPSR Nellore,,5,Active,6309914164,,,,14457595,FAC,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12074
+N. Sivasankara Reddy,Inspector of Factories,General Admin,General Admin,SPSR Nellore,,5,Active,9493121765,,,,14362055,FAC,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12075
+J. Mohanarao,Project Director Housing,General Admin,General Admin,SPSR Nellore,,5,Active,7093930109,,,,14124047,FAC,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12076
+P. Padmalatha,"Project Director, AP Micro Irrigation Project",General Admin,General Admin,SPSR Nellore,,5,Active,7995087051,,,,14457859,Regular,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12077
+M. Satya Prakash,AC/DC Commercial Taxes,Commercial Taxes,Commercial Taxes,SPSR Nellore,,5,Active,9959744409,,,,14116509,Regular,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12078
+K. Srinivasa Rao,DD/AD Mines,Commercial Taxes,Commercial Taxes,SPSR Nellore,,5,Active,9000373069,,,,14170078,FAC,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12079
+A. Srinivasulu Naidu,District Prohibition & Excise Officer,Commercial Taxes,Commercial Taxes,SPSR Nellore,,5,Active,9440902509,,,,14480849,Regular,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12080
+M. Ravi Joseph,District Registrar,Commercial Taxes,Commercial Taxes,SPSR Nellore,,5,Active,7093921582,,,,14040181,Regular,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12081
+Sk. Abdul Khayyum,"CEO, Society for Youth Training & Employment",Youth & Sports,Youth & Sports,SPSR Nellore,,5,Active,9502803300,,,,,FAC,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12082
+M. Panduranga Rao,District Sports Development Officer,Youth & Sports,Youth & Sports,SPSR Nellore,,5,Active,9121106835,,,,,FAC,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12083
+G. Usha Sree,District Tourism Officer,Youth & Sports,Youth & Sports,SPSR Nellore,,5,Active,8919133526,,,,14254474,Regular,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12084
+Pavani.B,"Revenue Divisional Officer, Atmakur",Revenue,Revenue,SPSR Nellore,,4,Active,9963474101,,,,15179715,Regular,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12085
+G V V Satyanarayana,"Revenue Divisional Officer, Gudur",Revenue,Revenue,SPSR Nellore,,4,Active,9849904056,,,,14379921,FAC,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12086
+D.Elisha,"Revenue Divisional Officer, Kavali",Revenue,Revenue,SPSR Nellore,,4,Active,9849904054,,,,14360691,Regular,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12087
+Naga Santosh Anusha,"Revenue Divisional Officer, Nellore",Revenue,Revenue,SPSR Nellore,,4,Active,9849904055,,,,15098701,Regular,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12088
+P. Sreedhar,"Dy.S.P, Kavali",Home,Home,SPSR Nellore,,5,Active,9440796333,,,,14414337,Regular,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12089
+M Giridhar Rao,"Dy.S.P, Gudur",Home,Home,SPSR Nellore,,5,Active,9440796340,,,,14417683,FAC,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12090
+C Ganga Prasad,"Municipal Commissioner, Atmakur Nellore Municipality ",Municipal Admin,Municipal Admin,SPSR Nellore,,5,Active,7093902427,,,,14317358,Regular,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12091
+A. Venkateswarlu,"Municipal Commissioner, Gudur Nellore Municipality ",Municipal Admin,Municipal Admin,SPSR Nellore,,5,Active,9849908254,,,,14119545,Regular,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12092
+G. Sravankumar,"Municipal Commissioner, Kavali Municipality ",Municipal Admin,Municipal Admin,SPSR Nellore,,5,Active,9849907342,,,,14465246,Regular,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12093
+Y. O. Nandan,"Municipal Commissioner, Nellore Municipal Corporation ",Municipal Admin,Municipal Admin,SPSR Nellore,,5,Active,9849906609,,,,14461640,FAC,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12094
+B. Uma Maheswar Rao,"Municipal Commissioner, Alluru Municipality ",Municipal Admin,Municipal Admin,SPSR Nellore,,5,Active,7337551201,,,,14199349,FAC,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12095
+M. Venkateswarlu,"Vice Chairman, Nellore Urban Development Authority ",Municipal Admin,Municipal Admin,SPSR Nellore,,4,Active,9121162479,,,,30000134,FAC,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12096
+Deeksha,"Dy.S.P, Nellore",Home,Home,SPSR Nellore,,5,Active,9440796305,,,,15206914,Regular,,,,,79.98650000000004,14.442600000000027,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12097
+M. Venkateswarlu,Joint Collector,Revenue,DEP01,SPSR Nellore,,,Active,9849904052,,,,30000134,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P102
+N. Vijayakumar,District Revenue Officer,Revenue,DEP01,SPSR Nellore,,,Active,9849904053,,,,14128182,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P103
+T.M.M. Krishna Kumar,"Assistant Director, Survey & Land Records",Revenue,DEP01,SPSR Nellore,,,Active,9963283685,,,,14181350,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P104
+B.Rajanikanth,"DPM, Disaster Management",Revenue,DEP01,SPSR Nellore,,,Active,9440065500,,,,14211942,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P105
+Md. Asifa,Forest Settlement Officer,Revenue,DEP01,SPSR Nellore,,,Active,9573073084,,,,14334380,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P106
+B.Chandra Leela,SDC KRRC,Revenue,DEP01,SPSR Nellore,,,Active,7095119282,,,,14182471,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P107
+Dr. Ajitha Vejendla,Superintendent of Police,Home (Law & Order),DEP02,SPSR Nellore,,,Active,9440796300,,,,14379301,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P108
+Ch. Sowjanya,Addl Superintendent of Police,Home (Law & Order),DEP02,SPSR Nellore,,,Active,9440796301,,,,14365915,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P109
+L. Sridhar Reddy,"Chief Executive Officer, Zilla Parishad",Panchayat Raj,DEP03,SPSR Nellore,,,Active,9949911797,,,,14026735,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P110
+D. Vasumathi,District Panchayat Officer,Panchayat Raj,DEP03,SPSR Nellore,,,Active,8125157666,,,,14194968,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P111
+J Mohana Rao,District Swarna Gramam & Swarna Wardu Officer ,Panchayat Raj,DEP03,SPSR Nellore,,,Active,9949911507,,,,14124047,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P112
+V. Naga Raja Kumari,"Project Director, DRDA",Panchayat Raj,DEP03,SPSR Nellore,,,Active,9704501001,,,,14417508,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P113
+B. Ganga Bhavani,"Project Director, DWMA",Panchayat Raj,DEP03,SPSR Nellore,,,Active,9849903744,,,,14283202,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P114
+P. Venkata Lakshumma,District BC Welfare & Empowerment Officer,Welfare Dept,DEP04,SPSR Nellore,,,Active,9849904499,,,,14325651,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P115
+G.V.K Raghu Kumar,District Minority Welfare & Empowerment Officer,Welfare Dept,DEP04,SPSR Nellore,,,Active,8639884313,,,,14204765,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P116
+K. Sobha Rani,District SC Welfare & Enpowerment Officer,Welfare Dept,DEP04,SPSR Nellore,,,Active,9948844774,,,,14137480,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P117
+K. Sujatha,District Tribal Welfare & Empowerment Officer,Welfare Dept,DEP04,SPSR Nellore,,,Active,9490957020,,,,14094901,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P118
+B. Henasuzan,District Women and Child Welfare & Empowerment Officer,Welfare Dept,DEP04,SPSR Nellore,,,Active,9440814522,,,,14194798,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P119
+A. Mahendra Reddy,District Youth Welfare & Empowerment Officer,Welfare Dept,DEP04,SPSR Nellore,,,Active,9963533440,,,,,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P120
+Dr. A.Nirmala Devi,"Executive Director, BC Corpn ",Welfare Dept,DEP04,SPSR Nellore,,,Active,9849906012,,,,14200271,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P121
+K. Sobha Rani,"Executive Director,SC Corpn",Welfare Dept,DEP04,SPSR Nellore,,,Active,9849905971,,,,14137480,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P122
+P. Satyavani,District Agricultural Officer,"Agriculture, Animal Husbandry & Cooperation",DEP05,SPSR Nellore,,,Active,8331057174,,,,14205273,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P123
+Dr.K.Ramesh Naik,District Animal Husbandry Officer,"Agriculture, Animal Husbandry & Cooperation",DEP05,SPSR Nellore,,,Active,9989932881,,,,14403973,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P124
+B. Gurappa,District Co-Operative Officer,"Agriculture, Animal Husbandry & Cooperation",DEP05,SPSR Nellore,,,Active,9100109190,,,,14455971,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P125
+Dr K. Santhi,District Fisheries Officer,"Agriculture, Animal Husbandry & Cooperation",DEP05,SPSR Nellore,,,Active,9440814739,,,,14296282,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P126
+M.V.Subba Reddy,District Horticulture Officer,"Agriculture, Animal Husbandry & Cooperation",DEP05,SPSR Nellore,,,Active,7995086780,,,,14195155,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P127
+S. Pavan Kumar,District Manager AP Markfed,"Agriculture, Animal Husbandry & Cooperation",DEP05,SPSR Nellore,,,Active,8978381839,,,,,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P128
+N.Satyanarayana,District Sericulture Officer,"Agriculture, Animal Husbandry & Cooperation",DEP05,SPSR Nellore,,,Active,8500374341,,,,14023409,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P129
+Bala. Leela Rani,District Civil Supply Officer,Civil Supplies,DEP06,SPSR Nellore,,,Active,8008301500,,,,14198251,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P130
+D. Arjuna Rao,"District Manager, Civil Supplies Corporation",Civil Supplies,DEP06,SPSR Nellore,,,Active,7702003544,,,,,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P131
+Dr. Raja Balaji Rao,District Educational Officer,Education,DEP07,SPSR Nellore,,,Active,9849909109,,,,14208137,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P132
+B. V. Krishna Reddy,District Intermediate Education Officer,Education,DEP07,SPSR Nellore,,,Active,9440816007,,,,14142843,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P133
+D. Venkata Subbaiah,"Addl Project Co-ordinator, Samagra Siksha",Education,DEP07,SPSR Nellore,,,Active,9849909132,,,,14480982,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P134
+Shaik Mahammed Azad,"Deputy Director, Adult Education",Education,DEP07,SPSR Nellore,,,Active,9849909209,,,,14322326,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P135
+B.V. Srinivas,"Superintending Engineer, APTRANSCO",Energy,DEP08,SPSR Nellore,,,Active,9440811030,,,,,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P136
+J.Nani Babu,"District Manager, NREDCAP",Energy,DEP08,SPSR Nellore,,,Active,9849550114,,,,,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P137
+Y. Koteswara Rao,District Engineer Officer PR Engineering,Engineering Depts,DEP09,SPSR Nellore,,,Active,9912326157,,,,14179687,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P138
+A. Giridhar,District Public Health Engineer Officer,Engineering Depts,DEP09,SPSR Nellore,,,Active,7893537278,,,,14182616,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P139
+G.Vijaya Bhaskar,District RWS Engineer,Engineering Depts,DEP09,SPSR Nellore,,,Active,9100121700,,,,14401487,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P140
+S. Dese Naik,"District Water Resources Officer, Irrigation",Engineering Depts,DEP09,SPSR Nellore,,,Active,9490610445,,,,14396450,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P141
+P. Kareemulla Khan,"EE, APEWIDC",Engineering Depts,DEP09,SPSR Nellore,,,Active,7993702697,,,,15070960,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P142
+P. Nirmal Kumar,"EE, APMSIDC",Engineering Depts,DEP09,SPSR Nellore,,,Active,8978680844,,,,30035021,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P143
+D. Prasada Rao,"Superintending Engineer, R&B",Engineering Depts,DEP09,SPSR Nellore,,,Active,9440818029,,,,14235713,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P144
+E. Husenamma,District Malaria Officer,Health,DEP10,SPSR Nellore,,,Active,9494742795,,,,14395214,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P145
+Dr V Sujatha,District Medical & Health Officer,Health,DEP10,SPSR Nellore,,,Active,9849032344,,,,14261783,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P146
+Bala Leela Rani,"Project Director, MEPMA",Municipal Administration,DEP11,SPSR Nellore,,,Active,7901311557,,,,14198251,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P149
+A. Mahesh,"Project Officer, TIDCO",Municipal Administration,DEP11,SPSR Nellore,,,Active,9849902306,,,,30007322,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P150
+K Janardhana Reddy,"Assistant Commissioner, Endowments",Other Departments,DEP12,SPSR Nellore,,,Active,9491000678,,,,14172541,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P151
+K. Balasubrahmanyam,"Assistant Director, Handlooms & Textiles",Other Departments,DEP12,SPSR Nellore,,,Active,9441795408,,,,14196948,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P152
+T. Lakshmi Narasimhulu,District Economics & Statistics Officer,Other Departments,DEP12,SPSR Nellore,,,Active,9849901493,,,,14457609,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P153
+M. Vinay Kumar,District Employment Officer,Other Departments,DEP12,SPSR Nellore,,,Active,7013019218,,,,14088087,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P154
+K. Mahaboob Basha,District Forest Officer(T),Other Departments,DEP12,SPSR Nellore,,,Active,9440810052,,,,14361170,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P155
+R. Sobhan Babu,District Ground Water Officer,Other Departments,DEP12,SPSR Nellore,,,Active,9849356979,,,,14389869,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P156
+Ch. Vijaya Kumara Reddy,District Labour Officer,Other Departments,DEP12,SPSR Nellore,,,Active,9492555114,,,,14172490,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P157
+B. Chander,District Transport Officer,Other Departments,DEP12,SPSR Nellore,,,Active,9281607030,,,,14197502,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P158
+Boda Sreenivasulu,District Treasury Officer,Other Departments,DEP12,SPSR Nellore,,,Active,7337272564,,,,14457330,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P159
+G. Chandra Sekhar,"General Manager, Industries",Other Departments,DEP12,SPSR Nellore,,,Active,6309914164,,,,14457595,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P160
+N. Sivasankara Reddy,Inspector of Factories,Other Departments,DEP12,SPSR Nellore,,,Active,9493121765,,,,14362055,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P161
+J. Mohanarao,Project Director Housing,Other Departments,DEP12,SPSR Nellore,,,Active,7093930109,,,,14124047,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P162
+P. Padmalatha,"Project Director, AP Micro Irrigation Project",Other Departments,DEP12,SPSR Nellore,,,Active,7995087051,,,,14457859,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P163
+M. Satya Prakash,AC/DC Commercial Taxes,Revenue Generating Depts,DEP13,SPSR Nellore,,,Active,9959744409,,,,14116509,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P164
+K. Srinivasa Rao,DD/AD Mines,Revenue Generating Depts,DEP13,SPSR Nellore,,,Active,9000373069,,,,14170078,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P165
+A. Srinivasulu Naidu,District Prohibition & Excise Officer,Revenue Generating Depts,DEP13,SPSR Nellore,,,Active,9440902509,,,,14480849,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P166
+M. Ravi Joseph,District Registrar,Revenue Generating Depts,DEP13,SPSR Nellore,,,Active,7093921582,,,,14040181,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P167
+Sk. Abdul Khayyum,"CEO, Society for Youth Training & Employment","Youth, Tourism, Sports & Culture",DEP14,SPSR Nellore,,,Active,9502803300,,,,,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P168
+M. Panduranga Rao,District Sports Development Officer,"Youth, Tourism, Sports & Culture",DEP14,SPSR Nellore,,,Active,9121106835,,,,,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P169
+G. Usha Sree,District Tourism Officer,"Youth, Tourism, Sports & Culture",DEP14,SPSR Nellore,,,Active,8919133526,,,,14254474,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P170
+Pavani.B,"Revenue Divisional Officer, Atmakur",Revenue,DEP01,SPSR Nellore,,,Active,9963474101,,,,15179715,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P217
+G V V Satyanarayana,"Revenue Divisional Officer, Gudur",Revenue,DEP01,SPSR Nellore,,,Active,9849904056,,,,14379921,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P218
+D.Elisha,"Revenue Divisional Officer, Kavali",Revenue,DEP01,SPSR Nellore,,,Active,9849904054,,,,14360691,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P219
+Naga Santosh Anusha,"Revenue Divisional Officer, Nellore",Revenue,DEP01,SPSR Nellore,,,Active,9849904055,,,,15098701,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P220
+P. Sreedhar,"Dy.S.P, Kavali",Home (Law & Order),DEP02,SPSR Nellore,,,Active,9440796333,,,,14414337,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P438
+M Giridhar Rao,"Dy.S.P, Gudur",Home (Law & Order),DEP02,SPSR Nellore,,,Active,9440796340,,,,14417683,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P439
+C Ganga Prasad,"Municipal Commissioner, Atmakur Nellore Municipality ",Municipal Administration,DEP11,SPSR Nellore,,,Active,7093902427,,,,14317358,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P330
+A. Venkateswarlu,"Municipal Commissioner, Gudur Nellore Municipality ",Municipal Administration,DEP11,SPSR Nellore,,,Active,9849908254,,,,14119545,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P331
+G. Sravankumar,"Municipal Commissioner, Kavali Municipality ",Municipal Administration,DEP11,SPSR Nellore,,,Active,9849907342,,,,14465246,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P332
+Y. O. Nandan,"Municipal Commissioner, Nellore Municipal Corporation ",Municipal Administration,DEP11,SPSR Nellore,,,Active,9849906609,,,,14461640,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P333
+B. Uma Maheswar Rao,"Municipal Commissioner, Alluru Municipality ",Municipal Administration,DEP11,SPSR Nellore,,,Active,7337551201,,,,14199349,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P334
+M. Venkateswarlu,"Vice Chairman, Nellore Urban Development Authority ",Municipal Administration,DEP11,SPSR Nellore,,,Active,9121162479,,,,30000134,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P335
+Deeksha,"Dy.S.P, Nellore",Home (Law & Order),DEP02,SPSR Nellore,,,Active,9440796305,,,,15206914,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P437
+"Hari Narayanan.M, I.A.S.,",Collector & District Magistrate,,,SPSR Nellore,,,Active,9849904051,,,collector_nlr@ap.gov.in,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+"CH Venkata Sai Krishna, CC M Hazartha Babu, CDT",CC to Collector,,,SPSR Nellore,,,Active,98499040789949096839,,,collector_nlr@ap.gov.in,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+"S Sedhu Madhavan. S, I.A.S.,",Joint Collector,,,SPSR Nellore,,,Active,9849904052,,,neljc@nic.in,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+"K Suneel Kumar, CC K.CH.V Anil Yadav, CDT",CC to Joint Collector,,,SPSR Nellore,,,Active,98499870379849944747,,,neljc@nic.in,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+"Vikas Marmat, I.A.S.,","Commissioner, NMC,Nellore",,,SPSR Nellore,,,Active,9849906609,,,Commissioner_nellore@yahoo.co.in,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+"Harish, CC","CC to Commissioner,NMC",,,SPSR Nellore,,,Active,9949907363,,,Commissioner_nellore@yahoo.co.in,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+S Lavanna,District Revenue Officer (DRO),,,SPSR Nellore,,,Active,9849904053,,,neldro@nic.in,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Pradeep,CC to (DRO),,,SPSR Nellore,,,Active,,,,neldro@nic.in,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+D Venkata Madhusudana Sarma,Administrative Officer (AO),,,SPSR Nellore,,,Active,9849904077,,,nelao@nic.in,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Y Veer Sehkar,Distrit Project Manager (DPM),,,SPSR Nellore,,,Active,,,,,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+P Subrahmanyam,Tahsildar Coordination / D-Section (Suprt),,,SPSR Nellore,,,Active,7995576695,,,nelsupdtd@nic.in,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+"G. Vidyadhari, I.A.S.,","Sub - Collector, Kandukur",,,SPSR Nellore,,,Active,8712622671,,,rdokdkr@nic.in,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+A. Malola,"RDO,Nellore",,,SPSR Nellore,,,Active,9849904055,,,rdonel@nic.in,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+V. K. Seena Naik,"RDO, Kavali",,,SPSR Nellore,,,Active,9849904054,,,rdokvli@nic,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+K.Madhu Latha,"RDO, Atmakur",,,SPSR Nellore,,,Active,9963474101,,,"rdoatk-ap@nic.in, rdoatk5@gmail.com",,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Name of the Tahsildars,Mandals,,,SPSR Nellore,,,Active,,,,Gmail IDs,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+K. Sanjeeva Rao,DAO Nellore,,,SPSR Nellore,,,Active,9849904061,,,rdonel@nic.in,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+G.V. Subba Reddy,Nellore Rural,,,SPSR Nellore,,,Active,9849904070,,,nelnel@nic.in,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+B. Venkateswarlu,Nellore City,,,SPSR Nellore,,,Active,7995576694,,,nelnel@nic.in,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+G. Vijaya Sri,Kovur,,,SPSR Nellore,,,Active,9849904069,,,nelkvr@nic.in,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+P. Suresh Babu,Buchireddypalem,,,SPSR Nellore,,,Active,9849904065,,,nelbrp@nic.in,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+G. Ramesh Kumar,Indukurpet,,,SPSR Nellore,,,Active,9989931798,,,nelipt@nic.in,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+K. Madhava Reddy,Thotapalli Gudur,,,SPSR Nellore,,,Active,9989931797,,,neltpg@nic.in,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+L.Balakrishna,Muthukur,,,SPSR Nellore,,,Active,9849904080,,,nelmtk@nic.in,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+M. Purnachandra Rao,Venkatachalam,,,SPSR Nellore,,,Active,9849904072,,,nelvkc@nic.in,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+K. Chiranjeevi,Manubolu,,,SPSR Nellore,,,Active,9989502066,,,nelmnb@nic.in,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+K. Veera Vasantha Rao,Podalakur,,,SPSR Nellore,,,Active,9989502065,,,nelpdk@nic.in,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+B. Venkataswamy,Rapur,,,SPSR Nellore,,,Active,9989502064,,,nelrpr@.nic.in,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+T. Praveen kumar,Sydapuram,,,SPSR Nellore,,,Active,9989502071,,,nelsyd@nic.in,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+vacant,DAO Atmakur,,,SPSR Nellore,,,Active,9100948215,,,"rdoatk-ap@nic.in, rdoatk5@gmail.com",,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+S. Siva Nagireddy,Atmakur,,,SPSR Nellore,,,Active,9849904076,,,nelatk@nic.in,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+K. Gopi Krishna,Chejerla,,,SPSR Nellore,,,Active,9989931808,,,nelchj@nic.in,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+K. Ravi Kumar,Anumasamudrampeta,,,SPSR Nellore,,,Active,9177504901,,,nelasp@.nic.in,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+P. Seetharatnam,Marripadu,,,SPSR Nellore,,,Active,9177504912,,,nelmpd@nic.in,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+B. Rama Devi,Sangam,,,SPSR Nellore,,,Active,9989502075,,,nelsgm@nic.in,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+P. Narasimha Rao,Anantha Sagaram,,,SPSR Nellore,,,Active,9177504902,,,nelasg@nic.in,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+K. Nehuru Babu,Udayagiri,,,SPSR Nellore,,,Active,9989502077,,,neludg@nic.in,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+P.V. Krishna Reddy,Seetharampuram,,,SPSR Nellore,,,Active,9177504908,,,nelsrp@nic.in,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+M.L. Sanjeeva Kumari,Kaluvoya,,,SPSR Nellore,,,Active,9177504903,,,nelkly@nic.in,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+vacant,DAO Kavali,,,SPSR Nellore,,,Active,9849904060,,,rdokvli@nic,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+K. Nagesh,Kavali,,,SPSR Nellore,,,Active,9849904063,,,nelkvli@nic.in,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+S. Venkataratnam,Bogole,,,SPSR Nellore,,,Active,9989931790,,,nelbgl@nic.in,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+N. Durgeswara Rao,Allur,,,SPSR Nellore,,,Active,9989931792,,,nelalr@nic.in,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+P. John Peter,Dagadarthi,,,SPSR Nellore,,,Active,9989502063,,,neldgt@nic.in,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+N. Vasu,Jaladanki,,,SPSR Nellore,,,Active,9989931789,,,neljdk@nic.in,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Bala Kishore,Kaligiri,,,SPSR Nellore,,,Active,9989502062,,,nelkgr@nic.in,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+R. Yasodha,Duttalur,,,SPSR Nellore,,,Active,9177504910,,,neldtr@nic.in,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+P. Sailendra Kumar,Kodavalur,,,SPSR Nellore,,,Active,9989931794,,,nelkdr@nic.in,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+Ch. Srenivasa Rao,Vidavalur,,,SPSR Nellore,,,Active,9989931793,,,nelvdr@nic.in,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+M.V. Krishna Reddy,Vinjamur,,,SPSR Nellore,,,Active,9989502061,,,nelvjr@nic.in,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+K. Ravi Babu,DAO Kandukur,,,SPSR Nellore,,,Active,8712622672,,,rdokdkr@nic.in,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+vacant,Kandukuru,,,SPSR Nellore,,,Active,8712622673,,,prkkdkr@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+A.V. Ramana,Gudluru,,,SPSR Nellore,,,Active,8712622674,,,prkgudlur@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+G. Sri Charan,Lingasamudram,,,SPSR Nellore,,,Active,8712622675,,,prklsmdr@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+A.V.P. Chandra Reddy,Ulavapadu,,,SPSR Nellore,,,Active,8712622676,,,prkupd@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+N. Naga Maleswara Rao,Voletivaripalem,,,SPSR Nellore,,,Active,8712622677,,,prkvvpalem@gmail.com,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+T. Masthan,Kondapuram,,,SPSR Nellore,,,Active,9177504911,,,nelkdp@nic.in,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+K. Aruna Devi,Varikuntapadu,,,SPSR Nellore,,,Active,9177504909,,,nelvkp@nic.in,,,,,,,,,Local_Excel (26 Districts contacts.xlsx),
+M.V.Seshagiri Babu,Collector,,,SPSR Nellore,,,Active,9849904051,,,collector_nlr@ap.nic.in,,,,,,,,,Local_Excel (Collecters contact list.xlsx),
+V.Vinod Kumar,JC-1,,,SPSR Nellore,,,Active,9849904052,,,neljc@nic.in,,,,,,,,,Local_Excel (Collecters contact list.xlsx),
+M.V.Seshagiri Babu,District Collector,,,SPSR Nellore,,,Active,9849904051,,,,,,,,,,,,"Local_Excel (ALL Collectors, JCs, DRO, RTGS, APSDMA, Agriculture Contact Numbers.xlsx)",
+V.Vinod Kumar,Joint Collector 1,,,SPSR Nellore,,,Active,9849904052,,,,,,,,,,,,"Local_Excel (ALL Collectors, JCs, DRO, RTGS, APSDMA, Agriculture Contact Numbers.xlsx)",
+K M Kamala Kumari,Joint Collector 2,,,SPSR Nellore,,,Active,9849904057,,,,,,,,,,,,"Local_Excel (ALL Collectors, JCs, DRO, RTGS, APSDMA, Agriculture Contact Numbers.xlsx)",
+C. Chandra Shekar reddy,DRO,,,SPSR Nellore,,,Active,9849904053,,,,,,,,,,,,"Local_Excel (ALL Collectors, JCs, DRO, RTGS, APSDMA, Agriculture Contact Numbers.xlsx)",
+B. Chandra naik,Agri Joint Director,,,SPSR Nellore,,,Active,8886614211,,,,,,,,,,,,"Local_Excel (ALL Collectors, JCs, DRO, RTGS, APSDMA, Agriculture Contact Numbers.xlsx)",
+Smt B.V. Siva kumari,APSDMA Staff,,,SPSR Nellore,,,Active,8886648385,,,,,,,,,,,,"Local_Excel (ALL Collectors, JCs, DRO, RTGS, APSDMA, Agriculture Contact Numbers.xlsx)",

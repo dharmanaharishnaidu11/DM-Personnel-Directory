@@ -1,0 +1,60 @@
+{
+  "generated": "2026-03-29",
+  "total_records": 7115,
+  "sources": {
+    "GIS_DM_Personnel": 3549,
+    "GitHub_KeyPosts_GoogleSheets": 1943,
+    "Local_Excel": 1096,
+    "GitHub_eOffice_Dashboard": 446,
+    "GIS_AP_Govt_Structure": 56,
+    "GitHub_Ministers_eOffice": 25
+  },
+  "districts": 28,
+  "with_phone": 6267,
+  "with_email": 2283,
+  "with_employee_id": 4385,
+  "duplicate_groups": 1963,
+  "files": {
+    "master_json": "AP_DM_Master_Directory.json",
+    "master_csv": "AP_DM_Master_Directory.csv",
+    "by_district": "by_district/",
+    "duplicates": "potential_duplicates.json"
+  },
+  "source_details": [
+    {
+      "name": "GIS_DM_Personnel",
+      "url": "https://apsdmagis.ap.gov.in/gisserver/rest/services/Hosted/DM_Personnel/FeatureServer/0",
+      "type": "ArcGIS Feature Service"
+    },
+    {
+      "name": "GIS_AP_Govt_Structure",
+      "url": "https://apsdmagis.ap.gov.in/gisserver/rest/services/Hosted/AP_Govt_Structure/FeatureServer/0",
+      "type": "ArcGIS Feature Service"
+    },
+    {
+      "name": "GitHub_KeyPosts",
+      "url": "https://kranthi0209.github.io/ap-district-key-posts/",
+      "type": "Google Sheets via Apps Script"
+    },
+    {
+      "name": "GitHub_eOffice",
+      "url": "https://github.com/kranthi0209/eOffice.dashboard.ap",
+      "type": "JSON files"
+    },
+    {
+      "name": "GitHub_Ministers",
+      "url": "https://github.com/kranthi0209/Ministers-e-Office",
+      "type": "JSON files"
+    },
+    {
+      "name": "Local_Excel",
+      "url": "d:/APSDMA_MASTER_DATA/",
+      "type": "Excel spreadsheets"
+    },
+    {
+      "name": "GitHub_Hierarchy",
+      "url": "https://github.com/dharmanaharishnaidu11/DM-Personnel-Directory",
+      "type": "Reference (191 HODs + hierarchy)"
+    }
+  ]
+}

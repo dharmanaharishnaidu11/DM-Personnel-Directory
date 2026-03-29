@@ -1,0 +1,37 @@
+﻿person_name,designation,department,category,district,mandal,hierarchy_level,status,phone,phone_alt,whatsapp,email,employee_id,posting_type,rank,dm_role,reports_to,office_address,longitude,latitude,source,source_id
+B Smaran Raj Ias,Joint Collector,Revenue,Revenue,Polavaram,,3,Active,9494902233,,,,15161241,FAC,,,,,81.64320000000004,17.247300000000052,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12668
+Amit Bardar Ips,Superintendent of Police,Home,Home,Polavaram,,3,Active,9440796002,,,,,FAC,,,,,81.64320000000004,17.247300000000052,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12672
+Ratnakar Rao Dasari,"Project Director, DRDA",PR & RD,PR & RD,Polavaram,,5,Active,9849291158,,,,,FAC,,,,,81.64320000000004,17.247300000000052,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12676
+M Rukmangadaiah,District Tribal Welfare & Empowerment Officer,Social Welfare,Social Welfare,Polavaram,,5,Active,9490957015,,,,1421772,FAC,,,,,81.64320000000004,17.247300000000052,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12681
+S A Sharif,District Animal Husbandry Officer,Agriculture,Agriculture,Polavaram,,5,Active,9440223645,,,,14465533,FAC,,,,,81.64320000000004,17.247300000000052,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12685
+Sk Dilshad,District Fisheries Officer,Agriculture,Agriculture,Polavaram,,5,Active,9676208389,,,,14208572,FAC,,,,,81.64320000000004,17.247300000000052,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12687
+A.Devanand,District Horticulture Officer,Agriculture,Agriculture,Polavaram,,5,Active,6309074823,,,,14074029,FAC,,,,,81.64320000000004,17.247300000000052,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12688
+Vijay Bhaskar,District Civil Supply Officer,Civil Supplies,Civil Supplies,Polavaram,,5,Active,9490982596,,,,14372169,FAC,,,,,81.64320000000004,17.247300000000052,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12691
+B Ganesh Kumar,"District Manager, Civil Supplies Corporation",Civil Supplies,Civil Supplies,Polavaram,,5,Active,9573365733,,,,,FAC,,,,,81.64320000000004,17.247300000000052,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12692
+R Ramachandra Rao,"District Water Resources Officer, Irrigation",Infrastructure,Infrastructure,Polavaram,,5,Active,9491303208,,,,14422210,FAC,,,,,81.64320000000004,17.247300000000052,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12702
+P.Saritha,District Medical & Health Officer,HM & FW,Health,Polavaram,,5,Active,9494940045,,,,14062988,FAC,,,,,81.64320000000004,17.247300000000052,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12707
+Ysn Murthy,District Transport Officer,General Admin,General Admin,Polavaram,,5,Active,9154291407,,,,14950124,FAC,,,,,81.64320000000004,17.247300000000052,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12717
+N Satyanarayana,District Treasury Officer,General Admin,General Admin,Polavaram,,5,Active,9701520081,,,,14376888,FAC,,,,,81.64320000000004,17.247300000000052,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12718
+Mv Narasimha Rao,Project Director Housing,General Admin,General Admin,Polavaram,,5,Active,7093930528,,,,,FAC,,,,,81.64320000000004,17.247300000000052,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12721
+Phanibhushan Reddy,DD/AD Mines,Commercial Taxes,Commercial Taxes,Polavaram,,5,Active,9100688824,,,,14391889,FAC,,,,,81.64320000000004,17.247300000000052,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12724
+Ch Lavanya,District Prohibition & Excise Officer,Commercial Taxes,Commercial Taxes,Polavaram,,5,Active,9676714547,,,,14384913,FAC,,,,,81.64320000000004,17.247300000000052,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12725
+Shubham Nokhwal Ias,"Sub Collector, Rampachoodavaram",Revenue,Revenue,Polavaram,,4,Active,9440801442,,,,15192885,Regular,,,,,81.64320000000004,17.247300000000052,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12731
+B Smaran Raj Ias,"PO ITDA, Rampachodavaram ",Tribal Welfare,Tribal Welfare,Polavaram,,4,Active,8500580322,,,,15161241,Regular,,,,,81.64320000000004,17.247300000000052,GIS_DM_Personnel (DM Key Posts Import 2026-03-28),12732
+B Smaran Raj Ias,Joint Collector,Revenue,DEP01,Polavaram,,,Active,9494902233,,,,15161241,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P102
+Amit Bardar Ips,Superintendent of Police,Home (Law & Order),DEP02,Polavaram,,,Active,9440796002,,,,,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P108
+Ratnakar Rao Dasari,"Project Director, DRDA",Panchayat Raj,DEP03,Polavaram,,,Active,9849291158,,,,,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P113
+M Rukmangadaiah,District Tribal Welfare & Empowerment Officer,Welfare Dept,DEP04,Polavaram,,,Active,9490957015,,,,1421772,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P118
+S A Sharif,District Animal Husbandry Officer,"Agriculture, Animal Husbandry & Cooperation",DEP05,Polavaram,,,Active,9440223645,,,,14465533,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P124
+Sk Dilshad,District Fisheries Officer,"Agriculture, Animal Husbandry & Cooperation",DEP05,Polavaram,,,Active,9676208389,,,,14208572,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P126
+A.Devanand,District Horticulture Officer,"Agriculture, Animal Husbandry & Cooperation",DEP05,Polavaram,,,Active,6309074823,,,,14074029,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P127
+Vijay Bhaskar,District Civil Supply Officer,Civil Supplies,DEP06,Polavaram,,,Active,9490982596,,,,14372169,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P130
+B Ganesh Kumar,"District Manager, Civil Supplies Corporation",Civil Supplies,DEP06,Polavaram,,,Active,9573365733,,,,,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P131
+R Ramachandra Rao,"District Water Resources Officer, Irrigation",Engineering Depts,DEP09,Polavaram,,,Active,9491303208,,,,14422210,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P141
+P.Saritha,District Medical & Health Officer,Health,DEP10,Polavaram,,,Active,9494940045,,,,14062988,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P146
+Ysn Murthy,District Transport Officer,Other Departments,DEP12,Polavaram,,,Active,9154291407,,,,14950124,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P158
+N Satyanarayana,District Treasury Officer,Other Departments,DEP12,Polavaram,,,Active,9701520081,,,,14376888,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P159
+Mv Narasimha Rao,Project Director Housing,Other Departments,DEP12,Polavaram,,,Active,7093930528,,,,,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P162
+Phanibhushan Reddy,DD/AD Mines,Revenue Generating Depts,DEP13,Polavaram,,,Active,9100688824,,,,14391889,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P165
+Ch Lavanya,District Prohibition & Excise Officer,Revenue Generating Depts,DEP13,Polavaram,,,Active,9676714547,,,,14384913,FAC,,,,,,,GitHub_KeyPosts_GoogleSheets,P166
+Shubham Nokhwal Ias,"Sub Collector, Rampachoodavaram",Revenue,DEP01,Polavaram,,,Active,9440801442,,,,15192885,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P230
+B Smaran Raj Ias,"PO ITDA, Rampachodavaram ",ITDA,DEP15,Polavaram,,,Active,8500580322,,,,15161241,Regular,,,,,,,GitHub_KeyPosts_GoogleSheets,P391
